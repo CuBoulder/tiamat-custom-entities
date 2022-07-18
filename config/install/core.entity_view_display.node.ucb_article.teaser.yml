@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ucb_article.body
+    - field.field.node.ucb_article.field_ucb_article_byline
+    - field.field.node.ucb_article.field_ucb_article_categories
+    - field.field.node.ucb_article.field_ucb_article_external_link
+    - field.field.node.ucb_article.field_ucb_article_summary
+    - field.field.node.ucb_article.field_ucb_article_tags
+    - field.field.node.ucb_article.field_ucb_article_tumbnail
+    - field.field.node.ucb_article.layout_builder__layout
+    - node.type.ucb_article
+  module:
+    - text
+    - user
+id: node.ucb_article.teaser
+targetEntityType: node
+bundle: ucb_article
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_ucb_article_byline: true
+  field_ucb_article_categories: true
+  field_ucb_article_external_link: true
+  field_ucb_article_summary: true
+  field_ucb_article_tags: true
+  field_ucb_article_tumbnail: true
+  layout_builder__layout: true

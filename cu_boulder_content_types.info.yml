@@ -1,0 +1,21 @@
+name: 'CU Boulder Content Types'
+description: 'Entity content schemas for the content types used by CU Boulder D9 websites.  '
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - cu_boulder_content_types
+  - field
+  - field_group
+  - layout_builder
+  - layout_discovery
+  - link
+  - media
+  - media_library
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
+version: '0.2'
+package: 'CU Boulder Content Types'

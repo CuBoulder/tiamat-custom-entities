@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_article_tags
+    - node.type.ucb_article
+    - taxonomy.vocabulary.tags
+id: node.ucb_article.field_ucb_article_tags
+field_name: field_ucb_article_tags
+entity_type: node
+bundle: ucb_article
+label: Tags
+description: 'Tags are used to categorize and cross-reference content. You may use the tag to create a page of same-tagged articles, such as ''news'', ''announcements'' or ''current''.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

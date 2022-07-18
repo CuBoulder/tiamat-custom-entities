@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_article_tumbnail
+    - media.type.image
+    - node.type.ucb_article
+id: node.ucb_article.field_ucb_article_tumbnail
+field_name: field_ucb_article_tumbnail
+entity_type: node
+bundle: ucb_article
+label: Tumbnail
+description: 'The thumbnail will display on list pages and in article blocks if you choose to show images when configuring the article list page or article block.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

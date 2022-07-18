@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Article
+type: ucb_article
+description: 'Articles are generally used for content that is updated more frequently and cross-referenced and categorized (such as news items or announcements). Articles may also be pulled together into an Article Block or Article List Page. After you create an article, use the Find Content shortcut to locate your article.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

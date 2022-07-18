@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_article_summary
+    - node.type.ucb_article
+id: node.ucb_article.field_ucb_article_summary
+field_name: field_ucb_article_summary
+entity_type: node
+bundle: ucb_article
+label: Summary
+description: 'Summaries are teasers, or short summaries of the article. They are displayed on the Article List pages, where articles are aggregated. You don’t have to create a summary but it is definitely a best practice; if there is no summary the system will show the first three lines of text of your article, which in some cases may be too long for an attractive display.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
