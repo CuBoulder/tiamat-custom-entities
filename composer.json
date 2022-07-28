@@ -1,0 +1,6 @@
+{
+    "name": "cu-boulder/ucb_d9_custom_entities",
+    "description": "Custom D9 content schemas for CU Boulder Web Express",
+    "license": "MIT",
+    "type": "drupal-custom-module"
+}
