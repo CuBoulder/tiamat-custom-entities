@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.ucb_article.field_ucb_article_external_link
     - field.field.node.ucb_article.field_ucb_article_summary
     - field.field.node.ucb_article.field_ucb_article_tags
-    - field.field.node.ucb_article.field_ucb_article_tumbnail
+    - field.field.node.ucb_article.field_ucb_article_thumbnail
     - field.field.node.ucb_article.layout_builder__layout
     - node.type.ucb_article
   module:
@@ -39,5 +39,5 @@ hidden:
   field_ucb_article_external_link: true
   field_ucb_article_summary: true
   field_ucb_article_tags: true
-  field_ucb_article_tumbnail: true
+  field_ucb_article_thumbnail: true
   layout_builder__layout: true

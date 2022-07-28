@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.ucb_article.field_ucb_article_external_link
     - field.field.node.ucb_article.field_ucb_article_summary
     - field.field.node.ucb_article.field_ucb_article_tags
-    - field.field.node.ucb_article.field_ucb_article_tumbnail
+    - field.field.node.ucb_article.field_ucb_article_thumbnail
     - field.field.node.ucb_article.layout_builder__layout
     - node.type.ucb_article
   module:
@@ -135,11 +135,11 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 6
             additional: {  }
-          00ce0786-aca1-4e99-b27f-ed50916a5a86:
-            uuid: 00ce0786-aca1-4e99-b27f-ed50916a5a86
+          e82a4ca1-6cc8-42b5-b9bd-22addd850aac:
+            uuid: e82a4ca1-6cc8-42b5-b9bd-22addd850aac
             region: content
             configuration:
-              id: 'field_block:node:ucb_article:field_ucb_article_tumbnail'
+              id: 'field_block:node:ucb_article:field_ucb_article_thumbnail'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
@@ -208,7 +208,7 @@ content:
     third_party_settings: {  }
     weight: 103
     region: content
-  field_ucb_article_tumbnail:
+  field_ucb_article_thumbnail:
     type: entity_reference_entity_view
     label: above
     settings:

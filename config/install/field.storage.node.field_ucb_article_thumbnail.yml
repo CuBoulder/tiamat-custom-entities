@@ -4,8 +4,8 @@ dependencies:
   module:
     - media
     - node
-id: node.field_ucb_article_tumbnail
-field_name: field_ucb_article_tumbnail
+id: node.field_ucb_article_thumbnail
+field_name: field_ucb_article_thumbnail
 entity_type: node
 type: entity_reference
 settings:
