@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_ucb_article_thumbnail
-    - media.type.video
+    - media.type.image
     - node.type.ucb_article
 id: node.ucb_article.field_ucb_article_thumbnail
 field_name: field_ucb_article_thumbnail
@@ -19,7 +19,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      video: video
+      image: image
     sort:
       field: _none
       direction: ASC
