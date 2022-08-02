@@ -6,6 +6,7 @@ dependencies:
   - cu_boulder_content_types
   - field
   - field_group
+  - filter
   - layout_builder
   - layout_discovery
   - link
@@ -14,7 +15,9 @@ dependencies:
   - menu_ui
   - node
   - path
+  - pathauto
   - taxonomy
+  - telephone
   - text
   - user
 version: '0.3'

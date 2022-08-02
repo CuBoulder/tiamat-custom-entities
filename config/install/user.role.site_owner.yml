@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.wysiwyg
+    - taxonomy.vocabulary.department
+    - taxonomy.vocabulary.ucb_person_job_type
+  module:
+    - filter
+    - taxonomy
+id: site_owner
+label: 'Site Owner'
+weight: 3
+is_admin: null

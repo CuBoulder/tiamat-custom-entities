@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.wysiwyg
+    - taxonomy.vocabulary.department
+    - taxonomy.vocabulary.ucb_person_job_type
+  module:
+    - filter
+    - taxonomy
+id: site_editor
+label: 'Site Editor'
+weight: 4
+is_admin: null
