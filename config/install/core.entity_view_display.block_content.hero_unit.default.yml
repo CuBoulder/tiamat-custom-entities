@@ -1,0 +1,106 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_unit
+    - field.field.block_content.hero_unit.field_background_media
+    - field.field.block_content.hero_unit.field_headline
+    - field.field.block_content.hero_unit.field_hero_overlay
+    - field.field.block_content.hero_unit.field_link_color
+    - field.field.block_content.hero_unit.field_links
+    - field.field.block_content.hero_unit.field_size
+    - field.field.block_content.hero_unit.field_solid_colors
+    - field.field.block_content.hero_unit.field_text
+    - field.field.block_content.hero_unit.field_text_align
+    - field.field.block_content.hero_unit.field_text_color
+  module:
+    - link
+    - options
+    - text
+id: block_content.hero_unit.default
+targetEntityType: block_content
+bundle: hero_unit
+mode: default
+content:
+  field_background_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_headline:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hero_overlay:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_link_color:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_links:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_size:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_solid_colors:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_text_align:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_text_color:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+hidden: {  }
