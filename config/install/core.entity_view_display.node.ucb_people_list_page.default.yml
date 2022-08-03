@@ -1,0 +1,70 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ucb_people_list_page.body
+    - field.field.node.ucb_people_list_page.field_ucb_people_department
+    - field.field.node.ucb_people_list_page.field_ucb_people_display
+    - field.field.node.ucb_people_list_page.field_ucb_people_group_by
+    - field.field.node.ucb_people_list_page.field_ucb_people_job_type
+    - field.field.node.ucb_people_list_page.field_ucb_people_order_by
+    - node.type.ucb_people_list_page
+  module:
+    - options
+    - text
+    - user
+id: node.ucb_people_list_page.default
+targetEntityType: node
+bundle: ucb_people_list_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_ucb_people_department:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_ucb_people_display:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_ucb_people_group_by:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_ucb_people_job_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_ucb_people_order_by:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
