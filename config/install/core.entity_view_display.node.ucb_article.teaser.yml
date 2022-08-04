@@ -6,38 +6,46 @@ dependencies:
     - field.field.node.ucb_article.body
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
-    - field.field.node.ucb_article.field_ucb_article_external_link
+    - field.field.node.ucb_article.field_ucb_article_content
+    - field.field.node.ucb_article.field_ucb_article_external_url
+    - field.field.node.ucb_article.field_ucb_article_image
     - field.field.node.ucb_article.field_ucb_article_summary
     - field.field.node.ucb_article.field_ucb_article_tags
     - field.field.node.ucb_article.field_ucb_article_thumbnail
-    - field.field.node.ucb_article.layout_builder__layout
     - node.type.ucb_article
   module:
-    - text
     - user
 id: node.ucb_article.teaser
 targetEntityType: node
 bundle: ucb_article
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
+  field_ucb_article_image:
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      trim_length: 600
+      view_mode: focal_image_render
+      link: false
     third_party_settings: {  }
-    weight: 101
+    weight: 0
+    region: content
+  field_ucb_article_summary:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
 hidden:
+  body: true
   field_ucb_article_byline: true
   field_ucb_article_categories: true
-  field_ucb_article_external_link: true
-  field_ucb_article_summary: true
+  field_ucb_article_content: true
+  field_ucb_article_external_url: true
   field_ucb_article_tags: true
   field_ucb_article_thumbnail: true
-  layout_builder__layout: true

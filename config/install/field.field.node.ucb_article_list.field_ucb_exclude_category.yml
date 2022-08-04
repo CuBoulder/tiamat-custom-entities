@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ucb_article_byline
-    - node.type.ucb_article
-    - taxonomy.vocabulary.byline
-id: node.ucb_article.field_ucb_article_byline
-field_name: field_ucb_article_byline
+    - field.storage.node.field_ucb_exclude_category
+    - node.type.ucb_article_list
+    - taxonomy.vocabulary.category
+id: node.ucb_article_list.field_ucb_exclude_category
+field_name: field_ucb_exclude_category
 entity_type: node
-bundle: ucb_article
-label: Byline
-description: 'Enter first and last name of the authors.   '
+bundle: ucb_article_list
+label: 'Exclude Category'
+description: ''
 required: false
 translatable: false
 default_value: {  }
@@ -19,10 +19,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      byline: byline
+      category: category
     sort:
       field: name
       direction: asc
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

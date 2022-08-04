@@ -5,185 +5,50 @@ dependencies:
     - field.field.node.ucb_article.body
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
-    - field.field.node.ucb_article.field_ucb_article_external_link
+    - field.field.node.ucb_article.field_ucb_article_content
+    - field.field.node.ucb_article.field_ucb_article_external_url
+    - field.field.node.ucb_article.field_ucb_article_image
     - field.field.node.ucb_article.field_ucb_article_summary
     - field.field.node.ucb_article.field_ucb_article_tags
     - field.field.node.ucb_article.field_ucb_article_thumbnail
-    - field.field.node.ucb_article.layout_builder__layout
     - node.type.ucb_article
   module:
-    - layout_builder
-    - layout_discovery
+    - entity_reference_revisions
     - link
-    - text
     - user
-third_party_settings:
-  layout_builder:
-    enabled: true
-    allow_custom: true
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          51fed1c7-42f8-42a3-bbed-e62f29f6b258:
-            uuid: 51fed1c7-42f8-42a3-bbed-e62f29f6b258
-            region: content
-            configuration:
-              id: 'extra_field_block:node:ucb_article:links'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 0
-            additional: {  }
-          2ba24875-26eb-4934-9eb8-14523314e101:
-            uuid: 2ba24875-26eb-4934-9eb8-14523314e101
-            region: content
-            configuration:
-              id: 'field_block:node:ucb_article:body'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
-          527e01eb-3dc4-4bbd-b564-53f7ae0e2ad8:
-            uuid: 527e01eb-3dc4-4bbd-b564-53f7ae0e2ad8
-            region: content
-            configuration:
-              id: 'field_block:node:ucb_article:field_ucb_article_categories'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
-          7402a9e7-d56e-4df1-9fd5-ffe4e2e4bdb8:
-            uuid: 7402a9e7-d56e-4df1-9fd5-ffe4e2e4bdb8
-            region: content
-            configuration:
-              id: 'field_block:node:ucb_article:field_ucb_article_tags'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            weight: 3
-            additional: {  }
-          a6222424-ad95-44f7-ae29-82b31968ac4d:
-            uuid: a6222424-ad95-44f7-ae29-82b31968ac4d
-            region: content
-            configuration:
-              id: 'field_block:node:ucb_article:field_ucb_article_byline'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            weight: 4
-            additional: {  }
-          622fa47e-6e83-416d-8f95-d814c86219ba:
-            uuid: 622fa47e-6e83-416d-8f95-d814c86219ba
-            region: content
-            configuration:
-              id: 'field_block:node:ucb_article:field_ucb_article_external_link'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: link
-                label: above
-                settings:
-                  trim_length: 80
-                  url_only: false
-                  url_plain: false
-                  rel: ''
-                  target: ''
-                third_party_settings: {  }
-            weight: 5
-            additional: {  }
-          0b178370-85f6-4735-97c9-e6fbd86ca56f:
-            uuid: 0b178370-85f6-4735-97c9-e6fbd86ca56f
-            region: content
-            configuration:
-              id: 'field_block:node:ucb_article:field_ucb_article_summary'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: basic_string
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 6
-            additional: {  }
-          e82a4ca1-6cc8-42b5-b9bd-22addd850aac:
-            uuid: e82a4ca1-6cc8-42b5-b9bd-22addd850aac
-            region: content
-            configuration:
-              id: 'field_block:node:ucb_article:field_ucb_article_thumbnail'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_entity_view
-                label: above
-                settings:
-                  view_mode: default
-                  link: false
-                third_party_settings: {  }
-            weight: 7
-            additional: {  }
-        third_party_settings: {  }
 id: node.ucb_article.default
 targetEntityType: node
 bundle: ucb_article
 mode: default
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 101
-    region: content
   field_ucb_article_byline:
     type: entity_reference_label
-    label: above
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_ucb_article_categories:
+    type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     weight: 104
     region: content
-  field_ucb_article_categories:
-    type: entity_reference_label
-    label: above
+  field_ucb_article_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
     settings:
-      link: true
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    weight: 102
+    weight: 108
     region: content
-  field_ucb_article_external_link:
+  field_ucb_article_external_url:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -191,31 +56,40 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 105
+    weight: 107
+    region: content
+  field_ucb_article_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: original_image
+      link: false
+    third_party_settings: {  }
+    weight: 102
     region: content
   field_ucb_article_summary:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 106
+    weight: 109
     region: content
   field_ucb_article_tags:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    weight: 103
+    weight: 105
     region: content
   field_ucb_article_thumbnail:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_link: ''
+      image_style: large
     third_party_settings: {  }
-    weight: 107
+    weight: 103
     region: content
   links:
     settings: {  }
@@ -223,4 +97,4 @@ content:
     weight: 100
     region: content
 hidden:
-  layout_builder__layout: true
+  body: true

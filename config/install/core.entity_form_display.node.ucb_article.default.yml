@@ -5,145 +5,137 @@ dependencies:
     - field.field.node.ucb_article.body
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
-    - field.field.node.ucb_article.field_ucb_article_external_link
+    - field.field.node.ucb_article.field_ucb_article_content
+    - field.field.node.ucb_article.field_ucb_article_external_url
+    - field.field.node.ucb_article.field_ucb_article_image
     - field.field.node.ucb_article.field_ucb_article_summary
     - field.field.node.ucb_article.field_ucb_article_tags
     - field.field.node.ucb_article.field_ucb_article_thumbnail
-    - field.field.node.ucb_article.layout_builder__layout
     - node.type.ucb_article
   module:
     - field_group
     - link
     - media_library
+    - paragraphs
     - path
-    - text
 third_party_settings:
   field_group:
     group_tabs:
       children:
-        - group_content
-        - group_summary
+        - group_images
         - group_categories
         - group_tags
         - group_byline
         - group_external_link
-      label: Tabs
-      region: content
+        - group_article_content
       parent_name: ''
-      weight: 14
+      weight: 7
       format_type: tabs
+      region: content
       format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
         direction: horizontal
         width_breakpoint: 640
-    group_content:
-      children:
-        - body
-      label: Content
-      region: content
-      parent_name: group_tabs
-      weight: 15
-      format_type: tab
-      format_settings:
+        id: ''
         classes: ''
         show_empty_fields: false
-        id: ''
-        formatter: open
-        description: ''
-        required_fields: true
-    group_summary:
+      label: Tabs
+    group_images:
       children:
         - field_ucb_article_summary
         - field_ucb_article_thumbnail
-      label: Summary
-      region: content
       parent_name: group_tabs
-      weight: 16
+      weight: 14
       format_type: tab
+      region: content
       format_settings:
+        description: 'These items will show in the summary instead of the main content.'
+        formatter: closed
+        required_fields: true
+        id: ''
         classes: ''
         show_empty_fields: false
-        id: ''
-        formatter: closed
-        description: ''
-        required_fields: true
+      label: Summary
     group_categories:
       children:
         - field_ucb_article_categories
+      parent_name: group_tabs
+      weight: 15
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
       label: Categories
-      region: content
-      parent_name: group_tabs
-      weight: 17
-      format_type: tab
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        formatter: closed
-        description: ''
-        required_fields: true
-    group_tags:
-      children:
-        - field_ucb_article_tags
-      label: Tags
-      region: content
-      parent_name: group_tabs
-      weight: 18
-      format_type: tab
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        formatter: closed
-        description: ''
-        required_fields: true
     group_byline:
       children:
         - field_ucb_article_byline
-      label: Byline
-      region: content
       parent_name: group_tabs
-      weight: 19
+      weight: 17
       format_type: tab
+      region: content
       format_settings:
-        classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed
+        classes: ''
         description: ''
+        formatter: closed
         required_fields: true
+      label: Byline
+    group_tags:
+      children:
+        - field_ucb_article_tags
+      parent_name: group_tabs
+      weight: 16
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Tags
     group_external_link:
       children:
-        - field_ucb_article_external_link
-      label: 'External Link'
-      region: content
+        - field_ucb_article_external_url
       parent_name: group_tabs
-      weight: 20
+      weight: 18
       format_type: tab
+      region: content
       format_settings:
-        classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed
+        classes: ''
         description: ''
+        formatter: closed
         required_fields: true
+      label: 'External Link'
+    group_article_content:
+      children:
+        - field_ucb_article_content
+        - field_ucb_article_image
+      parent_name: group_tabs
+      weight: 12
+      format_type: tab
+      region: hidden
+      format_settings:
+        description: "Main content area for articles to be added to.\r\nAddition content sections can be added as needed."
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: 'Article Content'
 id: node.ucb_article.default
 targetEntityType: node
 bundle: ucb_article
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 7
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 2
@@ -151,84 +143,95 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_ucb_article_byline:
-    type: entity_reference_autocomplete
-    weight: 10
-    region: content
+    weight: 12
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_ucb_article_categories:
-    type: entity_reference_autocomplete
-    weight: 8
-    region: content
+    weight: 28
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_ucb_article_external_link:
-    type: link_default
-    weight: 11
+    type: entity_reference_autocomplete
     region: content
+  field_ucb_article_content:
+    type: paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    region: content
+  field_ucb_article_external_url:
+    weight: 13
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  field_ucb_article_summary:
-    type: string_textarea
-    weight: 12
+    type: link_default
     region: content
+  field_ucb_article_summary:
+    weight: 27
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_ucb_article_tags:
-    type: entity_reference_autocomplete
-    weight: 9
+    type: string_textarea
     region: content
+  field_ucb_article_tags:
+    weight: 11
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_ucb_article_thumbnail:
     type: media_library_widget
-    weight: 13
-    region: content
+    weight: 28
     settings:
       media_types: {  }
     third_party_settings: {  }
+    region: content
   path:
     type: path
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    weight: 3
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 6
-    region: content
     settings:
       display_label: true
+    weight: 5
+    region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 4
-    region: content
     settings:
       display_label: true
+    weight: 3
+    region: content
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -241,12 +244,14 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 1
-    region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
+      match_limit: 10
+    region: content
     third_party_settings: {  }
 hidden:
-  layout_builder__layout: true
+  body: true
+  field_ucb_article_image: true
+  promote: true
