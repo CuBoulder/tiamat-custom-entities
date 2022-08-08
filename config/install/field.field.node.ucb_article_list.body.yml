@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.ucb_article
+    - node.type.ucb_article_list
   module:
     - text
-id: node.ucb_article.body
+id: node.ucb_article_list.body
 field_name: body
 entity_type: node
-bundle: ucb_article
+bundle: ucb_article_list
 label: Body
 description: ''
 required: false

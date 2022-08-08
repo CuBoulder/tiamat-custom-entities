@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ucb_article_thumbnail
+    - field.storage.node.field_ucb_article_image
     - media.type.image
     - node.type.ucb_article
-id: node.ucb_article.field_ucb_article_thumbnail
-field_name: field_ucb_article_thumbnail
+id: node.ucb_article.field_ucb_article_image
+field_name: field_ucb_article_image
 entity_type: node
 bundle: ucb_article
-label: Thumbnail
-description: 'Optional thumbnail image to be displayed with the summary for this article.  '
+label: Photo
+description: 'Upload an image to go with this article. '
 required: false
 translatable: false
 default_value: {  }
