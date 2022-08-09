@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_solid_colors
+    - paragraphs.paragraphs_type.hero_unit
+  module:
+    - options
+id: paragraph.hero_unit.field_solid_colors
+field_name: field_solid_colors
+entity_type: paragraph
+bundle: hero_unit
+label: 'Solid Colors'
+description: 'Select a color the background. Choose none if you don''t want a background'
+required: false
+translatable: false
+default_value:
+  -
+    value: '--ucb-light-blue'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

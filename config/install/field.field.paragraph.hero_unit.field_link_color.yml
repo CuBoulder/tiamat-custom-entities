@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_color
+    - paragraphs.paragraphs_type.hero_unit
+  module:
+    - options
+id: paragraph.hero_unit.field_link_color
+field_name: field_link_color
+entity_type: paragraph
+bundle: hero_unit
+label: 'Link Color'
+description: 'Set the color of the button for links, if any are listed'
+required: false
+translatable: false
+default_value:
+  -
+    value: button-blue
+default_value_callback: ''
+settings: {  }
+field_type: list_string

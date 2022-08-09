@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ucb_hero_overlay
+    - paragraphs.paragraphs_type.hero_unit
+id: paragraph.hero_unit.field_ucb_hero_overlay
+field_name: field_ucb_hero_overlay
+entity_type: paragraph
+bundle: hero_unit
+label: Overlay
+description: 'Add overlay to improve readability'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -5,6 +5,7 @@ dependencies:
     - field.storage.node.field_ucb_article_content
     - node.type.ucb_article
     - paragraphs.paragraphs_type.article_content
+    - paragraphs.paragraphs_type.hero_unit
   module:
     - entity_reference_revisions
 id: node.ucb_article.field_ucb_article_content
@@ -13,7 +14,7 @@ entity_type: node
 bundle: ucb_article
 label: 'Article Content'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -22,6 +23,7 @@ settings:
   handler_settings:
     target_bundles:
       article_content: article_content
+      hero_unit: hero_unit
     negate: 0
     target_bundles_drag_drop:
       article_content:
@@ -30,58 +32,10 @@ settings:
       blockquote:
         weight: 22
         enabled: false
-      content_grid:
-        weight: 23
-        enabled: false
-      content_row:
-        weight: 24
-        enabled: false
-      events_calendar:
-        weight: 25
-        enabled: false
-      expandable_content:
-        weight: 26
-        enabled: false
-      expandable_content_text:
-        weight: 27
-        enabled: false
-      grid_layout_content:
-        weight: 28
-        enabled: false
       hero_unit:
         weight: 29
-        enabled: false
-      image_gallery:
-        weight: 30
-        enabled: false
+        enabled: true
       media:
         weight: 31
-        enabled: false
-      newsletter_section:
-        weight: 32
-        enabled: false
-      newsletter_section_article:
-        weight: 33
-        enabled: false
-      newsletter_section_content:
-        weight: 34
-        enabled: false
-      row_layout_content:
-        weight: 35
-        enabled: false
-      slider:
-        weight: 52
-        enabled: false
-      slider_image:
-        weight: 53
-        enabled: false
-      social_media_icons_block:
-        weight: 38
-        enabled: false
-      text_block:
-        weight: 54
-        enabled: false
-      ucb_video_reveal:
-        weight: 40
         enabled: false
 field_type: entity_reference_revisions
