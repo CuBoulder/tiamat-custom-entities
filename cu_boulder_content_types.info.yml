@@ -17,5 +17,5 @@ dependencies:
   - taxonomy
   - text
   - user
-version: '0.4'
+version: '0.6'
 package: 'CU Boulder Content Types'
