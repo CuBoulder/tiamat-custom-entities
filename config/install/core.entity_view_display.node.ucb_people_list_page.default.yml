@@ -26,10 +26,9 @@ content:
     weight: 101
     region: content
   field_ucb_people_department:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
+    type: entity_reference_entity_id
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
     weight: 103
     region: content
@@ -41,23 +40,22 @@ content:
     weight: 102
     region: content
   field_ucb_people_group_by:
-    type: list_default
-    label: above
+    type: list_key
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 104
     region: content
   field_ucb_people_job_type:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
+    type: entity_reference_entity_id
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
     weight: 105
     region: content
   field_ucb_people_order_by:
-    type: list_default
-    label: above
+    type: list_key
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 106
