@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide_image_text
+    - paragraphs.paragraphs_type.slider_image
+  module:
+    - text
+id: paragraph.slider_image.field_slide_image_text
+field_name: field_slide_image_text
+entity_type: paragraph
+bundle: slider_image
+label: 'Slide Text'
+description: 'Add a caption for this slide'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
