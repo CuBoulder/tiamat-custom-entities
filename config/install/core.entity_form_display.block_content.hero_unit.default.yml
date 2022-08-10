@@ -23,6 +23,7 @@ third_party_settings:
     group_hero_unit_tabs:
       children:
         - group_hero_text_options
+        - group_hero_design_options
       label: 'Hero Unit Tabs'
       region: content
       parent_name: ''
@@ -39,7 +40,6 @@ third_party_settings:
         - field_headline
         - field_text
         - field_links
-        - group_hero_design_options
       label: 'Hero Text Options'
       region: content
       parent_name: group_hero_unit_tabs
@@ -63,8 +63,8 @@ third_party_settings:
         - field_hero_overlay
       label: 'Hero Design Options'
       region: content
-      parent_name: group_hero_text_options
-      weight: 14
+      parent_name: group_hero_unit_tabs
+      weight: 5
       format_type: tab
       format_settings:
         classes: ''
