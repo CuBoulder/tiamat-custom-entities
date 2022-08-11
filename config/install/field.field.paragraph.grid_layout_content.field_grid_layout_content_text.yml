@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_layout_content_text
+    - paragraphs.paragraphs_type.grid_layout_content
+  module:
+    - text
+id: paragraph.grid_layout_content.field_grid_layout_content_text
+field_name: field_grid_layout_content_text
+entity_type: paragraph
+bundle: grid_layout_content
+label: Text
+description: 'Text for the grid content'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
