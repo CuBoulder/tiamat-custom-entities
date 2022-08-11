@@ -10,7 +10,7 @@ field_name: field_ucb_article_tags
 entity_type: node
 bundle: ucb_article
 label: Tags
-description: 'Tags are used to categorize and cross-reference content. You may use the tag to create a page of same-tagged articles, such as ''news'', ''announcements'' or ''current''.'
+description: 'Enter a list of words to describe your content.  Tags describe the specific details of your article.  '
 required: false
 translatable: false
 default_value: {  }

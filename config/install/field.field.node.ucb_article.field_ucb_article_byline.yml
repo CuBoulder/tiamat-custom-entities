@@ -10,7 +10,7 @@ field_name: field_ucb_article_byline
 entity_type: node
 bundle: ucb_article
 label: Byline
-description: 'An article byline will allow you to display by whom the article is written. '
+description: 'Enter first and last name of the authors.   '
 required: false
 translatable: false
 default_value: {  }
@@ -24,5 +24,5 @@ settings:
       field: name
       direction: asc
     auto_create: true
-    auto_create_bundle: byline
+    auto_create_bundle: ''
 field_type: entity_reference

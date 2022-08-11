@@ -1,7 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
-name: Categories
-vid: categories
+name: Department
+vid: department
 description: ''
 weight: 0

@@ -1,10 +1,9 @@
-uuid: 713f0ea9-b2f6-4ad3-af20-713a1ef10b9a
 langcode: en
 status: true
 dependencies: {  }
 id: image
 label: Image
-description: 'Images that can be reused across the site.  '
+description: 'Manage images that can be reused across the site'
 source: image
 queue_thumbnail_downloads: false
 new_revision: false

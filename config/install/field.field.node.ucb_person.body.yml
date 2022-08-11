@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.ucb_article
+    - node.type.ucb_person
   module:
     - text
-id: node.ucb_article.body
+id: node.ucb_person.body
 field_name: body
 entity_type: node
-bundle: ucb_article
+bundle: ucb_person
 label: Body
 description: ''
 required: false
@@ -17,6 +17,6 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: true
+  display_summary: false
   required_summary: false
 field_type: text_with_summary

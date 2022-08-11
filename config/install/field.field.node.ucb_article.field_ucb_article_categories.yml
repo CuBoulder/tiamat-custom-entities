@@ -4,13 +4,13 @@ dependencies:
   config:
     - field.storage.node.field_ucb_article_categories
     - node.type.ucb_article
-    - taxonomy.vocabulary.categories
+    - taxonomy.vocabulary.category
 id: node.ucb_article.field_ucb_article_categories
 field_name: field_ucb_article_categories
 entity_type: node
 bundle: ucb_article
 label: Categories
-description: 'Categories are used to group articles into sets of content. You can think of categories as a way to create magazine style article issues.'
+description: 'Enter a list of words to describe your content. Categories are general topics for broad grouping of articles.'
 required: false
 translatable: false
 default_value: {  }
@@ -19,7 +19,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      categories: categories
+      category: category
     sort:
       field: name
       direction: asc
