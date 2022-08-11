@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.article_content.field_article_blockquote
     - field.field.paragraph.article_content.field_article_media_location
     - field.field.paragraph.article_content.field_article_media_selection
     - field.field.paragraph.article_content.field_article_text
@@ -16,6 +17,7 @@ third_party_settings:
       children:
         - group_article_text_tab
         - group_article_media_tab
+        - group_article_blockquote
       label: Tabs
       region: content
       parent_name: ''
@@ -57,12 +59,45 @@ third_party_settings:
         id: ''
         formatter: closed
         description: ''
+        required_fields: false
+    group_article_blockquote:
+      children:
+        - field_article_blockquote
+      label: Blockquote
+      region: hidden
+      parent_name: group_article_tabs
+      weight: 7
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
         required_fields: true
 id: paragraph.article_content.default
 targetEntityType: paragraph
 bundle: article_content
 mode: default
 content:
+  field_article_blockquote:
+    type: paragraphs
+    weight: 8
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
   field_article_media_location:
     type: options_select
     weight: 9
@@ -83,7 +118,7 @@ content:
     third_party_settings: {  }
   field_article_text:
     type: text_textarea
-    weight: 1
+    weight: 10
     region: content
     settings:
       rows: 5

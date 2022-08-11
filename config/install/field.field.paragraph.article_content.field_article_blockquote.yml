@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ucb_article_content
-    - node.type.ucb_article
+    - field.storage.paragraph.field_article_blockquote
     - paragraphs.paragraphs_type.article_content
+    - paragraphs.paragraphs_type.blockquote
   module:
     - entity_reference_revisions
-id: node.ucb_article.field_ucb_article_content
-field_name: field_ucb_article_content
-entity_type: node
-bundle: ucb_article
-label: 'Article Content'
+id: paragraph.article_content.field_article_blockquote
+field_name: field_article_blockquote
+entity_type: paragraph
+bundle: article_content
+label: 'Article Blockquote'
 description: ''
 required: false
 translatable: false
@@ -21,19 +21,19 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      article_content: article_content
+      blockquote: blockquote
     negate: 0
     target_bundles_drag_drop:
       article_content:
-        weight: 28
-        enabled: true
-      blockquote:
-        weight: 22
+        weight: 5
         enabled: false
+      blockquote:
+        weight: 6
+        enabled: true
       how_to_step:
         weight: 7
         enabled: false
       media:
-        weight: 31
+        weight: 8
         enabled: false
 field_type: entity_reference_revisions
