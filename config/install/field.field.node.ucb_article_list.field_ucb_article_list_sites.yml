@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_article_list_sites
+    - node.type.ucb_article_list
+id: node.ucb_article_list.field_ucb_article_list_sites
+field_name: field_ucb_article_list_sites
+entity_type: node
+bundle: ucb_article_list
+label: Sites
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
