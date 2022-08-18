@@ -6,8 +6,6 @@ dependencies:
     - field.field.node.ucb_article_list.body
     - field.field.node.ucb_article_list.field_article_list_inc_this_site
     - field.field.node.ucb_article_list.field_article_list_sites
-    - field.field.node.ucb_article_list.field_ucb_article_list_sites
-    - field.field.node.ucb_article_list.field_ucb_article_list_this_site
     - field.field.node.ucb_article_list.field_ucb_exclude_category
     - field.field.node.ucb_article_list.field_ucb_exclude_tag
     - field.field.node.ucb_article_list.field_ucb_filter_by_category
@@ -37,8 +35,6 @@ content:
 hidden:
   field_article_list_inc_this_site: true
   field_article_list_sites: true
-  field_ucb_article_list_sites: true
-  field_ucb_article_list_this_site: true
   field_ucb_exclude_category: true
   field_ucb_exclude_tag: true
   field_ucb_filter_by_category: true
