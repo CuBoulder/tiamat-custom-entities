@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ucb_article_list_this_site
+    - field.storage.node.field_article_list_inc_this_site
     - node.type.ucb_article_list
-id: node.ucb_article_list.field_ucb_article_list_this_site
-field_name: field_ucb_article_list_this_site
+id: node.ucb_article_list.field_article_list_inc_this_site
+field_name: field_article_list_inc_this_site
 entity_type: node
 bundle: ucb_article_list
 label: 'Display articles from this site'

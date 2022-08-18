@@ -2,15 +2,16 @@ langcode: en
 status: true
 dependencies:
   module:
+    - link
     - node
-id: node.field_ucb_article_list_this_site
-field_name: field_ucb_article_list_this_site
+id: node.field_article_list_sites
+field_name: field_article_list_sites
 entity_type: node
-type: boolean
+type: link
 settings: {  }
-module: core
+module: link
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

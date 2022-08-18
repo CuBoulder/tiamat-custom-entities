@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_article_list.body
+    - field.field.node.ucb_article_list.field_article_list_inc_this_site
+    - field.field.node.ucb_article_list.field_article_list_sites
     - field.field.node.ucb_article_list.field_ucb_article_list_sites
     - field.field.node.ucb_article_list.field_ucb_article_list_this_site
     - field.field.node.ucb_article_list.field_ucb_exclude_category
@@ -11,6 +13,7 @@ dependencies:
     - field.field.node.ucb_article_list.field_ucb_filter_by_tag
     - node.type.ucb_article_list
   module:
+    - link
     - text
     - user
 id: node.ucb_article_list.default
@@ -25,23 +28,27 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
-  field_ucb_article_list_sites:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 106
-    region: content
-  field_ucb_article_list_this_site:
+  field_article_list_inc_this_site:
     type: boolean
-    label: hidden
+    label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 107
+    weight: 110
+    region: content
+  field_article_list_sites:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 109
     region: content
   field_ucb_exclude_category:
     type: entity_reference_entity_id
@@ -76,4 +83,6 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_ucb_article_list_sites: true
+  field_ucb_article_list_this_site: true

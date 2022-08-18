@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_list_sites
+    - node.type.ucb_article_list
+  module:
+    - link
+id: node.ucb_article_list.field_article_list_sites
+field_name: field_article_list_sites
+entity_type: node
+bundle: ucb_article_list
+label: 'Other sites'
+description: 'You may add a list of other CU Boulder sites to pull articles from. Links must follow the format https://www.colorado.edu/[site name]'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link
