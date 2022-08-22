@@ -14,7 +14,12 @@ label: 'Other sites'
 description: 'You may add a list of other CU Boulder sites to pull articles from. Links must follow the format https://www.colorado.edu/[site name]'
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    uri: 'internal:/'
+    title: ''
+    options:
+      attributes: {  }
 default_value_callback: ''
 settings:
   title: 1

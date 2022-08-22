@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_article_list.body
-    - field.field.node.ucb_article_list.field_article_list_inc_this_site
     - field.field.node.ucb_article_list.field_article_list_sites
     - field.field.node.ucb_article_list.field_ucb_exclude_category
     - field.field.node.ucb_article_list.field_ucb_exclude_tag
@@ -84,13 +83,6 @@ content:
     weight: 2
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_article_list_inc_this_site:
-    type: boolean_checkbox
-    weight: 9
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   field_article_list_sites:
     type: link_default
@@ -185,4 +177,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: []
+hidden: {  }
