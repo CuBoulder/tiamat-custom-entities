@@ -12,16 +12,13 @@ settings:
   allowed_values:
     -
       value: '0'
-      label: 'Ultrawide - 1600x600'
+      label: Large
     -
       value: '1'
-      label: 'Widescreen - 1600x900'
+      label: Medium
     -
       value: '2'
-      label: '3:2 - 1500x500'
-    -
-      value: '3'
-      label: Large
+      label: Small
   allowed_values_function: ''
 module: options
 locked: false
