@@ -29,6 +29,7 @@ third_party_settings:
         - group_tags
         - group_byline
         - group_external_link
+        - group_ucb_related_articles
       label: Tabs
       region: content
       parent_name: ''
@@ -130,6 +131,21 @@ third_party_settings:
         id: ''
         formatter: open
         description: "Main content area for articles to be added to.\r\nAddition content sections can be added as needed."
+        required_fields: true
+    group_ucb_related_articles:
+      children:
+        - field_ucb_related_articles_parag
+      label: 'Related Articles'
+      region: content
+      parent_name: group_tabs
+      weight: 40
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
         required_fields: true
 id: node.ucb_article.default
 targetEntityType: node
