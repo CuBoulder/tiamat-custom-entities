@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.ucb_article.field_ucb_article_summary
     - field.field.node.ucb_article.field_ucb_article_tags
     - field.field.node.ucb_article.field_ucb_article_thumbnail
+    - field.field.node.ucb_article.field_ucb_related_articles_parag
     - field.field.node.ucb_article.layout_builder__layout
     - node.type.ucb_article
   module:
@@ -28,6 +29,7 @@ third_party_settings:
         - group_tags
         - group_byline
         - group_external_link
+        - group_ucb_related_articles
       label: Tabs
       region: content
       parent_name: ''
@@ -130,6 +132,21 @@ third_party_settings:
         formatter: open
         description: "Main content area for articles to be added to.\r\nAddition content sections can be added as needed."
         required_fields: true
+    group_ucb_related_articles:
+      children:
+        - field_ucb_related_articles_parag
+      label: 'Related Articles'
+      region: content
+      parent_name: group_tabs
+      weight: 40
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
 id: node.ucb_article.default
 targetEntityType: node
 bundle: ucb_article
@@ -211,6 +228,24 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_ucb_related_articles_parag:
+    type: paragraphs
+    weight: 40
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
   path:
     type: path
