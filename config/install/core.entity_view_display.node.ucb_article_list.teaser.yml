@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.ucb_article_list.body
+    - field.field.node.ucb_article_list.field_article_list_include_self
     - field.field.node.ucb_article_list.field_article_list_sites
     - field.field.node.ucb_article_list.field_ucb_exclude_category
     - field.field.node.ucb_article_list.field_ucb_exclude_tag
@@ -32,6 +33,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_article_list_include_self: true
   field_article_list_sites: true
   field_ucb_exclude_category: true
   field_ucb_exclude_tag: true

@@ -10,16 +10,11 @@ id: node.ucb_article_list.field_article_list_sites
 field_name: field_article_list_sites
 entity_type: node
 bundle: ucb_article_list
-label: 'Other sites'
+label: 'Add external sites'
 description: 'You may add a list of other CU Boulder sites to pull articles from. Links must follow the format https://www.colorado.edu/[site name]'
 required: false
 translatable: false
-default_value:
-  -
-    uri: 'internal:/'
-    title: ''
-    options:
-      attributes: {  }
+default_value: {  }
 default_value_callback: ''
 settings:
   title: 1

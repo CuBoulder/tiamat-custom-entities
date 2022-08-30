@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_article_list.body
+    - field.field.node.ucb_article_list.field_article_list_include_self
     - field.field.node.ucb_article_list.field_article_list_sites
     - field.field.node.ucb_article_list.field_ucb_exclude_category
     - field.field.node.ucb_article_list.field_ucb_exclude_tag
@@ -24,6 +25,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_article_list_include_self:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 110
     region: content
   field_article_list_sites:
     type: link
