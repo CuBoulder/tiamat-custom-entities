@@ -1,0 +1,110 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_media_icons
+    - field.field.block_content.social_media_icons.field_sm_use_default_links
+    - field.field.block_content.social_media_icons.field_social_media_email_link
+    - field.field.block_content.social_media_icons.field_social_media_icon_or
+    - field.field.block_content.social_media_icons.field_social_media_link_size
+    - field.field.block_content.social_media_icons.field_social_media_links
+  module:
+    - field_group
+    - link
+third_party_settings:
+  field_group:
+    group_social_media_tabs:
+      children:
+        - group_sm_default_links
+        - group_sm_custom_links
+      label: 'Social Media Tabs'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_sm_default_links:
+      children:
+        - field_sm_use_default_links
+      label: 'Default links'
+      region: content
+      parent_name: group_social_media_tabs
+      weight: 1
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: false
+    group_sm_custom_links:
+      children:
+        - field_social_media_links
+        - field_social_media_email_link
+      label: 'Custom links'
+      region: content
+      parent_name: group_social_media_tabs
+      weight: 2
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+id: block_content.social_media_icons.default
+targetEntityType: block_content
+bundle: social_media_icons
+mode: default
+content:
+  field_sm_use_default_links:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_social_media_email_link:
+    type: email_default
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_social_media_icon_or:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_social_media_link_size:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_social_media_links:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
