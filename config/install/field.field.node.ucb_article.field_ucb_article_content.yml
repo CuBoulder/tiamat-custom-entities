@@ -5,6 +5,7 @@ dependencies:
     - field.storage.node.field_ucb_article_content
     - node.type.ucb_article
     - paragraphs.paragraphs_type.article_content
+    - paragraphs.paragraphs_type.ucb_article_hero
   module:
     - entity_reference_revisions
 id: node.ucb_article.field_ucb_article_content
@@ -22,66 +23,37 @@ settings:
   handler_settings:
     target_bundles:
       article_content: article_content
+      ucb_article_hero: ucb_article_hero
     negate: 0
     target_bundles_drag_drop:
       article_content:
-        weight: 28
+        weight: -17
         enabled: true
       blockquote:
-        weight: 22
-        enabled: false
-      content_grid:
-        weight: 23
-        enabled: false
-      content_row:
-        weight: 24
-        enabled: false
-      events_calendar:
-        weight: 25
-        enabled: false
-      expandable_content:
-        weight: 26
+        weight: -19
         enabled: false
       expandable_content_text:
-        weight: 27
+        weight: -18
         enabled: false
       grid_layout_content:
-        weight: 28
+        weight: -15
         enabled: false
-      hero_unit:
-        weight: 29
-        enabled: false
-      image_gallery:
-        weight: 30
+      how_to_step:
+        weight: -21
         enabled: false
       media:
-        weight: 31
-        enabled: false
-      newsletter_section:
-        weight: 32
-        enabled: false
-      newsletter_section_article:
-        weight: 33
-        enabled: false
-      newsletter_section_content:
-        weight: 34
+        weight: -14
         enabled: false
       row_layout_content:
-        weight: 35
-        enabled: false
-      slider:
-        weight: 52
+        weight: -13
         enabled: false
       slider_image:
-        weight: 53
+        weight: -12
         enabled: false
-      social_media_icons_block:
-        weight: 38
-        enabled: false
-      text_block:
-        weight: 54
-        enabled: false
-      ucb_video_reveal:
-        weight: 40
+      ucb_article_hero:
+        weight: -16
+        enabled: true
+      ucb_related_articles_block:
+        weight: -20
         enabled: false
 field_type: entity_reference_revisions
