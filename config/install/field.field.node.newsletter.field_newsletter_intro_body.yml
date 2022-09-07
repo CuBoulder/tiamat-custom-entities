@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsletter_intro_body
+    - node.type.newsletter
+  module:
+    - text
+id: node.newsletter.field_newsletter_intro_body
+field_name: field_newsletter_intro_body
+entity_type: node
+bundle: newsletter
+label: 'Intro Text'
+description: 'Text block that will be displayed with the intro image above all other content'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
