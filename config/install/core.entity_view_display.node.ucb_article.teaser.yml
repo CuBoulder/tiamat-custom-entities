@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.ucb_article.field_ucb_article_content
     - field.field.node.ucb_article.field_ucb_article_external_url
     - field.field.node.ucb_article.field_ucb_article_image
+    - field.field.node.ucb_article.field_ucb_article_style
     - field.field.node.ucb_article.field_ucb_article_summary
     - field.field.node.ucb_article.field_ucb_article_tags
     - field.field.node.ucb_article.field_ucb_article_thumbnail
@@ -47,6 +48,7 @@ hidden:
   field_ucb_article_content: true
   field_ucb_article_external_url: true
   field_ucb_article_image: true
+  field_ucb_article_style: true
   field_ucb_article_tags: true
   field_ucb_related_articles_parag: true
   layout_builder__layout: true

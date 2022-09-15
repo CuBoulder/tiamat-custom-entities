@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.ucb_article.field_ucb_article_content
     - field.field.node.ucb_article.field_ucb_article_external_url
     - field.field.node.ucb_article.field_ucb_article_image
+    - field.field.node.ucb_article.field_ucb_article_style
     - field.field.node.ucb_article.field_ucb_article_summary
     - field.field.node.ucb_article.field_ucb_article_tags
     - field.field.node.ucb_article.field_ucb_article_thumbnail
@@ -30,6 +31,7 @@ third_party_settings:
         - group_byline
         - group_external_link
         - group_ucb_related_articles
+        - group_ucb_article_style
       label: Tabs
       region: content
       parent_name: ''
@@ -147,6 +149,21 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
+    group_ucb_article_style:
+      children:
+        - field_ucb_article_style
+      label: 'Page Style'
+      region: content
+      parent_name: group_tabs
+      weight: 41
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: false
 id: node.ucb_article.default
 targetEntityType: node
 bundle: ucb_article
@@ -203,6 +220,12 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_ucb_article_style:
+    type: options_buttons
+    weight: 7
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_ucb_article_summary:
     type: string_textarea
