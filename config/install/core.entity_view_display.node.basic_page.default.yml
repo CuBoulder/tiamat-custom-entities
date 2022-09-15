@@ -20,6 +20,7 @@ third_party_settings:
         layout_settings:
           context_mapping: {  }
           background_color: white
+          container_width: container
           class: ''
           column_width: '12'
         components:
