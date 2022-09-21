@@ -10,7 +10,7 @@ id: node.ucb_article.field_ucb_article_style
 field_name: field_ucb_article_style
 entity_type: node
 bundle: ucb_article
-label: 'Page Style'
+label: 'Page style'
 description: ''
 required: true
 translatable: false
