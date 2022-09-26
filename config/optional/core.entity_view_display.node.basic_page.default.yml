@@ -7,8 +7,8 @@ dependencies:
     - node.type.basic_page
   module:
     - layout_builder
-    - layout_discovery
     - text
+    - ucb_bootstrap_layouts
     - user
 third_party_settings:
   layout_builder:
@@ -16,13 +16,17 @@ third_party_settings:
     allow_custom: true
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: ucb_bootstrap_layouts__one_column
         layout_settings:
-          label: ''
+          context_mapping: {  }
+          background_color: white
+          container_width: container
+          class: ''
+          column_width: '12'
         components:
           038b3520-9c00-4563-b755-6ab338f736ca:
             uuid: 038b3520-9c00-4563-b755-6ab338f736ca
-            region: content
+            region: first
             configuration:
               id: 'extra_field_block:node:basic_page:links'
               label_display: '0'
@@ -32,7 +36,7 @@ third_party_settings:
             additional: {  }
           a9344b0c-abaf-439e-b72c-77e2e3c0bc01:
             uuid: a9344b0c-abaf-439e-b72c-77e2e3c0bc01
-            region: content
+            region: first
             configuration:
               id: 'field_block:node:basic_page:body'
               label_display: '0'
