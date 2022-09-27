@@ -13,7 +13,7 @@ entity_type: node
 bundle: ucb_article
 label: 'Related Articles'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -47,6 +47,9 @@ settings:
         enabled: false
       slider_image:
         weight: 17
+        enabled: false
+      ucb_article_hero:
+        weight: 19
         enabled: false
       ucb_related_articles_block:
         weight: 18
