@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ucb_campus_news_block
+    - field.storage.block_content.field_ucb_campus_news_display
+  module:
+    - options
+id: block_content.ucb_campus_news_block.field_ucb_campus_news_display
+field_name: field_ucb_campus_news_display
+entity_type: block_content
+bundle: ucb_campus_news_block
+label: Display
+description: 'Choose the visual presentation of the articles from https://www.colorado.edu/today/'
+required: true
+translatable: false
+default_value:
+  -
+    value: teaser
+default_value_callback: ''
+settings: {  }
+field_type: list_string

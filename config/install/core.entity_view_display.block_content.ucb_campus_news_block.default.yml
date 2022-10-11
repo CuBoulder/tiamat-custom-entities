@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ucb_campus_news_block
+    - field.field.block_content.ucb_campus_news_block.body
+    - field.field.block_content.ucb_campus_news_block.field_ucb_campus_news_display
+  module:
+    - options
+    - text
+id: block_content.ucb_campus_news_block.default
+targetEntityType: block_content
+bundle: ucb_campus_news_block
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_ucb_campus_news_display:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

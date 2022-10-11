@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ucb_campus_news_block
+label: 'Campus News'
+revision: 0
+description: "A paragraph that allows users to create a news block to share a selection of articles from www.colorado.edu/today.\t"
