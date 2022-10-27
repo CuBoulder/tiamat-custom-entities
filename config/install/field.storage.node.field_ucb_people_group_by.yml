@@ -19,6 +19,15 @@ settings:
     -
       value: department
       label: Department
+    -
+      value: filter_1
+      label: 'Filter 1'
+    -
+      value: filter_2
+      label: 'Filter 2'
+    -
+      value: filter_3
+      label: 'Filter 3'
   allowed_values_function: ''
 module: options
 locked: false

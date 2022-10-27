@@ -5,6 +5,9 @@ dependencies:
     - field.field.node.ucb_people_list_page.body
     - field.field.node.ucb_people_list_page.field_ucb_people_department
     - field.field.node.ucb_people_list_page.field_ucb_people_display
+    - field.field.node.ucb_people_list_page.field_ucb_people_filter_1
+    - field.field.node.ucb_people_list_page.field_ucb_people_filter_2
+    - field.field.node.ucb_people_list_page.field_ucb_people_filter_3
     - field.field.node.ucb_people_list_page.field_ucb_people_group_by
     - field.field.node.ucb_people_list_page.field_ucb_people_job_type
     - field.field.node.ucb_people_list_page.field_ucb_people_order_by
@@ -49,6 +52,9 @@ third_party_settings:
       children:
         - field_ucb_people_department
         - field_ucb_people_job_type
+        - field_ucb_people_filter_1
+        - field_ucb_people_filter_2
+        - field_ucb_people_filter_3
         - field_ucb_people_group_by
         - field_ucb_people_order_by
       label: Filter/Group/Order
@@ -96,9 +102,27 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_ucb_people_filter_1:
+    type: options_buttons
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ucb_people_filter_2:
+    type: options_buttons
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ucb_people_filter_3:
+    type: options_buttons
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_ucb_people_group_by:
     type: options_select
-    weight: 12
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -110,7 +134,7 @@ content:
     third_party_settings: {  }
   field_ucb_people_order_by:
     type: options_select
-    weight: 13
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -126,6 +150,11 @@ content:
     region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox

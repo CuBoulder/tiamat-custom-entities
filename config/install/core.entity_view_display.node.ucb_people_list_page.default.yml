@@ -5,6 +5,9 @@ dependencies:
     - field.field.node.ucb_people_list_page.body
     - field.field.node.ucb_people_list_page.field_ucb_people_department
     - field.field.node.ucb_people_list_page.field_ucb_people_display
+    - field.field.node.ucb_people_list_page.field_ucb_people_filter_1
+    - field.field.node.ucb_people_list_page.field_ucb_people_filter_2
+    - field.field.node.ucb_people_list_page.field_ucb_people_filter_3
     - field.field.node.ucb_people_list_page.field_ucb_people_group_by
     - field.field.node.ucb_people_list_page.field_ucb_people_job_type
     - field.field.node.ucb_people_list_page.field_ucb_people_order_by
@@ -38,6 +41,30 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_ucb_people_filter_1:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_ucb_people_filter_2:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_ucb_people_filter_3:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
     region: content
   field_ucb_people_group_by:
     type: list_key

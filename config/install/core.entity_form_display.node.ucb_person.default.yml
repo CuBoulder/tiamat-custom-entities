@@ -6,6 +6,9 @@ dependencies:
     - field.field.node.ucb_person.field_ucb_person_address
     - field.field.node.ucb_person.field_ucb_person_department
     - field.field.node.ucb_person.field_ucb_person_email
+    - field.field.node.ucb_person.field_ucb_person_filter_1
+    - field.field.node.ucb_person.field_ucb_person_filter_2
+    - field.field.node.ucb_person.field_ucb_person_filter_3
     - field.field.node.ucb_person.field_ucb_person_first_name
     - field.field.node.ucb_person.field_ucb_person_job_type
     - field.field.node.ucb_person.field_ucb_person_last_name
@@ -83,6 +86,9 @@ third_party_settings:
     group_other:
       children:
         - body
+        - field_ucb_person_filter_1
+        - field_ucb_person_filter_2
+        - field_ucb_person_filter_3
       label: Other
       region: content
       parent_name: group_tabs
@@ -135,6 +141,36 @@ content:
     settings:
       placeholder: ''
       size: 60
+    third_party_settings: {  }
+  field_ucb_person_filter_1:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ucb_person_filter_2:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ucb_person_filter_3:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_ucb_person_first_name:
     type: string_textfield
@@ -203,6 +239,11 @@ content:
   path:
     type: path
     weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
