@@ -31,6 +31,7 @@ third_party_settings:
       children:
         - group_personal
         - group_contact
+        - group_ucb_person_description
         - group_other
       label: Tabs
       region: content
@@ -85,18 +86,33 @@ third_party_settings:
         required_fields: false
     group_other:
       children:
-        - body
         - field_ucb_person_filter_1
         - field_ucb_person_filter_2
         - field_ucb_person_filter_3
       label: Other
       region: content
       parent_name: group_tabs
-      weight: 3
+      weight: 4
       format_type: tab
       format_settings:
         classes: ''
         show_empty_fields: true
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+    group_ucb_person_description:
+      children:
+        - field_ucb_person_summary
+        - body
+      label: Description
+      region: content
+      parent_name: group_tabs
+      weight: 3
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
         id: ''
         formatter: closed
         description: ''
@@ -108,7 +124,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 27
     region: content
     settings:
       rows: 9

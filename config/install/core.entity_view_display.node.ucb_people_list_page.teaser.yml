@@ -5,12 +5,17 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.ucb_people_list_page.body
     - field.field.node.ucb_people_list_page.field_ucb_people_department
+    - field.field.node.ucb_people_list_page.field_ucb_people_department_s
     - field.field.node.ucb_people_list_page.field_ucb_people_display
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_1
+    - field.field.node.ucb_people_list_page.field_ucb_people_filter_1_s
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_2
+    - field.field.node.ucb_people_list_page.field_ucb_people_filter_2_s
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_3
+    - field.field.node.ucb_people_list_page.field_ucb_people_filter_3_s
     - field.field.node.ucb_people_list_page.field_ucb_people_group_by
     - field.field.node.ucb_people_list_page.field_ucb_people_job_type
+    - field.field.node.ucb_people_list_page.field_ucb_people_job_type_s
     - field.field.node.ucb_people_list_page.field_ucb_people_order_by
     - node.type.ucb_people_list_page
   module:
@@ -36,10 +41,15 @@ content:
     region: content
 hidden:
   field_ucb_people_department: true
+  field_ucb_people_department_s: true
   field_ucb_people_display: true
   field_ucb_people_filter_1: true
+  field_ucb_people_filter_1_s: true
   field_ucb_people_filter_2: true
+  field_ucb_people_filter_2_s: true
   field_ucb_people_filter_3: true
+  field_ucb_people_filter_3_s: true
   field_ucb_people_group_by: true
   field_ucb_people_job_type: true
+  field_ucb_people_job_type_s: true
   field_ucb_people_order_by: true
