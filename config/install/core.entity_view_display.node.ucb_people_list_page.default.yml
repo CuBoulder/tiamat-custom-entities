@@ -42,7 +42,7 @@ content:
     region: content
   field_ucb_people_department_s:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
@@ -51,23 +51,22 @@ content:
     weight: 110
     region: content
   field_ucb_people_display:
-    type: list_default
+    type: list_key
     label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 102
     region: content
   field_ucb_people_filter_1:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
+    type: entity_reference_entity_id
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
     weight: 107
     region: content
   field_ucb_people_filter_1_s:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
@@ -76,16 +75,15 @@ content:
     weight: 112
     region: content
   field_ucb_people_filter_2:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
+    type: entity_reference_entity_id
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
     weight: 108
     region: content
   field_ucb_people_filter_2_s:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
@@ -94,16 +92,15 @@ content:
     weight: 113
     region: content
   field_ucb_people_filter_3:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
+    type: entity_reference_entity_id
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
     weight: 109
     region: content
   field_ucb_people_filter_3_s:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
@@ -127,7 +124,7 @@ content:
     region: content
   field_ucb_people_job_type_s:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
