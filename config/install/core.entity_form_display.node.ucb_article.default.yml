@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
     - field.field.node.ucb_article.field_ucb_article_content
+    - field.field.node.ucb_article.field_ucb_article_date_override
     - field.field.node.ucb_article.field_ucb_article_external_url
     - field.field.node.ucb_article.field_ucb_article_image
     - field.field.node.ucb_article.field_ucb_article_style
@@ -151,6 +152,7 @@ third_party_settings:
     group_ucb_article_page_styles:
       children:
         - field_ucb_article_style
+        - field_ucb_article_date_override
       label: 'Page style'
       region: content
       parent_name: ''
@@ -213,6 +215,12 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_ucb_article_date_override:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_ucb_article_external_url:
     type: link_default
     weight: 0
@@ -273,6 +281,11 @@ content:
   path:
     type: path
     weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
