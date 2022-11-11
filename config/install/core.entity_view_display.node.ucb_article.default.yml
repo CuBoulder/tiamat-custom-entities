@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
     - field.field.node.ucb_article.field_ucb_article_content
+    - field.field.node.ucb_article.field_ucb_article_date_override
     - field.field.node.ucb_article.field_ucb_article_external_url
     - field.field.node.ucb_article.field_ucb_article_image
     - field.field.node.ucb_article.field_ucb_article_style
@@ -48,6 +49,13 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_ucb_article_date_override:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_ucb_article_external_url:
     type: link
