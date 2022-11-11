@@ -14,8 +14,8 @@ settings:
       value: none
       label: None
     -
-      value: type
-      label: Type
+      value: job_type
+      label: Job Type
     -
       value: department
       label: Department
