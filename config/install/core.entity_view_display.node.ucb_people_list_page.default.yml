@@ -50,7 +50,7 @@ content:
     region: content
   field_ucb_people_department_r:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
@@ -84,7 +84,7 @@ content:
     region: content
   field_ucb_people_filter_1_label:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -92,7 +92,7 @@ content:
     region: content
   field_ucb_people_filter_1_r:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
@@ -119,7 +119,7 @@ content:
     region: content
   field_ucb_people_filter_2_label:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -127,7 +127,7 @@ content:
     region: content
   field_ucb_people_filter_2_r:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
@@ -154,7 +154,7 @@ content:
     region: content
   field_ucb_people_filter_3_label:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -162,7 +162,7 @@ content:
     region: content
   field_ucb_people_filter_3_r:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
@@ -196,7 +196,7 @@ content:
     region: content
   field_ucb_people_job_type_r:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''

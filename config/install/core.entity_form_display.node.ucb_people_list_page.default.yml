@@ -38,7 +38,7 @@ third_party_settings:
         - group_ucb_people_department_uo
       label: Department
       region: content
-      parent_name: group_ucb_people_filters
+      parent_name: group_ucb_people_tab_filters
       weight: 23
       format_type: details
       format_settings:
@@ -55,7 +55,7 @@ third_party_settings:
         - group_ucb_people_job_type_uo
       label: 'Job Type'
       region: content
-      parent_name: group_ucb_people_filters
+      parent_name: group_ucb_people_tab_filters
       weight: 24
       format_type: details
       format_settings:
@@ -72,14 +72,14 @@ third_party_settings:
         - group_ucb_people_filter_1_uo
       label: 'Custom Filter 1'
       region: content
-      parent_name: group_ucb_people_filters
+      parent_name: group_ucb_people_tab_filters
       weight: 25
       format_type: details
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        open: false
+        open: true
         description: ''
         required_fields: false
     group_ucb_people_label_2:
@@ -89,14 +89,14 @@ third_party_settings:
         - group_ucb_people_filter_2_uo
       label: 'Custom Filter 2'
       region: content
-      parent_name: group_ucb_people_filters
+      parent_name: group_ucb_people_tab_filters
       weight: 26
       format_type: details
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        open: false
+        open: true
         description: ''
         required_fields: false
     group_ucb_people_label_3:
@@ -106,14 +106,14 @@ third_party_settings:
         - group_ucb_people_filter_3_uo
       label: 'Custom Filter 3'
       region: content
-      parent_name: group_ucb_people_filters
+      parent_name: group_ucb_people_tab_filters
       weight: 27
       format_type: details
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        open: false
+        open: true
         description: ''
         required_fields: false
     group_ucb_people_filter_2_uo:
@@ -194,7 +194,39 @@ third_party_settings:
         open: false
         description: ''
         required_fields: false
-    group_ucb_people_filters:
+    group_ucb_people_tabs:
+      children:
+        - group_ucb_people_tab_layout
+        - group_ucb_people_tab_filters
+      label: Tabs
+      region: content
+      parent_name: ''
+      weight: 8
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_ucb_people_tab_layout:
+      children:
+        - field_ucb_people_display
+        - field_ucb_people_group_by
+        - field_ucb_people_order_by
+      label: Layout
+      region: content
+      parent_name: group_ucb_people_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: false
+    group_ucb_people_tab_filters:
       children:
         - group_ucb_people_department
         - group_ucb_people_job_type
@@ -203,14 +235,14 @@ third_party_settings:
         - group_ucb_people_label_3
       label: Filters
       region: content
-      parent_name: ''
-      weight: 11
-      format_type: details
+      parent_name: group_ucb_people_tabs
+      weight: 21
+      format_type: tab
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        open: true
+        formatter: closed
         description: ''
         required_fields: false
 id: node.ucb_people_list_page.default
@@ -256,7 +288,7 @@ content:
     third_party_settings: {  }
   field_ucb_people_display:
     type: options_select
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -346,7 +378,7 @@ content:
     third_party_settings: {  }
   field_ucb_people_group_by:
     type: options_select
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -372,7 +404,7 @@ content:
     third_party_settings: {  }
   field_ucb_people_order_by:
     type: options_select
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
