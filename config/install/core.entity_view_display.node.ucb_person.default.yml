@@ -6,6 +6,9 @@ dependencies:
     - field.field.node.ucb_person.field_ucb_person_address
     - field.field.node.ucb_person.field_ucb_person_department
     - field.field.node.ucb_person.field_ucb_person_email
+    - field.field.node.ucb_person.field_ucb_person_filter_1
+    - field.field.node.ucb_person.field_ucb_person_filter_2
+    - field.field.node.ucb_person.field_ucb_person_filter_3
     - field.field.node.ucb_person.field_ucb_person_first_name
     - field.field.node.ucb_person.field_ucb_person_job_type
     - field.field.node.ucb_person.field_ucb_person_last_name
@@ -53,6 +56,30 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_ucb_person_filter_1:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_ucb_person_filter_2:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_ucb_person_filter_3:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 16
     region: content
   field_ucb_person_first_name:
     type: string

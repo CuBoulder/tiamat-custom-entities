@@ -4,7 +4,6 @@ dependencies:
   config:
     - block_content.type.ucb_form
     - field.storage.block_content.field_ucb_form_block
-    - webform.webform.contact
   module:
     - webform
 id: block_content.ucb_form.field_ucb_form_block
