@@ -14,11 +14,11 @@ settings:
       value: custom
       label: Custom
     -
-      value: date_created
-      label: 'Date Created'
+      value: created_desc
+      label: 'Date created (newest first)'
     -
-      value: date_created_reverse
-      label: 'Date Created Reverse'
+      value: created_asc
+      label: 'Date created (oldest first)'
     -
       value: alphabetical
       label: Alphabetical
