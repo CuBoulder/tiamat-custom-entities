@@ -11,11 +11,11 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: teaser
-      label: Teaser
-    -
       value: embed
       label: Embed
+    -
+      value: teaser
+      label: Teaser
     -
       value: title
       label: Title
