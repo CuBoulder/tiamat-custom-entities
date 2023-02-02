@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.ucb_article.field_article_title_background
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
     - field.field.node.ucb_article.field_ucb_article_content
@@ -32,6 +33,7 @@ third_party_settings:
         - group_byline
         - group_external_link
         - group_ucb_related_articles
+        - group_title_background_image
       label: Tabs
       region: content
       parent_name: ''
@@ -166,6 +168,21 @@ third_party_settings:
         description: ''
         required_fields: false
         weight: 0
+    group_title_background_image:
+      children:
+        - field_article_title_background
+      label: 'Title Background Image'
+      region: content
+      parent_name: group_tabs
+      weight: 41
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
 id: node.ucb_article.default
 targetEntityType: node
 bundle: ucb_article
@@ -176,6 +193,13 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_article_title_background:
+    type: media_library_widget
+    weight: 10
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   field_ucb_article_byline:
     type: entity_reference_autocomplete
@@ -285,7 +309,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   simple_sitemap:
-    weight: 10
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }

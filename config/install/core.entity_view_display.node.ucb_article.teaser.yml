@@ -3,9 +3,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.ucb_article.field_article_title_background
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
     - field.field.node.ucb_article.field_ucb_article_content
+    - field.field.node.ucb_article.field_ucb_article_date_override
     - field.field.node.ucb_article.field_ucb_article_external_url
     - field.field.node.ucb_article.field_ucb_article_image
     - field.field.node.ucb_article.field_ucb_article_style
@@ -43,9 +45,11 @@ content:
     weight: 2
     region: content
 hidden:
+  field_article_title_background: true
   field_ucb_article_byline: true
   field_ucb_article_categories: true
   field_ucb_article_content: true
+  field_ucb_article_date_override: true
   field_ucb_article_external_url: true
   field_ucb_article_image: true
   field_ucb_article_style: true
