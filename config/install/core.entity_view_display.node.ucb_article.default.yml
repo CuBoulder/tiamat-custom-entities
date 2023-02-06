@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.ucb_article.field_appears_in_issue
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
     - field.field.node.ucb_article.field_ucb_article_content
@@ -25,6 +26,14 @@ targetEntityType: node
 bundle: ucb_article
 mode: default
 content:
+  field_appears_in_issue:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
   field_ucb_article_byline:
     type: entity_reference_label
     label: hidden
