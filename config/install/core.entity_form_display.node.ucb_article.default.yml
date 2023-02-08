@@ -2,12 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.ucb_article.field_article_header_text_color
     - field.field.node.ucb_article.field_article_title_background
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
     - field.field.node.ucb_article.field_ucb_article_content
     - field.field.node.ucb_article.field_ucb_article_date_override
     - field.field.node.ucb_article.field_ucb_article_external_url
+    - field.field.node.ucb_article.field_ucb_article_header_overlay
     - field.field.node.ucb_article.field_ucb_article_image
     - field.field.node.ucb_article.field_ucb_article_style
     - field.field.node.ucb_article.field_ucb_article_summary
@@ -171,7 +173,9 @@ third_party_settings:
     group_title_background_image:
       children:
         - field_article_title_background
-      label: 'Title Background Image'
+        - field_ucb_article_header_overlay
+        - field_article_header_text_color
+      label: 'Advanced Style Options'
       region: content
       parent_name: group_tabs
       weight: 41
@@ -181,7 +185,7 @@ third_party_settings:
         show_empty_fields: false
         id: ''
         formatter: closed
-        description: ''
+        description: 'Allows for optional advanced styling such as adding a Header Image to your Article, changing Header color, and applying an Overlay for readability'
         required_fields: true
 id: node.ucb_article.default
 targetEntityType: node
@@ -191,6 +195,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_article_header_text_color:
+    type: options_select
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -252,6 +262,13 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_ucb_article_header_overlay:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_ucb_article_style:
     type: options_buttons

@@ -2,12 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.ucb_article.field_article_header_text_color
     - field.field.node.ucb_article.field_article_title_background
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
     - field.field.node.ucb_article.field_ucb_article_content
     - field.field.node.ucb_article.field_ucb_article_date_override
     - field.field.node.ucb_article.field_ucb_article_external_url
+    - field.field.node.ucb_article.field_ucb_article_header_overlay
     - field.field.node.ucb_article.field_ucb_article_image
     - field.field.node.ucb_article.field_ucb_article_style
     - field.field.node.ucb_article.field_ucb_article_summary
@@ -26,6 +28,13 @@ targetEntityType: node
 bundle: ucb_article
 mode: default
 content:
+  field_article_header_text_color:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
   field_article_title_background:
     type: entity_reference_entity_view
     label: hidden
@@ -78,6 +87,16 @@ content:
       target: ''
     third_party_settings: {  }
     weight: 8
+    region: content
+  field_ucb_article_header_overlay:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 13
     region: content
   field_ucb_article_style:
     type: list_default
