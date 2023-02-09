@@ -2,12 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.ucb_article.field_article_header_image_text
+    - field.field.node.ucb_article.field_article_header_text_color
+    - field.field.node.ucb_article.field_article_title_background
     - field.field.node.ucb_article.field_appears_in_issue
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
     - field.field.node.ucb_article.field_ucb_article_content
     - field.field.node.ucb_article.field_ucb_article_date_override
     - field.field.node.ucb_article.field_ucb_article_external_url
+    - field.field.node.ucb_article.field_ucb_article_header_overlay
     - field.field.node.ucb_article.field_ucb_article_image
     - field.field.node.ucb_article.field_ucb_article_style
     - field.field.node.ucb_article.field_ucb_article_summary
@@ -34,6 +38,7 @@ third_party_settings:
         - group_external_link
         - group_link_to_issue
         - group_ucb_related_articles
+        - group_title_background_image
       label: Tabs
       region: content
       parent_name: ''
@@ -168,6 +173,23 @@ third_party_settings:
         description: ''
         required_fields: false
         weight: 0
+    group_title_background_image:
+      children:
+        - field_article_title_background
+        - field_ucb_article_header_overlay
+        - field_article_header_text_color
+        - field_article_header_image_text
+      label: 'Advanced Style Options'
+      region: content
+      parent_name: group_tabs
+      weight: 41
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: 'Allows for optional advanced styling such as adding a Header Image to your Article, changing Header color, and applying an Overlay for readability'
     group_link_to_issue:
       children:
         - field_appears_in_issue
@@ -180,7 +202,7 @@ third_party_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed
+        formatter: closed        
         description: 'Add a link to Issues that this Article appears in'
         required_fields: true
 id: node.ucb_article.default
@@ -193,6 +215,27 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_article_header_image_text:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_article_header_text_color:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_article_title_background:
+    type: media_library_widget
+    weight: 10
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   field_appears_in_issue:
     type: entity_reference_autocomplete
@@ -256,6 +299,13 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+  field_ucb_article_header_overlay:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_ucb_article_style:
     type: options_buttons
     weight: 21
@@ -312,7 +362,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   simple_sitemap:
-    weight: 10
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }

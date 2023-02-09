@@ -3,12 +3,16 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.ucb_article.field_article_header_image_text
+    - field.field.node.ucb_article.field_article_header_text_color
+    - field.field.node.ucb_article.field_article_title_background
     - field.field.node.ucb_article.field_appears_in_issue
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
     - field.field.node.ucb_article.field_ucb_article_content
     - field.field.node.ucb_article.field_ucb_article_date_override
     - field.field.node.ucb_article.field_ucb_article_external_url
+    - field.field.node.ucb_article.field_ucb_article_header_overlay
     - field.field.node.ucb_article.field_ucb_article_image
     - field.field.node.ucb_article.field_ucb_article_style
     - field.field.node.ucb_article.field_ucb_article_summary
@@ -45,12 +49,16 @@ content:
     weight: 2
     region: content
 hidden:
+  field_article_header_image_text: true
+  field_article_header_text_color: true
+  field_article_title_background: true
   field_appears_in_issue: true
   field_ucb_article_byline: true
   field_ucb_article_categories: true
   field_ucb_article_content: true
   field_ucb_article_date_override: true
   field_ucb_article_external_url: true
+  field_ucb_article_header_overlay: true
   field_ucb_article_image: true
   field_ucb_article_style: true
   field_ucb_article_tags: true

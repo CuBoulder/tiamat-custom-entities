@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Adds Title Background Images to Articles
+  Schemas for new Article fields for Header Image, Overlay, and Header Color
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/154
+---
+
 - ### Publication Bundle
   Includes the following additions included in the Publication Bundle, resolves https://github.com/CuBoulder/tiamat-theme/issues/168.
   
