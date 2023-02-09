@@ -9,6 +9,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Publication Bundle
+  Includes the following additions included in the Publication Bundle, resolves https://github.com/CuBoulder/tiamat-theme/issues/168.
+  
+  New Content Types:
+  - Issue
+  - Issue Archive
+  
+  Updated Content Types:
+  - Article
+  
+  New Block Types (Basic Page):
+  - Current Issue block
+  - Latest Issue block
+  - Category Cloud block
+  - Tag Cloud block
+  
+  Notes for testing:
+  Includes branches `issue/168` on `tiamat-theme`
+---
+
 - ### Adds `CHANGELOG.md` and workflow to `tiamat-custom-entities`
   Resolves #32 
 ---

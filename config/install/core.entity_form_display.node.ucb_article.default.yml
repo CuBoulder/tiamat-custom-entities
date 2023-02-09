@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.ucb_article.field_article_header_image_text
     - field.field.node.ucb_article.field_article_header_text_color
     - field.field.node.ucb_article.field_article_title_background
+    - field.field.node.ucb_article.field_appears_in_issue
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
     - field.field.node.ucb_article.field_ucb_article_content
@@ -35,6 +36,7 @@ third_party_settings:
         - group_tags
         - group_byline
         - group_external_link
+        - group_link_to_issue
         - group_ucb_related_articles
         - group_title_background_image
       label: Tabs
@@ -145,7 +147,7 @@ third_party_settings:
       label: 'Related Articles'
       region: content
       parent_name: group_tabs
-      weight: 40
+      weight: 41
       format_type: tab
       format_settings:
         classes: ''
@@ -188,6 +190,20 @@ third_party_settings:
         id: ''
         formatter: closed
         description: 'Allows for optional advanced styling such as adding a Header Image to your Article, changing Header color, and applying an Overlay for readability'
+    group_link_to_issue:
+      children:
+        - field_appears_in_issue
+      label: 'Link to Issue'
+      region: hidden
+      parent_name: group_tabs
+      weight: 40
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed        
+        description: 'Add a link to Issues that this Article appears in'
         required_fields: true
 id: node.ucb_article.default
 targetEntityType: node
@@ -220,6 +236,16 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_appears_in_issue:
+    type: entity_reference_autocomplete
+    weight: 41
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_ucb_article_byline:
     type: entity_reference_autocomplete
@@ -261,7 +287,7 @@ content:
     third_party_settings: {  }
   field_ucb_article_date_override:
     type: options_select
-    weight: 9
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -282,7 +308,7 @@ content:
     third_party_settings: {  }
   field_ucb_article_style:
     type: options_buttons
-    weight: 8
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -313,7 +339,7 @@ content:
     third_party_settings: {  }
   field_ucb_related_articles_parag:
     type: paragraphs
-    weight: 40
+    weight: 42
     region: content
     settings:
       title: Paragraph
