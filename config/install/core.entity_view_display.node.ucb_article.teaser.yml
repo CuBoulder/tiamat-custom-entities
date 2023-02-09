@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.ucb_article.field_article_header_image_text
     - field.field.node.ucb_article.field_article_header_text_color
     - field.field.node.ucb_article.field_article_title_background
     - field.field.node.ucb_article.field_ucb_article_byline
@@ -47,6 +48,7 @@ content:
     weight: 2
     region: content
 hidden:
+  field_article_header_image_text: true
   field_article_header_text_color: true
   field_article_title_background: true
   field_ucb_article_byline: true

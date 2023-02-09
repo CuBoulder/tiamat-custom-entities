@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.ucb_article.field_article_header_image_text
     - field.field.node.ucb_article.field_article_header_text_color
     - field.field.node.ucb_article.field_article_title_background
     - field.field.node.ucb_article.field_ucb_article_byline
@@ -175,6 +176,7 @@ third_party_settings:
         - field_article_title_background
         - field_ucb_article_header_overlay
         - field_article_header_text_color
+        - field_article_header_image_text
       label: 'Advanced Style Options'
       region: content
       parent_name: group_tabs
@@ -197,6 +199,14 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_article_header_image_text:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_article_header_text_color:
     type: options_select
