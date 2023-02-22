@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Hidden Terms: Category and Tag Taxonomy Display Option
+  Hidden Terms: Category and Tag schemas receive form option to toggle display for admin-only taxonomies.
+  
+  Resolves [#217 ](https://github.com/CuBoulder/tiamat-theme/issues/217)
+  
+  Change Includes:
+  - `tiamat-theme` => `issue/217`
+  - `tiamat-custom-entities` => `issue/217`
+  
+---
+
 ## [20230209] - 2023-02-09
 
 -   ### Adds Title Background Images to Articles
