@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Removes the ability to add articles to menus
+  Resolves CuBoulder/tiamat-theme#239
+---
+
 - ### Hidden Terms: Category and Tag Taxonomy Display Option
   Hidden Terms: Category and Tag schemas receive form option to toggle display for admin-only taxonomies.
   

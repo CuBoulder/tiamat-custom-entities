@@ -5,11 +5,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-      - secondary
-      - footer
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 name: Article
 type: ucb_article
 description: 'Content type for displaying time-sensitive information like news, announcements or blog posts.  '
