@@ -5,8 +5,8 @@ dependencies:
     - block_content
     - entity_reference_revisions
     - paragraphs
-id: block_content.field_content_sequence_steps
-field_name: field_content_sequence_steps
+id: block_content.field_content_sequence_items
+field_name: field_content_sequence_items
 entity_type: block_content
 type: entity_reference_revisions
 settings:

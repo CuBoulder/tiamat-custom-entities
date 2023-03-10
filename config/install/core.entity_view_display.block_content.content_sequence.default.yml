@@ -4,9 +4,10 @@ dependencies:
   config:
     - block_content.type.content_sequence
     - field.field.block_content.content_sequence.body
+    - field.field.block_content.content_sequence.field_content_sequence_display
     - field.field.block_content.content_sequence.field_content_sequence_image
-    - field.field.block_content.content_sequence.field_content_sequence_steps
-    - field.field.block_content.content_sequence.field_scale
+    - field.field.block_content.content_sequence.field_content_sequence_items
+    - field.field.block_content.content_sequence.field_content_sequence_scale
   module:
     - entity_reference_revisions
     - options
@@ -23,29 +24,36 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_content_sequence_display:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
   field_content_sequence_image:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     weight: 2
     region: content
-  field_content_sequence_steps:
+  field_content_sequence_items:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 6
     region: content
-  field_scale:
-    type: list_default
-    label: above
+  field_content_sequence_scale:
+    type: list_key
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 5
     region: content
 hidden: {  }

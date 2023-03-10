@@ -3,16 +3,16 @@ status: true
 dependencies:
   config:
     - block_content.type.content_sequence
-    - field.storage.block_content.field_content_sequence_steps
+    - field.storage.block_content.field_content_sequence_items
     - paragraphs.paragraphs_type.content_sequence_item
   module:
     - entity_reference_revisions
-id: block_content.content_sequence.field_content_sequence_steps
-field_name: field_content_sequence_steps
+id: block_content.content_sequence.field_content_sequence_items
+field_name: field_content_sequence_items
 entity_type: block_content
 bundle: content_sequence
-label: 'Content Sequence Steps'
-description: 'The individual steps in the content sequence.'
+label: Items
+description: ''
 required: false
 translatable: false
 default_value: {  }

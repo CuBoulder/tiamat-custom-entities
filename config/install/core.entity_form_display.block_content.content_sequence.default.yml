@@ -4,9 +4,10 @@ dependencies:
   config:
     - block_content.type.content_sequence
     - field.field.block_content.content_sequence.body
+    - field.field.block_content.content_sequence.field_content_sequence_display
     - field.field.block_content.content_sequence.field_content_sequence_image
-    - field.field.block_content.content_sequence.field_content_sequence_steps
-    - field.field.block_content.content_sequence.field_scale
+    - field.field.block_content.content_sequence.field_content_sequence_items
+    - field.field.block_content.content_sequence.field_content_sequence_scale
   module:
     - field_group
     - media_library
@@ -16,7 +17,7 @@ third_party_settings:
   field_group:
     group_content_sequence_tabs:
       children:
-        - group_steps
+        - group_general
         - group_advanced
       label: 'Content Sequence Tabs'
       region: content
@@ -31,14 +32,13 @@ third_party_settings:
         width_breakpoint: 640
     group_advanced:
       children:
-        - field_scale
-        - info
+        - field_content_sequence_scale
         - body
         - field_content_sequence_image
-      label: Advanced
+      label: 'Timeline (Advanced)'
       region: content
       parent_name: group_content_sequence_tabs
-      weight: 8
+      weight: 22
       format_type: tab
       format_settings:
         classes: ''
@@ -47,19 +47,20 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
-    group_steps:
+    group_general:
       children:
-        - field_content_sequence_steps
-      label: Steps
-      region: hidden
+        - field_content_sequence_display
+        - field_content_sequence_items
+      label: General
+      region: content
       parent_name: group_content_sequence_tabs
-      weight: 7
+      weight: 20
       format_type: tab
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed
+        formatter: open
         description: ''
         required_fields: true
 id: block_content.content_sequence.default
@@ -69,7 +70,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 29
     region: content
     settings:
       rows: 9
@@ -77,16 +78,22 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+  field_content_sequence_display:
+    type: options_select
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_content_sequence_image:
     type: media_library_widget
-    weight: 7
+    weight: 30
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_content_sequence_steps:
+  field_content_sequence_items:
     type: paragraphs
-    weight: 3
+    weight: 27
     region: content
     settings:
       title: Paragraph
@@ -102,18 +109,11 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
-  field_scale:
+  field_content_sequence_scale:
     type: options_select
-    weight: 4
+    weight: 28
     region: content
     settings: {  }
     third_party_settings: {  }
-  info:
-    type: string_textfield
-    weight: 5
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  info: true

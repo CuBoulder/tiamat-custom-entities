@@ -9,7 +9,7 @@ id: block_content.content_sequence.field_content_sequence_image
 field_name: field_content_sequence_image
 entity_type: block_content
 bundle: content_sequence
-label: 'Content Sequence Image'
+label: Image
 description: ''
 required: false
 translatable: false
