@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Newsletter Email View Modes
+  Adds `Email HTML` View Modes for the Newsletter Node, allowing for dual render styles to satisfy Newsletter requirements
+  Partially resolves https://github.com/CuBoulder/tiamat-theme/issues/222
+  
+  Includes:
+  `tiamat-theme` => issue/222
+  `tiamat-custom-entities` => issue/222
+---
+
 - ### Removes the ability to add articles to menus
   Resolves CuBoulder/tiamat-theme#239
 ---
