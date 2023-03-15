@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Removes the ability to turn off "Restrict choices to those selected" in People List
+  The option is no longer present when creating or editing a People List page.
+  
+  CuBoulder/tiamat-theme#281
+  
+  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/285)
+---
+
 - ### Newsletter Email View Modes
   Adds `Email HTML` View Modes for the Newsletter Node, allowing for dual render styles to satisfy Newsletter requirements
   Partially resolves https://github.com/CuBoulder/tiamat-theme/issues/222
