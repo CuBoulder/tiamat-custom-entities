@@ -4,24 +4,19 @@ dependencies:
   config:
     - field.field.node.ucb_people_list_page.body
     - field.field.node.ucb_people_list_page.field_ucb_people_department
-    - field.field.node.ucb_people_list_page.field_ucb_people_department_r
     - field.field.node.ucb_people_list_page.field_ucb_people_department_s
     - field.field.node.ucb_people_list_page.field_ucb_people_display
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_1
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_1_label
-    - field.field.node.ucb_people_list_page.field_ucb_people_filter_1_r
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_1_s
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_2
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_2_label
-    - field.field.node.ucb_people_list_page.field_ucb_people_filter_2_r
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_2_s
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_3
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_3_label
-    - field.field.node.ucb_people_list_page.field_ucb_people_filter_3_r
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_3_s
     - field.field.node.ucb_people_list_page.field_ucb_people_group_by
     - field.field.node.ucb_people_list_page.field_ucb_people_job_type
-    - field.field.node.ucb_people_list_page.field_ucb_people_job_type_r
     - field.field.node.ucb_people_list_page.field_ucb_people_job_type_s
     - field.field.node.ucb_people_list_page.field_ucb_people_order_by
     - node.type.ucb_people_list_page
@@ -119,7 +114,6 @@ third_party_settings:
     group_ucb_people_filter_2_uo:
       children:
         - field_ucb_people_filter_2_label
-        - field_ucb_people_filter_2_r
       label: 'Visitor filtering options'
       region: content
       parent_name: group_ucb_people_label_2
@@ -135,7 +129,6 @@ third_party_settings:
     group_ucb_people_filter_3_uo:
       children:
         - field_ucb_people_filter_3_label
-        - field_ucb_people_filter_3_r
       label: 'Visitor filtering options'
       region: content
       parent_name: group_ucb_people_label_3
@@ -149,8 +142,7 @@ third_party_settings:
         description: ''
         required_fields: false
     group_ucb_people_department_uo:
-      children:
-        - field_ucb_people_department_r
+      children: {  }
       label: 'Visitor filtering options'
       region: content
       parent_name: group_ucb_people_department
@@ -164,8 +156,7 @@ third_party_settings:
         description: ''
         required_fields: false
     group_ucb_people_job_type_uo:
-      children:
-        - field_ucb_people_job_type_r
+      children: {  }
       label: 'Visitor filtering options'
       region: content
       parent_name: group_ucb_people_job_type
@@ -181,7 +172,6 @@ third_party_settings:
     group_ucb_people_filter_1_uo:
       children:
         - field_ucb_people_filter_1_label
-        - field_ucb_people_filter_1_r
       label: 'Visitor filtering options'
       region: content
       parent_name: group_ucb_people_label_1
@@ -272,13 +262,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_ucb_people_department_r:
-    type: boolean_checkbox
-    weight: 16
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   field_ucb_people_department_s:
     type: boolean_checkbox
     weight: 18
@@ -306,13 +289,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_ucb_people_filter_1_r:
-    type: boolean_checkbox
-    weight: 21
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   field_ucb_people_filter_1_s:
     type: boolean_checkbox
     weight: 24
@@ -333,13 +309,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_ucb_people_filter_2_r:
-    type: boolean_checkbox
-    weight: 21
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   field_ucb_people_filter_2_s:
     type: boolean_checkbox
@@ -362,13 +331,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_ucb_people_filter_3_r:
-    type: boolean_checkbox
-    weight: 20
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   field_ucb_people_filter_3_s:
     type: boolean_checkbox
     weight: 17
@@ -387,13 +349,6 @@ content:
     weight: 12
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_ucb_people_job_type_r:
-    type: boolean_checkbox
-    weight: 15
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   field_ucb_people_job_type_s:
     type: boolean_checkbox
