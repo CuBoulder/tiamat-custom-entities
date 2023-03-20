@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Changes "Order by" for Person List page
+  The option "Has Job Type, Last Name" has become "Job Type, Last Name". Rather than simply checking for the existence of the _job type_, sorting is performed alphabetically by a person's first _job type_.
+  
+  CuBoulder/tiamat-theme#280; Author @TeddyBearX 
+  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/287)
+---
+
 - ### Removes the ability to turn off "Restrict choices to those selected" in People List
   The option is no longer present when creating or editing a People List page.
   

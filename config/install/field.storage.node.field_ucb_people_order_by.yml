@@ -15,7 +15,7 @@ settings:
       label: 'Last Name'
     -
       value: type
-      label: 'Has Job Type, Last Name'
+      label: 'Job Type, Last Name'
   allowed_values_function: ''
 module: options
 locked: false
