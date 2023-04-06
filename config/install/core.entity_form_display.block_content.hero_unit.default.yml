@@ -27,7 +27,7 @@ third_party_settings:
       label: 'Hero Unit Tabs'
       region: content
       parent_name: ''
-      weight: 0
+      weight: 1
       format_type: tabs
       format_settings:
         classes: ''
@@ -146,5 +146,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  info: true
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
