@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Add new image styles to WYSIWYG and full html
+  Closes #152 in Tiamat Theme.
+  Adds the new image styles to the custom entities
+---
+
 ## [20230323] - 2023-03-23
 
 -   ### Changes "Order by" for Person List page
