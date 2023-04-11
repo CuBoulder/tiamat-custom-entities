@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Update hero unit form display
+  Added "Block Description" to the form display.
+  This option is needed to add titles to the Block Layout list of options.
+  
+  Closes #45
+  (Issue number changed in ticket repo transfer)
+---
+
 - ### Modifies person page form display
   - CuBoulder/tiamat-theme#308: adds descriptions for the _Job Type_ and _Phone_ fields
   - Resolves CuBoulder/tiamat-theme#310: renames "Other" tab to "Filters"
