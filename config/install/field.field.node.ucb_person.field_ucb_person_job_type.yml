@@ -10,7 +10,7 @@ field_name: field_ucb_person_job_type
 entity_type: node
 bundle: ucb_person
 label: 'Job Type'
-description: ''
+description: 'Used to group people into categories such as administration, faculty, staff, etc.'
 required: false
 translatable: false
 default_value: {  }

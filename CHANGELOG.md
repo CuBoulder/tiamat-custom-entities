@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Modifies person page form display
+  - CuBoulder/tiamat-theme#308: adds descriptions for the _Job Type_ and _Phone_ fields
+  - Resolves CuBoulder/tiamat-theme#310: renames "Other" tab to "Filters"
+  - Resolves CuBoulder/tiamat-theme#311: renames "Description" tab and "Bio" field to "Body"
+---
+
 - ### Add new image styles to WYSIWYG and full html
   Closes #152 in Tiamat Theme.
   Adds the new image styles to the custom entities

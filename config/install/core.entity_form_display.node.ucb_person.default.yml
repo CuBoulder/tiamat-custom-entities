@@ -31,8 +31,8 @@ third_party_settings:
       children:
         - group_personal
         - group_contact
-        - group_ucb_person_description
-        - group_other
+        - group_body
+        - group_filters
       label: Tabs
       region: content
       parent_name: ''
@@ -84,12 +84,12 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: false
-    group_other:
+    group_filters:
       children:
         - field_ucb_person_filter_1
         - field_ucb_person_filter_2
         - field_ucb_person_filter_3
-      label: Other
+      label: Filters
       region: content
       parent_name: group_tabs
       weight: 4
@@ -101,11 +101,11 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: false
-    group_ucb_person_description:
+    group_body:
       children:
         - field_ucb_person_summary
         - body
-      label: Description
+      label: Body
       region: content
       parent_name: group_tabs
       weight: 3

@@ -10,7 +10,7 @@ id: node.ucb_person.body
 field_name: body
 entity_type: node
 bundle: ucb_person
-label: Bio
+label: Body
 description: ''
 required: false
 translatable: true
