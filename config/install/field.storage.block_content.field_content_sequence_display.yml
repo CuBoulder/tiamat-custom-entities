@@ -18,7 +18,7 @@ settings:
       label: Vertical
     -
       value: advanced
-      label: 'Timeline (Advanced)'
+      label: 'Advanced timeline'
   allowed_values_function: ''
 module: options
 locked: false

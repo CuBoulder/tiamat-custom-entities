@@ -5,9 +5,10 @@ dependencies:
     - block_content.type.content_sequence
     - field.field.block_content.content_sequence.body
     - field.field.block_content.content_sequence.field_content_sequence_display
-    - field.field.block_content.content_sequence.field_content_sequence_image
     - field.field.block_content.content_sequence.field_content_sequence_items
+    - field.field.block_content.content_sequence.field_content_sequence_media
     - field.field.block_content.content_sequence.field_content_sequence_scale
+    - field.field.block_content.content_sequence.field_content_sequence_title
   module:
     - field_group
     - media_library
@@ -33,9 +34,10 @@ third_party_settings:
     group_advanced:
       children:
         - field_content_sequence_scale
+        - field_content_sequence_title
         - body
-        - field_content_sequence_image
-      label: 'Timeline (Advanced)'
+        - field_content_sequence_media
+      label: 'Advanced timeline'
       region: content
       parent_name: group_content_sequence_tabs
       weight: 22
@@ -70,7 +72,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 29
+    weight: 30
     region: content
     settings:
       rows: 9
@@ -83,13 +85,6 @@ content:
     weight: 26
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_content_sequence_image:
-    type: media_library_widget
-    weight: 30
-    region: content
-    settings:
-      media_types: {  }
     third_party_settings: {  }
   field_content_sequence_items:
     type: paragraphs
@@ -109,11 +104,26 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_content_sequence_media:
+    type: media_library_widget
+    weight: 31
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
   field_content_sequence_scale:
     type: options_select
     weight: 28
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_content_sequence_title:
+    type: string_textfield
+    weight: 29
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   info: true
