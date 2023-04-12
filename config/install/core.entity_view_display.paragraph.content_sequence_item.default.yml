@@ -22,7 +22,7 @@ mode: default
 content:
   field_sequence_item_d_end_date:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -30,7 +30,7 @@ content:
     region: content
   field_sequence_item_d_start_date:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -38,14 +38,14 @@ content:
     region: content
   field_sequence_item_descr:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
   field_sequence_item_end_date:
     type: timestamp
-    label: above
+    label: hidden
     settings:
       date_format: medium
       custom_date_format: ''
@@ -55,7 +55,7 @@ content:
     region: content
   field_sequence_item_group:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -63,7 +63,7 @@ content:
     region: content
   field_sequence_item_media:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
@@ -72,7 +72,7 @@ content:
     region: content
   field_sequence_item_start_date:
     type: timestamp
-    label: above
+    label: hidden
     settings:
       date_format: medium
       custom_date_format: ''
@@ -82,7 +82,7 @@ content:
     region: content
   field_sequence_item_title:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -90,7 +90,7 @@ content:
     region: content
   field_sequence_item_url:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false

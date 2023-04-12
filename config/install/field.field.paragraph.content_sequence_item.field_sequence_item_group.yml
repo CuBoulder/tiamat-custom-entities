@@ -8,7 +8,7 @@ id: paragraph.content_sequence_item.field_sequence_item_group
 field_name: field_sequence_item_group
 entity_type: paragraph
 bundle: content_sequence_item
-label: Group
+label: 'Item Group'
 description: ''
 required: false
 translatable: false
