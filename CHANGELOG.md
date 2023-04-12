@@ -9,20 +9,74 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- ### Removes the ability to add articles to menus
-  Resolves CuBoulder/tiamat-theme#239
+- ### Update hero unit form display
+  Added "Block Description" to the form display.
+  This option is needed to add titles to the Block Layout list of options.
+  
+  Closes #45
+  (Issue number changed in ticket repo transfer)
 ---
 
-- ### Hidden Terms: Category and Tag Taxonomy Display Option
-  Hidden Terms: Category and Tag schemas receive form option to toggle display for admin-only taxonomies.
-  
-  Resolves [#217 ](https://github.com/CuBoulder/tiamat-theme/issues/217)
-  
-  Change Includes:
-  - `tiamat-theme` => `issue/217`
-  - `tiamat-custom-entities` => `issue/217`
-  
+- ### Modifies person page form display
+  - CuBoulder/tiamat-theme#308: adds descriptions for the _Job Type_ and _Phone_ fields
+  - Resolves CuBoulder/tiamat-theme#310: renames "Other" tab to "Filters"
+  - Resolves CuBoulder/tiamat-theme#311: renames "Description" tab and "Bio" field to "Body"
 ---
+
+- ### Add new image styles to WYSIWYG and full html
+  Closes #152 in Tiamat Theme.
+  Adds the new image styles to the custom entities
+---
+
+## [20230323] - 2023-03-23
+
+-   ### Changes "Order by" for Person List page
+
+    The option "Has Job Type, Last Name" has become "Job Type, Last Name". Rather than simply checking for the existence of the _job type_, sorting is performed alphabetically by a person's first _job type_.
+
+    CuBoulder/tiamat-theme#280; Author @TeddyBearX 
+    Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/287)
+
+* * *
+
+-   ### Removes the ability to turn off "Restrict choices to those selected" in People List
+
+    The option is no longer present when creating or editing a People List page.
+
+    CuBoulder/tiamat-theme#281
+
+    Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/285)
+
+* * *
+
+-   ### Newsletter Email View Modes
+
+    Adds `Email HTML` View Modes for the Newsletter Node, allowing for dual render styles to satisfy Newsletter requirements
+    Partially resolves <https://github.com/CuBoulder/tiamat-theme/issues/222>
+
+    Includes:
+    `tiamat-theme` => issue/222
+    `tiamat-custom-entities` => issue/222
+
+* * *
+
+-   ### Removes the ability to add articles to menus
+    Resolves CuBoulder/tiamat-theme#239
+
+* * *
+
+-   ### Hidden Terms: Category and Tag Taxonomy Display Option
+
+    Hidden Terms: Category and Tag schemas receive form option to toggle display for admin-only taxonomies.
+
+    Resolves [#217 ](https://github.com/CuBoulder/tiamat-theme/issues/217)
+
+    Change Includes:
+
+    -   `tiamat-theme` => `issue/217`
+    -   `tiamat-custom-entities` => `issue/217`
+
+* * *
 
 ## [20230209] - 2023-02-09
 
@@ -62,6 +116,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20230209...HEAD
+[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20230323...HEAD
+
+[20230323]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20230209...20230323
 
 [20230209]: https://github.com/CuBoulder/tiamat-custom-entities/compare/5194d160ddd0ecedec145abb78463eda2032d8a4...20230209

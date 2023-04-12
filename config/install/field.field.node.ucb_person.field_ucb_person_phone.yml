@@ -11,7 +11,7 @@ field_name: field_ucb_person_phone
 entity_type: node
 bundle: ucb_person
 label: Phone
-description: ''
+description: 'Include the area code and use the following format: 303-555-1212'
 required: false
 translatable: false
 default_value: {  }
