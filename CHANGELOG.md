@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Adds pronouns field to the Person page
+  A pronouns text field has been added to the Person page, allowing a person's pronouns to be displayed below their name.
+  
+  CuBoulder/tiamat-theme#315
+  
+  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/327)
+---
+
 - ### Update hero unit form display
   Added "Block Description" to the form display.
   This option is needed to add titles to the Block Layout list of options.
