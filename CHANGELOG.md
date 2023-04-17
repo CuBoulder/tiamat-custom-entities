@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### chg: bumping for D10 compatibility
+  
+---
+
 - ### Adds pronouns field to the Person page
   A pronouns text field has been added to the Person page, allowing a person's pronouns to be displayed below their name.
   

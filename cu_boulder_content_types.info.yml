@@ -1,7 +1,7 @@
 name: 'CU Boulder Content Types'
 description: 'Entity content schemas for the content types used by CU Boulder D9 websites.  '
 type: module
-core_version_requirement: '^8.9 || ^9'
+core_version_requirement: '^9 || ^10'
 dependencies:
   - cu_boulder_content_types
   - field
