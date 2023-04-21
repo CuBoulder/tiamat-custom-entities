@@ -9,6 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Change: Newsletter Taxonomy Enhancements and Newsletter URL Path
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/306
+  
+  Adds the following fields to the Newsletter Taxonomy type to eventually be used in styling the Newsletter email render:
+  - Design
+  - Email Footer
+  - Image
+  - Newsletter Path*
+  
+  Also changes pathauto for Newsletters to follow this pattern:
+  _/newsletter/newsletter-path*/title_
+---
+
 - ### chg: bumping for D10 compatibility
   
 ---
