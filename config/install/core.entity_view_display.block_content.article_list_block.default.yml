@@ -29,42 +29,42 @@ content:
     region: content
   field_art_list_block_cat_exclude:
     type: entity_reference_entity_id
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content
   field_art_list_block_display:
-    type: list_default
-    label: above
+    type: list_key
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 6
     region: content
   field_art_list_block_filter_cat:
     type: entity_reference_entity_id
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 3
     region: content
   field_art_list_block_filter_tag:
     type: entity_reference_entity_id
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 4
     region: content
   field_art_list_block_item_count:
     type: list_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 5
     region: content
   field_art_list_block_more_url:
     type: link_separate
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -76,7 +76,7 @@ content:
     region: content
   field_art_list_block_tag_exclude:
     type: entity_reference_entity_id
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 2
