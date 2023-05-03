@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Issue/tiamat theme/265
+  Closes #265.
+---
+
 - ### Change: Newsletter Taxonomy Enhancements and Newsletter URL Path
   Resolves https://github.com/CuBoulder/tiamat-theme/issues/306
   
