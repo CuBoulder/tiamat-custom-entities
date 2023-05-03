@@ -14,7 +14,9 @@ label: Scale
 description: ''
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: '1'
 default_value_callback: ''
 settings: {  }
 field_type: list_string
