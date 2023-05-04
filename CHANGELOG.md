@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### New Block Type: Article List Block
+  Adds Article List Block - a block version of the Article List page with some added display style customizations.
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/316
+  
+  Includes:
+  -tiamat-theme (https://github.com/CuBoulder/tiamat-theme/pull/357) => `issue/tiamat-theme-316` 
+  -custom-entities => `issue/tiamat-theme-316`
+---
+
 - ### Issue/tiamat theme/265
   Closes #265.
 ---
