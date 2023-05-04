@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.ucb_article.field_appears_in_issue
     - field.field.node.ucb_article.field_article_header_image_text
     - field.field.node.ucb_article.field_article_header_text_color
     - field.field.node.ucb_article.field_article_title_background
-    - field.field.node.ucb_article.field_appears_in_issue
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
     - field.field.node.ucb_article.field_ucb_article_content
@@ -36,9 +36,9 @@ third_party_settings:
         - group_tags
         - group_byline
         - group_external_link
-        - group_link_to_issue
         - group_ucb_related_articles
         - group_title_background_image
+        - group_link_to_issue
       label: Tabs
       region: content
       parent_name: ''
@@ -148,14 +148,16 @@ third_party_settings:
       region: content
       parent_name: group_tabs
       weight: 41
-      format_type: tab
+      format_type: details_sidebar
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed
+        open: false
         description: ''
         required_fields: false
+        weight: 0
+        formatter: closed
     group_ucb_article_page_styles:
       children:
         - field_ucb_article_style
@@ -202,7 +204,7 @@ third_party_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed        
+        formatter: closed
         description: 'Add a link to Issues that this Article appears in'
         required_fields: true
 id: node.ucb_article.default
@@ -215,6 +217,16 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_appears_in_issue:
+    type: entity_reference_autocomplete
+    weight: 41
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_article_header_image_text:
     type: string_textfield
@@ -236,16 +248,6 @@ content:
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
-  field_appears_in_issue:
-    type: entity_reference_autocomplete
-    weight: 41
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   field_ucb_article_byline:
     type: entity_reference_autocomplete
@@ -397,6 +399,11 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   field_ucb_article_image: true

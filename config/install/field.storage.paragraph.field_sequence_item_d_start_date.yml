@@ -3,16 +3,17 @@ status: true
 dependencies:
   module:
     - paragraphs
-    - taxonomy
-id: paragraph.field_ucb_related_tag_exclude
-field_name: field_ucb_related_tag_exclude
+id: paragraph.field_sequence_item_d_start_date
+field_name: field_sequence_item_d_start_date
 entity_type: paragraph
-type: entity_reference
+type: string
 settings:
-  target_type: taxonomy_term
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
