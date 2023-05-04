@@ -10,7 +10,7 @@ entity_type: block_content
 bundle: ucb_article_grid
 label: 'Include Summary'
 description: 'Choose whether or not to display Article summaries below the thumbnail image'
-required: true
+required: false
 translatable: false
 default_value:
   -
