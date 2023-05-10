@@ -4,6 +4,7 @@ dependencies:
   config:
     - block_content.type.expandable_content
     - field.field.block_content.expandable_content.field_expandable_content_copy
+    - field.field.block_content.expandable_content.field_expandable_content_open
     - field.field.block_content.expandable_content.field_expandable_content_type
   module:
     - entity_reference_revisions
@@ -29,4 +30,5 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_expandable_content_open: true
