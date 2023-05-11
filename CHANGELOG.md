@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Update field.field.block_content.events_calendar.field_calendar_code.yml
+  Updated help text to contain link to the events calendar widget maker
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/367
+---
+
 - ### Change: Related Articles set via Global Settings
   Resolves[ #246 ](https://github.com/CuBoulder/tiamat-theme/issues/246)-- Related Articles paragraph now uses the Global Settings (Admin => Configuration / CU Boulder site settings / Related Articles) for Taxonomy Exclusions
   
