@@ -5,7 +5,6 @@ dependencies:
     - field.storage.node.field_ucb_article_content
     - node.type.ucb_article
     - paragraphs.paragraphs_type.article_content
-    - paragraphs.paragraphs_type.ucb_article_hero
   module:
     - entity_reference_revisions
 id: node.ucb_article.field_ucb_article_content
@@ -23,37 +22,9 @@ settings:
   handler_settings:
     target_bundles:
       article_content: article_content
-      ucb_article_hero: ucb_article_hero
     negate: 0
     target_bundles_drag_drop:
       article_content:
-        weight: -17
+        weight: 0
         enabled: true
-      blockquote:
-        weight: -19
-        enabled: false
-      expandable_content_text:
-        weight: -18
-        enabled: false
-      grid_layout_content:
-        weight: -15
-        enabled: false
-      how_to_step:
-        weight: -21
-        enabled: false
-      media:
-        weight: -14
-        enabled: false
-      row_layout_content:
-        weight: -13
-        enabled: false
-      slider_image:
-        weight: -12
-        enabled: false
-      ucb_article_hero:
-        weight: -16
-        enabled: true
-      ucb_related_articles_block:
-        weight: -20
-        enabled: false
 field_type: entity_reference_revisions
