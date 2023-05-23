@@ -16,7 +16,7 @@ third_party_settings:
       children:
         - group_grid_design
         - group_grid_content
-      label: 'Grid Content Tabs'
+      label: Tabs
       region: content
       parent_name: ''
       weight: 1
@@ -39,7 +39,7 @@ third_party_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed
+        formatter: open
         description: ''
         required_fields: true
     group_grid_design:
@@ -56,7 +56,7 @@ third_party_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: open
+        formatter: closed
         description: ''
         required_fields: true
 id: block_content.content_grid.default
