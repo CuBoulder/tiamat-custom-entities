@@ -27,12 +27,10 @@ third_party_settings:
         id: ''
         direction: horizontal
         width_breakpoint: 640
-    group_grid_design:
+    group_grid_content:
       children:
-        - field_grid_column_count
-        - field_grid_image_style
-        - field_grid_layout_selection
-      label: 'Grid Design'
+        - field_grid_layout_content
+      label: Content
       region: content
       parent_name: group_grid_content_tabs
       weight: 2
@@ -41,13 +39,15 @@ third_party_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: open
+        formatter: closed
         description: ''
         required_fields: true
-    group_grid_content:
+    group_grid_design:
       children:
-        - field_grid_layout_content
-      label: 'Grid Content'
+        - field_grid_column_count
+        - field_grid_image_style
+        - field_grid_layout_selection
+      label: Design
       region: content
       parent_name: group_grid_content_tabs
       weight: 3
@@ -56,7 +56,7 @@ third_party_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed
+        formatter: open
         description: ''
         required_fields: true
 id: block_content.content_grid.default
