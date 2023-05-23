@@ -15,7 +15,7 @@ third_party_settings:
       children:
         - group_text_block_content
         - group_text_block_design
-      label: 'Text Block Tabs'
+      label: Tabs
       region: content
       parent_name: ''
       weight: 1
@@ -29,7 +29,7 @@ third_party_settings:
     group_text_block_content:
       children:
         - field_text_block_body
-      label: 'Text Block Content'
+      label: Content
       region: content
       parent_name: group_text_block_tabs
       weight: 5
@@ -45,7 +45,7 @@ third_party_settings:
       children:
         - field_text_block_style
         - field_text_block_background
-      label: 'Text Block Design'
+      label: Design
       region: content
       parent_name: group_text_block_tabs
       weight: 6
