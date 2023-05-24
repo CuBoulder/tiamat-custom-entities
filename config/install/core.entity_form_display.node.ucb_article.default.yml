@@ -2,11 +2,18 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.ucb_article.field_appears_in_issue
+    - field.field.node.ucb_article.field_article_header_image_text
+    - field.field.node.ucb_article.field_article_header_text_color
+    - field.field.node.ucb_article.field_article_title_background
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
     - field.field.node.ucb_article.field_ucb_article_content
+    - field.field.node.ucb_article.field_ucb_article_date_override
     - field.field.node.ucb_article.field_ucb_article_external_url
+    - field.field.node.ucb_article.field_ucb_article_header_overlay
     - field.field.node.ucb_article.field_ucb_article_image
+    - field.field.node.ucb_article.field_ucb_article_style
     - field.field.node.ucb_article.field_ucb_article_summary
     - field.field.node.ucb_article.field_ucb_article_tags
     - field.field.node.ucb_article.field_ucb_article_thumbnail
@@ -30,6 +37,8 @@ third_party_settings:
         - group_byline
         - group_external_link
         - group_ucb_related_articles
+        - group_title_background_image
+        - group_link_to_issue
       label: Tabs
       region: content
       parent_name: ''
@@ -138,6 +147,58 @@ third_party_settings:
       label: 'Related Articles'
       region: content
       parent_name: group_tabs
+      weight: 41
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+        weight: 0
+        formatter: closed
+    group_ucb_article_page_styles:
+      children:
+        - field_ucb_article_style
+        - field_ucb_article_date_override
+      label: 'Page style'
+      region: content
+      parent_name: ''
+      weight: 7
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+        weight: 0
+    group_title_background_image:
+      children:
+        - field_article_title_background
+        - field_ucb_article_header_overlay
+        - field_article_header_text_color
+        - field_article_header_image_text
+      label: 'Advanced Style Options'
+      region: content
+      parent_name: group_tabs
+      weight: 41
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: 'Allows for optional advanced styling such as adding a Header Image to your Article, changing Header color, and applying an Overlay for readability'
+        required_fields: false
+    group_link_to_issue:
+      children:
+        - field_appears_in_issue
+      label: 'Link to Issue'
+      region: hidden
+      parent_name: group_tabs
       weight: 40
       format_type: tab
       format_settings:
@@ -145,7 +206,7 @@ third_party_settings:
         show_empty_fields: false
         id: ''
         formatter: closed
-        description: ''
+        description: 'Add a link to Issues that this Article appears in'
         required_fields: true
 id: node.ucb_article.default
 targetEntityType: node
@@ -158,8 +219,39 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_ucb_article_byline:
+  field_appears_in_issue:
     type: entity_reference_autocomplete
+    weight: 41
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_article_header_image_text:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_article_header_text_color:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_article_title_background:
+    type: media_library_widget
+    weight: 10
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_ucb_article_byline:
+    type: entity_reference_autocomplete_tags
     weight: 12
     region: content
     settings:
@@ -169,7 +261,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_ucb_article_categories:
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     weight: 28
     region: content
     settings:
@@ -196,6 +288,12 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_ucb_article_date_override:
+    type: options_select
+    weight: 22
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_ucb_article_external_url:
     type: link_default
     weight: 0
@@ -203,6 +301,19 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_ucb_article_header_overlay:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_ucb_article_style:
+    type: options_buttons
+    weight: 21
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_ucb_article_summary:
     type: string_textarea
@@ -213,7 +324,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_ucb_article_tags:
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     weight: 35
     region: content
     settings:
@@ -231,7 +342,7 @@ content:
     third_party_settings: {  }
   field_ucb_related_articles_parag:
     type: paragraphs
-    weight: 40
+    weight: 42
     region: content
     settings:
       title: Paragraph
@@ -250,6 +361,11 @@ content:
   path:
     type: path
     weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -284,6 +400,11 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   field_ucb_article_image: true
