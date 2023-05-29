@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.ucb_person.field_ucb_person_office_hours
     - field.field.node.ucb_person.field_ucb_person_phone
     - field.field.node.ucb_person.field_ucb_person_photo
+    - field.field.node.ucb_person.field_ucb_person_primary_link
     - field.field.node.ucb_person.field_ucb_person_pronouns
     - field.field.node.ucb_person.field_ucb_person_title
     - node.type.ucb_person
@@ -55,5 +56,6 @@ hidden:
   field_ucb_person_office_hours: true
   field_ucb_person_phone: true
   field_ucb_person_photo: true
+  field_ucb_person_primary_link: true
   field_ucb_person_pronouns: true
   field_ucb_person_title: true
