@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Changes to Article content type, Text and Content Grid blocks
+  - Changes Article category and tag fields to tag style. Resolves CuBoulder/tiamat-theme#349
+  - Removes Article Hero from Article. CuBoulder/tiamat-theme#352
+  - Renames and reorders tabs in the Content Grid form display. Resolves CuBoulder/tiamat-theme#375
+  - Renames tabs in the Text block form display. Resolves CuBoulder/tiamat-theme#386
+---
+
 - ### Update field.field.paragraph.row_layout_content.field_row_layout_cont…
   Made the text option not required
   

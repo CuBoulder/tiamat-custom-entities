@@ -192,6 +192,7 @@ third_party_settings:
         id: ''
         formatter: closed
         description: 'Allows for optional advanced styling such as adding a Header Image to your Article, changing Header color, and applying an Overlay for readability'
+        required_fields: false
     group_link_to_issue:
       children:
         - field_appears_in_issue
@@ -250,7 +251,7 @@ content:
       media_types: {  }
     third_party_settings: {  }
   field_ucb_article_byline:
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     weight: 12
     region: content
     settings:
@@ -260,7 +261,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_ucb_article_categories:
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     weight: 28
     region: content
     settings:
@@ -323,7 +324,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_ucb_article_tags:
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     weight: 35
     region: content
     settings:
