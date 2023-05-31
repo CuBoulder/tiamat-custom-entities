@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Update field.storage.block_content.field_grid_column_count.yml
+  Added options for 5 and 6 columns in grid content
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/395
+---
+
 - ### Changes to Article content type, Text and Content Grid blocks
   - Changes Article category and tag fields to tag style. Resolves CuBoulder/tiamat-theme#349
   - Removes Article Hero from Article. CuBoulder/tiamat-theme#352
