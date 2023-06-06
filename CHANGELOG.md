@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Issue 320: Adding primary link to person pages
+  Closes Issue 320 in tiamat-theme. Adds the necessary files for a primary link field in the person page.
+---
+
 - ### Update field.storage.block_content.field_grid_column_count.yml
   Added options for 5 and 6 columns in grid content
   
