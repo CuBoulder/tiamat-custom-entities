@@ -40,7 +40,7 @@ third_party_settings:
         - field_headline
         - field_text
         - field_links
-      label: 'Hero Text Options'
+      label: 'Content'
       region: content
       parent_name: group_hero_unit_tabs
       weight: 4
@@ -61,7 +61,7 @@ third_party_settings:
         - field_text_color
         - field_link_color
         - field_hero_overlay
-      label: 'Hero Design Options'
+      label: 'Design'
       region: content
       parent_name: group_hero_unit_tabs
       weight: 5

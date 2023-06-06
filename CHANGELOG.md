@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Changes labels of Hero Block 'Content' and 'Design' tabs
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/399
+---
+
 - ### Issue 320: Adding primary link to person pages
   Closes Issue 320 in tiamat-theme. Adds the necessary files for a primary link field in the person page.
 ---
