@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Change: Adds 'White' background to card-styled Text Block
+  Adds a White background option to card-style Text Block for the case where sections have a different colored background
+  
+  Includes:
+  
+  - `tiamat-theme` => `issue/tiamat-theme/413`
+  - `tiamat-custom-entities` => `issue/tiamat-theme/413`
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/413
+---
+
 - ### Adds Additional Events link to Event Calendar block
   Resolves https://github.com/CuBoulder/tiamat-theme/issues/381 - Adds a Link field to the Events Calendar Block to allow for links to additional events.
   
