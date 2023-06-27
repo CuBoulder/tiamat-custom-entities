@@ -25,6 +25,9 @@ settings:
     -
       value: '4'
       label: Gold
+    - 
+      value: '5'
+      label: White
   allowed_values_function: ''
 module: options
 locked: false
