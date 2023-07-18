@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Updated Byline
+  Byline now has Author Person Page entity ID targetting
+---
+
 - ### Adds Description to Form Page Node
   Resolves #18 
 ---
