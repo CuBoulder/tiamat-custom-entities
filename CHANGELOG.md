@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Removes image requirement from Content Row "Teaser" layouts
+  This update enables the creation of Content Row blocks with image-less content and displays it correctly in the "Teasers" and "Teasers Alternate" layouts.
+  
+  CuBoulder/tiamat-theme#453
+  
+  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/457)
+---
+
 - ### Removes "D9" from theme name and the theme, custom entities Composer package names
   CuBoulder/tiamat-theme#435
   
