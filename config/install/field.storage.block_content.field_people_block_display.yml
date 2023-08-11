@@ -14,7 +14,7 @@ settings:
       value: teaser
       label: Teaser
     -
-      value: gird
+      value: grid
       label: Grid
     -
       value: name-thumbnail
