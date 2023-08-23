@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Update core.entity_view_display.node.basic_page.default.yml
+  The page title being moved to layout builder mode
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/473
+---
+
 - ### New: Adds 'People List Block'
   ### People List Block
   A configurable and placeable block that displays a list of People, similar to the Person List Page with simpler options. Block contains options for how your block will display to users (Teaser, Grid, Name & Thumbnail, Name Only) and selectable filters by taxonomies on a Person (Department, Job Type, Filter 1, 2, 3) to curate a specific list of People ordered by Last Name.
