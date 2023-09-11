@@ -9,6 +9,7 @@ dependencies:
     - field.field.block_content.hero_unit.field_link_color
     - field.field.block_content.hero_unit.field_links
     - field.field.block_content.hero_unit.field_size
+    - field.field.block_content.hero_unit.field_size_priority
     - field.field.block_content.hero_unit.field_solid_colors
     - field.field.block_content.hero_unit.field_text
     - field.field.block_content.hero_unit.field_text_align
@@ -40,7 +41,7 @@ third_party_settings:
         - field_headline
         - field_text
         - field_links
-      label: 'Content'
+      label: Content
       region: content
       parent_name: group_hero_unit_tabs
       weight: 4
@@ -54,6 +55,7 @@ third_party_settings:
         required_fields: true
     group_hero_design_options:
       children:
+        - field_size_priority
         - field_size
         - field_background_media
         - field_solid_colors
@@ -61,7 +63,7 @@ third_party_settings:
         - field_text_color
         - field_link_color
         - field_hero_overlay
-      label: 'Design'
+      label: Design
       region: content
       parent_name: group_hero_unit_tabs
       weight: 5
@@ -80,7 +82,7 @@ mode: default
 content:
   field_background_media:
     type: media_library_widget
-    weight: 5
+    weight: 28
     region: content
     settings:
       media_types: {  }
@@ -95,14 +97,14 @@ content:
     third_party_settings: {  }
   field_hero_overlay:
     type: boolean_checkbox
-    weight: 10
+    weight: 33
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_link_color:
     type: options_select
-    weight: 9
+    weight: 32
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -116,13 +118,19 @@ content:
     third_party_settings: {  }
   field_size:
     type: options_select
-    weight: 3
+    weight: 27
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_size_priority:
+    type: options_select
+    weight: 26
     region: content
     settings: {  }
     third_party_settings: {  }
   field_solid_colors:
     type: options_select
-    weight: 6
+    weight: 29
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -136,13 +144,13 @@ content:
     third_party_settings: {  }
   field_text_align:
     type: options_select
-    weight: 7
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
   field_text_color:
     type: options_select
-    weight: 8
+    weight: 31
     region: content
     settings: {  }
     third_party_settings: {  }
