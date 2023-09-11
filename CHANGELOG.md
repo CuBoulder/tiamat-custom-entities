@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### metatag necessary fields
+  Closes https://github.com/CuBoulder/tiamat-theme/issues/149.
+  Adds social sharing custom entity to enable metatags.
+---
+
 - ### Update core.entity_view_display.node.basic_page.default.yml
   The page title being moved to layout builder mode
   
