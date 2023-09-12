@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Hero Unit Size Priority
+  Added "Size Priority" option to hero unit.
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/482
+---
+
 - ### metatag necessary fields
   Closes https://github.com/CuBoulder/tiamat-theme/issues/149.
   Adds social sharing custom entity to enable metatags.
