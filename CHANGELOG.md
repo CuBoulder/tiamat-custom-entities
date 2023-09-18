@@ -9,207 +9,256 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- ### Hero Unit Size Priority
-  Added "Size Priority" option to hero unit.
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/482
----
+## [20230918] - 2023-09-18
 
-- ### metatag necessary fields
-  Closes https://github.com/CuBoulder/tiamat-theme/issues/149.
-  Adds social sharing custom entity to enable metatags.
----
+-   ### Hero Unit Size Priority
 
-- ### Update core.entity_view_display.node.basic_page.default.yml
-  The page title being moved to layout builder mode
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/473
----
+    Added "Size Priority" option to hero unit.
 
-- ### New: Adds 'People List Block'
-  ### People List Block
-  A configurable and placeable block that displays a list of People, similar to the Person List Page with simpler options. Block contains options for how your block will display to users (Teaser, Grid, Name & Thumbnail, Name Only) and selectable filters by taxonomies on a Person (Department, Job Type, Filter 1, 2, 3) to curate a specific list of People ordered by Last Name.
-  
-  Includes:
-  - `tiamat-custom-entities` => `issue/tiamat-theme/466`
-  - `tiamat-theme` => `issue/tiamat-theme/466`
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/466
----
+    Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/482>
 
-- ### Removes image requirement from Content Row "Teaser" layouts
-  This update enables the creation of Content Row blocks with image-less content and displays it correctly in the "Teasers" and "Teasers Alternate" layouts.
-  
-  CuBoulder/tiamat-theme#453
-  
-  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/457)
----
+* * *
 
-- ### Removes "D9" from theme name and the theme, custom entities Composer package names
-  CuBoulder/tiamat-theme#435
-  
-  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/452), [tiamat-profile](https://github.com/CuBoulder/tiamat-profile/pull/52), [tiamat10-profile](https://github.com/CuBoulder/tiamat10-profile/pull/13), [tiamat-project-template](https://github.com/CuBoulder/tiamat-project-template/pull/28), [tiamat10-project-template](https://github.com/CuBoulder/tiamat10-project-template/pull/8), [ucb_site_configuration](https://github.com/CuBoulder/ucb_site_configuration/pull/26)
----
+-   ### metatag necessary fields
+    Closes <https://github.com/CuBoulder/tiamat-theme/issues/149>.
+    Adds social sharing custom entity to enable metatags.
 
-- ### Updated Byline
-  Byline now has Author Person Page entity ID targetting
----
+* * *
 
-- ### Adds Description to Form Page Node
-  Resolves #18 
----
+-   ### Update core.entity_view_display.node.basic_page.default.yml
 
-- ### Change: Adds 'White' background to card-styled Text Block
-  Adds a White background option to card-style Text Block for the case where sections have a different colored background
-  
-  Includes:
-  
-  - `tiamat-theme` => `issue/tiamat-theme/413`
-  - `tiamat-custom-entities` => `issue/tiamat-theme/413`
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/413
----
+    The page title being moved to layout builder mode
 
-- ### Adds Additional Events link to Event Calendar block
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/381 - Adds a Link field to the Events Calendar Block to allow for links to additional events.
-  
-  Includes:
-  [tiamat-theme](https://github.com/CuBoulder/tiamat-theme) => [issue/tiamat-theme/381 ](https://github.com/CuBoulder/tiamat-theme/pull/411)
-  [tiamat-custom-entities](https://github.com/CuBoulder/tiamat-custom-entities) => [issue/tiamat-theme/381](https://github.com/CuBoulder/tiamat-custom-entities/pull/65)
-  
----
+    Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/473>
 
-- ### Changes labels of Hero Block 'Content' and 'Design' tabs
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/399
----
+* * *
 
-- ### Issue 320: Adding primary link to person pages
-  Closes Issue 320 in tiamat-theme. Adds the necessary files for a primary link field in the person page.
----
+-   ### New: Adds 'People List Block'
 
-- ### Update field.storage.block_content.field_grid_column_count.yml
-  Added options for 5 and 6 columns in grid content
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/395
----
+    ### People List Block
 
-- ### Changes to Article content type, Text and Content Grid blocks
-  - Changes Article category and tag fields to tag style. Resolves CuBoulder/tiamat-theme#349
-  - Removes Article Hero from Article. CuBoulder/tiamat-theme#352
-  - Renames and reorders tabs in the Content Grid form display. Resolves CuBoulder/tiamat-theme#375
-  - Renames tabs in the Text block form display. Resolves CuBoulder/tiamat-theme#386
----
+    A configurable and placeable block that displays a list of People, similar to the Person List Page with simpler options. Block contains options for how your block will display to users (Teaser, Grid, Name & Thumbnail, Name Only) and selectable filters by taxonomies on a Person (Department, Job Type, Filter 1, 2, 3) to curate a specific list of People ordered by Last Name.
 
-- ### Update field.field.paragraph.row_layout_content.field_row_layout_cont…
-  Made the text option not required
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/391
----
+    Includes:
 
-- ### New Block Type: Article Slider
-  Adds the Article Slider block. Much like the Article List page and other Article blocks, this will display a maximum of 6 articles in an interactive slider using user-provided inclusion and exclusion filters.
-  
-  Resolves [#319 ](https://github.com/CuBoulder/tiamat-theme/issues/319)
-  
-  Includes:
-  `tiamat-theme` => `issue/tiamat-theme/319`
-  `tiamat-custom-entities` => `issue/tiamat-theme/319`
----
+    -   `tiamat-custom-entities` => `issue/tiamat-theme/466`
+    -   `tiamat-theme` => `issue/tiamat-theme/466`
 
-- ### New Block Type: Article Feature
-  Adds a new block type: Article Feature. The Article Feature block displays the latest Articles, with Category & Tag filters set by the user much like the Article List page. The first Article displays a large image and summary and the remaining articles displays titles and thumbnails. 
-  
-  Resolves [#318 ](https://github.com/CuBoulder/tiamat-theme/issues/318)
-  
-  Includes:
-  
-  - `tiamat-theme` => `issue/tiamat-theme/318`
-  - `tiamat-custom-entities` => `issue/tiamat-theme/318`
----
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/466>
 
-- ### New Block Type: Article Grid
-  Adds a new block type - Article Grid. Allows for Articles with thumbnails to be displayed in an Article List-style grid display.
-  
-  Includes:
-  
-  - `tiamat-theme` => `issue/tiamat-theme/317`
-  -  `tiamat-custom-entities` => `issue/tiamat-theme/317`
-  
-  Resolves [#317 ](https://github.com/CuBoulder/tiamat-theme/issues/317)
----
+* * *
 
-- ### Update field.field.block_content.events_calendar.field_calendar_code.yml
-  Updated help text to contain link to the events calendar widget maker
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/367
----
+-   ### Removes image requirement from Content Row "Teaser" layouts
 
-- ### Change: Related Articles set via Global Settings
-  Resolves[ #246 ](https://github.com/CuBoulder/tiamat-theme/issues/246)-- Related Articles paragraph now uses the Global Settings (Admin => Configuration / CU Boulder site settings / Related Articles) for Taxonomy Exclusions
-  
-  Includes:
-  
-  - tiamat-theme `issue/246`
-  - tiamat-custom-entities `issue/tiamat-theme/246`
----
+    This update enables the creation of Content Row blocks with image-less content and displays it correctly in the "Teasers" and "Teasers Alternate" layouts.
 
-- ### New Block Type: Article List Block
-  Adds Article List Block - a block version of the Article List page with some added display style customizations.
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/316
-  
-  Includes:
-  -tiamat-theme (https://github.com/CuBoulder/tiamat-theme/pull/357) => `issue/tiamat-theme-316` 
-  -custom-entities => `issue/tiamat-theme-316`
----
+    CuBoulder/tiamat-theme#453
 
-- ### Issue/tiamat theme/265
-  Closes #265.
----
+    Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/457)
 
-- ### Change: Newsletter Taxonomy Enhancements and Newsletter URL Path
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/306
-  
-  Adds the following fields to the Newsletter Taxonomy type to eventually be used in styling the Newsletter email render:
-  - Design
-  - Email Footer
-  - Image
-  - Newsletter Path*
-  
-  Also changes pathauto for Newsletters to follow this pattern:
-  _/newsletter/newsletter-path*/title_
----
+* * *
 
-- ### chg: bumping for D10 compatibility
-  
----
+-   ### Removes "D9" from theme name and the theme, custom entities Composer package names
 
-- ### Adds pronouns field to the Person page
-  A pronouns text field has been added to the Person page, allowing a person's pronouns to be displayed below their name.
-  
-  CuBoulder/tiamat-theme#315
-  
-  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/327)
----
+    CuBoulder/tiamat-theme#435
 
-- ### Update hero unit form display
-  Added "Block Description" to the form display.
-  This option is needed to add titles to the Block Layout list of options.
-  
-  Closes #45
-  (Issue number changed in ticket repo transfer)
----
+    Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/452), [tiamat-profile](https://github.com/CuBoulder/tiamat-profile/pull/52), [tiamat10-profile](https://github.com/CuBoulder/tiamat10-profile/pull/13), [tiamat-project-template](https://github.com/CuBoulder/tiamat-project-template/pull/28), [tiamat10-project-template](https://github.com/CuBoulder/tiamat10-project-template/pull/8), [ucb_site_configuration](https://github.com/CuBoulder/ucb_site_configuration/pull/26)
 
-- ### Modifies person page form display
-  - CuBoulder/tiamat-theme#308: adds descriptions for the _Job Type_ and _Phone_ fields
-  - Resolves CuBoulder/tiamat-theme#310: renames "Other" tab to "Filters"
-  - Resolves CuBoulder/tiamat-theme#311: renames "Description" tab and "Bio" field to "Body"
----
+* * *
 
-- ### Add new image styles to WYSIWYG and full html
-  Closes #152 in Tiamat Theme.
-  Adds the new image styles to the custom entities
----
+-   ### Updated Byline
+    Byline now has Author Person Page entity ID targetting
+
+* * *
+
+-   ### Adds Description to Form Page Node
+    Resolves #18 
+
+* * *
+
+-   ### Change: Adds 'White' background to card-styled Text Block
+
+    Adds a White background option to card-style Text Block for the case where sections have a different colored background
+
+    Includes:
+
+    -   `tiamat-theme` => `issue/tiamat-theme/413`
+    -   `tiamat-custom-entities` => `issue/tiamat-theme/413`
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/413>
+
+* * *
+
+-   ### Adds Additional Events link to Event Calendar block
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/381> - Adds a Link field to the Events Calendar Block to allow for links to additional events.
+
+    Includes:
+    [tiamat-theme](https://github.com/CuBoulder/tiamat-theme) => [issue/tiamat-theme/381 ](https://github.com/CuBoulder/tiamat-theme/pull/411)
+    [tiamat-custom-entities](https://github.com/CuBoulder/tiamat-custom-entities) => [issue/tiamat-theme/381](https://github.com/CuBoulder/tiamat-custom-entities/pull/65)
+
+* * *
+
+-   ### Changes labels of Hero Block 'Content' and 'Design' tabs
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/399>
+
+* * *
+
+-   ### Issue 320: Adding primary link to person pages
+    Closes Issue 320 in tiamat-theme. Adds the necessary files for a primary link field in the person page.
+
+* * *
+
+-   ### Update field.storage.block_content.field_grid_column_count.yml
+
+    Added options for 5 and 6 columns in grid content
+
+    Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/395>
+
+* * *
+
+-   ### Changes to Article content type, Text and Content Grid blocks
+    -   Changes Article category and tag fields to tag style. Resolves CuBoulder/tiamat-theme#349
+    -   Removes Article Hero from Article. CuBoulder/tiamat-theme#352
+    -   Renames and reorders tabs in the Content Grid form display. Resolves CuBoulder/tiamat-theme#375
+    -   Renames tabs in the Text block form display. Resolves CuBoulder/tiamat-theme#386
+
+* * *
+
+-   ### Update field.field.paragraph.row_layout_content.field_row_layout_cont…
+
+    Made the text option not required
+
+    Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/391>
+
+* * *
+
+-   ### New Block Type: Article Slider
+
+    Adds the Article Slider block. Much like the Article List page and other Article blocks, this will display a maximum of 6 articles in an interactive slider using user-provided inclusion and exclusion filters.
+
+    Resolves [#319 ](https://github.com/CuBoulder/tiamat-theme/issues/319)
+
+    Includes:
+    `tiamat-theme` => `issue/tiamat-theme/319`
+    `tiamat-custom-entities` => `issue/tiamat-theme/319`
+
+* * *
+
+-   ### New Block Type: Article Feature
+
+    Adds a new block type: Article Feature. The Article Feature block displays the latest Articles, with Category & Tag filters set by the user much like the Article List page. The first Article displays a large image and summary and the remaining articles displays titles and thumbnails. 
+
+    Resolves [#318 ](https://github.com/CuBoulder/tiamat-theme/issues/318)
+
+    Includes:
+
+    -   `tiamat-theme` => `issue/tiamat-theme/318`
+    -   `tiamat-custom-entities` => `issue/tiamat-theme/318`
+
+* * *
+
+-   ### New Block Type: Article Grid
+
+    Adds a new block type - Article Grid. Allows for Articles with thumbnails to be displayed in an Article List-style grid display.
+
+    Includes:
+
+    -   `tiamat-theme` => `issue/tiamat-theme/317`
+    -   `tiamat-custom-entities` => `issue/tiamat-theme/317`
+
+    Resolves [#317 ](https://github.com/CuBoulder/tiamat-theme/issues/317)
+
+* * *
+
+-   ### Update field.field.block_content.events_calendar.field_calendar_code.yml
+
+    Updated help text to contain link to the events calendar widget maker
+
+    Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/367>
+
+* * *
+
+-   ### Change: Related Articles set via Global Settings
+
+    Resolves[ #246 ](https://github.com/CuBoulder/tiamat-theme/issues/246)-- Related Articles paragraph now uses the Global Settings (Admin => Configuration / CU Boulder site settings / Related Articles) for Taxonomy Exclusions
+
+    Includes:
+
+    -   tiamat-theme `issue/246`
+    -   tiamat-custom-entities `issue/tiamat-theme/246`
+
+* * *
+
+-   ### New Block Type: Article List Block
+
+    Adds Article List Block - a block version of the Article List page with some added display style customizations.
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/316>
+
+    Includes:
+    \-tiamat-theme (<https://github.com/CuBoulder/tiamat-theme/pull/357>) => `issue/tiamat-theme-316` 
+    \-custom-entities => `issue/tiamat-theme-316`
+
+* * *
+
+-   ### Issue/tiamat theme/265
+    Closes #265.
+
+* * *
+
+-   ### Change: Newsletter Taxonomy Enhancements and Newsletter URL Path
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/306>
+
+    Adds the following fields to the Newsletter Taxonomy type to eventually be used in styling the Newsletter email render:
+
+    -   Design
+    -   Email Footer
+    -   Image
+    -   Newsletter Path\*
+
+    Also changes pathauto for Newsletters to follow this pattern:
+    _/newsletter/newsletter-path\*/title_
+
+* * *
+
+-   ### chg: bumping for D10 compatibility
+
+* * *
+
+-   ### Adds pronouns field to the Person page
+
+    A pronouns text field has been added to the Person page, allowing a person's pronouns to be displayed below their name.
+
+    CuBoulder/tiamat-theme#315
+
+    Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/327)
+
+* * *
+
+-   ### Update hero unit form display
+
+    Added "Block Description" to the form display.
+    This option is needed to add titles to the Block Layout list of options.
+
+    Closes #45
+    (Issue number changed in ticket repo transfer)
+
+* * *
+
+-   ### Modifies person page form display
+    -   CuBoulder/tiamat-theme#308: adds descriptions for the _Job Type_ and _Phone_ fields
+    -   Resolves CuBoulder/tiamat-theme#310: renames "Other" tab to "Filters"
+    -   Resolves CuBoulder/tiamat-theme#311: renames "Description" tab and "Bio" field to "Body"
+
+* * *
+
+-   ### Add new image styles to WYSIWYG and full html
+    Closes #152 in Tiamat Theme.
+    Adds the new image styles to the custom entities
+
+* * *
 
 ## [20230323] - 2023-03-23
 
@@ -299,7 +348,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20230323...HEAD
+[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20230918...HEAD
+
+[20230918]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20230323...20230918
 
 [20230323]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20230209...20230323
 
