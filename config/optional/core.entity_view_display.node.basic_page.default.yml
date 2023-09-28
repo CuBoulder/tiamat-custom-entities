@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.basic_page.body
+    - field.field.node.basic_page.field_social_sharing_image
     - field.field.node.basic_page.layout_builder__layout
     - node.type.basic_page
   module:
@@ -21,6 +22,7 @@ third_party_settings:
           context_mapping: {  }
           background_color: white
           content_frame_color: none
+          container_width: contained
           0: false
           1: false
           overlay_color: none
@@ -33,7 +35,16 @@ third_party_settings:
           section_padding_left: 0px
           2: false
           3: false
-          container_width: container
+          4: false
+          5: false
+          6: false
+          7: false
+          8: false
+          9: false
+          10: false
+          11: false
+          background_image: null
+          background_image_styles: 'padding:0px 0px 0px 0px'
         components:
           038b3520-9c00-4563-b755-6ab338f736ca:
             uuid: 038b3520-9c00-4563-b755-6ab338f736ca
@@ -98,4 +109,5 @@ content:
     weight: 100
     region: content
 hidden:
+  field_social_sharing_image: true
   layout_builder__layout: true
