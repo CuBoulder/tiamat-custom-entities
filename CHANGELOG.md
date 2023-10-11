@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Formatted Text Update
+  Set allowed formats for fields with long formatted text fields
+  
+  Closes #79
+---
+
 - ### Update core.entity_view_display.node.basic_page.default.yml
   Added setting so default section has "contained" set.
   
