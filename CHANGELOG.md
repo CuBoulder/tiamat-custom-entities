@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Update core.entity_view_display.node.basic_page.default.yml
+  Added setting so default section has "contained" set.
+  
+  Closes #77 
+---
+
 ## [20230918] - 2023-09-18
 
 -   ### Hero Unit Size Priority
