@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### View Display fix on 'Focal Image Wide' + 'Focal Image Square' Image Styles on Sandbox Sites
+  Changes view display configuration for 'Focal Image Wide' and 'Focal Image Square' to resolve the issue where unwanted fields would render with the styled image on sandbox sites.
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/521
+---
+
 - ### Resolves configuration conflict for Image Styles causing issues on the Admin Interface
   Resizes the `Wide` Image Style after fixing config.
   
