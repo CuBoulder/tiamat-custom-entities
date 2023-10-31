@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Resolves configuration conflict for Image Styles causing issues on the Admin Interface
+  Resizes the `Wide` Image Style after fixing config.
+  
+  Removes conflicting/duplicate `Image Style` configuration from `profile` that already existed in `custom-entities`, which caused the Admin interface to WSOD while trying to update the Image Styles via UI. 
+  
+  Includes:
+  - `profile` => [`issue/tiamat-theme/524`](https://github.com/CuBoulder/tiamat10-profile/pull/40)
+  - `custom-entities` => [`issue/tiamat-theme/524` ](https://github.com/CuBoulder/tiamat-custom-entities/pull/82)
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/524
+---
+
 - ### Update core.entity_view_display.node.basic_page.default.yml
   Added setting so default section has "contained" set.
   
