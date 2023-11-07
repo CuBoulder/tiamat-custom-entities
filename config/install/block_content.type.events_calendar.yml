@@ -4,4 +4,4 @@ dependencies: {  }
 id: events_calendar
 label: 'Events Calendar'
 revision: 0
-description: 'Paragraph that allows event calendar embed code to be displayed.'
+description: 'Paragraph that allows event calendar embed code to be displayed. Widget Builder: <a href="https://calendar.colorado.edu/help/widget">https://calendar.colorado.edu/help/widget</a>'
