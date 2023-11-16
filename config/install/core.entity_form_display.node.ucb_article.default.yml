@@ -26,6 +26,7 @@ dependencies:
     - media_library
     - paragraphs
     - path
+    - scheduler
 third_party_settings:
   field_group:
     group_tabs:
@@ -364,8 +365,19 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 32
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 32
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   simple_sitemap:
-    weight: 9
+    weight: 31
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -410,3 +422,4 @@ hidden:
   field_ucb_article_image: true
   layout_builder__layout: true
   promote: true
+  unpublish_on: true
