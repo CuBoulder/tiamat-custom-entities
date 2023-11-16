@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Add help text to Calendar Block
+  Closes https://github.com/CuBoulder/tiamat-theme/issues/539.
+  Adds new help text to Calendar Block to link to the widget builder
+---
+
 - ### updated entities for scheduler
   Used for https://github.com/CuBoulder/tiamat-theme/issues/504.
   Adds entities needed for the scheduler module.
