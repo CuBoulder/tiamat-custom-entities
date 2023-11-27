@@ -6,12 +6,12 @@ dependencies:
 id: ucb_person_page
 label: 'UCB Person page'
 type: 'canonical_entities:node'
-pattern: '/people/[node:title]'
+pattern: '/[node:menu-link:parent:url:path]/[node:title]'
 selection_criteria:
-  0510a140-c681-4b19-80b5-b30b9ee5e76e:
+  994e722f-9bea-41e2-8e70-357c881254e1:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 0510a140-c681-4b19-80b5-b30b9ee5e76e
+    uuid: 994e722f-9bea-41e2-8e70-357c881254e1
     context_mapping:
       node: node
     bundles:
