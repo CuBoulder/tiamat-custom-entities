@@ -6,12 +6,12 @@ dependencies:
 id: ucb_form_page
 label: 'UCB Form Page'
 type: 'canonical_entities:node'
-pattern: '/[node:title]'
+pattern: '/[node:menu-link:parent:url:path]/[node:title]'
 selection_criteria:
-  466ddaf2-5813-4ca5-bf37-3bedc624a795:
+  af8ad8c9-f450-4f28-a20a-522000cd31b1:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 466ddaf2-5813-4ca5-bf37-3bedc624a795
+    uuid: af8ad8c9-f450-4f28-a20a-522000cd31b1
     context_mapping:
       node: node
     bundles:

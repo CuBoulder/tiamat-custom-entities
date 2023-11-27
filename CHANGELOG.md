@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### pathauto updates
+  Path auto updates so that parent items are listed in the url alias and by extension the breadcrumbs
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/557
+---
+
 - ### Add help text to Calendar Block
   Closes https://github.com/CuBoulder/tiamat-theme/issues/539.
   Adds new help text to Calendar Block to link to the widget builder
