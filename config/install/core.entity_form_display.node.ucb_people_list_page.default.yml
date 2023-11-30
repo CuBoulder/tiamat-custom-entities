@@ -7,13 +7,10 @@ dependencies:
     - field.field.node.ucb_people_list_page.field_ucb_people_department_s
     - field.field.node.ucb_people_list_page.field_ucb_people_display
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_1
-    - field.field.node.ucb_people_list_page.field_ucb_people_filter_1_label
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_1_s
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_2
-    - field.field.node.ucb_people_list_page.field_ucb_people_filter_2_label
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_2_s
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_3
-    - field.field.node.ucb_people_list_page.field_ucb_people_filter_3_label
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_3_s
     - field.field.node.ucb_people_list_page.field_ucb_people_group_by
     - field.field.node.ucb_people_list_page.field_ucb_people_job_type
@@ -112,8 +109,7 @@ third_party_settings:
         description: ''
         required_fields: false
     group_ucb_people_filter_2_uo:
-      children:
-        - field_ucb_people_filter_2_label
+      children: {  }
       label: 'Visitor filtering options'
       region: content
       parent_name: group_ucb_people_label_2
@@ -127,8 +123,7 @@ third_party_settings:
         description: ''
         required_fields: false
     group_ucb_people_filter_3_uo:
-      children:
-        - field_ucb_people_filter_3_label
+      children: {  }
       label: 'Visitor filtering options'
       region: content
       parent_name: group_ucb_people_label_3
@@ -170,8 +165,7 @@ third_party_settings:
         description: ''
         required_fields: false
     group_ucb_people_filter_1_uo:
-      children:
-        - field_ucb_people_filter_1_label
+      children: {  }
       label: 'Visitor filtering options'
       region: content
       parent_name: group_ucb_people_label_1
@@ -281,14 +275,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_ucb_people_filter_1_label:
-    type: string_textfield
-    weight: 19
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_ucb_people_filter_1_s:
     type: boolean_checkbox
     weight: 24
@@ -302,14 +288,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_ucb_people_filter_2_label:
-    type: string_textfield
-    weight: 19
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_ucb_people_filter_2_s:
     type: boolean_checkbox
     weight: 17
@@ -322,14 +300,6 @@ content:
     weight: 16
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_ucb_people_filter_3_label:
-    type: string_textfield
-    weight: 19
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   field_ucb_people_filter_3_s:
     type: boolean_checkbox
@@ -413,4 +383,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  publish_on: true
+  unpublish_on: true
