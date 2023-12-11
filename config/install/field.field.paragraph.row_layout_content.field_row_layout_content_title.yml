@@ -10,7 +10,7 @@ entity_type: paragraph
 bundle: row_layout_content
 label: Title
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
