@@ -6,12 +6,12 @@ dependencies:
 id: ucb_article_list_by_title
 label: 'UCB Article List'
 type: 'canonical_entities:node'
-pattern: '/[node:title]'
+pattern: '/[node:menu-link:parent:url:path]/[node:title]'
 selection_criteria:
-  8e74348f-e0fb-4d6f-8db4-49038bc70aac:
+  f068f38a-c8f0-4595-93d6-ddb4047b71bc:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 8e74348f-e0fb-4d6f-8db4-49038bc70aac
+    uuid: f068f38a-c8f0-4595-93d6-ddb4047b71bc
     context_mapping:
       node: node
     bundles:

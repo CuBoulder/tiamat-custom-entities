@@ -8,13 +8,10 @@ dependencies:
     - field.field.node.ucb_people_list_page.field_ucb_people_department_s
     - field.field.node.ucb_people_list_page.field_ucb_people_display
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_1
-    - field.field.node.ucb_people_list_page.field_ucb_people_filter_1_label
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_1_s
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_2
-    - field.field.node.ucb_people_list_page.field_ucb_people_filter_2_label
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_2_s
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_3
-    - field.field.node.ucb_people_list_page.field_ucb_people_filter_3_label
     - field.field.node.ucb_people_list_page.field_ucb_people_filter_3_s
     - field.field.node.ucb_people_list_page.field_ucb_people_group_by
     - field.field.node.ucb_people_list_page.field_ucb_people_job_type
@@ -47,13 +44,10 @@ hidden:
   field_ucb_people_department_s: true
   field_ucb_people_display: true
   field_ucb_people_filter_1: true
-  field_ucb_people_filter_1_label: true
   field_ucb_people_filter_1_s: true
   field_ucb_people_filter_2: true
-  field_ucb_people_filter_2_label: true
   field_ucb_people_filter_2_s: true
   field_ucb_people_filter_3: true
-  field_ucb_people_filter_3_label: true
   field_ucb_people_filter_3_s: true
   field_ucb_people_group_by: true
   field_ucb_people_job_type: true
