@@ -9,62 +9,80 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- ### Issue/567
-  Small change to make the title not required for content rows
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/582
----
+## [20231212] - 2023-12-12
 
-- ### People List Filter Labels as a Global Setting
-  Changes the People List `Filter 1`, `Filter 2`, and `Filter 3` custom labels to a Global Setting in Site Configuration, rather than being set per-page. These labels will be set under Configuration => Cu Boulder Site Settings => Appearance and Layout.
-  
-  Resolves [#543 ](https://github.com/CuBoulder/tiamat-theme/issues/543)
-  
-  Includes:
-  - `ucb_site_configuarion` => https://github.com/CuBoulder/ucb_site_configuration/pull/35
-  -  `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/560
-  -  `ucb_custom_entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/87
----
+-   ### Issue/567
 
-- ### pathauto updates
-  Path auto updates so that parent items are listed in the url alias and by extension the breadcrumbs
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/557
----
+    Small change to make the title not required for content rows
 
-- ### Add help text to Calendar Block
-  Closes https://github.com/CuBoulder/tiamat-theme/issues/539.
-  Adds new help text to Calendar Block to link to the widget builder
----
+    Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/582>
 
-- ### updated entities for scheduler
-  Used for https://github.com/CuBoulder/tiamat-theme/issues/504.
-  Adds entities needed for the scheduler module.
----
+* * *
 
-- ### View Display fix on 'Focal Image Wide' + 'Focal Image Square' Image Styles on Sandbox Sites
-  Changes view display configuration for 'Focal Image Wide' and 'Focal Image Square' to resolve the issue where unwanted fields would render with the styled image on sandbox sites.
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/521
----
+-   ### People List Filter Labels as a Global Setting
 
-- ### Resolves configuration conflict for Image Styles causing issues on the Admin Interface
-  Resizes the `Wide` Image Style after fixing config.
-  
-  Removes conflicting/duplicate `Image Style` configuration from `profile` that already existed in `custom-entities`, which caused the Admin interface to WSOD while trying to update the Image Styles via UI. 
-  
-  Includes:
-  - `profile` => [`issue/tiamat-theme/524`](https://github.com/CuBoulder/tiamat10-profile/pull/40)
-  - `custom-entities` => [`issue/tiamat-theme/524` ](https://github.com/CuBoulder/tiamat-custom-entities/pull/82)
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/524
----
+    Changes the People List `Filter 1`, `Filter 2`, and `Filter 3` custom labels to a Global Setting in Site Configuration, rather than being set per-page. These labels will be set under Configuration => Cu Boulder Site Settings => Appearance and Layout.
 
-- ### Update core.entity_view_display.node.basic_page.default.yml
-  Added setting so default section has "contained" set.
-  
-  Closes #77 
----
+    Resolves [#543 ](https://github.com/CuBoulder/tiamat-theme/issues/543)
+
+    Includes:
+
+    -   `ucb_site_configuarion` => <https://github.com/CuBoulder/ucb_site_configuration/pull/35>
+    -   `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/560>
+    -   `ucb_custom_entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/87>
+
+* * *
+
+-   ### pathauto updates
+
+    Path auto updates so that parent items are listed in the url alias and by extension the breadcrumbs
+
+    Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/557>
+
+* * *
+
+-   ### Add help text to Calendar Block
+    Closes <https://github.com/CuBoulder/tiamat-theme/issues/539>.
+    Adds new help text to Calendar Block to link to the widget builder
+
+* * *
+
+-   ### updated entities for scheduler
+    Used for <https://github.com/CuBoulder/tiamat-theme/issues/504>.
+    Adds entities needed for the scheduler module.
+
+* * *
+
+-   ### View Display fix on 'Focal Image Wide' + 'Focal Image Square' Image Styles on Sandbox Sites
+
+    Changes view display configuration for 'Focal Image Wide' and 'Focal Image Square' to resolve the issue where unwanted fields would render with the styled image on sandbox sites.
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/521>
+
+* * *
+
+-   ### Resolves configuration conflict for Image Styles causing issues on the Admin Interface
+
+    Resizes the `Wide` Image Style after fixing config.
+
+    Removes conflicting/duplicate `Image Style` configuration from `profile` that already existed in `custom-entities`, which caused the Admin interface to WSOD while trying to update the Image Styles via UI. 
+
+    Includes:
+
+    -   `profile` => [`issue/tiamat-theme/524`](https://github.com/CuBoulder/tiamat10-profile/pull/40)
+    -   `custom-entities` => [`issue/tiamat-theme/524` ](https://github.com/CuBoulder/tiamat-custom-entities/pull/82)
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/524>
+
+* * *
+
+-   ### Update core.entity_view_display.node.basic_page.default.yml
+
+    Added setting so default section has "contained" set.
+
+    Closes #77 
+
+* * *
 
 ## [20230918] - 2023-09-18
 
@@ -405,7 +423,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20230918...HEAD
+[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20231212...HEAD
+
+[20231212]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20230918...20231212
 
 [20230918]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20230323...20230918
 
