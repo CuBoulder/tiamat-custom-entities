@@ -2,23 +2,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.hero_unit
-    - field.field.block_content.hero_unit.field_headline
-    - field.field.block_content.hero_unit.field_hero_background_image
-    - field.field.block_content.hero_unit.field_hero_overlay
-    - field.field.block_content.hero_unit.field_link_color
-    - field.field.block_content.hero_unit.field_links
-    - field.field.block_content.hero_unit.field_size
-    - field.field.block_content.hero_unit.field_solid_colors
-    - field.field.block_content.hero_unit.field_text
-    - field.field.block_content.hero_unit.field_text_align
-    - field.field.block_content.hero_unit.field_text_color
+    - block_content.type.video_hero_unit
+    - field.field.block_content.video_hero_unit.field_headline
+    - field.field.block_content.video_hero_unit.field_hero_background_video
+    - field.field.block_content.video_hero_unit.field_hero_overlay
+    - field.field.block_content.video_hero_unit.field_link_color
+    - field.field.block_content.video_hero_unit.field_links
+    - field.field.block_content.video_hero_unit.field_size
+    - field.field.block_content.video_hero_unit.field_text
+    - field.field.block_content.video_hero_unit.field_text_align
+    - field.field.block_content.video_hero_unit.field_text_color
   module:
     - link
     - text
-id: block_content.hero_unit.default
+id: block_content.video_hero_unit.default
 targetEntityType: block_content
-bundle: hero_unit
+bundle: video_hero_unit
 mode: default
 content:
   field_headline:
@@ -49,10 +48,9 @@ content:
     weight: 1
     region: content
 hidden:
-  field_hero_background_image: true
+  field_hero_background_video: true
   field_hero_overlay: true
   field_link_color: true
   field_size: true
-  field_solid_colors: true
   field_text_align: true
   field_text_color: true
