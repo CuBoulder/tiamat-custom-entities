@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Video hero unit separation setup
+  Set up files for the separated hero units
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/606
+---
+
 ## [20231212] - 2023-12-12
 
 -   ### Issue/567
