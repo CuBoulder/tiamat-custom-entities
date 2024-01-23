@@ -5,13 +5,15 @@ dependencies:
     - field.field.paragraph.ucb_faq_question_and_answer.field_ucb_faq_answer
     - field.field.paragraph.ucb_faq_question_and_answer.field_ucb_faq_question
     - paragraphs.paragraphs_type.ucb_faq_question_and_answer
+  module:
+    - text
 id: paragraph.ucb_faq_question_and_answer.default
 targetEntityType: paragraph
 bundle: ucb_faq_question_and_answer
 mode: default
 content:
   field_ucb_faq_answer:
-    type: string_textarea
+    type: text_textarea
     weight: 1
     region: content
     settings:
