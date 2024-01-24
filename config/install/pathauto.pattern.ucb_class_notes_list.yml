@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: ucb_class_notes_list
+label: 'UCB Class Notes List'
+type: 'canonical_entities:node'
+pattern: '/[site:name]/classnotes'
+selection_criteria:
+  7d5eb557-78c0-419f-87e6-41ed15549651:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 7d5eb557-78c0-419f-87e6-41ed15549651
+    context_mapping:
+      node: node
+    bundles:
+      ucb_class_notes_list_page: ucb_class_notes_list_page
+selection_logic: and
+weight: -5
+relationships: {  }
