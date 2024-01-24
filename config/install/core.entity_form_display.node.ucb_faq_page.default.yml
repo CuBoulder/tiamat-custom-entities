@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_faq_page.body
-    - field.field.node.ucb_faq_page.field_ucb_faq_page_seciton
+    - field.field.node.ucb_faq_page.field_ucb_faq_page_section
     - node.type.ucb_faq_page
   module:
     - paragraphs
@@ -30,7 +30,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_ucb_faq_page_seciton:
+  field_ucb_faq_page_section:
     type: paragraphs
     weight: 122
     region: content
