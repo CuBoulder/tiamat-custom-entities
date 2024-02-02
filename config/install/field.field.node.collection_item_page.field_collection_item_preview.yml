@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_collection_item_preview
+    - filter.format.wysiwyg
+    - node.type.collection_item_page
+  module:
+    - text
+id: node.collection_item_page.field_collection_item_preview
+field_name: field_collection_item_preview
+entity_type: node
+bundle: collection_item_page
+label: Preview
+description: 'A short, preview of the collection item content. A summarized version of the body field will be used if this field is empty.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - wysiwyg
+field_type: text_long
