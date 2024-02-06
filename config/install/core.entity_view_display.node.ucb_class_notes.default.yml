@@ -3,9 +3,11 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_class_notes.body
+    - field.field.node.ucb_class_notes.field_ucb_class_note_image
     - field.field.node.ucb_class_notes.field_ucb_class_year
     - node.type.ucb_class_notes
   module:
+    - image
     - options
     - text
     - user
@@ -19,18 +21,29 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 1
+    region: content
+  field_ucb_class_note_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_ucb_class_year:
     type: list_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden: {  }
