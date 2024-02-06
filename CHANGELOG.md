@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Adds Collection Grid block and Collection Item content type
+  Helps close https://github.com/CuBoulder/tiamat-theme/issues/534.
+  Adds the entities for the collection grid and collection item pages.
+---
+
 - ### FAQ Content Type
   Adds the FAQ Content Type. Resolves https://github.com/CuBoulder/tiamat-theme/issues/620
   
