@@ -6,12 +6,12 @@ dependencies:
 id: ucb_class_notes_list
 label: 'UCB Class Notes List'
 type: 'canonical_entities:node'
-pattern: '/[site:name]/classnotes'
+pattern: '/[site:name]/class-notes'
 selection_criteria:
-  7d5eb557-78c0-419f-87e6-41ed15549651:
+  91f15d02-f152-4a8f-80b1-b3ce4f712449:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 7d5eb557-78c0-419f-87e6-41ed15549651
+    uuid: 91f15d02-f152-4a8f-80b1-b3ce4f712449
     context_mapping:
       node: node
     bundles:

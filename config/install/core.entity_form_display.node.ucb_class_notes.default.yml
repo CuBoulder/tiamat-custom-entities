@@ -5,10 +5,9 @@ dependencies:
     - field.field.node.ucb_class_notes.body
     - field.field.node.ucb_class_notes.field_ucb_class_note_image
     - field.field.node.ucb_class_notes.field_ucb_class_year
-    - image.style.focal_image_square
     - node.type.ucb_class_notes
   module:
-    - image
+    - media_library
     - path
     - text
 id: node.ucb_class_notes.default
@@ -33,12 +32,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_ucb_class_note_image:
-    type: image_image
-    weight: 10
+    type: media_library_widget
+    weight: 26
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: focal_image_square
+      media_types: {  }
     third_party_settings: {  }
   field_ucb_class_year:
     type: options_select
