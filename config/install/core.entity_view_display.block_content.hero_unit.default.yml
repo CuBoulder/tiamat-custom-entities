@@ -3,8 +3,8 @@ status: true
 dependencies:
   config:
     - block_content.type.hero_unit
-    - field.field.block_content.hero_unit.field_background_media
     - field.field.block_content.hero_unit.field_headline
+    - field.field.block_content.hero_unit.field_hero_background_image
     - field.field.block_content.hero_unit.field_hero_overlay
     - field.field.block_content.hero_unit.field_link_color
     - field.field.block_content.hero_unit.field_links
@@ -49,7 +49,7 @@ content:
     weight: 1
     region: content
 hidden:
-  field_background_media: true
+  field_hero_background_image: true
   field_hero_overlay: true
   field_link_color: true
   field_size: true

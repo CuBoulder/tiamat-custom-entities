@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_collection_item_preview
+    - node.type.collection_item_page
+id: node.collection_item_page.field_collection_item_preview
+field_name: field_collection_item_preview
+entity_type: node
+bundle: collection_item_page
+label: Preview
+description: 'The preview is the text shown when rendered in the collection grid.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

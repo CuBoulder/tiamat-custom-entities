@@ -3,17 +3,16 @@ status: true
 dependencies:
   module:
     - node
-id: node.field_ucb_people_filter_2_label
-field_name: field_ucb_people_filter_2_label
+    - taxonomy
+id: node.field_collection_item_category
+field_name: field_collection_item_category
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 128
-  case_sensitive: false
-  is_ascii: false
+  target_type: taxonomy_term
 module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

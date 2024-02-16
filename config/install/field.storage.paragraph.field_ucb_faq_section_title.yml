@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   module:
-    - node
-id: node.field_ucb_people_filter_1_label
-field_name: field_ucb_people_filter_1_label
-entity_type: node
+    - paragraphs
+id: paragraph.field_ucb_faq_section_title
+field_name: field_ucb_faq_section_title
+entity_type: paragraph
 type: string
 settings:
-  max_length: 128
+  max_length: 255
   case_sensitive: false
   is_ascii: false
 module: core
