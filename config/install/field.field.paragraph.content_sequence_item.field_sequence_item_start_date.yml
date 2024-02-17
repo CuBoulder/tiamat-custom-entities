@@ -12,9 +12,7 @@ label: 'Item Start Date'
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    value: 1678312277
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: timestamp
