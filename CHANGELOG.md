@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Social Media Block entities
+  Helps close https://github.com/CuBoulder/tiamat-theme/issues/12.
+  Adds custom entities for social media block
+---
+
 - ### Class Note + Class Note List Changes
   - Adds images and adjusts the style of the `Class Notes List` page to mirror the Teaser-List display of other List-type nodes
   - Allows for `Class Note` Content types to have multiple images (custom-entities)
