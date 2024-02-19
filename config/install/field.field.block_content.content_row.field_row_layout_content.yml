@@ -12,7 +12,7 @@ field_name: field_row_layout_content
 entity_type: block_content
 bundle: content_row
 label: 'Row Layout Content'
-description: 'Add your row''s content here.'
+description: "Add your row's content here."
 required: false
 translatable: false
 default_value: {  }

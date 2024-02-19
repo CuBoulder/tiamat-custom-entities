@@ -12,10 +12,13 @@ settings:
   allowed_values:
     -
       value: '0'
-      label: Teasers
+      label: Teaser
+    -
+      value: '4'
+      label: 'Large Teaser'
     -
       value: '1'
-      label: 'Teasers Alternate'
+      label: 'Large Teaser Alternate'
     -
       value: '2'
       label: Tiles
