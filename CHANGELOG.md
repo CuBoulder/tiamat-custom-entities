@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Content Sequence fixes.
+  Helps close content sequence tickets.
+  Sister pull request in https://github.com/CuBoulder/tiamat-theme/pull/685.
+---
+
 - ### Social Media Block entities
   Helps close https://github.com/CuBoulder/tiamat-theme/issues/12.
   Adds custom entities for social media block

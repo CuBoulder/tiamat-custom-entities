@@ -4,17 +4,17 @@ dependencies:
   config:
     - field.storage.paragraph.field_sequence_item_start_date
     - paragraphs.paragraphs_type.content_sequence_item
+  module:
+    - datetime
 id: paragraph.content_sequence_item.field_sequence_item_start_date
 field_name: field_sequence_item_start_date
 entity_type: paragraph
 bundle: content_sequence_item
-label: 'Item Start Date'
-description: ''
+label: 'Start date'
+description: 'The starting date of the content sequence item. This field is required for advanced content sequences.'
 required: false
 translatable: false
-default_value:
-  -
-    value: 1678312277
+default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: timestamp
+field_type: datetime

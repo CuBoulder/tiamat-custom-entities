@@ -13,6 +13,7 @@ dependencies:
     - field.field.paragraph.content_sequence_item.field_sequence_item_url
     - paragraphs.paragraphs_type.content_sequence_item
   module:
+    - datetime
     - field_group
     - link
     - media_library
@@ -161,8 +162,8 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_sequence_item_end_date:
-    type: datetime_timestamp
-    weight: 7
+    type: datetime_default
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -182,8 +183,8 @@ content:
       media_types: {  }
     third_party_settings: {  }
   field_sequence_item_start_date:
-    type: datetime_timestamp
-    weight: 4
+    type: datetime_default
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
