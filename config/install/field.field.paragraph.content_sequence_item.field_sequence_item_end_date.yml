@@ -4,15 +4,17 @@ dependencies:
   config:
     - field.storage.paragraph.field_sequence_item_end_date
     - paragraphs.paragraphs_type.content_sequence_item
+  module:
+    - datetime
 id: paragraph.content_sequence_item.field_sequence_item_end_date
 field_name: field_sequence_item_end_date
 entity_type: paragraph
 bundle: content_sequence_item
-label: 'Item End Date'
-description: ''
+label: 'End Date'
+description: 'Provides an end date for advanced timelines. Required for advanced timeline view.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: timestamp
+field_type: datetime

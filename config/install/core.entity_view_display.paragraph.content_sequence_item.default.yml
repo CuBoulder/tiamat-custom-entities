@@ -13,6 +13,7 @@ dependencies:
     - field.field.paragraph.content_sequence_item.field_sequence_item_url
     - paragraphs.paragraphs_type.content_sequence_item
   module:
+    - datetime
     - link
     - text
 id: paragraph.content_sequence_item.default
@@ -44,14 +45,13 @@ content:
     weight: 2
     region: content
   field_sequence_item_end_date:
-    type: timestamp
-    label: hidden
+    type: datetime_default
+    label: above
     settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
+      timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    weight: 5
+    weight: 10
     region: content
   field_sequence_item_group:
     type: string
@@ -71,14 +71,13 @@ content:
     weight: 3
     region: content
   field_sequence_item_start_date:
-    type: timestamp
-    label: hidden
+    type: datetime_default
+    label: above
     settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
+      timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    weight: 4
+    weight: 9
     region: content
   field_sequence_item_title:
     type: string
