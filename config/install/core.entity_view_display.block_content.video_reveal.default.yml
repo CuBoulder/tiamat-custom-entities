@@ -4,8 +4,10 @@ dependencies:
   config:
     - block_content.type.video_reveal
     - field.field.block_content.video_reveal.field_video_reveal_image
-    - field.field.block_content.video_reveal.field_video_reveal_text
+    - field.field.block_content.video_reveal.field_video_reveal_text_overlay
     - field.field.block_content.video_reveal.field_video_reveal_video
+  module:
+    - text
 id: block_content.video_reveal.default
 targetEntityType: block_content
 bundle: video_reveal
@@ -20,13 +22,12 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_video_reveal_text:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
+  field_video_reveal_text_overlay:
+    type: text_default
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
   field_video_reveal_video:
     type: entity_reference_entity_view

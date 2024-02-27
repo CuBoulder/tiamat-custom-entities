@@ -3,16 +3,17 @@ status: true
 dependencies:
   config:
     - block_content.type.video_reveal
-    - field.storage.block_content.field_video_reveal_text
+    - field.storage.block_content.field_video_reveal_text_overlay
+    - filter.format.full_html
     - filter.format.plain_text
     - filter.format.wysiwyg
   module:
     - text
-id: block_content.video_reveal.field_video_reveal_text
-field_name: field_video_reveal_text
+id: block_content.video_reveal.field_video_reveal_text_overlay
+field_name: field_video_reveal_text_overlay
 entity_type: block_content
 bundle: video_reveal
-label: Text
+label: 'Text Overlay'
 description: 'Optional text to display with the image.'
 required: false
 translatable: false
@@ -21,5 +22,6 @@ default_value_callback: ''
 settings:
   allowed_formats:
     - wysiwyg
+    - full_html
     - plain_text
 field_type: text_long
