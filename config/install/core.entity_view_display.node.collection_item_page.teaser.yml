@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.collection_item_page.body
     - field.field.node.collection_item_page.field_collection_item_category
     - field.field.node.collection_item_page.field_collection_item_page_type
-    - field.field.node.collection_item_page.field_collection_item_preview
+    - field.field.node.collection_item_page.field_collection_item_summary
     - field.field.node.collection_item_page.field_collection_item_thumbnail
     - node.type.collection_item_page
   module:
@@ -33,5 +33,5 @@ content:
 hidden:
   field_collection_item_category: true
   field_collection_item_page_type: true
-  field_collection_item_preview: true
+  field_collection_item_summary: true
   field_collection_item_thumbnail: true

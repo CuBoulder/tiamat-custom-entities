@@ -5,7 +5,7 @@ dependencies:
     - field.field.node.collection_item_page.body
     - field.field.node.collection_item_page.field_collection_item_category
     - field.field.node.collection_item_page.field_collection_item_page_type
-    - field.field.node.collection_item_page.field_collection_item_preview
+    - field.field.node.collection_item_page.field_collection_item_summary
     - field.field.node.collection_item_page.field_collection_item_thumbnail
     - node.type.collection_item_page
   module:
@@ -49,7 +49,7 @@ third_party_settings:
         required_fields: true
     group_summary_and_preview:
       children:
-        - field_collection_item_preview
+        - field_collection_item_summary
         - field_collection_item_thumbnail
       label: 'Summary and Preview'
       region: content
@@ -104,9 +104,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_collection_item_preview:
+  field_collection_item_summary:
     type: text_textarea
-    weight: 10
+    weight: 26
     region: content
     settings:
       rows: 5
@@ -114,7 +114,7 @@ content:
     third_party_settings: {  }
   field_collection_item_thumbnail:
     type: media_library_widget
-    weight: 11
+    weight: 27
     region: content
     settings:
       media_types: {  }
@@ -174,4 +174,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  publish_on: true
+  unpublish_on: true
