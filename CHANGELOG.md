@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Collection Item Page Preview Page
+  Closes #101.
+  Changes the preview field into a full html field.
+---
+
 - ### Content Row: Block Changes
   Adjusts the following on the `Content Row` blocks:
   - On the "Configure Block" modal, switched the order of the tabs so 'Row Content' is on the left and open by default and 'Row Design' is on the right and hidden

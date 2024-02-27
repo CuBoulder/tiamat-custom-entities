@@ -5,7 +5,7 @@ dependencies:
     - field.field.node.collection_item_page.body
     - field.field.node.collection_item_page.field_collection_item_category
     - field.field.node.collection_item_page.field_collection_item_page_type
-    - field.field.node.collection_item_page.field_collection_item_preview
+    - field.field.node.collection_item_page.field_collection_item_summary
     - field.field.node.collection_item_page.field_collection_item_thumbnail
     - node.type.collection_item_page
   module:
@@ -39,12 +39,12 @@ content:
     third_party_settings: {  }
     weight: 106
     region: content
-  field_collection_item_preview:
+  field_collection_item_summary:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 108
     region: content
   field_collection_item_thumbnail:
     type: entity_reference_entity_view
