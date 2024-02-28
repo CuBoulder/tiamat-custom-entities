@@ -4,10 +4,11 @@ dependencies:
   config:
     - block_content.type.video_reveal
     - field.field.block_content.video_reveal.field_video_reveal_image
-    - field.field.block_content.video_reveal.field_video_reveal_text
+    - field.field.block_content.video_reveal.field_video_reveal_text_overlay
     - field.field.block_content.video_reveal.field_video_reveal_video
   module:
     - media_library
+    - text
 id: block_content.video_reveal.default
 targetEntityType: block_content
 bundle: video_reveal
@@ -20,12 +21,12 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_video_reveal_text:
-    type: string_textfield
-    weight: 3
+  field_video_reveal_text_overlay:
+    type: text_textarea
+    weight: 26
     region: content
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_video_reveal_video:

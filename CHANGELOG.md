@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### update text field for video reveal
+  Closes https://github.com/CuBoulder/tiamat-theme/issues/662.
+  Changes the text field for video reveal.
+---
+
 - ### Collection Item Page Preview Page
   Closes #101.
   Changes the preview field into a full html field.
