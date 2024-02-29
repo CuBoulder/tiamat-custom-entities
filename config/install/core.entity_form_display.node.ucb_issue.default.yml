@@ -6,10 +6,8 @@ dependencies:
     - field.field.node.ucb_issue.field_ucb_issue_image
     - field.field.node.ucb_issue.field_ucb_issue_secondary_image
     - field.field.node.ucb_issue.field_ucb_issue_section
-    - image.style.thumbnail
     - node.type.ucb_issue
   module:
-    - image
     - media_library
     - paragraphs
     - path
@@ -36,12 +34,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_ucb_issue_image:
-    type: image_image
+    type: media_library_widget
     weight: 9
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
   field_ucb_issue_secondary_image:
     type: media_library_widget
@@ -118,4 +115,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+  url_redirects:
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  publish_on: true
+  unpublish_on: true

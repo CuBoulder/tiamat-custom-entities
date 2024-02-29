@@ -9,7 +9,6 @@ dependencies:
     - node.type.ucb_issue
   module:
     - entity_reference_revisions
-    - image
     - text
     - user
 id: node.ucb_issue.default
@@ -25,15 +24,13 @@ content:
     weight: 0
     region: content
   field_ucb_issue_image:
-    type: image
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_ucb_issue_secondary_image:
     type: entity_reference_entity_view
@@ -51,7 +48,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden:
   links: true
