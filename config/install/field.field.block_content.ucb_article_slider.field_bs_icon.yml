@@ -4,7 +4,6 @@ dependencies:
   config:
     - block_content.type.ucb_article_slider
     - field.storage.block_content.field_bs_icon
-    - filter.format.icon_picker
   module:
     - text
 id: block_content.ucb_article_slider.field_bs_icon

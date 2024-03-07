@@ -4,7 +4,6 @@ dependencies:
   config:
     - block_content.type.content_sequence
     - field.storage.block_content.field_bs_icon
-    - filter.format.icon_picker
   module:
     - text
 id: block_content.content_sequence.field_bs_icon

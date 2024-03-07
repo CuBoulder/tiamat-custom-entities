@@ -4,7 +4,6 @@ dependencies:
   config:
     - block_content.type.ucb_tag_cloud
     - field.storage.block_content.field_bs_icon
-    - filter.format.icon_picker
   module:
     - text
 id: block_content.ucb_tag_cloud.field_bs_icon
