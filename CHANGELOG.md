@@ -9,6 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Issue Node: Removing the Secondary Image
+  Fixes the following on Issue Content Types:
+  
+  - Removes the Secondary Image field from the form and page display. Also removes the hard-coded dark gray box with the title and body in it, as users can use CKEditor5 plugins such as Box, Button, Icons, and Media Library to achieve a variety of left-side layouts. 
+  - Fixes bug with Teaser view of Categories displaying improperly
+  - "Read More" capitzalized via CSS instead of hard-coded
+  
+  Includes:
+  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/730
+  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/107
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/704
+---
+
 - ### Issue and Issue Archive use Media Library images
   Changes the Issue cover image field to use the Media Library images rather than the default. This change requires creating an additional consumer in `Focal Image Enable` to use un-cropped image styles from JSON:API as well as modifying the Issue Archive build process to use that un-cropped image.
   

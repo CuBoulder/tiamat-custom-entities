@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.field.node.ucb_issue.body
     - field.field.node.ucb_issue.field_ucb_issue_cover_image
-    - field.field.node.ucb_issue.field_ucb_issue_secondary_image
     - field.field.node.ucb_issue.field_ucb_issue_section
     - node.type.ucb_issue
   module:
@@ -36,13 +35,6 @@ content:
   field_ucb_issue_cover_image:
     type: media_library_widget
     weight: 9
-    region: content
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-  field_ucb_issue_secondary_image:
-    type: media_library_widget
-    weight: 10
     region: content
     settings:
       media_types: {  }

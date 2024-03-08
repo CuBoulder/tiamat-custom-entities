@@ -5,7 +5,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.ucb_issue.body
     - field.field.node.ucb_issue.field_ucb_issue_cover_image
-    - field.field.node.ucb_issue.field_ucb_issue_secondary_image
     - field.field.node.ucb_issue.field_ucb_issue_section
     - node.type.ucb_issue
   module:
@@ -31,5 +30,4 @@ content:
     region: content
 hidden:
   field_ucb_issue_cover_image: true
-  field_ucb_issue_secondary_image: true
   field_ucb_issue_section: true
