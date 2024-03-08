@@ -3,6 +3,17 @@ status: true
 dependencies:
   config:
     - block_content.type.hero_unit
+    - field.field.block_content.hero_unit.field_background_media
+    - field.field.block_content.hero_unit.field_bs_background_style
+    - field.field.block_content.hero_unit.field_bs_content_font_scale
+    - field.field.block_content.hero_unit.field_bs_heading
+    - field.field.block_content.hero_unit.field_bs_heading_alignment
+    - field.field.block_content.hero_unit.field_bs_heading_style
+    - field.field.block_content.hero_unit.field_bs_icon
+    - field.field.block_content.hero_unit.field_bs_icon_color
+    - field.field.block_content.hero_unit.field_bs_icon_position
+    - field.field.block_content.hero_unit.field_bs_icon_size
+    - field.field.block_content.hero_unit.field_bs_title_font_scale
     - field.field.block_content.hero_unit.field_headline
     - field.field.block_content.hero_unit.field_hero_background_image
     - field.field.block_content.hero_unit.field_hero_overlay
@@ -24,6 +35,7 @@ third_party_settings:
       children:
         - group_hero_text_options
         - group_hero_design_options
+        - group_styles
       label: 'Hero Unit Tabs'
       region: content
       parent_name: ''
@@ -43,7 +55,7 @@ third_party_settings:
       label: Content
       region: content
       parent_name: group_hero_unit_tabs
-      weight: 4
+      weight: 2
       format_type: tab
       format_settings:
         classes: ''
@@ -64,7 +76,106 @@ third_party_settings:
       label: Design
       region: content
       parent_name: group_hero_unit_tabs
+      weight: 3
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_styles:
+      children:
+        - group_block_styles
+        - group_icon_settings
+        - group_block_heading
+        - group_block_style
+        - group_block_typography
+      label: Styles
+      region: content
+      parent_name: group_hero_unit_tabs
+      weight: 4
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_block_styles:
+      children: {  }
+      label: 'Block Styles'
+      region: content
+      parent_name: group_styles
       weight: 5
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_icon_settings:
+      children:
+        - field_bs_icon
+        - field_bs_icon_position
+        - field_bs_icon_color
+        - field_bs_icon_size
+      label: 'Icon Settings'
+      region: content
+      parent_name: group_styles
+      weight: 6
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_block_heading:
+      children:
+        - field_bs_heading
+        - field_bs_heading_alignment
+        - field_bs_heading_style
+      label: 'Block Heading'
+      region: content
+      parent_name: group_styles
+      weight: 7
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_block_style:
+      children:
+        - field_bs_background_style
+      label: 'Block Style'
+      region: content
+      parent_name: group_styles
+      weight: 8
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_block_typography:
+      children:
+        - field_bs_title_font_scale
+        - field_bs_content_font_scale
+      label: 'Block Typography'
+      region: content
+      parent_name: group_styles
+      weight: 9
       format_type: tab
       format_settings:
         classes: ''
@@ -78,6 +189,68 @@ targetEntityType: block_content
 bundle: hero_unit
 mode: default
 content:
+  field_bs_background_style:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bs_content_font_scale:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bs_heading:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bs_heading_alignment:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bs_heading_style:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bs_icon:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_bs_icon_color:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bs_icon_position:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bs_icon_size:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bs_title_font_scale:
+    type: options_select
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_headline:
     type: string_textfield
     weight: 11
@@ -154,4 +327,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_background_media: true

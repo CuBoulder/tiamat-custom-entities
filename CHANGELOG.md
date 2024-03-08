@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Block styles
+  Huge update to custom entities for block styles
+  Every block got the updates for block styles as an extra tab
+  Blocks without tabs were given tabs for separation of content and styles
+  300+ file changes/creations
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/729
+  Sister PR: https://github.com/CuBoulder/tiamat10-profile/pull/99
+---
+
 - ### Issue Node: Removing the Secondary Image
   Fixes the following on Issue Content Types:
   
