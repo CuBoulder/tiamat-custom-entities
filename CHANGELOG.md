@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Removes requirement for Related Articles
+  Related Articles block no longer required, which would cause errors on migrated sites with this block
+  
+  Resolves #102 
+---
+
 - ### Block styles
   Huge update to custom entities for block styles
   Every block got the updates for block styles as an extra tab
