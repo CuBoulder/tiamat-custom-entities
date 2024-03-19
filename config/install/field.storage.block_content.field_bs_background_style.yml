@@ -11,6 +11,9 @@ type: list_string
 settings:
   allowed_values:
     -
+      value: bs_background_style_none
+      label: None
+    -
       value: bs_background_style_white
       label: White
     -
