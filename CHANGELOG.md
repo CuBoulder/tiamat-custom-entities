@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Added "None"
+  Added `None` as an option to background style and made it a required field with `None` selected as default
+  
+  Fixed hero and event calendar classes showing in content 
+  Fixed color layering and cascading
+  Added `None` as an option for `Block Style` background color
+  
+  Related PR: https://github.com/CuBoulder/tiamat-theme/pull/747
+  Related PR: https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/26
+---
+
 - ### Removes requirement for Related Articles
   Related Articles block no longer required, which would cause errors on migrated sites with this block
   
