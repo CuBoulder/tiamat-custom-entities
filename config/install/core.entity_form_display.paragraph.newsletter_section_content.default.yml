@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.newsletter_section_content.field_newsletter_content_text
     - field.field.paragraph.newsletter_section_content.field_newsletter_content_title
     - paragraphs.paragraphs_type.newsletter_section_content
-module:
+  module:
     - media_library
     - text
 id: paragraph.newsletter_section_content.default

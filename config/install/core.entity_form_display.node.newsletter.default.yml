@@ -2,6 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.newsletter.field_newsletter_block_title_one
+    - field.field.node.newsletter.field_newsletter_block_title_two
     - field.field.node.newsletter.field_newsletter_content_blocks
     - field.field.node.newsletter.field_newsletter_intro_body
     - field.field.node.newsletter.field_newsletter_intro_image
@@ -216,6 +218,8 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_newsletter_block_title_one: true
+  field_newsletter_block_title_two: true
   path: true
   promote: true
   publish_on: true
