@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.ucb_faq_page.body
+    - field.field.node.ucb_faq_page.field_meta_tags
     - field.field.node.ucb_faq_page.field_ucb_faq_page_section
     - node.type.ucb_faq_page
   module:
@@ -28,4 +29,5 @@ content:
     weight: 100
     region: content
 hidden:
+  field_meta_tags: true
   field_ucb_faq_page_section: true

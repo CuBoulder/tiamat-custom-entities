@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.ucb_class_notes_list_page.body
+    - field.field.node.ucb_class_notes_list_page.field_meta_tags
     - node.type.ucb_class_notes_list_page
   module:
     - text
@@ -26,4 +27,5 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_meta_tags: true

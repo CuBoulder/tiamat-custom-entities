@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.ucb_class_notes.body
+    - field.field.node.ucb_class_notes.field_meta_tags
     - field.field.node.ucb_class_notes.field_ucb_class_note_image
     - field.field.node.ucb_class_notes.field_ucb_class_year
     - node.type.ucb_class_notes
@@ -29,5 +30,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_meta_tags: true
   field_ucb_class_note_image: true
   field_ucb_class_year: true

@@ -3,11 +3,13 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_issue.body
+    - field.field.node.ucb_issue.field_meta_tags
     - field.field.node.ucb_issue.field_ucb_issue_cover_image
     - field.field.node.ucb_issue.field_ucb_issue_section
     - node.type.ucb_issue
   module:
     - media_library
+    - metatag
     - paragraphs
     - path
     - text
@@ -31,6 +33,14 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 51
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_ucb_issue_cover_image:
     type: media_library_widget

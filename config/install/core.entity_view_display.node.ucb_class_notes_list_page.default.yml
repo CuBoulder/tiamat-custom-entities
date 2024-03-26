@@ -3,8 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_class_notes_list_page.body
+    - field.field.node.ucb_class_notes_list_page.field_meta_tags
     - node.type.ucb_class_notes_list_page
   module:
+    - metatag
     - text
     - user
 id: node.ucb_class_notes_list_page.default
@@ -18,6 +20,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
     region: content
   links:
     settings: {  }

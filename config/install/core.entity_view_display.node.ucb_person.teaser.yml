@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.ucb_person.body
+    - field.field.node.ucb_person.field_meta_tags
     - field.field.node.ucb_person.field_ucb_person_address
     - field.field.node.ucb_person.field_ucb_person_department
     - field.field.node.ucb_person.field_ucb_person_email
@@ -43,6 +44,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_meta_tags: true
   field_ucb_person_address: true
   field_ucb_person_department: true
   field_ucb_person_email: true

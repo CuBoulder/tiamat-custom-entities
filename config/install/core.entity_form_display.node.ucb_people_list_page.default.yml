@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_people_list_page.body
+    - field.field.node.ucb_people_list_page.field_meta_tags
     - field.field.node.ucb_people_list_page.field_ucb_people_department
     - field.field.node.ucb_people_list_page.field_ucb_people_department_s
     - field.field.node.ucb_people_list_page.field_ucb_people_display
@@ -19,6 +20,7 @@ dependencies:
     - node.type.ucb_people_list_page
   module:
     - field_group
+    - metatag
     - path
     - text
 third_party_settings:
@@ -249,6 +251,14 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 51
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_ucb_people_department:
     type: options_buttons

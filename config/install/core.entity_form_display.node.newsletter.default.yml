@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.newsletter.field_meta_tags
     - field.field.node.newsletter.field_newsletter_block_text_one
     - field.field.node.newsletter.field_newsletter_block_text_two
     - field.field.node.newsletter.field_newsletter_block_title_one
@@ -19,6 +20,7 @@ dependencies:
     - field_group
     - link
     - media_library
+    - metatag
     - paragraphs
     - text
 third_party_settings:
@@ -113,6 +115,14 @@ targetEntityType: node
 bundle: newsletter
 mode: default
 content:
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 51
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
   field_newsletter_block_text_one:
     type: text_textarea
     weight: 12
@@ -227,10 +237,17 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   path: true
   promote: true
+  publish_on: true
   status: true
   sticky: true
   uid: true
+  unpublish_on: true
