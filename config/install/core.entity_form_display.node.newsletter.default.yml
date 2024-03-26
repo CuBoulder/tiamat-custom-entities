@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.newsletter.field_newsletter_promo_link_one
     - field.field.node.newsletter.field_newsletter_promo_link_two
     - field.field.node.newsletter.field_newsletter_section_block
+    - field.field.node.newsletter.field_newsletter_social_links
     - field.field.node.newsletter.field_newsletter_type
     - node.type.newsletter
   module:
@@ -192,6 +193,13 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_newsletter_social_links:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_newsletter_type:
     type: options_select
     weight: 19
@@ -199,7 +207,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   simple_sitemap:
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -212,7 +220,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
