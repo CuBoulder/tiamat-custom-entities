@@ -7,8 +7,10 @@ dependencies:
     - field.field.node.collection_item_page.field_collection_item_page_type
     - field.field.node.collection_item_page.field_collection_item_summary
     - field.field.node.collection_item_page.field_collection_item_thumbnail
+    - field.field.node.collection_item_page.field_meta_tags
     - node.type.collection_item_page
   module:
+    - metatag
     - text
     - user
 id: node.collection_item_page.default
@@ -54,6 +56,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 104
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
     region: content
   links:
     settings: {  }

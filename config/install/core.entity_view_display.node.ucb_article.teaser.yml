@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.ucb_article.field_article_header_image_text
     - field.field.node.ucb_article.field_article_header_text_color
     - field.field.node.ucb_article.field_article_title_background
+    - field.field.node.ucb_article.field_meta_tags
     - field.field.node.ucb_article.field_ucb_article_byline
     - field.field.node.ucb_article.field_ucb_article_categories
     - field.field.node.ucb_article.field_ucb_article_content
@@ -53,6 +54,7 @@ hidden:
   field_article_header_image_text: true
   field_article_header_text_color: true
   field_article_title_background: true
+  field_meta_tags: true
   field_ucb_article_byline: true
   field_ucb_article_categories: true
   field_ucb_article_content: true

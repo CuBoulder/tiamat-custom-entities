@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.how_to_page.field_how_to_materials
     - field.field.node.how_to_page.field_how_to_steps
     - field.field.node.how_to_page.field_how_to_tools
+    - field.field.node.how_to_page.field_meta_tags
     - node.type.how_to_page
   module:
     - text
@@ -37,3 +38,4 @@ hidden:
   field_how_to_materials: true
   field_how_to_steps: true
   field_how_to_tools: true
+  field_meta_tags: true

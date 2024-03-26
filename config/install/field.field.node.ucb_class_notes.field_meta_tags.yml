@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.ucb_class_notes
+  module:
+    - metatag
+id: node.ucb_class_notes.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: ucb_class_notes
+label: 'Meta tags'
+description: 'Meta tags are an advanced feature which enables modifying information about a page, such as the thumbnail that appears when sharing the page on social media, or preventing it from being indexed by search engines.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

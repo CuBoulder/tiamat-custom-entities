@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.newsletter.field_meta_tags
     - field.field.node.newsletter.field_newsletter_block_text_one
     - field.field.node.newsletter.field_newsletter_block_text_two
     - field.field.node.newsletter.field_newsletter_block_title_one
@@ -29,6 +30,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_meta_tags: true
   field_newsletter_block_text_one: true
   field_newsletter_block_text_two: true
   field_newsletter_block_title_one: true

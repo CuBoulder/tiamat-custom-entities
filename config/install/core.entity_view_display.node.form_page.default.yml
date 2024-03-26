@@ -4,8 +4,10 @@ dependencies:
   config:
     - field.field.node.form_page.body
     - field.field.node.form_page.field_form_page_webform
+    - field.field.node.form_page.field_meta_tags
     - node.type.form_page
   module:
+    - metatag
     - text
     - user
     - webform
@@ -28,6 +30,13 @@ content:
       source_entity: true
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
     region: content
   links:
     settings: {  }

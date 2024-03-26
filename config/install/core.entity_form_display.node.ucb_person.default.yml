@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_person.body
+    - field.field.node.ucb_person.field_meta_tags
     - field.field.node.ucb_person.field_ucb_person_address
     - field.field.node.ucb_person.field_ucb_person_department
     - field.field.node.ucb_person.field_ucb_person_email
@@ -24,6 +25,7 @@ dependencies:
     - field_group
     - link
     - media_library
+    - metatag
     - path
     - telephone
     - text
@@ -134,6 +136,14 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 51
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_ucb_person_address:
     type: text_textarea
@@ -305,5 +315,7 @@ content:
 hidden:
   created: true
   promote: true
+  publish_on: true
   sticky: true
   uid: true
+  unpublish_on: true

@@ -3,8 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_issue_archive.body
+    - field.field.node.ucb_issue_archive.field_meta_tags
     - node.type.ucb_issue_archive
   module:
+    - metatag
     - path
     - text
 id: node.ucb_issue_archive.default
@@ -27,6 +29,14 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 51
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   path:
     type: path
@@ -80,9 +90,9 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   publish_on: true
   unpublish_on: true

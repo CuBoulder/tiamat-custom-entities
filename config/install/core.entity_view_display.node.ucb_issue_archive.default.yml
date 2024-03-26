@@ -3,8 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_issue_archive.body
+    - field.field.node.ucb_issue_archive.field_meta_tags
     - node.type.ucb_issue_archive
   module:
+    - metatag
     - text
     - user
 id: node.ucb_issue_archive.default
@@ -18,6 +20,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   links: true

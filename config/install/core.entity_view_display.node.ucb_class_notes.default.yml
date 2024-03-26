@@ -3,10 +3,12 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_class_notes.body
+    - field.field.node.ucb_class_notes.field_meta_tags
     - field.field.node.ucb_class_notes.field_ucb_class_note_image
     - field.field.node.ucb_class_notes.field_ucb_class_year
     - node.type.ucb_class_notes
   module:
+    - metatag
     - options
     - text
     - user
@@ -21,6 +23,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_ucb_class_note_image:
     type: entity_reference_entity_view

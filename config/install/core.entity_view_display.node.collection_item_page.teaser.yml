@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.collection_item_page.field_collection_item_page_type
     - field.field.node.collection_item_page.field_collection_item_summary
     - field.field.node.collection_item_page.field_collection_item_thumbnail
+    - field.field.node.collection_item_page.field_meta_tags
     - node.type.collection_item_page
   module:
     - text
@@ -35,3 +36,4 @@ hidden:
   field_collection_item_page_type: true
   field_collection_item_summary: true
   field_collection_item_thumbnail: true
+  field_meta_tags: true
