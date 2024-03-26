@@ -2,10 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.newsletter.field_newsletter_block_text_one
-    - field.field.node.newsletter.field_newsletter_block_text_two
-    - field.field.node.newsletter.field_newsletter_block_title_one
-    - field.field.node.newsletter.field_newsletter_block_title_two
+    - field.field.node.newsletter.field_newsletter_content_blocks
     - field.field.node.newsletter.field_newsletter_intro_body
     - field.field.node.newsletter.field_newsletter_intro_image
     - field.field.node.newsletter.field_newsletter_promo_image_one
@@ -25,35 +22,14 @@ targetEntityType: node
 bundle: newsletter
 mode: default
 content:
-  field_newsletter_block_text_one:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_newsletter_block_text_two:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 6
-    region: content
-  field_newsletter_block_title_one:
-    type: string
-    label: hidden
+  field_newsletter_content_blocks:
+    type: entity_reference_revisions_entity_view
+    label: above
     settings:
-      link_to_entity: false
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    weight: 3
-    region: content
-  field_newsletter_block_title_two:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 5
+    weight: 12
     region: content
   field_newsletter_intro_body:
     type: text_default
