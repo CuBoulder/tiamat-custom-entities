@@ -3,13 +3,12 @@ status: true
 dependencies:
   module:
     - node
-    - text
-id: node.field_newsletter_block_text_two
-field_name: field_newsletter_block_text_two
+id: node.field_newsletter_social_links
+field_name: field_newsletter_social_links
 entity_type: node
-type: text_long
+type: boolean
 settings: {  }
-module: text
+module: core
 locked: false
 cardinality: 1
 translatable: true

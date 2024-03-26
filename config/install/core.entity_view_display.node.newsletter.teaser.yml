@@ -3,10 +3,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.newsletter.field_newsletter_block_text_one
-    - field.field.node.newsletter.field_newsletter_block_text_two
     - field.field.node.newsletter.field_newsletter_block_title_one
     - field.field.node.newsletter.field_newsletter_block_title_two
+    - field.field.node.newsletter.field_newsletter_content_blocks
     - field.field.node.newsletter.field_newsletter_intro_body
     - field.field.node.newsletter.field_newsletter_intro_image
     - field.field.node.newsletter.field_newsletter_promo_image_one
@@ -14,6 +13,7 @@ dependencies:
     - field.field.node.newsletter.field_newsletter_promo_link_one
     - field.field.node.newsletter.field_newsletter_promo_link_two
     - field.field.node.newsletter.field_newsletter_section_block
+    - field.field.node.newsletter.field_newsletter_social_links
     - field.field.node.newsletter.field_newsletter_type
     - node.type.newsletter
   module:
@@ -29,10 +29,9 @@ content:
     weight: 100
     region: content
 hidden:
-  field_newsletter_block_text_one: true
-  field_newsletter_block_text_two: true
   field_newsletter_block_title_one: true
   field_newsletter_block_title_two: true
+  field_newsletter_content_blocks: true
   field_newsletter_intro_body: true
   field_newsletter_intro_image: true
   field_newsletter_promo_image_one: true
@@ -40,4 +39,5 @@ hidden:
   field_newsletter_promo_link_one: true
   field_newsletter_promo_link_two: true
   field_newsletter_section_block: true
+  field_newsletter_social_links: true
   field_newsletter_type: true
