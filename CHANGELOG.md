@@ -9,6 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Newsletter Changes
+  - `Newsletter Text Blocks` previously had two fixed Text Blocks. This has been updated to a paragraph type with no limit and the previous fields were removed. 
+  - Custom content in the `Newsletter Section Content` paragraph no longer includes a category field.
+  - Adds a `Social Media Links` boolean field to the Newsletter.
+  - Includes Email HTML views for new paragraph types
+  
+  Includes:
+  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/770
+  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/112
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/706
+---
+
 - ### Added "None"
   Added `None` as an option to background style and made it a required field with `None` selected as default
   
