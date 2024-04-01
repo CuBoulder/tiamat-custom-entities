@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Issue Archive Path Auto
+  ## Issue Archive
+  Needed a pathauto so the button on the "Latest Issues Block" so it works by default (only one expected per site so a similar pathauto to the "Class Notes" implemented)
+  
+  Includes:
+  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/773
+  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/113
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/765
+---
+
 - ### Newsletter Changes
   - `Newsletter Text Blocks` previously had two fixed Text Blocks. This has been updated to a paragraph type with no limit and the previous fields were removed. 
   - Custom content in the `Newsletter Section Content` paragraph no longer includes a category field.
