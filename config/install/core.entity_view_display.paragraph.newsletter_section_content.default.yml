@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.newsletter_section_content.field_news_content_categories
     - field.field.paragraph.newsletter_section_content.field_newsletter_content_image
     - field.field.paragraph.newsletter_section_content.field_newsletter_content_text
     - field.field.paragraph.newsletter_section_content.field_newsletter_content_title
@@ -14,14 +13,6 @@ targetEntityType: paragraph
 bundle: newsletter_section_content
 mode: default
 content:
-  field_news_content_categories:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 3
-    region: content
   field_newsletter_content_image:
     type: entity_reference_entity_view
     label: hidden
