@@ -185,7 +185,7 @@ third_party_settings:
       label: Tabs
       region: content
       parent_name: ''
-      weight: 8
+      weight: 6
       format_type: tabs
       format_settings:
         classes: ''
@@ -236,7 +236,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 7
+    weight: 5
     region: content
     settings:
       rows: 9
@@ -335,30 +335,16 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    weight: 3
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   simple_sitemap:
-    weight: 12
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
-    type: boolean_checkbox
-    weight: 6
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  sticky:
     type: boolean_checkbox
     weight: 4
     region: content
@@ -384,10 +370,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  promote: true
   publish_on: true
+  sticky: true
   unpublish_on: true

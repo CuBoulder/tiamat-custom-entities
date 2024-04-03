@@ -25,7 +25,7 @@ third_party_settings:
       label: 'How-To Tabs'
       region: content
       parent_name: ''
-      weight: 8
+      weight: 5
       format_type: tabs
       format_settings:
         classes: ''
@@ -153,25 +153,16 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    weight: 3
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
+  simple_sitemap:
     weight: 6
     region: content
-    settings:
-      display_label: true
+    settings: {  }
     third_party_settings: {  }
-  sticky:
+  status:
     type: boolean_checkbox
     weight: 4
     region: content
@@ -196,4 +187,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+  url_redirects:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  promote: true
+  publish_on: true
+  sticky: true
+  unpublish_on: true

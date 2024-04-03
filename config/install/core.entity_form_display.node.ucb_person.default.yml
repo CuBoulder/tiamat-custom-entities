@@ -305,5 +305,7 @@ content:
 hidden:
   created: true
   promote: true
+  publish_on: true
   sticky: true
   uid: true
+  unpublish_on: true

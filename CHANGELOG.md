@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Disables 'Sticky at Top of Lists' and 'Promoted to Front Page'
+  Disables the 'Sticky at Top of Lists' and 'Promoted to Front Page' fields from Form Display across all Content Types
+  
+  Resolves #114 
+---
+
 - ### Issue Archive Path Auto
   ## Issue Archive
   Needed a pathauto so the button on the "Latest Issues Block" so it works by default (only one expected per site so a similar pathauto to the "Class Notes" implemented)
