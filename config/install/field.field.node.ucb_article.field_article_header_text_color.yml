@@ -11,12 +11,12 @@ field_name: field_article_header_text_color
 entity_type: node
 bundle: ucb_article
 label: 'Article Header Text Color'
-description: 'Set the Header Image''s header text color'
+description: "Set the Header Image's header text color"
 required: true
 translatable: false
 default_value:
   -
-    value: text-body
+    value: text-white
 default_value_callback: ''
 settings: {  }
 field_type: list_string
