@@ -3,20 +3,20 @@ status: true
 dependencies:
   config:
     - block_content.type.video_hero_unit
-    - field.storage.block_content.field_size
+    - field.storage.block_content.field_bs_background_style
   module:
     - options
-id: block_content.video_hero_unit.field_size
-field_name: field_size
+id: block_content.video_hero_unit.field_bs_background_style
+field_name: field_bs_background_style
 entity_type: block_content
 bundle: video_hero_unit
-label: Size
-description: 'Changes sizing of text within the unit'
+label: 'Background Style'
+description: ''
 required: true
 translatable: false
 default_value:
   -
-    value: '0'
+    value: bs_background_style_none
 default_value_callback: ''
 settings: {  }
 field_type: list_string

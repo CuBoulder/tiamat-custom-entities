@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Block Style Updates
+  Update vidoe hero unit with block styles
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/808
+---
+
 - ### Updates Articles
   This update:
   - Removes margin at the top of articles with header image.
