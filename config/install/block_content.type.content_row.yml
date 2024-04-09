@@ -4,4 +4,4 @@ dependencies: {  }
 id: content_row
 label: 'Content Row'
 revision: 0
-description: "A paragraph that allows users to select different types of grid layouts to display content. \r\nTeaser\r\nLarge Teaser\r\nLarge Teaser Alternate\r\nTiles\r\nFeatures (3 cells Only)"
+description: "A block that allows users to select different types of grid layouts to display content. \r\nTeaser\r\nLarge Teaser\r\nLarge Teaser Alternate\r\nTiles\r\nFeatures (3 cells Only)"
