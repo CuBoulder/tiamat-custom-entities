@@ -11,11 +11,11 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: text-body
-      label: Black
-    -
       value: text-white
       label: White
+    -
+      value: text-body
+      label: Black
   allowed_values_function: ''
 module: options
 locked: false

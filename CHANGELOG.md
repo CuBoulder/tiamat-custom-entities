@@ -9,6 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Updates Articles
+  This update:
+  - Removes margin at the top of articles with header image.
+  - Moves header image caption to immediately below header image.
+  - Removes options for black text or hiding the overlay on the header image, setting the white text on dark overlay as the default.
+  - Updates description of the article header image text field.
+  
+  CuBoulder/tiamat-theme#791
+  CuBoulder/tiamat-theme#790
+  
+  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/805)
+---
+
 - ### Disables 'Sticky at Top of Lists' and 'Promoted to Front Page'
   Disables the 'Sticky at Top of Lists' and 'Promoted to Front Page' fields from Form Display across all Content Types
   
