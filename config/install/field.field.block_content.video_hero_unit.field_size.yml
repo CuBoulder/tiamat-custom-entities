@@ -11,7 +11,7 @@ field_name: field_size
 entity_type: block_content
 bundle: video_hero_unit
 label: Size
-description: 'This setting determines the size of the hero unit. Use Small for narrow areas, Medium for slightly taller areas, and Large for tall areas. '
+description: 'Changes sizing of text within the unit'
 required: true
 translatable: false
 default_value:
