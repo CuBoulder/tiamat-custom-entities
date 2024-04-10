@@ -9,6 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Adjusts descriptions of various blocks
+  Adjusts descriptive text of the following blocks:
+  
+  - Content Grid
+  - Content Row
+  - Events Calendar
+  - Expandable Content
+  - Form Block
+  
+  Previously these were described as 'paragraphs' rather than blocks.
+  
+  Resolves #116 
+---
+
 - ### Block Style Updates
   Update vidoe hero unit with block styles
   
