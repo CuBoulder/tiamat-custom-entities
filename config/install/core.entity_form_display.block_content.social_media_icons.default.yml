@@ -13,7 +13,6 @@ dependencies:
     - field.field.block_content.social_media_icons.field_bs_icon_position
     - field.field.block_content.social_media_icons.field_bs_icon_size
     - field.field.block_content.social_media_icons.field_bs_title_font_scale
-    - field.field.block_content.social_media_icons.field_sm_use_default_links
     - field.field.block_content.social_media_icons.field_social_media_email_link
     - field.field.block_content.social_media_icons.field_social_media_icon_or
     - field.field.block_content.social_media_icons.field_social_media_link_size
@@ -26,7 +25,6 @@ third_party_settings:
   field_group:
     group_social_media_tabs:
       children:
-        - group_sm_default_links
         - group_sm_custom_links
         - group_styles
       label: 'Social Media Tabs'
@@ -40,26 +38,11 @@ third_party_settings:
         id: ''
         direction: horizontal
         width_breakpoint: 640
-    group_sm_default_links:
-      children:
-        - field_sm_use_default_links
-      label: 'Default links'
-      region: content
-      parent_name: group_social_media_tabs
-      weight: 1
-      format_type: tab
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        formatter: open
-        description: ''
-        required_fields: false
     group_sm_custom_links:
       children:
         - field_social_media_links
         - field_social_media_email_link
-      label: 'Custom links'
+      label: Links
       region: content
       parent_name: group_social_media_tabs
       weight: 2
@@ -68,7 +51,7 @@ third_party_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed
+        formatter: open
         description: ''
         required_fields: false
     group_styles:
@@ -235,13 +218,6 @@ content:
     weight: 10
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_sm_use_default_links:
-    type: boolean_checkbox
-    weight: 5
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   field_social_media_email_link:
     type: email_default
