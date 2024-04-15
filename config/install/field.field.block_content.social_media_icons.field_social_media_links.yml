@@ -10,7 +10,7 @@ id: block_content.social_media_icons.field_social_media_links
 field_name: field_social_media_links
 entity_type: block_content
 bundle: social_media_icons
-label: Links
+label: 'Social media links'
 description: ''
 required: false
 translatable: false

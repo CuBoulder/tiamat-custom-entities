@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Updates Social Media Icons block
+  This update:
+  - Removes "Use default links" option from Social Media Icons block.
+  - Moves description field to the top when adding a Social Media Icons block in Block Layout.
+  
+  CuBoulder/tiamat-theme#795
+  
+  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/827)
+---
+
 - ### Adjusts descriptions of various blocks
   Adjusts descriptive text of the following blocks:
   

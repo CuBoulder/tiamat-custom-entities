@@ -13,7 +13,6 @@ dependencies:
     - field.field.block_content.social_media_icons.field_bs_icon_position
     - field.field.block_content.social_media_icons.field_bs_icon_size
     - field.field.block_content.social_media_icons.field_bs_title_font_scale
-    - field.field.block_content.social_media_icons.field_sm_use_default_links
     - field.field.block_content.social_media_icons.field_social_media_email_link
     - field.field.block_content.social_media_icons.field_social_media_icon_or
     - field.field.block_content.social_media_icons.field_social_media_link_size
@@ -96,16 +95,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 8
-    region: content
-  field_sm_use_default_links:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 2
     region: content
   field_social_media_email_link:
     type: basic_string
