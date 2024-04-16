@@ -107,6 +107,7 @@ third_party_settings:
       children:
         - group_block_styles
         - group_icon_settings
+        - group_block_heading
         - group_block_style
         - group_block_typography
       label: Styles
@@ -159,7 +160,7 @@ third_party_settings:
         - field_bs_heading_style
       label: 'Block Heading'
       region: content
-      parent_name: ''
+      parent_name: group_styles
       weight: 6
       format_type: tab
       format_settings:
@@ -213,7 +214,7 @@ content:
     third_party_settings: {  }
   field_bs_content_font_scale:
     type: options_select
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
