@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Collection Item Page: Tab Labels change
+  Resolves #123 
+---
+
 - ### Updates Social Media Icons block
   This update:
   - Removes "Use default links" option from Social Media Icons block.
