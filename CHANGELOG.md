@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Updates Collection Grid block
+  This update:
+  - [Bug] Fixes a minor typo in the description of the "Display Summary" field. Resolves CuBoulder/tiamat-custom-entities#122
+  - [Bug] Moves "Block Heading" into the correct place under the "Styles" tab in the form display.  Resolves CuBoulder/tiamat-custom-entities#121
+  
+  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/851)
+---
+
 - ### Collection Item Page: Tab Labels change
   Resolves #123 
 ---

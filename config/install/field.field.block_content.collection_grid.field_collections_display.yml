@@ -11,7 +11,7 @@ field_name: field_collections_display
 entity_type: block_content
 bundle: collection_grid
 label: 'Display Summary'
-description: 'You can choose whether or no to include a truncated version of body field text of the collection items.'
+description: 'You can choose whether or not to include a truncated version of body field text of the collection items.'
 required: true
 translatable: false
 default_value:
