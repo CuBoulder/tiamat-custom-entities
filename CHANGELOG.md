@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Makes the URL to the Events Calendar block widget builder a link
+  Resolves CuBoulder/tiamat-custom-entities#124
+---
+
 - ### Updates Collection Grid block
   This update:
   - [Bug] Fixes a minor typo in the description of the "Display Summary" field. Resolves CuBoulder/tiamat-custom-entities#122
