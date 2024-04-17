@@ -17,8 +17,9 @@ third_party_settings:
   field_group:
     group_item_tabs:
       children:
-        - group_display
+        - group_collection_item_content
         - group_summary_and_preview
+        - group_display
       label: 'Item Tabs'
       region: content
       parent_name: ''
@@ -32,29 +33,12 @@ third_party_settings:
         width_breakpoint: 640
     group_display:
       children:
-        - body
         - field_collection_item_page_type
         - field_collection_item_category
-      label: Display
+      label: Taxonomy
       region: content
       parent_name: group_item_tabs
-      weight: 15
-      format_type: tab
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        formatter: open
-        description: ''
-        required_fields: true
-    group_summary_and_preview:
-      children:
-        - field_collection_item_summary
-        - field_collection_item_thumbnail
-      label: 'Summary and Preview'
-      region: content
-      parent_name: group_item_tabs
-      weight: 16
+      weight: 22
       format_type: tab
       format_settings:
         classes: ''
@@ -63,6 +47,37 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
+    group_summary_and_preview:
+      children:
+        - field_collection_item_summary
+        - field_collection_item_thumbnail
+      label: 'Grid Display'
+      region: content
+      parent_name: group_item_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_collection_item_content:
+      children:
+        - body
+      label: Content
+      region: content
+      parent_name: group_item_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: false
 id: node.collection_item_page.default
 targetEntityType: node
 bundle: collection_item_page
