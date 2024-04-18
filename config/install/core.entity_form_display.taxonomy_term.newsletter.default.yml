@@ -6,10 +6,12 @@ dependencies:
     - field.field.taxonomy_term.newsletter.field_newsletter_footer
     - field.field.taxonomy_term.newsletter.field_newsletter_name_image
     - field.field.taxonomy_term.newsletter.field_newsletter_path
+    - field.field.taxonomy_term.newsletter.field_newsletter_social_link
     - image.style.thumbnail
     - taxonomy.vocabulary.newsletter
   module:
     - image
+    - link
     - path
     - text
 id: taxonomy_term.newsletter.default
@@ -55,6 +57,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_newsletter_social_link:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   name:
     type: string_textfield
     weight: 0
@@ -65,18 +75,18 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   simple_sitemap:
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 8
+    weight: 9
     region: content
     settings:
       display_label: true

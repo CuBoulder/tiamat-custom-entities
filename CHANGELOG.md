@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Newsletter: Moves social links from Node to Newsletter term
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/867
+  
+  Includes:
+  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/871
+  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/130
+---
+
 - ### Issue Page: Section Titles made optional
   Resolves https://github.com/CuBoulder/tiamat-theme/issues/852
   
