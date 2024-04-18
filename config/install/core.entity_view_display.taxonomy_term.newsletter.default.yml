@@ -6,9 +6,11 @@ dependencies:
     - field.field.taxonomy_term.newsletter.field_newsletter_footer
     - field.field.taxonomy_term.newsletter.field_newsletter_name_image
     - field.field.taxonomy_term.newsletter.field_newsletter_path
+    - field.field.taxonomy_term.newsletter.field_newsletter_social_link
     - taxonomy.vocabulary.newsletter
   module:
     - image
+    - link
     - options
     - text
 id: taxonomy_term.newsletter.default
@@ -55,5 +57,17 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_newsletter_social_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
     region: content
 hidden: {  }
