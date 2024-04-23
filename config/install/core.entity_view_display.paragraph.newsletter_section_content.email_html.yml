@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.newsletter_section_content.field_newsletter_content_image
     - field.field.paragraph.newsletter_section_content.field_newsletter_content_text
     - field.field.paragraph.newsletter_section_content.field_newsletter_content_title
+    - field.field.paragraph.newsletter_section_content.field_newsletter_content_url
     - paragraphs.paragraphs_type.newsletter_section_content
   module:
     - layout_builder
@@ -43,4 +44,5 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-hidden: {  }
+hidden:
+  field_newsletter_content_url: true
