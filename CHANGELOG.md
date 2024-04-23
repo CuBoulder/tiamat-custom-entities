@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Removal of article hero files
+  Removes necessary files for article hero units.
+---
+
 - ### Newsletter: Adds optional URL field to Newsletter Section: Custom Content
   Adds the optional URL field for Newsletter Section's Custom Content.
   
