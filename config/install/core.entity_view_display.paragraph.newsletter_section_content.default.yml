@@ -5,8 +5,10 @@ dependencies:
     - field.field.paragraph.newsletter_section_content.field_newsletter_content_image
     - field.field.paragraph.newsletter_section_content.field_newsletter_content_text
     - field.field.paragraph.newsletter_section_content.field_newsletter_content_title
+    - field.field.paragraph.newsletter_section_content.field_newsletter_content_url
     - paragraphs.paragraphs_type.newsletter_section_content
   module:
+    - link
     - text
 id: paragraph.newsletter_section_content.default
 targetEntityType: paragraph
@@ -36,5 +38,17 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_newsletter_content_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 3
     region: content
 hidden: {  }

@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Newsletter: Adds optional URL field to Newsletter Section: Custom Content
+  Adds the optional URL field for Newsletter Section's Custom Content.
+  
+  Includes:
+  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/882
+  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/131
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/872
+  
+  
+---
+
 - ### Newsletter: Moves social links from Node to Newsletter term
   Resolves https://github.com/CuBoulder/tiamat-theme/issues/867
   
