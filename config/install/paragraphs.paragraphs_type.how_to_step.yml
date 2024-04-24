@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: how_to_step
-label: 'How-To Step'
-icon_uuid: null
-icon_default: null
-description: 'Individual steps for the How-To Page'
-behavior_plugins: {  }
