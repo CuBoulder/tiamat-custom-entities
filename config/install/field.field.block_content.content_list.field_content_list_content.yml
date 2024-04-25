@@ -5,7 +5,6 @@ dependencies:
     - block_content.type.content_list
     - field.storage.block_content.field_content_list_content
     - node.type.basic_page
-    - node.type.how_to_page
     - node.type.ucb_article
     - node.type.ucb_person
 id: block_content.content_list.field_content_list_content
@@ -24,7 +23,6 @@ settings:
     target_bundles:
       ucb_article: ucb_article
       basic_page: basic_page
-      how_to_page: how_to_page
       ucb_person: ucb_person
     sort:
       field: _none

@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Issue/129
+  Closes #129.
+  Removes all relevant how-to files and pages.
+  
+  Sister requests:
+  Tiamat-profile: https://github.com/CuBoulder/tiamat10-profile/pull/117
+  Tiamat-theme: https://github.com/CuBoulder/tiamat-theme/pull/890
+---
+
 - ### Removal of article hero files
   Removes necessary files for article hero units.
 ---

@@ -39,9 +39,6 @@ settings:
       grid_layout_content:
         weight: 20
         enabled: false
-      how_to_step:
-        weight: 21
-        enabled: false
       media:
         weight: 22
         enabled: false
