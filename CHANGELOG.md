@@ -9,6 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Update core.entity_view_display.node.basic_page.default.yml
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/898
+  Sister PR: https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/38
+  Sister PR: https://github.com/CuBoulder/tiamat10-profile/pull/119
+  
+  Updated basic page default layout to be a two column set up rather than single column
+  
+  The first column contains the title and body content 
+  The second column contains the Main, Secondary, and Footer navigations
+  
+  This will allow for the new layout to display properly. 
+---
+
 - ### Issue/tiamat theme/804
   Sister pull request to resolve https://github.com/CuBoulder/tiamat-theme/issues/804.
   Adds necessary custom entities for the wallpaper image style.
