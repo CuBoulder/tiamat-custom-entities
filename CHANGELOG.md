@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Issue/tiamat theme/804
+  Sister pull request to resolve https://github.com/CuBoulder/tiamat-theme/issues/804.
+  Adds necessary custom entities for the wallpaper image style.
+---
+
 - ### Issue/129
   Closes #129.
   Removes all relevant how-to files and pages.
