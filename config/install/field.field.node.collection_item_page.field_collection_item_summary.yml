@@ -23,5 +23,4 @@ settings:
   allowed_formats:
     - wysiwyg
     - full_html
-    - plain_text
 field_type: text_long

@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Remove Plain text from Collection Item Page
+  Closes https://github.com/CuBoulder/tiamat-theme/issues/928.
+  Removes the plain text option from the collection item page preview.
+---
+
 - ### Update core.entity_view_display.node.basic_page.default.yml
   Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/898
   Sister PR: https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/38
