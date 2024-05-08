@@ -6,7 +6,6 @@ dependencies:
     - field.field.paragraph.content_sequence_item.field_sequence_item_d_start_date
     - field.field.paragraph.content_sequence_item.field_sequence_item_descr
     - field.field.paragraph.content_sequence_item.field_sequence_item_end_date
-    - field.field.paragraph.content_sequence_item.field_sequence_item_group
     - field.field.paragraph.content_sequence_item.field_sequence_item_media
     - field.field.paragraph.content_sequence_item.field_sequence_item_start_date
     - field.field.paragraph.content_sequence_item.field_sequence_item_title
@@ -85,21 +84,6 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
-    group_sequence_group:
-      children:
-        - field_sequence_item_group
-      label: Group
-      region: content
-      parent_name: group_content_sequence_step_tabs
-      weight: 15
-      format_type: tab
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        formatter: closed
-        description: ''
-        required_fields: true
     group_date_details:
       children:
         - field_sequence_item_start_date
@@ -166,14 +150,6 @@ content:
     weight: 17
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_sequence_item_group:
-    type: string_textfield
-    weight: 6
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   field_sequence_item_media:
     type: media_library_widget
