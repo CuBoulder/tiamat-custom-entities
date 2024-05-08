@@ -16,25 +16,20 @@ dependencies:
     - field.field.block_content.content_sequence.field_bs_title_font_scale
     - field.field.block_content.content_sequence.field_content_sequence_display
     - field.field.block_content.content_sequence.field_content_sequence_items
-    - field.field.block_content.content_sequence.field_content_sequence_media
-    - field.field.block_content.content_sequence.field_content_sequence_scale
-    - field.field.block_content.content_sequence.field_content_sequence_title
   module:
     - field_group
-    - media_library
     - paragraphs
     - text
 third_party_settings:
   field_group:
     group_content_sequence_tabs:
       children:
-        - group_styles
         - group_general
-        - group_advanced
+        - group_styles
       label: 'Content Sequence Tabs'
       region: content
       parent_name: ''
-      weight: 1
+      weight: 0
       format_type: tabs
       format_settings:
         classes: ''
@@ -42,27 +37,8 @@ third_party_settings:
         id: ''
         direction: horizontal
         width_breakpoint: 640
-    group_advanced:
-      children:
-        - field_content_sequence_scale
-        - field_content_sequence_title
-        - body
-        - field_content_sequence_media
-      label: 'Advanced timeline'
-      region: content
-      parent_name: group_content_sequence_tabs
-      weight: 3
-      format_type: tab
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        formatter: closed
-        description: ''
-        required_fields: true
     group_general:
       children:
-        - field_content_sequence_display
         - field_content_sequence_items
       label: General
       region: content
@@ -181,7 +157,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 30
+    weight: 1
     region: content
     settings:
       rows: 9
@@ -251,12 +227,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_content_sequence_display:
-    type: options_select
-    weight: 26
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_content_sequence_items:
     type: paragraphs
     weight: 27
@@ -275,26 +245,6 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
-  field_content_sequence_media:
-    type: media_library_widget
-    weight: 31
-    region: content
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-  field_content_sequence_scale:
-    type: options_select
-    weight: 28
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_content_sequence_title:
-    type: string_textfield
-    weight: 29
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
+  field_content_sequence_display: true
   info: true

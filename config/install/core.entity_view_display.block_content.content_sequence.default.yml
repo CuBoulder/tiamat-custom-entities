@@ -16,9 +16,6 @@ dependencies:
     - field.field.block_content.content_sequence.field_bs_title_font_scale
     - field.field.block_content.content_sequence.field_content_sequence_display
     - field.field.block_content.content_sequence.field_content_sequence_items
-    - field.field.block_content.content_sequence.field_content_sequence_media
-    - field.field.block_content.content_sequence.field_content_sequence_scale
-    - field.field.block_content.content_sequence.field_content_sequence_title
   module:
     - entity_reference_revisions
     - options
@@ -120,29 +117,5 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 1
-    region: content
-  field_content_sequence_media:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  field_content_sequence_scale:
-    type: list_key
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_content_sequence_title:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 3
     region: content
 hidden: {  }
