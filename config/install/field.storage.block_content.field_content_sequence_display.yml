@@ -11,14 +11,8 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: horizontal
-      label: Horizontal
-    -
       value: vertical
       label: Vertical
-    -
-      value: advanced
-      label: 'Advanced timeline'
   allowed_values_function: ''
 module: options
 locked: false
