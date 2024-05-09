@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Removes horizontal and advanced content sequence blocks
+  [a11y, Remove] The horizontal and advanced variants of content sequence aren't properly accessible to screenreader users. This update removes them. CuBoulder/tiamat-theme#934
+  
+  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/940)
+---
+
 - ### Remove Plain text from Collection Item Page
   Closes https://github.com/CuBoulder/tiamat-theme/issues/928.
   Removes the plain text option from the collection item page preview.
