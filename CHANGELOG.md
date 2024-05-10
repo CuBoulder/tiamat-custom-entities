@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Update core.entity_view_display.block_content.video_hero_unit.default.yml
+  
+  Update video hero unit's display options so that the title displays properly.
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/950
+---
+
 - ### Removes horizontal and advanced content sequence blocks
   [a11y, Remove] The horizontal and advanced variants of content sequence aren't properly accessible to screenreader users. This update removes them. CuBoulder/tiamat-theme#934
   
