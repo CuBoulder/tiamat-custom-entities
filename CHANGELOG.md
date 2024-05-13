@@ -9,315 +9,388 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- ### Update core.entity_view_display.block_content.video_hero_unit.default.yml
-  
-  Update video hero unit's display options so that the title displays properly.
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/950
----
+## [20240513] - 2024-05-13
 
-- ### Removes horizontal and advanced content sequence blocks
-  [a11y, Remove] The horizontal and advanced variants of content sequence aren't properly accessible to screenreader users. This update removes them. CuBoulder/tiamat-theme#934
-  
-  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/940)
----
+-   ### Update core.entity_view_display.block_content.video_hero_unit.default.yml
 
-- ### Remove Plain text from Collection Item Page
-  Closes https://github.com/CuBoulder/tiamat-theme/issues/928.
-  Removes the plain text option from the collection item page preview.
----
+    Update video hero unit's display options so that the title displays properly.
 
-- ### Update core.entity_view_display.node.basic_page.default.yml
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/898
-  Sister PR: https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/38
-  Sister PR: https://github.com/CuBoulder/tiamat10-profile/pull/119
-  
-  Updated basic page default layout to be a two column set up rather than single column
-  
-  The first column contains the title and body content 
-  The second column contains the Main, Secondary, and Footer navigations
-  
-  This will allow for the new layout to display properly. 
----
+    Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/950>
 
-- ### Issue/tiamat theme/804
-  Sister pull request to resolve https://github.com/CuBoulder/tiamat-theme/issues/804.
-  Adds necessary custom entities for the wallpaper image style.
----
+* * *
 
-- ### Issue/129
-  Closes #129.
-  Removes all relevant how-to files and pages.
-  
-  Sister requests:
-  Tiamat-profile: https://github.com/CuBoulder/tiamat10-profile/pull/117
-  Tiamat-theme: https://github.com/CuBoulder/tiamat-theme/pull/890
----
+-   ### Removes horizontal and advanced content sequence blocks
 
-- ### Removal of article hero files
-  Removes necessary files for article hero units.
----
+    [a11y, Remove] The horizontal and advanced variants of content sequence aren't properly accessible to screenreader users. This update removes them. CuBoulder/tiamat-theme#934
 
-- ### Newsletter: Adds optional URL field to Newsletter Section: Custom Content
-  Adds the optional URL field for Newsletter Section's Custom Content.
-  
-  Includes:
-  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/882
-  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/131
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/872
-  
-  
----
+    Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/940)
 
-- ### Newsletter: Moves social links from Node to Newsletter term
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/867
-  
-  Includes:
-  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/871
-  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/130
----
+* * *
 
-- ### Issue Page: Section Titles made optional
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/852
-  
-  Includes:
-  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/855
-  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/127
----
+-   ### Remove Plain text from Collection Item Page
+    Closes <https://github.com/CuBoulder/tiamat-theme/issues/928>.
+    Removes the plain text option from the collection item page preview.
 
-- ### Makes the URL to the Events Calendar block widget builder a link
-  Resolves CuBoulder/tiamat-custom-entities#124
----
+* * *
 
-- ### Updates Collection Grid block
-  This update:
-  - [Bug] Fixes a minor typo in the description of the "Display Summary" field. Resolves CuBoulder/tiamat-custom-entities#122
-  - [Bug] Moves "Block Heading" into the correct place under the "Styles" tab in the form display.  Resolves CuBoulder/tiamat-custom-entities#121
-  
-  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/851)
----
+-   ### Update core.entity_view_display.node.basic_page.default.yml
 
-- ### Collection Item Page: Tab Labels change
-  Resolves #123 
----
+    Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/898>
+    Sister PR: <https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/38>
+    Sister PR: <https://github.com/CuBoulder/tiamat10-profile/pull/119>
 
-- ### Updates Social Media Icons block
-  This update:
-  - Removes "Use default links" option from Social Media Icons block.
-  - Moves description field to the top when adding a Social Media Icons block in Block Layout.
-  
-  CuBoulder/tiamat-theme#795
-  
-  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/827)
----
+    Updated basic page default layout to be a two column set up rather than single column
 
-- ### Adjusts descriptions of various blocks
-  Adjusts descriptive text of the following blocks:
-  
-  - Content Grid
-  - Content Row
-  - Events Calendar
-  - Expandable Content
-  - Form Block
-  
-  Previously these were described as 'paragraphs' rather than blocks.
-  
-  Resolves #116 
----
+    The first column contains the title and body content 
+    The second column contains the Main, Secondary, and Footer navigations
 
-- ### Block Style Updates
-  Update vidoe hero unit with block styles
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/808
----
+    This will allow for the new layout to display properly. 
 
-- ### Updates Articles
-  This update:
-  - Removes margin at the top of articles with header image.
-  - Moves header image caption to immediately below header image.
-  - Removes options for black text or hiding the overlay on the header image, setting the white text on dark overlay as the default.
-  - Updates description of the article header image text field.
-  
-  CuBoulder/tiamat-theme#791
-  CuBoulder/tiamat-theme#790
-  
-  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/805)
----
+* * *
 
-- ### Disables 'Sticky at Top of Lists' and 'Promoted to Front Page'
-  Disables the 'Sticky at Top of Lists' and 'Promoted to Front Page' fields from Form Display across all Content Types
-  
-  Resolves #114 
----
+-   ### Issue/tiamat theme/804
+    Sister pull request to resolve <https://github.com/CuBoulder/tiamat-theme/issues/804>.
+    Adds necessary custom entities for the wallpaper image style.
 
-- ### Issue Archive Path Auto
-  ## Issue Archive
-  Needed a pathauto so the button on the "Latest Issues Block" so it works by default (only one expected per site so a similar pathauto to the "Class Notes" implemented)
-  
-  Includes:
-  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/773
-  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/113
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/765
----
+* * *
 
-- ### Newsletter Changes
-  - `Newsletter Text Blocks` previously had two fixed Text Blocks. This has been updated to a paragraph type with no limit and the previous fields were removed. 
-  - Custom content in the `Newsletter Section Content` paragraph no longer includes a category field.
-  - Adds a `Social Media Links` boolean field to the Newsletter.
-  - Includes Email HTML views for new paragraph types
-  
-  Includes:
-  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/770
-  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/112
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/706
----
+-   ### Issue/129
 
-- ### Added "None"
-  Added `None` as an option to background style and made it a required field with `None` selected as default
-  
-  Fixed hero and event calendar classes showing in content 
-  Fixed color layering and cascading
-  Added `None` as an option for `Block Style` background color
-  
-  Related PR: https://github.com/CuBoulder/tiamat-theme/pull/747
-  Related PR: https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/26
----
+    Closes #129.
+    Removes all relevant how-to files and pages.
 
-- ### Removes requirement for Related Articles
-  Related Articles block no longer required, which would cause errors on migrated sites with this block
-  
-  Resolves #102 
----
+    Sister requests:
+    Tiamat-profile: <https://github.com/CuBoulder/tiamat10-profile/pull/117>
+    Tiamat-theme: <https://github.com/CuBoulder/tiamat-theme/pull/890>
 
-- ### Block styles
-  Huge update to custom entities for block styles
-  Every block got the updates for block styles as an extra tab
-  Blocks without tabs were given tabs for separation of content and styles
-  300+ file changes/creations
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/729
-  Sister PR: https://github.com/CuBoulder/tiamat10-profile/pull/99
----
+* * *
 
-- ### Issue Node: Removing the Secondary Image
-  Fixes the following on Issue Content Types:
-  
-  - Removes the Secondary Image field from the form and page display. Also removes the hard-coded dark gray box with the title and body in it, as users can use CKEditor5 plugins such as Box, Button, Icons, and Media Library to achieve a variety of left-side layouts. 
-  - Fixes bug with Teaser view of Categories displaying improperly
-  - "Read More" capitzalized via CSS instead of hard-coded
-  
-  Includes:
-  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/730
-  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/107
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/704
----
+-   ### Removal of article hero files
+    Removes necessary files for article hero units.
 
-- ### Issue and Issue Archive use Media Library images
-  Changes the Issue cover image field to use the Media Library images rather than the default. This change requires creating an additional consumer in `Focal Image Enable` to use un-cropped image styles from JSON:API as well as modifying the Issue Archive build process to use that un-cropped image.
-  
-  Includes:
-  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/707
-  - `tiamat-custom-entities` =>  https://github.com/CuBoulder/tiamat-custom-entities/pull/105
-  - `ucb-focal-image-enable` => https://github.com/CuBoulder/ucb_focal_image_enable/pull/8
-  
-  Resolves [#104 ](https://github.com/CuBoulder/tiamat-custom-entities/issues/104)
----
+* * *
 
-- ### update text field for video reveal
-  Closes https://github.com/CuBoulder/tiamat-theme/issues/662.
-  Changes the text field for video reveal.
----
+-   ### Newsletter: Adds optional URL field to Newsletter Section: Custom Content
 
-- ### Collection Item Page Preview Page
-  Closes #101.
-  Changes the preview field into a full html field.
----
+    Adds the optional URL field for Newsletter Section's Custom Content.
 
-- ### Content Row: Block Changes
-  Adjusts the following on the `Content Row` blocks:
-  - On the "Configure Block" modal, switched the order of the tabs so 'Row Content' is on the left and open by default and 'Row Design' is on the right and hidden
-  - Added three teaser displays: `Large Teaser`, `Large Teaser Alternate`, and `Teaser`. Previously the teaser displays available were Teaser and Teaser Alternate.
-  - The `Large Teaser` and `Large Teaser Alternate` displays use the focal image wide style images rather than square.
-  - Adjusts style of the `Teaser` display to mirror other teaser-list style elements, such as the Article List. 
-  - Adjusted style of the `Tile` style display to more closely mirror the D7 version, which achieved the tile effect with images and text alternating. 
-  - Fixes bug where internal links, such as `/homepage` would cause a WSOD when added to Row Layout Content
-  
-  Includes:
-  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/687
-  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/99
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/673
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/674
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/675
----
+    Includes:
 
-- ### Content Sequence fixes.
-  Helps close content sequence tickets.
-  Sister pull request in https://github.com/CuBoulder/tiamat-theme/pull/685.
----
+    -   `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/882>
+    -   `custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/131>
 
-- ### Social Media Block entities
-  Helps close https://github.com/CuBoulder/tiamat-theme/issues/12.
-  Adds custom entities for social media block
----
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/872>
 
-- ### Class Note + Class Note List Changes
-  - Adds images and adjusts the style of the `Class Notes List` page to mirror the Teaser-List display of other List-type nodes
-  - Allows for `Class Note` Content types to have multiple images (custom-entities)
-  
-  
-  Includes:
-  
-  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/657
-  - `tiamat-custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/95
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/206
----
+* * *
 
-- ### Class Note Enhancements
-  Adjusts permissions for Class Notes, adds optional image field. Resolves https://github.com/CuBoulder/tiamat-theme/issues/622
-  
-  Includes:
-  - tiamat-theme => https://github.com/CuBoulder/tiamat-theme/pull/648
-  - tiamat-profile => https://github.com/CuBoulder/tiamat10-profile/pull/75
-  - custom-entities => https://github.com/CuBoulder/tiamat-custom-entities/pull/94
----
+-   ### Newsletter: Moves social links from Node to Newsletter term
 
-- ### Adds Collection Grid block and Collection Item content type
-  Helps close https://github.com/CuBoulder/tiamat-theme/issues/534.
-  Adds the entities for the collection grid and collection item pages.
----
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/867>
 
-- ### FAQ Content Type
-  Adds the FAQ Content Type. Resolves https://github.com/CuBoulder/tiamat-theme/issues/620
-  
-  Includes:
-  - tiamat-theme (issue/tiamat-theme/620) => https://github.com/CuBoulder/tiamat-theme/pull/641
-  - custom-entities (issue/tiamat-theme/620) => https://github.com/CuBoulder/tiamat-custom-entities/pull/92
-  - ucb-admin-menus (issue/tiamat-theme/620) => https://github.com/CuBoulder/ucb_admin_menus/pull/20
----
+    Includes:
 
-- ### Adds Class Note Page + Class Notes List Page
-  Adds the `Class Note` Node and `Class Note List` node. A Class Note List Page lists your Class Notes and has built in filters to allow visitors to filter by year or sort by class year or date posted.
-  
-  Includes:
-  `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/621
-  `tiamat-custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/91
-  
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/588
-  
----
+    -   `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/871>
+    -   `custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/130>
 
-- ### Video hero unit separation setup
-  Set up files for the separated hero units
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/606
----
+* * *
+
+-   ### Issue Page: Section Titles made optional
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/852>
+
+    Includes:
+
+    -   `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/855>
+    -   `custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/127>
+
+* * *
+
+-   ### Makes the URL to the Events Calendar block widget builder a link
+    Resolves CuBoulder/tiamat-custom-entities#124
+
+* * *
+
+-   ### Updates Collection Grid block
+
+    This update:
+
+    -   [Bug] Fixes a minor typo in the description of the "Display Summary" field. Resolves CuBoulder/tiamat-custom-entities#122
+    -   [Bug] Moves "Block Heading" into the correct place under the "Styles" tab in the form display.  Resolves CuBoulder/tiamat-custom-entities#121
+
+    Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/851)
+
+* * *
+
+-   ### Collection Item Page: Tab Labels change
+    Resolves #123 
+
+* * *
+
+-   ### Updates Social Media Icons block
+
+    This update:
+
+    -   Removes "Use default links" option from Social Media Icons block.
+    -   Moves description field to the top when adding a Social Media Icons block in Block Layout.
+
+    CuBoulder/tiamat-theme#795
+
+    Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/827)
+
+* * *
+
+-   ### Adjusts descriptions of various blocks
+
+    Adjusts descriptive text of the following blocks:
+
+    -   Content Grid
+    -   Content Row
+    -   Events Calendar
+    -   Expandable Content
+    -   Form Block
+
+    Previously these were described as 'paragraphs' rather than blocks.
+
+    Resolves #116 
+
+* * *
+
+-   ### Block Style Updates
+
+    Update vidoe hero unit with block styles
+
+    Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/808>
+
+* * *
+
+-   ### Updates Articles
+
+    This update:
+
+    -   Removes margin at the top of articles with header image.
+    -   Moves header image caption to immediately below header image.
+    -   Removes options for black text or hiding the overlay on the header image, setting the white text on dark overlay as the default.
+    -   Updates description of the article header image text field.
+
+    CuBoulder/tiamat-theme#791
+    CuBoulder/tiamat-theme#790
+
+    Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/805)
+
+* * *
+
+-   ### Disables 'Sticky at Top of Lists' and 'Promoted to Front Page'
+
+    Disables the 'Sticky at Top of Lists' and 'Promoted to Front Page' fields from Form Display across all Content Types
+
+    Resolves #114 
+
+* * *
+
+-   ### Issue Archive Path Auto
+
+    ## Issue Archive
+
+    Needed a pathauto so the button on the "Latest Issues Block" so it works by default (only one expected per site so a similar pathauto to the "Class Notes" implemented)
+
+    Includes:
+
+    -   `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/773>
+    -   `custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/113>
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/765>
+
+* * *
+
+-   ### Newsletter Changes
+
+    -   `Newsletter Text Blocks` previously had two fixed Text Blocks. This has been updated to a paragraph type with no limit and the previous fields were removed. 
+    -   Custom content in the `Newsletter Section Content` paragraph no longer includes a category field.
+    -   Adds a `Social Media Links` boolean field to the Newsletter.
+    -   Includes Email HTML views for new paragraph types
+
+    Includes:
+
+    -   `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/770>
+    -   `custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/112>
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/706>
+
+* * *
+
+-   ### Added "None"
+
+    Added `None` as an option to background style and made it a required field with `None` selected as default
+
+    Fixed hero and event calendar classes showing in content 
+    Fixed color layering and cascading
+    Added `None` as an option for `Block Style` background color
+
+    Related PR: <https://github.com/CuBoulder/tiamat-theme/pull/747>
+    Related PR: <https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/26>
+
+* * *
+
+-   ### Removes requirement for Related Articles
+
+    Related Articles block no longer required, which would cause errors on migrated sites with this block
+
+    Resolves #102 
+
+* * *
+
+-   ### Block styles
+
+    Huge update to custom entities for block styles
+    Every block got the updates for block styles as an extra tab
+    Blocks without tabs were given tabs for separation of content and styles
+    300+ file changes/creations
+
+    Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/729>
+    Sister PR: <https://github.com/CuBoulder/tiamat10-profile/pull/99>
+
+* * *
+
+-   ### Issue Node: Removing the Secondary Image
+
+    Fixes the following on Issue Content Types:
+
+    -   Removes the Secondary Image field from the form and page display. Also removes the hard-coded dark gray box with the title and body in it, as users can use CKEditor5 plugins such as Box, Button, Icons, and Media Library to achieve a variety of left-side layouts. 
+    -   Fixes bug with Teaser view of Categories displaying improperly
+    -   "Read More" capitzalized via CSS instead of hard-coded
+
+    Includes:
+
+    -   `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/730>
+    -   `custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/107>
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/704>
+
+* * *
+
+-   ### Issue and Issue Archive use Media Library images
+
+    Changes the Issue cover image field to use the Media Library images rather than the default. This change requires creating an additional consumer in `Focal Image Enable` to use un-cropped image styles from JSON:API as well as modifying the Issue Archive build process to use that un-cropped image.
+
+    Includes:
+
+    -   `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/707>
+    -   `tiamat-custom-entities` =>  <https://github.com/CuBoulder/tiamat-custom-entities/pull/105>
+    -   `ucb-focal-image-enable` => <https://github.com/CuBoulder/ucb_focal_image_enable/pull/8>
+
+    Resolves [#104 ](https://github.com/CuBoulder/tiamat-custom-entities/issues/104)
+
+* * *
+
+-   ### update text field for video reveal
+    Closes <https://github.com/CuBoulder/tiamat-theme/issues/662>.
+    Changes the text field for video reveal.
+
+* * *
+
+-   ### Collection Item Page Preview Page
+    Closes #101.
+    Changes the preview field into a full html field.
+
+* * *
+
+-   ### Content Row: Block Changes
+
+    Adjusts the following on the `Content Row` blocks:
+
+    -   On the "Configure Block" modal, switched the order of the tabs so 'Row Content' is on the left and open by default and 'Row Design' is on the right and hidden
+    -   Added three teaser displays: `Large Teaser`, `Large Teaser Alternate`, and `Teaser`. Previously the teaser displays available were Teaser and Teaser Alternate.
+    -   The `Large Teaser` and `Large Teaser Alternate` displays use the focal image wide style images rather than square.
+    -   Adjusts style of the `Teaser` display to mirror other teaser-list style elements, such as the Article List. 
+    -   Adjusted style of the `Tile` style display to more closely mirror the D7 version, which achieved the tile effect with images and text alternating. 
+    -   Fixes bug where internal links, such as `/homepage` would cause a WSOD when added to Row Layout Content
+
+    Includes:
+
+    -   `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/687>
+    -   `custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/99>
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/673>
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/674>
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/675>
+
+* * *
+
+-   ### Content Sequence fixes.
+    Helps close content sequence tickets.
+    Sister pull request in <https://github.com/CuBoulder/tiamat-theme/pull/685>.
+
+* * *
+
+-   ### Social Media Block entities
+    Helps close <https://github.com/CuBoulder/tiamat-theme/issues/12>.
+    Adds custom entities for social media block
+
+* * *
+
+-   ### Class Note + Class Note List Changes
+
+    -   Adds images and adjusts the style of the `Class Notes List` page to mirror the Teaser-List display of other List-type nodes
+    -   Allows for `Class Note` Content types to have multiple images (custom-entities)
+
+    Includes:
+
+    -   `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/657>
+    -   `tiamat-custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/95>
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/206>
+
+* * *
+
+-   ### Class Note Enhancements
+
+    Adjusts permissions for Class Notes, adds optional image field. Resolves <https://github.com/CuBoulder/tiamat-theme/issues/622>
+
+    Includes:
+
+    -   tiamat-theme => <https://github.com/CuBoulder/tiamat-theme/pull/648>
+    -   tiamat-profile => <https://github.com/CuBoulder/tiamat10-profile/pull/75>
+    -   custom-entities => <https://github.com/CuBoulder/tiamat-custom-entities/pull/94>
+
+* * *
+
+-   ### Adds Collection Grid block and Collection Item content type
+    Helps close <https://github.com/CuBoulder/tiamat-theme/issues/534>.
+    Adds the entities for the collection grid and collection item pages.
+
+* * *
+
+-   ### FAQ Content Type
+
+    Adds the FAQ Content Type. Resolves <https://github.com/CuBoulder/tiamat-theme/issues/620>
+
+    Includes:
+
+    -   tiamat-theme (issue/tiamat-theme/620) => <https://github.com/CuBoulder/tiamat-theme/pull/641>
+    -   custom-entities (issue/tiamat-theme/620) => <https://github.com/CuBoulder/tiamat-custom-entities/pull/92>
+    -   ucb-admin-menus (issue/tiamat-theme/620) => <https://github.com/CuBoulder/ucb_admin_menus/pull/20>
+
+* * *
+
+-   ### Adds Class Note Page + Class Notes List Page
+
+    Adds the `Class Note` Node and `Class Note List` node. A Class Note List Page lists your Class Notes and has built in filters to allow visitors to filter by year or sort by class year or date posted.
+
+    Includes:
+    `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/621>
+    `tiamat-custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/91>
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/588>
+
+* * *
+
+-   ### Video hero unit separation setup
+
+    Set up files for the separated hero units
+
+    Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/606>
+
+* * *
 
 ## [20231212] - 2023-12-12
 
@@ -733,7 +806,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20231212...HEAD
+[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240513...HEAD
+
+[20240513]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20231212...20240513
 
 [20231212]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20230918...20231212
 
