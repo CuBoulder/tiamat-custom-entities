@@ -94,26 +94,6 @@ third_party_settings:
               suggestion: main
             weight: 0
             additional: {  }
-          d0f3fe35-b443-4419-842c-4eee36066f93:
-            uuid: d0f3fe35-b443-4419-842c-4eee36066f93
-            region: second
-            configuration:
-              id: 'menu_block:secondary'
-              label: 'Secondary menu'
-              label_display: '0'
-              provider: menu_block
-              context_mapping: {  }
-              follow: false
-              follow_parent: child
-              label_link: false
-              label_type: block
-              level: 2
-              depth: 0
-              expand_all_items: false
-              parent: 'secondary:'
-              suggestion: secondary
-            weight: 1
-            additional: {  }
           33798309-27b1-4a55-9f74-f17591cf1d4f:
             uuid: 33798309-27b1-4a55-9f74-f17591cf1d4f
             region: second
