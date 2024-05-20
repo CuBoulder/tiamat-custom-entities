@@ -12,6 +12,7 @@ dependencies:
     - field.field.block_content.text_block.field_bs_icon_color
     - field.field.block_content.text_block.field_bs_icon_position
     - field.field.block_content.text_block.field_bs_icon_size
+    - field.field.block_content.text_block.field_bs_text_block_alert
     - field.field.block_content.text_block.field_bs_title_font_scale
     - field.field.block_content.text_block.field_text_block_body
   module:
@@ -135,6 +136,7 @@ third_party_settings:
     group_bs_block_style:
       children:
         - field_bs_background_style
+        - field_bs_text_block_alert
       label: 'Block Style'
       region: content
       parent_name: group_bs_styles
@@ -207,6 +209,13 @@ content:
     weight: 6
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_bs_text_block_alert:
+    type: boolean_checkbox
+    weight: 13
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_bs_title_font_scale:
     type: options_select
