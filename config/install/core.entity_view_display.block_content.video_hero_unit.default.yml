@@ -31,6 +31,20 @@ targetEntityType: block_content
 bundle: video_hero_unit
 mode: default
 content:
+  field_bs_background_style:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_bs_content_font_scale:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
   field_bs_heading:
     type: list_default
     label: hidden
@@ -115,8 +129,6 @@ content:
     weight: 1
     region: content
 hidden:
-  field_bs_background_style: true
-  field_bs_content_font_scale: true
   field_hero_background_video: true
   field_hero_overlay: true
   field_link_color: true

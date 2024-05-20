@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Video Hero Block: Enables background color block style
+  ### Video Hero Block
+  Enables the background style on the Video Hero block. Previously this field was disabled on the block's display.
+  
+  Includes:
+  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/989
+  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/144
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/988
+---
+
 ## [20240513] - 2024-05-13
 
 -   ### Update core.entity_view_display.block_content.video_hero_unit.default.yml
