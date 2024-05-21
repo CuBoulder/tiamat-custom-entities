@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Adds Alert setting to Text Block
+  ### Text Block
+  Adds a new "Alert" style to the Text Block, useful for alerts or notifications on your site.
+  
+  
+  Includes:
+  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/991
+  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/145
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/880
+---
+
 - ### Video Hero Block: Enables background color block style
   ### Video Hero Block
   Enables the background style on the Video Hero block. Previously this field was disabled on the block's display.
