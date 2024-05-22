@@ -18,7 +18,7 @@ settings:
       label: White
     -
       value: bs_background_style_gray
-      label: Gray
+      label: 'Light Gray'
     -
       value: bs_background_style_dark_gray
       label: 'Dark Gray'
