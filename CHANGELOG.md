@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Update field.storage.block_content.field_bs_background_style.yml
+  Switched 'gray' to 'light gray' for site setting consistency.
+  
+  Resolves #146 
+---
+
 - ### Adds Alert setting to Text Block
   ### Text Block
   Adds a new "Alert" style to the Text Block, useful for alerts or notifications on your site.
