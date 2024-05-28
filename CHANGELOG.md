@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Updates form display of Content Sequence block
+  This update includes two modifications to the Content Sequence block's form display:
+  - [Bug] Restores missing block info description for Content Sequence blocks added using Block Layout.
+  - [Remove] Removes stray description field previously used for the advanced Content Sequence. CuBoulder/tiamat-theme#934; Resolves CuBoulder/tiamat-custom-entities#142 
+---
+
 - ### Update field.storage.block_content.field_bs_background_style.yml
   Switched 'gray' to 'light gray' for site setting consistency.
   
