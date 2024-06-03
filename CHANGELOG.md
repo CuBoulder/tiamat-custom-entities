@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Adds secondary and footer menus as allowed options for class notes list pages
+  Resolves #149
+---
+
 - ### Updates form display of Content Sequence block
   This update includes two modifications to the Content Sequence block's form display:
   - [Bug] Restores missing block info description for Content Sequence blocks added using Block Layout.
