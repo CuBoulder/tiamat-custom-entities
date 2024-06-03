@@ -7,7 +7,9 @@ dependencies:
 third_party_settings:
   menu_ui:
     available_menus:
+      - footer
       - main
+      - secondary
     parent: 'main:'
   scheduler:
     expand_fieldset: when_required
