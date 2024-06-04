@@ -9,44 +9,57 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- ### Adds secondary and footer menus as allowed options for class notes list pages
-  Resolves #149
----
+## [20240604] - 2024-06-04
 
-- ### Updates form display of Content Sequence block
-  This update includes two modifications to the Content Sequence block's form display:
-  - [Bug] Restores missing block info description for Content Sequence blocks added using Block Layout.
-  - [Remove] Removes stray description field previously used for the advanced Content Sequence. CuBoulder/tiamat-theme#934; Resolves CuBoulder/tiamat-custom-entities#142 
----
+-   ### Adds secondary and footer menus as allowed options for class notes list pages
+    Resolves #149
 
-- ### Update field.storage.block_content.field_bs_background_style.yml
-  Switched 'gray' to 'light gray' for site setting consistency.
-  
-  Resolves #146 
----
+* * *
 
-- ### Adds Alert setting to Text Block
-  ### Text Block
-  Adds a new "Alert" style to the Text Block, useful for alerts or notifications on your site.
-  
-  
-  Includes:
-  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/991
-  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/145
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/880
----
+-   ### Updates form display of Content Sequence block
+    This update includes two modifications to the Content Sequence block's form display:
+    -   [Bug] Restores missing block info description for Content Sequence blocks added using Block Layout.
+    -   [Remove] Removes stray description field previously used for the advanced Content Sequence. CuBoulder/tiamat-theme#934; Resolves CuBoulder/tiamat-custom-entities#142 
 
-- ### Video Hero Block: Enables background color block style
-  ### Video Hero Block
-  Enables the background style on the Video Hero block. Previously this field was disabled on the block's display.
-  
-  Includes:
-  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/989
-  - `custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/144
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/988
----
+* * *
+
+-   ### Update field.storage.block_content.field_bs_background_style.yml
+
+    Switched 'gray' to 'light gray' for site setting consistency.
+
+    Resolves #146 
+
+* * *
+
+-   ### Adds Alert setting to Text Block
+
+    ### Text Block
+
+    Adds a new "Alert" style to the Text Block, useful for alerts or notifications on your site.
+
+    Includes:
+
+    -   `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/991>
+    -   `custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/145>
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/880>
+
+* * *
+
+-   ### Video Hero Block: Enables background color block style
+
+    ### Video Hero Block
+
+    Enables the background style on the Video Hero block. Previously this field was disabled on the block's display.
+
+    Includes:
+
+    -   `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/989>
+    -   `custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/144>
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/988>
+
+* * *
 
 ## [20240513] - 2024-05-13
 
@@ -845,7 +858,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240513...HEAD
+[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240604...HEAD
+
+[20240604]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240513...20240604
 
 [20240513]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20231212...20240513
 
