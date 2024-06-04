@@ -1,4 +1,4 @@
-# CU Boulder Drupal 9+ Custom Entities
+# CU Boulder Drupal 10+ Custom Entities
 
 All notable changes to this project will be documented in this file.
 
