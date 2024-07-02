@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Image Gallery Masonry changes
+  Helps close https://github.com/CuBoulder/tiamat-theme/issues/1085.
+  Sister Pull Request with https://github.com/CuBoulder/tiamat-theme/pull/1094.
+  Adds the necessary entities to enable the masonry option for image galleries.
+---
+
 ## [20240604] - 2024-06-04
 
 -   ### Adds secondary and footer menus as allowed options for class notes list pages

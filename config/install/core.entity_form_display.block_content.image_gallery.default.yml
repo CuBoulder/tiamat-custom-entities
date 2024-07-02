@@ -14,6 +14,8 @@ dependencies:
     - field.field.block_content.image_gallery.field_bs_icon_size
     - field.field.block_content.image_gallery.field_bs_title_font_scale
     - field.field.block_content.image_gallery.field_image_gallery_photo
+    - field.field.block_content.image_gallery.field_masonry_columns
+    - field.field.block_content.image_gallery.field_masonry_display
   module:
     - field_group
     - media_library
@@ -23,6 +25,7 @@ third_party_settings:
     group_tabs:
       children:
         - group_content
+        - group_masonry_style
         - group_styles
       label: Tabs
       region: content
@@ -41,7 +44,7 @@ third_party_settings:
       label: Content
       region: content
       parent_name: group_tabs
-      weight: 2
+      weight: 5
       format_type: tab
       format_settings:
         classes: ''
@@ -60,7 +63,7 @@ third_party_settings:
       label: Styles
       region: content
       parent_name: group_tabs
-      weight: 3
+      weight: 7
       format_type: tab
       format_settings:
         classes: ''
@@ -148,6 +151,22 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
+    group_masonry_style:
+      children:
+        - field_masonry_display
+        - field_masonry_columns
+      label: 'Masonry Style'
+      region: hidden
+      parent_name: group_tabs
+      weight: 6
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
 id: block_content.image_gallery.default
 targetEntityType: block_content
 bundle: image_gallery
@@ -167,19 +186,19 @@ content:
     third_party_settings: {  }
   field_bs_heading:
     type: options_select
-    weight: 7
+    weight: 28
     region: content
     settings: {  }
     third_party_settings: {  }
   field_bs_heading_alignment:
     type: options_select
-    weight: 8
+    weight: 29
     region: content
     settings: {  }
     third_party_settings: {  }
   field_bs_heading_style:
     type: options_select
-    weight: 9
+    weight: 31
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -193,7 +212,7 @@ content:
     third_party_settings: {  }
   field_bs_icon_color:
     type: options_select
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -217,10 +236,23 @@ content:
     third_party_settings: {  }
   field_image_gallery_photo:
     type: media_library_widget
-    weight: 26
+    weight: 6
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_masonry_columns:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_masonry_display:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   info:
     type: string_textfield

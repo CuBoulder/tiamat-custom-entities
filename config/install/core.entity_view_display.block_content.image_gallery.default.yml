@@ -14,6 +14,8 @@ dependencies:
     - field.field.block_content.image_gallery.field_bs_icon_size
     - field.field.block_content.image_gallery.field_bs_title_font_scale
     - field.field.block_content.image_gallery.field_image_gallery_photo
+    - field.field.block_content.image_gallery.field_masonry_columns
+    - field.field.block_content.image_gallery.field_masonry_display
   module:
     - options
     - text
@@ -100,5 +102,22 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_masonry_columns:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_masonry_display:
+    type: boolean
+    label: above
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 11
     region: content
 hidden: {  }
