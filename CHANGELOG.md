@@ -9,11 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- ### Image Gallery Masonry changes
-  Helps close https://github.com/CuBoulder/tiamat-theme/issues/1085.
-  Sister Pull Request with https://github.com/CuBoulder/tiamat-theme/pull/1094.
-  Adds the necessary entities to enable the masonry option for image galleries.
----
+## [20240711] - 2024-07-11
+
+-   ### Image Gallery Masonry changes
+    Helps close <https://github.com/CuBoulder/tiamat-theme/issues/1085>.
+    Sister Pull Request with <https://github.com/CuBoulder/tiamat-theme/pull/1094>.
+    Adds the necessary entities to enable the masonry option for image galleries.
+
+* * *
 
 ## [20240604] - 2024-06-04
 
@@ -864,7 +867,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240604...HEAD
+[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240711...HEAD
+
+[20240711]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240604...20240711
 
 [20240604]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240513...20240604
 
