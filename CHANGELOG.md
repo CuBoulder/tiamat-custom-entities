@@ -9,6 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Image Styles: Adds 'Original Image Size' style, adjusts small
+  ### Image Styles
+  - Adds new 'Original Image Size' image style to WYSIWYG and Full HTML
+  - Adjusts the 'Small' Image Size to be 375px wide, mirroring D7. Previously this was set to 500px.
+  
+  Includes:
+  - `tiamat-custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/155
+  - `tiamat-profile` => https://github.com/CuBoulder/tiamat10-profile/pull/177
+  
+  
+  Resolves #154 
+---
+
 ## [20240711] - 2024-07-11
 
 -   ### Image Gallery Masonry changes
