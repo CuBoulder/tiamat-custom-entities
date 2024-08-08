@@ -74,8 +74,7 @@ third_party_settings:
         description: ''
         required_fields: true
     group_block_styles:
-      children:
-        - field_bs_background_style
+      children: {  }
       label: 'Block Styles'
       region: content
       parent_name: group_styles
@@ -123,7 +122,8 @@ third_party_settings:
         description: ''
         required_fields: true
     group_block_style:
-      children: {  }
+      children:
+        - field_bs_background_style
       label: 'Block Style'
       region: content
       parent_name: group_styles
