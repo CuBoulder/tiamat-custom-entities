@@ -39,12 +39,13 @@ third_party_settings:
         width_breakpoint: 640
     group_content:
       children:
+        - info
         - field_ucb_slate_form_id
         - field_ucb_slate_form_domain
       label: Content
       region: content
       parent_name: group_tabs
-      weight: 2
+      weight: 1
       format_type: tab
       format_settings:
         classes: ''
@@ -63,7 +64,7 @@ third_party_settings:
       label: Styles
       region: content
       parent_name: group_tabs
-      weight: 3
+      weight: 2
       format_type: tab
       format_settings:
         classes: ''
@@ -73,8 +74,7 @@ third_party_settings:
         description: ''
         required_fields: true
     group_block_styles:
-      children:
-        - field_bs_background_style
+      children: {  }
       label: 'Block Styles'
       region: content
       parent_name: group_styles
@@ -122,7 +122,8 @@ third_party_settings:
         description: ''
         required_fields: true
     group_block_style:
-      children: {  }
+      children:
+        - field_bs_background_style
       label: 'Block Style'
       region: content
       parent_name: group_styles
@@ -188,7 +189,7 @@ content:
     third_party_settings: {  }
   field_bs_icon:
     type: text_textarea
-    weight: 2
+    weight: 1
     region: content
     settings:
       rows: 1
@@ -196,19 +197,19 @@ content:
     third_party_settings: {  }
   field_bs_icon_color:
     type: options_select
-    weight: 4
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_bs_icon_position:
     type: options_select
-    weight: 3
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_bs_icon_size:
     type: options_select
-    weight: 6
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -220,13 +221,21 @@ content:
     third_party_settings: {  }
   field_ucb_slate_form_domain:
     type: link_default
-    weight: 1
+    weight: 2
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
   field_ucb_slate_form_id:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
     type: string_textfield
     weight: 0
     region: content
@@ -236,4 +245,3 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  info: true

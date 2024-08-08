@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Slate Form: Allows a Block Description & Config Fixes
+  ### Slate Form
+  Enables a hidden Block Description so users can add in information to make their reuseable block more easily identifiable when going to `/admin/content`
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/1171
+  
+  ### Dev Config Fix
+  A previously commit broke some config in `filter.format` files for wysiwyg and full html, preventing devs from reinstalling via `lando install-site`.  This has been corrected.
+  
+  Related: https://github.com/CuBoulder/tiamat-theme/pull/1182
+---
+
 - ### Image Styles: Adds 'Original Image Size' style, adjusts small
   ### Image Styles
   - Adds new 'Original Image Size' image style to WYSIWYG and Full HTML
