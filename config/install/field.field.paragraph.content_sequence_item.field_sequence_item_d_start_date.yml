@@ -8,7 +8,7 @@ id: paragraph.content_sequence_item.field_sequence_item_d_start_date
 field_name: field_sequence_item_d_start_date
 entity_type: paragraph
 bundle: content_sequence_item
-label: 'Item Display Start Date'
+label: 'Display date'
 description: ''
 required: false
 translatable: false

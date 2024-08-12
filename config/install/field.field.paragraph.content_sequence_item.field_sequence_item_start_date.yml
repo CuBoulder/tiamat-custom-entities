@@ -10,8 +10,8 @@ id: paragraph.content_sequence_item.field_sequence_item_start_date
 field_name: field_sequence_item_start_date
 entity_type: paragraph
 bundle: content_sequence_item
-label: 'Start date'
-description: 'The starting date of the content sequence item. This field is required for advanced content sequences.'
+label: Date
+description: 'The date of the content sequence item.'
 required: false
 translatable: false
 default_value: {  }
