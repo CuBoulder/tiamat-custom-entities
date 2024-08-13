@@ -1,0 +1,11 @@
+uuid: 8625db82-6342-468c-9c10-6cb571017794
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.colorbox_small_thumbnail
+label: 'Colorbox Small - Thumbnail'
+description: 'Image width is sized to 100 pixels; lightbox added.'
+targetEntityType: media
+cache: true
