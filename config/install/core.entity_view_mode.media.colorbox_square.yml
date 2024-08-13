@@ -1,0 +1,11 @@
+uuid: a1f845c8-c283-4836-bb7f-c37b7c4e5a60
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.colorbox_square
+label: 'Colorbox Square'
+description: 'Image cropped to a square, 180 pixels per side; lightbox added. '
+targetEntityType: media
+cache: true

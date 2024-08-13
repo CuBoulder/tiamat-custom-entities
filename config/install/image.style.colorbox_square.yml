@@ -1,0 +1,15 @@
+uuid: 7797e62a-3967-462c-9ad0-0f885d2d5b0d
+langcode: en
+status: true
+dependencies: {  }
+name: colorbox_square
+label: 'Colorbox Square'
+effects:
+  fc5b2ad7-0c69-4d9e-abe0-ea308bfdc080:
+    uuid: fc5b2ad7-0c69-4d9e-abe0-ea308bfdc080
+    id: image_crop
+    weight: 1
+    data:
+      width: 180
+      height: 180
+      anchor: center-center
