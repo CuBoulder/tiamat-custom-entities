@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Hides "End Date" fields from Content Sequence items
+  These fields aren't currently used anywhere and do nothing. This update hides them.
+  
+  [remove] Resolves CuBoulder/tiamat-custom-entities#158
+---
+
 - ### New Image Styles: Colorbox Image Styles
   Adds config files for Colorbox style images
   
