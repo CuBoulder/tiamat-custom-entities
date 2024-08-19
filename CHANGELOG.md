@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### 'Small Square' Image Style size adjustments
+  ### Image Style: Small Square
+  Adjusts the `Small Square` image style size to mirror the `Small` image style sizing, reducing the width from 500px to 375px. 
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/1222
+---
+
 - ### Content Entities for Mega Menu
   Closes https://github.com/CuBoulder/tiamat-theme/issues/629.
   Adds the necessary content entities for the mega menu.
