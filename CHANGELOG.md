@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Content Entities for Mega Menu
+  Closes https://github.com/CuBoulder/tiamat-theme/issues/629.
+  Adds the necessary content entities for the mega menu.
+---
+
 ## [20240814] - 2024-08-14
 
 -   ### Hides "End Date" fields from Content Sequence items
