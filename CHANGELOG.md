@@ -9,24 +9,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- ### Focal Point Update
-  Added focal point to all cropping image styles.
-  Colorbox styles have the focal point added but will still be uncropped due to templating limitations for now.
-  
-  Sister PR: https://github.com/CuBoulder/tiamat10-profile/pull/192
----
+## [20240821] - 2024-08-21
 
-- ### 'Small Square' Image Style size adjustments
-  ### Image Style: Small Square
-  Adjusts the `Small Square` image style size to mirror the `Small` image style sizing, reducing the width from 500px to 375px. 
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/1222
----
+-   ### Focal Point Update
 
-- ### Content Entities for Mega Menu
-  Closes https://github.com/CuBoulder/tiamat-theme/issues/629.
-  Adds the necessary content entities for the mega menu.
----
+    Added focal point to all cropping image styles.
+    Colorbox styles have the focal point added but will still be uncropped due to templating limitations for now.
+
+    Sister PR: <https://github.com/CuBoulder/tiamat10-profile/pull/192>
+
+* * *
+
+-   ### 'Small Square' Image Style size adjustments
+
+    ### Image Style: Small Square
+
+    Adjusts the `Small Square` image style size to mirror the `Small` image style sizing, reducing the width from 500px to 375px. 
+
+    Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1222>
+
+* * *
+
+-   ### Content Entities for Mega Menu
+    Closes <https://github.com/CuBoulder/tiamat-theme/issues/629>.
+    Adds the necessary content entities for the mega menu.
+
+* * *
 
 ## [20240814] - 2024-08-14
 
@@ -946,7 +954,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240814...HEAD
+[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240821...HEAD
+
+[20240821]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240814...20240821
 
 [20240814]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240711...20240814
 
