@@ -18,10 +18,10 @@ settings:
       label: 'Widescreen - 1600x900'
     -
       value: '2'
-      label: '3:2 - 1500x500'
+      label: 'Large 3:2 - 1500x1000'
     -
       value: '3'
-      label: Large
+      label: 'Original'
   allowed_values_function: ''
 module: options
 locked: false
