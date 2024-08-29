@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Updates `core.entity_form_display.node.ucb_person.default.yml`
+  [bug] This update adds the missing author information to Person nodes to match our other content types. Resolves CuBoulder/tiamat-custom-entities#166
+---
+
 - ### New Image styles issue/1240
   Added three new image styles:
   Slider Ultrawide (1600x600)
