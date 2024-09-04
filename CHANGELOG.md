@@ -9,31 +9,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- ### Content list update
-  Helps close https://github.com/CuBoulder/tiamat-theme/pull/1265.
-  Adds the necessary entity changes to allow collection item pages to be used in the content list.
----
+## [20240904] - 2024-09-04
 
-- ### Updates `core.entity_form_display.node.ucb_person.default.yml`
-  [bug] This update adds the missing author information to Person nodes to match our other content types. Resolves CuBoulder/tiamat-custom-entities#166
----
+-   ### Content list update
+    Helps close <https://github.com/CuBoulder/tiamat-theme/pull/1265>.
+    Adds the necessary entity changes to allow collection item pages to be used in the content list.
 
-- ### New Image styles issue/1240
-  Added three new image styles:
-  Slider Ultrawide (1600x600)
-  Slider Widescreen (1600:900)
-  Slider 3:2 (1500:1000)
-  
-  Each style has the proper sizing dictated by Kevin
-  The Slider block has been updated to have the proper names and sizes associated with them.
-  The slide paragraph now has the default image style set to Original.
-  The slider block template has had it's sizing logic moved to the paragraph slide template.
-  The paragraph slide template uses parent logic to check what side the slider is going to be and applies the appropriate style to each image.
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1252
-  
-  Closes #1240 
----
+* * *
+
+-   ### Updates `core.entity_form_display.node.ucb_person.default.yml`
+    [bug] This update adds the missing author information to Person nodes to match our other content types. Resolves CuBoulder/tiamat-custom-entities#166
+
+* * *
+
+-   ### New Image styles issue/1240
+
+    Added three new image styles:
+    Slider Ultrawide (1600x600)
+    Slider Widescreen (1600:900)
+    Slider 3:2 (1500:1000)
+
+    Each style has the proper sizing dictated by Kevin
+    The Slider block has been updated to have the proper names and sizes associated with them.
+    The slide paragraph now has the default image style set to Original.
+    The slider block template has had it's sizing logic moved to the paragraph slide template.
+    The paragraph slide template uses parent logic to check what side the slider is going to be and applies the appropriate style to each image.
+
+    Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1252>
+
+    Closes #1240 
+
+* * *
 
 ## [20240821] - 2024-08-21
 
@@ -980,7 +986,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240821...HEAD
+[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240904...HEAD
+
+[20240904]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240821...20240904
 
 [20240821]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240814...20240821
 
