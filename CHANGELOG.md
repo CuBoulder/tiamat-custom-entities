@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Content list update
+  Helps close https://github.com/CuBoulder/tiamat-theme/pull/1265.
+  Adds the necessary entity changes to allow collection item pages to be used in the content list.
+---
+
 - ### Updates `core.entity_form_display.node.ucb_person.default.yml`
   [bug] This update adds the missing author information to Person nodes to match our other content types. Resolves CuBoulder/tiamat-custom-entities#166
 ---
