@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Article thumbnail style change 
+  This is a change to the article's thumbnail display so that cropping works properly across our various blocks.
+  This is one of several incoming changes for issue #1249
+  https://github.com/CuBoulder/tiamat-theme/issues/1249
+---
+
 ## [20240911] - 2024-09-11
 
 ## [20240904] - 2024-09-04
