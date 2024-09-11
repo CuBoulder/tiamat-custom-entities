@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20240911] - 2024-09-11
+
 ## [20240904] - 2024-09-04
 
 -   ### Content list update
@@ -986,7 +988,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240904...HEAD
+[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240911...HEAD
+
+[20240911]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240904...20240911
 
 [20240904]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240821...20240904
 
