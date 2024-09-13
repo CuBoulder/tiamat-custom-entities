@@ -1,4 +1,3 @@
-uuid: cb517783-4716-4596-b210-c54a71976dc9
 langcode: en
 status: true
 dependencies:
@@ -16,8 +15,6 @@ third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
-_core:
-  default_config_hash: DPQF7FpejmJUfV4hf2yaf_0JlDpTAojB9_lOIX2Zq6I
 id: media.image.colorbox_small_thumbnail
 targetEntityType: media
 bundle: image

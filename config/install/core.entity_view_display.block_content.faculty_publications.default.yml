@@ -13,9 +13,13 @@ dependencies:
     - field.field.block_content.faculty_publications.field_bs_icon_position
     - field.field.block_content.faculty_publications.field_bs_icon_size
     - field.field.block_content.faculty_publications.field_bs_title_font_scale
+    - field.field.block_content.faculty_publications.field_faculty_publications_count
     - field.field.block_content.faculty_publications.field_faculty_publications_dpt
     - field.field.block_content.faculty_publications.field_faculty_publications_email
     - field.field.block_content.faculty_publications.field_faculty_publications_from
+    - field.field.block_content.faculty_publications.field_faculty_publications_jt
+    - field.field.block_content.faculty_publications.field_faculty_publications_p
+    - field.field.block_content.faculty_publications.field_faculty_publications_sort
     - field.field.block_content.faculty_publications.field_faculty_publications_to
   module:
     - datetime
@@ -96,6 +100,13 @@ content:
     third_party_settings: {  }
     weight: 13
     region: content
+  field_faculty_publications_count:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: content
   field_faculty_publications_dpt:
     type: string
     label: above
@@ -119,6 +130,29 @@ content:
       format_type: medium
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_faculty_publications_jt:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_faculty_publications_p:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_faculty_publications_sort:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
     region: content
   field_faculty_publications_to:
     type: datetime_default

@@ -9,7 +9,7 @@ field_name: field_faculty_publications_email
 entity_type: block_content
 bundle: faculty_publications
 label: 'Faculty email'
-description: ''
+description: 'University of Colorado Boulder faculty email as it appears on <a target="_blank" href="https://experts.colorado.edu/people">CU Experts</a>.'
 required: false
 translatable: false
 default_value: {  }
