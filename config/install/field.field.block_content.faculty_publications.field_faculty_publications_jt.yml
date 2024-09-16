@@ -10,7 +10,7 @@ field_name: field_faculty_publications_jt
 entity_type: block_content
 bundle: faculty_publications
 label: 'Job type'
-description: 'Choose one or more job type to include. All people with the corresponding job type will be included.'
+description: 'Choose one or more job types to include. All people with the corresponding job type will be included.'
 required: false
 translatable: false
 default_value: {  }
