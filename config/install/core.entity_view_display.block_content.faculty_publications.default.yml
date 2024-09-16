@@ -13,6 +13,7 @@ dependencies:
     - field.field.block_content.faculty_publications.field_bs_icon_position
     - field.field.block_content.faculty_publications.field_bs_icon_size
     - field.field.block_content.faculty_publications.field_bs_title_font_scale
+    - field.field.block_content.faculty_publications.field_faculty_publications_auto
     - field.field.block_content.faculty_publications.field_faculty_publications_count
     - field.field.block_content.faculty_publications.field_faculty_publications_dpt
     - field.field.block_content.faculty_publications.field_faculty_publications_email
@@ -99,6 +100,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 13
+    region: content
+  field_faculty_publications_auto:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 18
     region: content
   field_faculty_publications_count:
     type: list_default

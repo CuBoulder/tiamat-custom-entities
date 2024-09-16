@@ -13,6 +13,7 @@ dependencies:
     - field.field.block_content.faculty_publications.field_bs_icon_position
     - field.field.block_content.faculty_publications.field_bs_icon_size
     - field.field.block_content.faculty_publications.field_bs_title_font_scale
+    - field.field.block_content.faculty_publications.field_faculty_publications_auto
     - field.field.block_content.faculty_publications.field_faculty_publications_count
     - field.field.block_content.faculty_publications.field_faculty_publications_dpt
     - field.field.block_content.faculty_publications.field_faculty_publications_email
@@ -30,8 +31,8 @@ third_party_settings:
     group_content:
       children:
         - group_publication_date
-        - group_on_this_site
         - group_custom
+        - group_on_this_site
       label: Filters
       region: content
       parent_name: group_tabs
@@ -167,12 +168,13 @@ third_party_settings:
       region: content
       parent_name: group_content
       weight: 9
-      format_type: fieldset
+      format_type: details
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
         label_as_html: false
+        open: true
         description: ''
         required_fields: true
     group_sort:
@@ -196,10 +198,10 @@ third_party_settings:
       children:
         - field_faculty_publications_p
         - field_faculty_publications_jt
-      label: 'On this site'
+      label: 'Authors – On this site'
       region: content
       parent_name: group_content
-      weight: 10
+      weight: 11
       format_type: details
       format_settings:
         classes: ''
@@ -207,16 +209,17 @@ third_party_settings:
         id: ''
         label_as_html: false
         open: true
-        description: 'Select from faculty members on this site. The faculty member''s primary email address must match the one on <a target="_blank" href="https://experts.colorado.edu/people">CU Experts</a> or no publications will be returned. Choosing multiple people will include results matching any one person.'
+        description: 'Select from faculty members on this site. The faculty member''s primary email address must match the one on <a target="_blank" href="https://experts.colorado.edu/people">CU Experts</a> or no publications will be returned. Choosing multiple people will include results matching one or more people.'
         required_fields: true
     group_custom:
       children:
         - field_faculty_publications_dpt
         - field_faculty_publications_email
-      label: Custom
+        - field_faculty_publications_auto
+      label: 'Authors – Custom'
       region: content
       parent_name: group_content
-      weight: 11
+      weight: 10
       format_type: details
       format_settings:
         classes: ''
@@ -293,6 +296,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_faculty_publications_auto:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_faculty_publications_count:
     type: options_select
     weight: 27
@@ -309,7 +319,7 @@ content:
     third_party_settings: {  }
   field_faculty_publications_email:
     type: email_default
-    weight: 12
+    weight: 11
     region: content
     settings:
       placeholder: ''
