@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Create image.style.section_background.yml
+  New image style for section backgrounds.
+  Scales to 1920 width, but does not crop height at all.
+  
+  Sister PR: https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/57
+---
+
 - ### Adds the Faculty Publications block
   [new] This update adds the Faculty Publications block. Faculty Publications blocks pull results from [CU Experts](https://experts.colorado.edu/). A variety of filters are available to bring near feature-parity with the version in D7. Notable changes in this version:
   
