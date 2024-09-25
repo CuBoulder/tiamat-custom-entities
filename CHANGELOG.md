@@ -9,11 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- ### Newsletter and Article Nodes: Field Adjustments
-  Adjusts the following fields on the `Article` and `Newsletter` nodes:
-  - Article: Removes 'Sticky at Top'. Resolves https://github.com/CuBoulder/tiamat-theme/issues/1319
-  - Newsletter: Adds 'Published' checkbox to allow Unpublished Newsletters. Resolves https://github.com/CuBoulder/tiamat-theme/issues/1310
----
+## [20240925] - 2024-09-25
+
+-   ### Newsletter and Article Nodes: Field Adjustments
+    Adjusts the following fields on the `Article` and `Newsletter` nodes:
+    -   Article: Removes 'Sticky at Top'. Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1319>
+    -   Newsletter: Adds 'Published' checkbox to allow Unpublished Newsletters. Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1310>
+
+* * *
 
 ## [20240918] - 2024-09-18
 
@@ -1026,7 +1029,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240918...HEAD
+[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240925...HEAD
+
+[20240925]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240918...20240925
 
 [20240918]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240911...20240918
 
