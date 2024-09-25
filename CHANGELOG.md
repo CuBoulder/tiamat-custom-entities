@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Newsletter and Article Nodes: Field Adjustments
+  Adjusts the following fields on the `Article` and `Newsletter` nodes:
+  - Article: Removes 'Sticky at Top'. Resolves https://github.com/CuBoulder/tiamat-theme/issues/1319
+  - Newsletter: Adds 'Published' checkbox to allow Unpublished Newsletters. Resolves https://github.com/CuBoulder/tiamat-theme/issues/1310
+---
+
 ## [20240918] - 2024-09-18
 
 -   ### Create image.style.section_background.yml
