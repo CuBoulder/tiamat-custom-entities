@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Create developer-sandbox-ci.yml
+  new ci workflow
+---
+
+## [20241002] - 2024-10-02
+
 ## [20240925] - 2024-09-25
 
 -   ### Newsletter and Article Nodes: Field Adjustments
@@ -1029,7 +1035,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240925...HEAD
+[Unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241002...HEAD
+
+[20241002]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240925...20241002
 
 [20240925]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240918...20240925
 
