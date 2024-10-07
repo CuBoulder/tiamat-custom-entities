@@ -10,7 +10,7 @@ entity_type: node
 bundle: ucb_article_list
 label: 'Show Tag Filter'
 description: 'Allow visitors to filter on Tags'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
