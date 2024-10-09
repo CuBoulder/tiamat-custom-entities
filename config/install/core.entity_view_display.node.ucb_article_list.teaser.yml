@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.ucb_article_list.body
     - field.field.node.ucb_article_list.field_ucb_exclude_category
     - field.field.node.ucb_article_list.field_ucb_exclude_tag
+    - field.field.node.ucb_article_list.field_ucb_expose_category
+    - field.field.node.ucb_article_list.field_ucb_expose_tag
     - field.field.node.ucb_article_list.field_ucb_filter_by_category
     - field.field.node.ucb_article_list.field_ucb_filter_by_tag
     - node.type.ucb_article_list
@@ -33,5 +35,7 @@ content:
 hidden:
   field_ucb_exclude_category: true
   field_ucb_exclude_tag: true
+  field_ucb_expose_category: true
+  field_ucb_expose_tag: true
   field_ucb_filter_by_category: true
   field_ucb_filter_by_tag: true

@@ -5,6 +5,8 @@ dependencies:
     - field.field.node.ucb_article_list.body
     - field.field.node.ucb_article_list.field_ucb_exclude_category
     - field.field.node.ucb_article_list.field_ucb_exclude_tag
+    - field.field.node.ucb_article_list.field_ucb_expose_category
+    - field.field.node.ucb_article_list.field_ucb_expose_tag
     - field.field.node.ucb_article_list.field_ucb_filter_by_category
     - field.field.node.ucb_article_list.field_ucb_filter_by_tag
     - node.type.ucb_article_list
@@ -18,6 +20,7 @@ third_party_settings:
       children:
         - group_ucb_include_filter
         - group_ucb_exclude_filter
+        - group_ucb_expose_filters
       label: Filters
       region: content
       parent_name: ''
@@ -61,6 +64,23 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
+    group_ucb_expose_filters:
+      children:
+        - field_ucb_expose_category
+        - field_ucb_expose_tag
+      label: 'Expose Filters'
+      region: content
+      parent_name: group_ucb_filters
+      weight: 15
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
 id: node.ucb_article_list.default
 targetEntityType: node
 bundle: ucb_article_list
@@ -93,6 +113,20 @@ content:
     weight: 12
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_ucb_expose_category:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_ucb_expose_tag:
+    type: boolean_checkbox
+    weight: 17
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_ucb_filter_by_category:
     type: options_buttons
