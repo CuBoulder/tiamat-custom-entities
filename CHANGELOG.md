@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Article List Page: Expose Category/Tag Filter Toggle Setting
+  Adds two new toggles to the Article List Page settings, which will expose filters on Categories and Tags for page visitors. This will allow visitors to the page to further filter Articles, which was previously a setting in D7.
+  
+  This will have migration implications. 
+  
+  Includes:
+  - `tiamat-theme` => https://github.com/CuBoulder/tiamat-theme/pull/1387
+  - `tiamat-custom-entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/180
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/pull/1387
+---
+
 ## [20241009] - 2024-10-09
 
 -   ### Create developer-sandbox-ci.yml

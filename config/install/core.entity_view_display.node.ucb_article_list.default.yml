@@ -5,6 +5,8 @@ dependencies:
     - field.field.node.ucb_article_list.body
     - field.field.node.ucb_article_list.field_ucb_exclude_category
     - field.field.node.ucb_article_list.field_ucb_exclude_tag
+    - field.field.node.ucb_article_list.field_ucb_expose_category
+    - field.field.node.ucb_article_list.field_ucb_expose_tag
     - field.field.node.ucb_article_list.field_ucb_filter_by_category
     - field.field.node.ucb_article_list.field_ucb_filter_by_tag
     - node.type.ucb_article_list
@@ -36,6 +38,26 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 105
+    region: content
+  field_ucb_expose_category:
+    type: boolean
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_ucb_expose_tag:
+    type: boolean
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 107
     region: content
   field_ucb_filter_by_category:
     type: entity_reference_entity_id
