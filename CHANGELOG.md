@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Updates linter workflow
+  Updates the linter workflow to use the new parent workflow in action-collection.
+  
+  CuBoulder/action-collection#7
+  
+  Sister PR in: All the things
+---
+
 - ### Article List Page: Expose Category/Tag Filter Toggle Setting
   Adds two new toggles to the Article List Page settings, which will expose filters on Categories and Tags for page visitors. This will allow visitors to the page to further filter Articles, which was previously a setting in D7.
   
