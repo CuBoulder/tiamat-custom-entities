@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Updates article date/time formatting default option label
+  [change] Resolves CuBoulder/tiamat-custom-entities#183
+---
+
 ## [20241017] - 2024-10-17
 
 - ### Updates linter workflow
