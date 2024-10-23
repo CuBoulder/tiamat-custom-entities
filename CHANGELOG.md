@@ -9,9 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20241023] - 2024-10-23
+
 - ### Updates article date/time formatting default option label
   [change] Resolves CuBoulder/tiamat-custom-entities#183
----
+
+* * *
 
 ## [20241017] - 2024-10-17
 
@@ -1069,7 +1072,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241017...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241023...HEAD
+[20241023]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241017...20241023
 [20241017]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241009...20241017
 [20241009]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241002...20241009
 [20241002]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20240925...20241002
