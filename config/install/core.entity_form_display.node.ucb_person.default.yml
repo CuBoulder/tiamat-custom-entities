@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_person.body
+    - field.field.node.ucb_person.field_ucb_articles_by_person
     - field.field.node.ucb_person.field_ucb_person_address
     - field.field.node.ucb_person.field_ucb_person_department
     - field.field.node.ucb_person.field_ucb_person_email
@@ -56,6 +57,7 @@ third_party_settings:
         - field_ucb_person_title
         - field_ucb_person_department
         - field_ucb_person_photo
+        - field_ucb_articles_by_person
       label: Personal
       region: content
       parent_name: group_tabs
@@ -137,9 +139,16 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_ucb_articles_by_person:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_ucb_person_address:
     type: text_textarea
@@ -305,7 +314,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
@@ -314,7 +323,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
