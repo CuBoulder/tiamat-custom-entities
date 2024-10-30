@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_person.body
+    - field.field.node.ucb_person.field_ucb_articles_by_person
     - field.field.node.ucb_person.field_ucb_person_address
     - field.field.node.ucb_person.field_ucb_person_department
     - field.field.node.ucb_person.field_ucb_person_email
@@ -120,6 +121,23 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: false
+    group_show_articles_person_side:
+      children:
+        - field_ucb_articles_by_person
+      label: 'Toggle Articles by Person'
+      region: content
+      parent_name: ''
+      weight: 6
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+        weight: 0
 id: node.ucb_person.default
 targetEntityType: node
 bundle: ucb_person
@@ -127,7 +145,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 27
+    weight: 11
     region: content
     settings:
       rows: 9
@@ -137,13 +155,20 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_ucb_articles_by_person:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_ucb_person_address:
     type: text_textarea
-    weight: 12
+    weight: 15
     region: content
     settings:
       rows: 4
@@ -161,7 +186,7 @@ content:
     third_party_settings: {  }
   field_ucb_person_email:
     type: email_default
-    weight: 8
+    weight: 11
     region: content
     settings:
       placeholder: ''
@@ -225,7 +250,7 @@ content:
     third_party_settings: {  }
   field_ucb_person_links:
     type: link_default
-    weight: 11
+    weight: 14
     region: content
     settings:
       placeholder_url: ''
@@ -233,7 +258,7 @@ content:
     third_party_settings: {  }
   field_ucb_person_office_hours:
     type: text_textarea
-    weight: 13
+    weight: 16
     region: content
     settings:
       rows: 5
@@ -241,7 +266,7 @@ content:
     third_party_settings: {  }
   field_ucb_person_phone:
     type: telephone_default
-    weight: 9
+    weight: 12
     region: content
     settings:
       placeholder: ''
@@ -255,7 +280,7 @@ content:
     third_party_settings: {  }
   field_ucb_person_primary_link:
     type: link_default
-    weight: 10
+    weight: 13
     region: content
     settings:
       placeholder_url: ''
