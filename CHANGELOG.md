@@ -9,15 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20241030] - 2024-10-30
+
 - ### Person Page: Adds On / Off Toggle field
+
   Adds an on / off toggle field to make the Articles by Person block on a Person page optional.
-  
+
   Includes:
-  - theme => https://github.com/CuBoulder/tiamat-theme/pull/1437
-  - custom_entities => https://github.com/CuBoulder/tiamat-custom-entities/pull/186
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/1398
----
+
+  - theme => <https://github.com/CuBoulder/tiamat-theme/pull/1437>
+  - custom_entities => <https://github.com/CuBoulder/tiamat-custom-entities/pull/186>
+
+  Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1398>
+
+* * *
 
 ## [20241023] - 2024-10-23
 
@@ -1082,7 +1087,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241023...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241030...HEAD
+[20241030]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241023...20241030
 [20241023]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241017...20241023
 [20241017]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241009...20241017
 [20241009]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241002...20241009
