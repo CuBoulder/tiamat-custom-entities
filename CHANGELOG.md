@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Newsletter: Adds authoring information fields
+  Adds Authored by and Authored On fields to Newsletter nodes
+  
+  Resolves https://github.com/CuBoulder/tiamat-theme/issues/1448
+---
+
 ## [20241030] - 2024-10-30
 
 - ### Person Page: Adds On / Off Toggle field
