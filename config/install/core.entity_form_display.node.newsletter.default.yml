@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.newsletter.field_newsletter_promo_link_one
     - field.field.node.newsletter.field_newsletter_promo_link_two
     - field.field.node.newsletter.field_newsletter_section_block
+    - field.field.node.newsletter.field_newsletter_summary
     - field.field.node.newsletter.field_newsletter_type
     - node.type.newsletter
   module:
@@ -44,6 +45,7 @@ third_party_settings:
         - field_newsletter_type
         - field_newsletter_intro_image
         - field_newsletter_intro_body
+        - field_newsletter_summary
       label: Intro
       region: content
       parent_name: group_newsletter_tabs
@@ -95,7 +97,7 @@ third_party_settings:
       label: Ads/Promos
       region: content
       parent_name: group_newsletter_tabs
-      weight: 6
+      weight: 7
       format_type: tab
       format_settings:
         classes: ''
@@ -191,6 +193,14 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_newsletter_summary:
+    type: string_textarea
+    weight: 26
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_newsletter_type:
     type: options_select
