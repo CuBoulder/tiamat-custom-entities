@@ -15,7 +15,9 @@ dependencies:
     - field.field.block_content.video_hero_unit.field_bs_title_font_scale
     - field.field.block_content.video_hero_unit.field_headline
     - field.field.block_content.video_hero_unit.field_hero_background_video
+    - field.field.block_content.video_hero_unit.field_hero_bottom_padding
     - field.field.block_content.video_hero_unit.field_hero_overlay
+    - field.field.block_content.video_hero_unit.field_hero_top_padding
     - field.field.block_content.video_hero_unit.field_link_color
     - field.field.block_content.video_hero_unit.field_links
     - field.field.block_content.video_hero_unit.field_size
@@ -108,6 +110,24 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_hero_bottom_padding:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_hero_top_padding:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings: {  }
+    weight: 13
     region: content
   field_links:
     type: link
