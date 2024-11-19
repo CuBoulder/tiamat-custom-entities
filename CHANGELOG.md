@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Update image.style.focal_image_wide.yml
+  Updated focal wide image style to be 3:2 instead of 2:1
+  
+  Resolves #190 
+---
+
 - ### Additional height options for video hero unit
   Added top and bottom padding options to the design tab so that users can easily adjust the height of their videos.
   
