@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Additional height options for video hero unit
+  Added top and bottom padding options to the design tab so that users can easily adjust the height of their videos.
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1480
+---
+
 - ### Adds Newsletter List Block and Newsletter Summary Field
   Creates the Newsletter List Block schema. Updates Newsletter schema to include a Summary field. 
   
