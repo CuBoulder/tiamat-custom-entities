@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.newsletter.field_newsletter_promo_link_one
     - field.field.node.newsletter.field_newsletter_promo_link_two
     - field.field.node.newsletter.field_newsletter_section_block
+    - field.field.node.newsletter.field_newsletter_summary
     - field.field.node.newsletter.field_newsletter_type
     - node.type.newsletter
   module:
@@ -117,4 +118,5 @@ content:
 hidden:
   field_newsletter_block_title_one: true
   field_newsletter_block_title_two: true
+  field_newsletter_summary: true
   links: true
