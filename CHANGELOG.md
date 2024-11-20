@@ -9,29 +9,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20241120] - 2024-11-20
+
 - ### Update image.style.focal_image_wide.yml
+
   Updated focal wide image style to be 3:2 instead of 2:1
-  
+
   Resolves #190 
----
+
+* * *
 
 - ### Additional height options for video hero unit
+
   Added top and bottom padding options to the design tab so that users can easily adjust the height of their videos.
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1480
----
+
+  Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1480>
+
+* * *
 
 - ### Adds Newsletter List Block and Newsletter Summary Field
+
   Creates the Newsletter List Block schema. Updates Newsletter schema to include a Summary field. 
-  
+
   Includes:
-  - `theme` => https://github.com/CuBoulder/tiamat-theme/pull/1476
-  - `profile` => https://github.com/CuBoulder/tiamat10-profile/pull/231
-  - `custom-entities`  => https://github.com/CuBoulder/tiamat-custom-entities/pull/192
-  
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/1391
-  Resolves https://github.com/CuBoulder/tiamat-theme/issues/1475
----
+
+  - `theme` => <https://github.com/CuBoulder/tiamat-theme/pull/1476>
+  - `profile` => <https://github.com/CuBoulder/tiamat10-profile/pull/231>
+  - `custom-entities`  => <https://github.com/CuBoulder/tiamat-custom-entities/pull/192>
+
+  Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1391>
+  Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1475>
+
+* * *
 
 ## [20241113] - 2024-11-13
 
@@ -1121,7 +1130,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241113...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241120...HEAD
+[20241120]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241113...20241120
 [20241113]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241030...20241113
 [20241030]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241023...20241030
 [20241023]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241017...20241023
