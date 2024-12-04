@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Create image.style.focal_image_teaser_wide.yml
+  Added new teaser wide style which is 2:1 instead of 3:2
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1529
+---
+
 ## [20241122] - 2024-11-22
 
 ## [20241120] - 2024-11-20
