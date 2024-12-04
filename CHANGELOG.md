@@ -9,11 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20241204] - 2024-12-04
+
 - ### Create image.style.focal_image_teaser_wide.yml
+
   Added new teaser wide style which is 2:1 instead of 3:2
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1529
----
+
+  Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1529>
+
+* * *
 
 ## [20241122] - 2024-11-22
 
@@ -1138,7 +1142,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241122...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241204...HEAD
+[20241204]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241122...20241204
 [20241122]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241120...20241122
 [20241120]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241113...20241120
 [20241113]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241030...20241113
