@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20241211] - 2024-12-11
+
 ## [20241204] - 2024-12-04
 
 - ### Create image.style.focal_image_teaser_wide.yml
@@ -1142,7 +1144,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241204...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241211...HEAD
+[20241211]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241204...20241211
 [20241204]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241122...20241204
 [20241122]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241120...20241122
 [20241120]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241113...20241120
