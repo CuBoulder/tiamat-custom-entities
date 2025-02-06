@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Issue/1597
+  Added schemas for the new paragraph type - article secondary content
+  Updated article paragraph schemas to reflect new addtion
+  Updated reusable paragraph types
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1598
+  
+---
+
 ## [20250115] - 2025-01-15
 
 ## [20241211] - 2024-12-11

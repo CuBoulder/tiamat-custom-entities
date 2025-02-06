@@ -2,43 +2,35 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_article_media_selection
-    - paragraphs.paragraphs_type.article_content
     - paragraphs.paragraphs_type.article_secondary_content
-    - paragraphs.paragraphs_type.blockquote
-    - paragraphs.paragraphs_type.from_library
-    - paragraphs.paragraphs_type.media
   module:
     - entity_reference_revisions
-id: paragraph.article_content.field_article_media_selection
-field_name: field_article_media_selection
-entity_type: paragraph
-bundle: article_content
-label: 'Secondary Content Selection'
-description: "Add media (image/video), stylized blockquotes, or a secondary text block to the section.<br>\r\nSecondary text blocks can be made reusable through the Paragraphs library.<br>\r\nReusable Secondary Text places reusable secondary text from the Paragraphs Library."
-required: false
-translatable: false
+id: paragraphs_library_item.paragraphs_library_item.paragraphs
+field_name: paragraphs
+entity_type: paragraphs_library_item
+bundle: paragraphs_library_item
+label: Paragraphs
+description: ''
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      media: media
-      blockquote: blockquote
       article_secondary_content: article_secondary_content
-      from_library: from_library
     negate: 0
     target_bundles_drag_drop:
       article_content:
-        weight: -13
+        weight: 23
         enabled: false
       article_secondary_content:
         weight: 24
         enabled: true
       blockquote:
-        weight: -14
-        enabled: true
+        weight: 25
+        enabled: false
       collection_grid_filter:
         weight: 26
         enabled: false
@@ -50,13 +42,13 @@ settings:
         enabled: false
       from_library:
         weight: 29
-        enabled: true
+        enabled: false
       grid_layout_content:
         weight: 30
         enabled: false
       media:
-        weight: -15
-        enabled: true
+        weight: 31
+        enabled: false
       mega_menu_links:
         weight: 32
         enabled: false
@@ -76,7 +68,7 @@ settings:
         weight: 37
         enabled: false
       slider_image:
-        weight: -10
+        weight: 38
         enabled: false
       ucb_article_hero:
         weight: 39

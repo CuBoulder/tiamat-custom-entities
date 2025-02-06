@@ -46,7 +46,7 @@ third_party_settings:
       children:
         - field_article_media_selection
         - field_article_media_location
-      label: Media
+      label: 'Secondary Content'
       region: hidden
       parent_name: group_article_tabs
       weight: 7
@@ -55,6 +55,7 @@ third_party_settings:
         classes: ''
         show_empty_fields: false
         id: ''
+        label_as_html: false
         formatter: closed
         description: ''
         required_fields: true
