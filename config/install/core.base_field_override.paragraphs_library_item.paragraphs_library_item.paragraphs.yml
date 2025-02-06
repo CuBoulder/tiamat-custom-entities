@@ -5,7 +5,6 @@ dependencies:
     - paragraphs.paragraphs_type.article_secondary_content
   module:
     - entity_reference_revisions
-    - paragraphs_library
 id: paragraphs_library_item.paragraphs_library_item.paragraphs
 field_name: paragraphs
 entity_type: paragraphs_library_item

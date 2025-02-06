@@ -1,9 +1,5 @@
 langcode: en
 status: true
-dependencies:
-  enforced:
-    module:
-      - paragraphs_library
 id: from_library
 label: 'Reusable Secondary Text'
 icon_uuid: null

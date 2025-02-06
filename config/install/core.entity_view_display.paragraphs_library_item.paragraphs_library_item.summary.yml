@@ -3,8 +3,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraphs_library_item.summary
-  module:
-    - paragraphs_library
 id: paragraphs_library_item.paragraphs_library_item.summary
 targetEntityType: paragraphs_library_item
 bundle: paragraphs_library_item

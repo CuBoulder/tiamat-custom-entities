@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - paragraphs
-    - paragraphs_library
 id: paragraph.field_reusable_paragraph
 field_name: field_reusable_paragraph
 entity_type: paragraph
