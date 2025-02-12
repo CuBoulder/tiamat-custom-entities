@@ -9,14 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20250212] - 2025-02-12
+
 - ### Issue/1597
+
   Added schemas for the new paragraph type - article secondary content
   Updated article paragraph schemas to reflect new addtion
   Updated reusable paragraph types
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1598
-  
----
+
+  Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1598>
+
+* * *
 
 ## [20250115] - 2025-01-15
 
@@ -1155,7 +1158,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250115...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250212...HEAD
+[20250212]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250115...20250212
 [20250115]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241211...20250115
 [20241211]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241204...20241211
 [20241204]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20241122...20241204
