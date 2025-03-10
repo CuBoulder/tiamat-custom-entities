@@ -1,7 +1,7 @@
 name: 'University of Colorado Boulder custom entities'
 description: 'Entity content schemas for the content types used by CU Boulder websites.'
 type: module
-core_version_requirement: '^9 || ^10'
+core_version_requirement: '^10 || ^11'
 dependencies:
   - field
   - field_group
