@@ -9,7 +9,7 @@ field_name: field_slide_duration
 entity_type: block_content
 bundle: ucb_hero_slider
 label: 'Slide Duration'
-description: 'Set time per slide. Between 500 and 6000ms'
+description: 'Set time per slide. Between 1500 and 7000ms'
 required: true
 translatable: false
 default_value: {  }
