@@ -5,5 +5,5 @@ id: hero_slider_image
 label: 'Hero Slider Image'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'The Hero Slider Image paragraph type is used to display a slider of images in the hero section of a page.'
 behavior_plugins: {  }
