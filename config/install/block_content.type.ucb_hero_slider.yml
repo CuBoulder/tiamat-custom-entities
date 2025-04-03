@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ucb_hero_slider
+label: 'Hero Slider'
+revision: false
+description: null

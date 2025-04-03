@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ucb_hero_slider
+    - field.storage.block_content.field_default_text_color
+  module:
+    - options
+id: block_content.ucb_hero_slider.field_default_text_color
+field_name: field_default_text_color
+entity_type: block_content
+bundle: ucb_hero_slider
+label: 'Text Color'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: hero_slide_text_light
+default_value_callback: ''
+settings: {  }
+field_type: list_string

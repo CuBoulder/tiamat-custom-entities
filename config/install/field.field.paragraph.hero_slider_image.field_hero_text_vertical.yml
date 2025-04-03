@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_text_vertical
+    - paragraphs.paragraphs_type.hero_slider_image
+  module:
+    - options
+id: paragraph.hero_slider_image.field_hero_text_vertical
+field_name: field_hero_text_vertical
+entity_type: paragraph
+bundle: hero_slider_image
+label: 'Vertical Text Alignment'
+description: 'Vertical alignment for text: Top, Middle, or Bottom'
+required: true
+translatable: false
+default_value:
+  -
+    value: hero_slide_text_middle
+default_value_callback: ''
+settings: {  }
+field_type: list_string
