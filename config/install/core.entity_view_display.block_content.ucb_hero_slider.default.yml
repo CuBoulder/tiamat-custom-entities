@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ucb_hero_slider
+    - field.field.block_content.ucb_hero_slider.field_default_text_color
+    - field.field.block_content.ucb_hero_slider.field_hero_slides
+    - field.field.block_content.ucb_hero_slider.field_slide_duration
+  module:
+    - entity_reference_revisions
+    - options
+id: block_content.ucb_hero_slider.default
+targetEntityType: block_content
+bundle: ucb_hero_slider
+mode: default
+content:
+  field_default_text_color:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_hero_slides:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_slide_duration:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

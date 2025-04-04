@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_slide_text_color_over
+    - paragraphs.paragraphs_type.hero_slider_image
+  module:
+    - options
+id: paragraph.hero_slider_image.field_hero_slide_text_color_over
+field_name: field_hero_slide_text_color_over
+entity_type: paragraph
+bundle: hero_slider_image
+label: 'Text Color Override'
+description: 'Used if this slide needs to be a different color than the default color selected above.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

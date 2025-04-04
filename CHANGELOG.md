@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Hero Slider Block/Paragraph
+  Configuration set up for the block and paragraph needed for the new Hero Slider
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1620
+---
+
 ## [20250312] - 2025-03-12
 
 - ### D11 version bump

@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_hero_text_vertical
+field_name: field_hero_text_vertical
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: hero_slide_text_top
+      label: Top
+    -
+      value: hero_slide_text_middle
+      label: Middle
+    -
+      value: hero_slide_text_bottom
+      label: Bottom
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
