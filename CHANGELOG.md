@@ -9,11 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20250409] - 2025-04-09
+
 - ### Hero Slider Block/Paragraph
+
   Configuration set up for the block and paragraph needed for the new Hero Slider
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1620
----
+
+  Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1620>
+
+* * *
 
 ## [20250312] - 2025-03-12
 
@@ -1173,7 +1177,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250312...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250409...HEAD
+[20250409]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250312...20250409
 [20250312]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250219...20250312
 [20250219]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250212...20250219
 [20250212]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250115...20250212
