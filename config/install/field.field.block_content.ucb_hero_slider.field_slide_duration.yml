@@ -12,7 +12,9 @@ label: 'Slide Duration'
 description: 'Set time per slide. Between 1500 and 7000ms'
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: 5000
 default_value_callback: ''
 settings:
   min: 1500
