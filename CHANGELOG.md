@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Slide duration update
+  Updated the field to have a default duration of 5000
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1628
+---
+
 ## [20250409] - 2025-04-09
 
 - ### Hero Slider Block/Paragraph
