@@ -2,6 +2,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: ucb_hero_slider
-label: 'Hero Slider'
+label: 'Hero Slider - BETA'
 revision: false
 description: 'The Hero Slider block content type is used to display a slider of images in the edge-to-edge section of a page.'
