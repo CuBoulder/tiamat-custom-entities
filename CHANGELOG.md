@@ -9,15 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20250423] - 2025-04-23
+
 - ### Update block_content.type.ucb_hero_slider.yml
   Add BETA to the label for the hero slider
----
+
+* * *
 
 - ### Slide duration update
+
   Updated the field to have a default duration of 5000
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1628
----
+
+  Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1628>
+
+* * *
 
 ## [20250409] - 2025-04-09
 
@@ -1187,7 +1192,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250409...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250423...HEAD
+[20250423]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250409...20250423
 [20250409]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250312...20250409
 [20250312]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250219...20250312
 [20250219]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250212...20250219
