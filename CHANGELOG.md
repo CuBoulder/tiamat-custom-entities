@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Updates Description of Summary/Thumbnail section of Articles
+  Helps clarify the purpose of the Summary and Thumbnail fields on Article nodes, since they will be used for aggregator blocks like the Article List, and in metatags to facilitate social sharing across applications. 
+  
+  Includes: 
+  - `profile` => https://github.com/CuBoulder/tiamat10-profile/pull/280
+  - `custom_entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/210
+  
+  Resolves https://github.com/CuBoulder/tiamat10-profile/issues/279
+---
+
 ## [20250423] - 2025-04-23
 
 - ### Update block_content.type.ucb_hero_slider.yml
