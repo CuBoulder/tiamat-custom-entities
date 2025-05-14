@@ -65,7 +65,7 @@ third_party_settings:
         show_empty_fields: false
         id: ''
         formatter: closed
-        description: 'These items will show in the summary instead of the main content.'
+        description: 'Summary and Thumbnail are used in Article List pages and blocks, and also power social sharing previews on platforms like Facebook, X (Twitter), and Teams. Fill these out to ensure your content looks great when shared.'
         required_fields: true
     group_categories:
       children:
