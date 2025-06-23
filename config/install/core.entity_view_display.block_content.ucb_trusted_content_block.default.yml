@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ucb_trusted_content_block
+    - field.field.block_content.ucb_trusted_content_block.body
+    - field.field.block_content.ucb_trusted_content_block.field_trusted_content_display
+    - field.field.block_content.ucb_trusted_content_block.field_trusted_content_link
+  module:
+    - options
+    - text
+id: block_content.ucb_trusted_content_block.default
+targetEntityType: block_content
+bundle: ucb_trusted_content_block
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_trusted_content_display:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_trusted_content_link:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

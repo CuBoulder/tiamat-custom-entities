@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ucb_trusted_content_block
+label: 'Trusted CU Content'
+revision: false
+description: 'Allows your site to display and share syndicated Articles, People Pages, and Basic Pages from other Trusted CU partner sites'

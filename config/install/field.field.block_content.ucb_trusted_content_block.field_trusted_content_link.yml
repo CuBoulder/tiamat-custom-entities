@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ucb_trusted_content_block
+    - field.storage.block_content.field_trusted_content_link
+id: block_content.ucb_trusted_content_block.field_trusted_content_link
+field_name: field_trusted_content_link
+entity_type: block_content
+bundle: ucb_trusted_content_block
+label: 'Content Link'
+description: 'Paste the link provided from the Discovery site here to link to the syndicated content'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
