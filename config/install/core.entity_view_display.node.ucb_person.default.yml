@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_person.body
+    - field.field.node.ucb_person.field_abstract
     - field.field.node.ucb_person.field_ucb_articles_by_person
     - field.field.node.ucb_person.field_ucb_person_address
     - field.field.node.ucb_person.field_ucb_person_department
@@ -187,4 +188,5 @@ content:
     third_party_settings: {  }
     weight: 12
     region: content
-hidden: {  }
+hidden:
+  field_abstract: true

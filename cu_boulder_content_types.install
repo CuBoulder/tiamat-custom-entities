@@ -1,0 +1,307 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the CU Boulder Content Types module.
+ */
+
+use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\field\Entity\FieldConfig;
+use Drupal\Core\Entity\Entity\EntityFormDisplay;
+use Drupal\Core\Entity\Entity\EntityViewDisplay;
+use Symfony\Component\Yaml\Yaml;
+
+/**
+ * Adds abstract field to basic pages.
+ */
+function cu_boulder_content_types_update_10001() {
+  $config_path = \Drupal::service('extension.list.module')->getPath('cu_boulder_content_types') . '/config/install';
+  
+  // Install field storage if it doesn't exist
+  $field_storage = FieldStorageConfig::loadByName('node', 'field_abstract');
+  if (!$field_storage) {
+    $field_storage_config = \Drupal::service('config.storage')->read('field.storage.node.field_abstract');
+    if (!$field_storage_config) {
+      $field_storage_config = Yaml::parse(file_get_contents($config_path . '/field.storage.node.field_abstract.yml'));
+    }
+    FieldStorageConfig::create($field_storage_config)->save();
+  }
+  
+  // Install field instance for basic_page if it doesn't exist
+  $field = FieldConfig::loadByName('node', 'basic_page', 'field_abstract');
+  if (!$field) {
+    $field_config = \Drupal::service('config.storage')->read('field.field.node.basic_page.field_abstract');
+    if (!$field_config) {
+      $field_config = Yaml::parse(file_get_contents($config_path . '/field.field.node.basic_page.field_abstract.yml'));
+    }
+    FieldConfig::create($field_config)->save();
+  }
+  
+  // Update basic_page form display with tab structure
+  $form_display = EntityFormDisplay::load('node.basic_page.default');
+  if ($form_display && !$form_display->getComponent('field_abstract')) {
+    // Add the field to form display
+    $form_display->setComponent('field_abstract', [
+      'type' => 'text_textarea',
+      'weight' => 2,
+      'region' => 'content',
+      'settings' => [
+        'rows' => 5,
+        'placeholder' => '',
+      ],
+      'third_party_settings' => [],
+    ]);
+    
+    // Update body field weight
+    $form_display->setComponent('body', [
+      'type' => 'text_textarea_with_summary',
+      'weight' => 1,
+      'region' => 'content',
+      'settings' => [
+        'rows' => 9,
+        'summary_rows' => 3,
+        'placeholder' => '',
+        'show_summary' => FALSE,
+      ],
+      'third_party_settings' => [],
+    ]);
+    
+    // Add tab structure to field_group configuration
+    $third_party = $form_display->getThirdPartySettings('field_group');
+    
+    // Create the group_tabs configuration
+    $third_party['group_tabs'] = [
+      'children' => ['group_body', 'group_abstract'],
+      'label' => 'Tabs',
+      'region' => 'content',
+      'parent_name' => '',
+      'weight' => 6,
+      'format_type' => 'tabs',
+      'format_settings' => [
+        'classes' => '',
+        'show_empty_fields' => FALSE,
+        'id' => '',
+        'direction' => 'horizontal',
+        'width_breakpoint' => 640,
+      ],
+    ];
+    
+    // Create the group_body configuration
+    $third_party['group_body'] = [
+      'children' => ['body'],
+      'label' => 'Body',
+      'region' => 'content',
+      'parent_name' => 'group_tabs',
+      'weight' => 1,
+      'format_type' => 'tab',
+      'format_settings' => [
+        'classes' => '',
+        'show_empty_fields' => FALSE,
+        'id' => '',
+        'formatter' => 'open',
+        'description' => '',
+        'required_fields' => FALSE,
+      ],
+    ];
+    
+    // Create the group_abstract configuration
+    $third_party['group_abstract'] = [
+      'children' => ['field_abstract'],
+      'label' => 'Abstract',
+      'region' => 'content',
+      'parent_name' => 'group_tabs',
+      'weight' => 2,
+      'format_type' => 'tab',
+      'format_settings' => [
+        'classes' => '',
+        'show_empty_fields' => FALSE,
+        'id' => '',
+        'formatter' => 'closed',
+        'description' => 'Abstracts are used for syndicating basic, article, and person page content. In most cases this content will not display anywhere and does not need to be filled out.',
+        'required_fields' => FALSE,
+      ],
+    ];
+    
+    $form_display->setThirdPartySetting('field_group', 'group_tabs', $third_party['group_tabs']);
+    $form_display->setThirdPartySetting('field_group', 'group_body', $third_party['group_body']);
+    $form_display->setThirdPartySetting('field_group', 'group_abstract', $third_party['group_abstract']);
+    
+    $form_display->save();
+  }
+  
+  // Update basic_page view display
+  $view_display = EntityViewDisplay::load('node.basic_page.default');
+  if ($view_display && !$view_display->getComponent('field_abstract')) {
+    $view_display->setComponent('field_abstract', [
+      'type' => 'text_default',
+      'label' => 'above',
+      'weight' => 102,
+      'region' => 'content',
+      'settings' => [],
+      'third_party_settings' => [],
+    ])->save();
+  }
+  
+  return t('Abstract field has been added to basic pages.');
+}
+
+/**
+ * Adds abstract field to articles.
+ */
+function cu_boulder_content_types_update_10002() {
+  $config_path = \Drupal::service('extension.list.module')->getPath('cu_boulder_content_types') . '/config/install';
+  
+  // Install field instance for ucb_article if it doesn't exist
+  $article_field = FieldConfig::loadByName('node', 'ucb_article', 'field_abstract');
+  if (!$article_field) {
+    $article_field_config = \Drupal::service('config.storage')->read('field.field.node.ucb_article.field_abstract');
+    if (!$article_field_config) {
+      $article_field_config = Yaml::parse(file_get_contents($config_path . '/field.field.node.ucb_article.field_abstract.yml'));
+    }
+    FieldConfig::create($article_field_config)->save();
+  }
+  
+  // Update ucb_article form display with Abstract tab
+  $article_form_display = EntityFormDisplay::load('node.ucb_article.default');
+  if ($article_form_display && !$article_form_display->getComponent('field_abstract')) {
+    // Add the field to form display
+    $article_form_display->setComponent('field_abstract', [
+      'type' => 'text_textarea',
+      'weight' => 43,
+      'region' => 'content',
+      'settings' => [
+        'rows' => 5,
+        'placeholder' => '',
+      ],
+      'third_party_settings' => [],
+    ]);
+    
+    // Add Abstract tab to field_group configuration
+    $third_party = $article_form_display->getThirdPartySettings('field_group');
+    if (isset($third_party['group_tabs'])) {
+      // Add group_abstract to tabs children if not already there
+      if (!in_array('group_abstract', $third_party['group_tabs']['children'])) {
+        // Insert after group_images (Summary tab)
+        $key = array_search('group_images', $third_party['group_tabs']['children']);
+        if ($key !== FALSE) {
+          array_splice($third_party['group_tabs']['children'], $key + 1, 0, 'group_abstract');
+        }
+      }
+      
+      // Create the group_abstract configuration
+      $third_party['group_abstract'] = [
+        'children' => ['field_abstract'],
+        'label' => 'Abstract',
+        'region' => 'content',
+        'parent_name' => 'group_tabs',
+        'weight' => 36,
+        'format_type' => 'tab',
+        'format_settings' => [
+          'classes' => '',
+          'show_empty_fields' => FALSE,
+          'id' => '',
+          'formatter' => 'closed',
+          'description' => 'Abstracts are used for syndicating basic, article, and person page content. In most cases this content will not display anywhere and does not need to be filled out.',
+          'required_fields' => FALSE,
+        ],
+      ];
+      
+      $article_form_display->setThirdPartySetting('field_group', 'group_tabs', $third_party['group_tabs']);
+      $article_form_display->setThirdPartySetting('field_group', 'group_abstract', $third_party['group_abstract']);
+    }
+    
+    $article_form_display->save();
+  }
+  
+  // Update ucb_article view display (hide the field)
+  $article_view_display = EntityViewDisplay::load('node.ucb_article.default');
+  if ($article_view_display && !$article_view_display->getComponent('field_abstract')) {
+    $article_view_display->removeComponent('field_abstract')->save();
+  }
+  
+  return t('Abstract field has been added to articles.');
+}
+
+/**
+ * Adds abstract field to person pages.
+ */
+function cu_boulder_content_types_update_10003() {
+  $config_path = \Drupal::service('extension.list.module')->getPath('cu_boulder_content_types') . '/config/install';
+  
+  // Install field instance for ucb_person if it doesn't exist
+  $person_field = FieldConfig::loadByName('node', 'ucb_person', 'field_abstract');
+  if (!$person_field) {
+    $person_field_config = \Drupal::service('config.storage')->read('field.field.node.ucb_person.field_abstract');
+    if (!$person_field_config) {
+      $person_field_config = Yaml::parse(file_get_contents($config_path . '/field.field.node.ucb_person.field_abstract.yml'));
+    }
+    FieldConfig::create($person_field_config)->save();
+  }
+  
+  // Update ucb_person form display with Abstract tab
+  $person_form_display = EntityFormDisplay::load('node.ucb_person.default');
+  if ($person_form_display && !$person_form_display->getComponent('field_abstract')) {
+    // Add the field to form display
+    $person_form_display->setComponent('field_abstract', [
+      'type' => 'text_textarea',
+      'weight' => 12,
+      'region' => 'content',
+      'settings' => [
+        'rows' => 5,
+        'placeholder' => '',
+      ],
+      'third_party_settings' => [],
+    ]);
+    
+    // Add Abstract tab to field_group configuration
+    $third_party = $person_form_display->getThirdPartySettings('field_group');
+    if (isset($third_party['group_tabs'])) {
+      // Add group_abstract to tabs children if not already there
+      if (!in_array('group_abstract', $third_party['group_tabs']['children'])) {
+        // Insert after group_body
+        $key = array_search('group_body', $third_party['group_tabs']['children']);
+        if ($key !== FALSE) {
+          array_splice($third_party['group_tabs']['children'], $key + 1, 0, 'group_abstract');
+        }
+      }
+      
+      // Update group_filters weight from 4 to 5
+      if (isset($third_party['group_filters'])) {
+        $third_party['group_filters']['weight'] = 5;
+      }
+      
+      // Create the group_abstract configuration
+      $third_party['group_abstract'] = [
+        'children' => ['field_abstract'],
+        'label' => 'Abstract',
+        'region' => 'content',
+        'parent_name' => 'group_tabs',
+        'weight' => 4,
+        'format_type' => 'tab',
+        'format_settings' => [
+          'classes' => '',
+          'show_empty_fields' => FALSE,
+          'id' => '',
+          'formatter' => 'closed',
+          'description' => 'Abstracts are used for syndicating basic, article, and person page content. In most cases this content will not display anywhere and does not need to be filled out.',
+          'required_fields' => FALSE,
+        ],
+      ];
+      
+      $person_form_display->setThirdPartySetting('field_group', 'group_tabs', $third_party['group_tabs']);
+      $person_form_display->setThirdPartySetting('field_group', 'group_abstract', $third_party['group_abstract']);
+      $person_form_display->setThirdPartySetting('field_group', 'group_filters', $third_party['group_filters']);
+    }
+    
+    $person_form_display->save();
+  }
+  
+  // Update ucb_person view display (hide the field)
+  $person_view_display = EntityViewDisplay::load('node.ucb_person.default');
+  if ($person_view_display && !$person_view_display->getComponent('field_abstract')) {
+    $person_view_display->removeComponent('field_abstract')->save();
+  }
+  
+  return t('Abstract field has been added to person pages.');
+}
+
