@@ -38,7 +38,7 @@ content:
     region: content
   field_ucb_show_abstract:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
