@@ -6,6 +6,7 @@ dependencies:
     - field.field.block_content.ucb_trusted_content_block.body
     - field.field.block_content.ucb_trusted_content_block.field_trusted_content_display
     - field.field.block_content.ucb_trusted_content_block.field_trusted_content_link
+    - field.field.block_content.ucb_trusted_content_block.field_ucb_show_abstract
   module:
     - text
 id: block_content.ucb_trusted_content_block.default
@@ -36,6 +37,13 @@ content:
     settings:
       rows: 5
       placeholder: ''
+    third_party_settings: {  }
+  field_ucb_show_abstract:
+    type: boolean_checkbox
+    weight: 29
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   info:
     type: string_textfield
