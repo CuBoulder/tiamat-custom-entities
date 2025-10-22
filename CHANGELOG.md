@@ -9,14 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20251022] - 2025-10-22
+
 - ### Adds Syndicated CU content block
+
   Adds the Syndicated CU Content block to allow `Trust => Discovery => Consumer site` content sharing pipeline
-  
+
   Includes:
-  - `custom entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/212
-  - `theme` => https://github.com/CuBoulder/tiamat-theme/issues/1675
-  - `ucb_trusted_content_discovery` => https://github.com/CuBoulder/ucb_trusted_content_discovery/pull/2
----
+
+  - `custom entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/212>
+  - `theme` => <https://github.com/CuBoulder/tiamat-theme/issues/1675>
+  - `ucb_trusted_content_discovery` => <https://github.com/CuBoulder/ucb_trusted_content_discovery/pull/2>
+
+* * *
 
 ## [20250514] - 2025-05-14
 
@@ -1216,7 +1221,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250514...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251022...HEAD
+[20251022]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250514...20251022
 [20250514]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250423...20250514
 [20250423]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250409...20250423
 [20250409]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250312...20250409
