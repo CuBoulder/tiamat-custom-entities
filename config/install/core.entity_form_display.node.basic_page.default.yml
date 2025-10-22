@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.basic_page.body
+    - field.field.node.basic_page.field_abstract
     - field.field.node.basic_page.field_social_sharing_image
     - field.field.node.basic_page.layout_builder__layout
     - node.type.basic_page
@@ -14,6 +15,51 @@ dependencies:
     - text
 third_party_settings:
   field_group:
+    group_tabs:
+      children:
+        - group_body
+        - group_abstract
+      label: Tabs
+      region: content
+      parent_name: ''
+      weight: 6
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_body:
+      children:
+        - body
+      label: Body
+      region: content
+      parent_name: group_tabs
+      weight: 1
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: false
+    group_abstract:
+      children:
+        - field_abstract
+      label: Abstract
+      region: content
+      parent_name: group_tabs
+      weight: 2
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: 'Abstracts are used for syndicating basic, article, and person page content. In most cases this content will not display anywhere and does not need to be filled out.'
+        required_fields: false
     group_social_sharing_sidebar:
       children:
         - field_social_sharing_image
@@ -37,13 +83,21 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 1
     region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+  field_abstract:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   created:
     type: datetime_timestamp

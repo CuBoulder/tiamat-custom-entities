@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abstract
+    - filter.format.abstract
+    - node.type.ucb_person
+  module:
+    - text
+id: node.ucb_person.field_abstract
+field_name: field_abstract
+entity_type: node
+bundle: ucb_person
+label: Abstract
+description: 'Abstracts are used for syndicating basic, article, and person page content. In most cases this content will not display anywhere and does not need to be filled out.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - abstract
+field_type: text_long
+

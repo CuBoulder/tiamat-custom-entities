@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.ucb_article.field_abstract
     - field.field.node.ucb_article.field_appears_in_issue
     - field.field.node.ucb_article.field_article_header_image_text
     - field.field.node.ucb_article.field_article_header_text_color
@@ -162,5 +163,6 @@ content:
     weight: 0
     region: content
 hidden:
+  field_abstract: true
   field_ucb_article_image: true
   layout_builder__layout: true

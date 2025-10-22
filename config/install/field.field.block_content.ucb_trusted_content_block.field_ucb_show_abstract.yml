@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ucb_trusted_content_block
+    - field.storage.block_content.field_ucb_show_abstract
+id: block_content.ucb_trusted_content_block.field_ucb_show_abstract
+field_name: field_ucb_show_abstract
+entity_type: block_content
+bundle: ucb_trusted_content_block
+label: 'Show Abstract'
+description: 'Choose which version of the content to display. Some sites provide an Abstract (a detailed write-up) and a Summary (a brief overview). If an Abstract is available, you can choose to display it here, if available. '
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Abstract
+  off_label: Summary
+field_type: boolean

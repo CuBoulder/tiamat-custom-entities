@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.ucb_article.field_abstract
     - field.field.node.ucb_article.field_appears_in_issue
     - field.field.node.ucb_article.field_article_header_image_text
     - field.field.node.ucb_article.field_article_header_text_color
@@ -33,6 +34,7 @@ third_party_settings:
       children:
         - group_article_content
         - group_images
+        - group_abstract
         - group_categories
         - group_tags
         - group_byline
@@ -67,13 +69,28 @@ third_party_settings:
         formatter: closed
         description: 'Summary and Thumbnail are used in Article List pages and blocks, and also power social sharing previews on platforms like Facebook, X (Twitter), and Teams. Fill these out to ensure your content looks great when shared.'
         required_fields: true
+    group_abstract:
+      children:
+        - field_abstract
+      label: Abstract
+      region: content
+      parent_name: group_tabs
+      weight: 36
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: 'Abstracts are used for syndicating basic, article, and person page content. In most cases this content will not display anywhere and does not need to be filled out.'
+        required_fields: false
     group_categories:
       children:
         - field_ucb_article_categories
       label: Categories
       region: content
       parent_name: group_tabs
-      weight: 36
+      weight: 37
       format_type: tab
       format_settings:
         classes: ''
@@ -88,7 +105,7 @@ third_party_settings:
       label: Byline
       region: content
       parent_name: group_tabs
-      weight: 38
+      weight: 39
       format_type: tab
       format_settings:
         classes: ''
@@ -103,7 +120,7 @@ third_party_settings:
       label: Tags
       region: content
       parent_name: group_tabs
-      weight: 37
+      weight: 38
       format_type: tab
       format_settings:
         classes: ''
@@ -118,7 +135,7 @@ third_party_settings:
       label: 'External Link'
       region: content
       parent_name: group_tabs
-      weight: 39
+      weight: 40
       format_type: tab
       format_settings:
         classes: ''
@@ -148,7 +165,7 @@ third_party_settings:
       label: 'Related Articles'
       region: content
       parent_name: group_tabs
-      weight: 40
+      weight: 41
       format_type: details_sidebar
       format_settings:
         classes: ''
@@ -183,7 +200,7 @@ third_party_settings:
       label: 'Advanced Style Options'
       region: content
       parent_name: group_tabs
-      weight: 42
+      weight: 43
       format_type: tab
       format_settings:
         classes: ''
@@ -198,7 +215,7 @@ third_party_settings:
       label: 'Link to Issue'
       region: content
       parent_name: group_tabs
-      weight: 41
+      weight: 42
       format_type: tab
       format_settings:
         classes: ''
@@ -217,6 +234,14 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_abstract:
+    type: text_textarea
+    weight: 43
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_appears_in_issue:
     type: entity_reference_autocomplete

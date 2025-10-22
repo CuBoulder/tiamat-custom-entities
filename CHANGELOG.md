@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Adds Syndicated CU content block
+  Adds the Syndicated CU Content block to allow `Trust => Discovery => Consumer site` content sharing pipeline
+  
+  Includes:
+  - `custom entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/212
+  - `theme` => https://github.com/CuBoulder/tiamat-theme/issues/1675
+  - `ucb_trusted_content_discovery` => https://github.com/CuBoulder/ucb_trusted_content_discovery/pull/2
+---
+
 ## [20250514] - 2025-05-14
 
 - ### Updates Description of Summary/Thumbnail section of Articles

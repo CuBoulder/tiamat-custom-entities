@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ucb_trusted_content_block
+    - field.field.block_content.ucb_trusted_content_block.body
+    - field.field.block_content.ucb_trusted_content_block.field_trusted_content_display
+    - field.field.block_content.ucb_trusted_content_block.field_trusted_content_link
+    - field.field.block_content.ucb_trusted_content_block.field_ucb_show_abstract
+  module:
+    - text
+id: block_content.ucb_trusted_content_block.default
+targetEntityType: block_content
+bundle: ucb_trusted_content_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_trusted_content_display:
+    type: options_select
+    weight: 27
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_trusted_content_link:
+    type: string_textarea
+    weight: 28
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_ucb_show_abstract:
+    type: boolean_checkbox
+    weight: 29
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

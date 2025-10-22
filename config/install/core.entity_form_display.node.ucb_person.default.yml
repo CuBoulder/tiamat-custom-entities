@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.ucb_person.body
+    - field.field.node.ucb_person.field_abstract
     - field.field.node.ucb_person.field_ucb_articles_by_person
     - field.field.node.ucb_person.field_ucb_person_address
     - field.field.node.ucb_person.field_ucb_person_department
@@ -35,6 +36,7 @@ third_party_settings:
         - group_personal
         - group_contact
         - group_body
+        - group_abstract
         - group_filters
       label: Tabs
       region: content
@@ -89,6 +91,21 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: false
+    group_abstract:
+      children:
+        - field_abstract
+      label: Abstract
+      region: content
+      parent_name: group_tabs
+      weight: 4
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: 'Abstracts are used for syndicating basic, article, and person page content. In most cases this content will not display anywhere and does not need to be filled out.'
+        required_fields: false
     group_filters:
       children:
         - field_ucb_person_filter_1
@@ -97,7 +114,7 @@ third_party_settings:
       label: Filters
       region: content
       parent_name: group_tabs
-      weight: 4
+      weight: 5
       format_type: tab
       format_settings:
         classes: ''
@@ -158,6 +175,14 @@ content:
     weight: 7
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_abstract:
+    type: text_textarea
+    weight: 12
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_ucb_articles_by_person:
     type: boolean_checkbox
