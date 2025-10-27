@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### #215: Change label from Syndicated CU Content to Trusted CU Content
+  Changes `Syndicated CU Content` block name to `Trusted CU Content` for better consistency with the terminology used throughout the Trust and Discovery content-sharing ecosystem.
+  
+  Resolves #215 
+---
+
 ## [20251022] - 2025-10-22
 
 - ### Adds Syndicated CU content block
