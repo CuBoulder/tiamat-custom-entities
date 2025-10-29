@@ -9,19 +9,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20251029] - 2025-10-29
+
 - ### Rework Article node input display
+
   Article UI Rework
-  
+
   Matched Kevin's test page as well as instructions laid out in the attached ticket.
-  
+
   Resolves #217
----
+
+* * *
 
 - ### #215: Change label from Syndicated CU Content to Trusted CU Content
+
   Changes `Syndicated CU Content` block name to `Trusted CU Content` for better consistency with the terminology used throughout the Trust and Discovery content-sharing ecosystem.
-  
+
   Resolves #215 
----
+
+* * *
 
 ## [20251022] - 2025-10-22
 
@@ -1235,7 +1241,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251022...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251029...HEAD
+[20251029]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251022...20251029
 [20251022]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250514...20251022
 [20250514]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250423...20250514
 [20250423]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250409...20250423
