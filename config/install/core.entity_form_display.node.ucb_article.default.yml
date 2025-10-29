@@ -35,13 +35,7 @@ third_party_settings:
         - group_article_content
         - group_images
         - group_abstract
-        - group_categories
-        - group_tags
-        - group_byline
-        - group_external_link
-        - group_ucb_related_articles
-        - group_link_to_issue
-        - group_title_background_image
+        - group_taxonomy
       label: Tabs
       region: content
       parent_name: ''
@@ -84,10 +78,11 @@ third_party_settings:
         formatter: closed
         description: 'Abstracts are used for syndicating basic, article, and person page content. In most cases this content will not display anywhere and does not need to be filled out.'
         required_fields: false
-    group_categories:
+    group_taxonomy:
       children:
         - field_ucb_article_categories
-      label: Categories
+        - field_ucb_article_tags
+      label: Taxonomy
       region: content
       parent_name: group_tabs
       weight: 37
@@ -104,29 +99,14 @@ third_party_settings:
         - field_ucb_article_byline
       label: Byline
       region: content
-      parent_name: group_tabs
-      weight: 39
-      format_type: tab
+      parent_name: ''
+      weight: 12
+      format_type: details_sidebar
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed
-        description: ''
-        required_fields: true
-    group_tags:
-      children:
-        - field_ucb_article_tags
-      label: Tags
-      region: content
-      parent_name: group_tabs
-      weight: 38
-      format_type: tab
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        formatter: closed
+        open: false
         description: ''
         required_fields: true
     group_external_link:
@@ -134,14 +114,14 @@ third_party_settings:
         - field_ucb_article_external_url
       label: 'External Link'
       region: content
-      parent_name: group_tabs
-      weight: 40
-      format_type: tab
+      parent_name: ''
+      weight: 13
+      format_type: details_sidebar
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed
+        open: false
         description: ''
         required_fields: true
     group_article_content:
@@ -164,8 +144,8 @@ third_party_settings:
         - field_ucb_related_articles_parag
       label: 'Related Articles'
       region: content
-      parent_name: group_tabs
-      weight: 41
+      parent_name: ''
+      weight: 20
       format_type: details_sidebar
       format_settings:
         classes: ''
@@ -174,54 +154,37 @@ third_party_settings:
         open: false
         description: ''
         required_fields: false
-        weight: 0
-        formatter: closed
-    group_ucb_article_page_styles:
+    group_title_background_image:
       children:
         - field_ucb_article_style
         - field_ucb_article_date_override
-      label: 'Page style'
-      region: content
-      parent_name: ''
-      weight: 6
-      format_type: details_sidebar
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        open: false
-        description: ''
-        required_fields: false
-        weight: 0
-    group_title_background_image:
-      children:
         - field_article_title_background
         - field_article_header_image_text
       label: 'Advanced Style Options'
       region: content
-      parent_name: group_tabs
-      weight: 43
-      format_type: tab
+      parent_name: ''
+      weight: 11
+      format_type: details_sidebar
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed
+        open: false
         description: 'Allows for optional advanced styling such as adding a Header Image to your Article, changing Header color, and applying an Overlay for readability'
         required_fields: false
     group_link_to_issue:
       children:
         - field_appears_in_issue
-      label: 'Link to Issue'
+      label: 'Article Issue'
       region: content
-      parent_name: group_tabs
-      weight: 42
-      format_type: tab
+      parent_name: ''
+      weight: 14
+      format_type: details_sidebar
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed
+        open: false
         description: 'Add a link to Issues that this Article appears in'
         required_fields: true
 id: node.ucb_article.default
@@ -231,7 +194,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -371,23 +334,23 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 3
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 8
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 9
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
   simple_sitemap:
-    weight: 7
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -417,7 +380,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 10
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }

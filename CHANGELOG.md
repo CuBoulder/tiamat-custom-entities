@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Rework Article node input display
+  Article UI Rework
+  
+  Matched Kevin's test page as well as instructions laid out in the attached ticket.
+  
+  Resolves #217
+---
+
 - ### #215: Change label from Syndicated CU Content to Trusted CU Content
   Changes `Syndicated CU Content` block name to `Trusted CU Content` for better consistency with the terminology used throughout the Trust and Discovery content-sharing ecosystem.
   
