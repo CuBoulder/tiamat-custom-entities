@@ -314,11 +314,25 @@ function cu_boulder_content_types_update_10004() {
   // Ensure field storage exists.
   $field_storage = FieldStorageConfig::loadByName('block_content', 'field_people_list_block_order_by');
   if (!$field_storage) {
-    $field_storage_config = \Drupal::service('config.storage')->read('field.storage.block_content.field_people_list_block_order_by');
-    if (!$field_storage_config) {
-      $field_storage_config = Yaml::parse(file_get_contents($config_path . '/field.storage.block_content.field_people_list_block_order_by.yml'));
-    }
-    FieldStorageConfig::create($field_storage_config)->save();
+    // Create with explicit allowed_values map to satisfy typed config expectations.
+    FieldStorageConfig::create([
+      'field_name' => 'field_people_list_block_order_by',
+      'entity_type' => 'block_content',
+      'type' => 'list_string',
+      'settings' => [
+        'allowed_values' => [
+          'last' => 'Last Name',
+          'type' => 'Job Type, Last Name',
+        ],
+        'allowed_values_function' => '',
+      ],
+      'locked' => FALSE,
+      'cardinality' => 1,
+      'translatable' => TRUE,
+      'indexes' => [],
+      'persist_with_no_fields' => FALSE,
+      'custom_storage' => FALSE,
+    ])->save();
   }
 
   // Ensure field instance on the People List Block bundle.
@@ -328,7 +342,14 @@ function cu_boulder_content_types_update_10004() {
     if (!$field_config) {
       $field_config = Yaml::parse(file_get_contents($config_path . '/field.field.block_content.ucb_people_list_block.field_people_list_block_order_by.yml'));
     }
-    FieldConfig::create($field_config)->save();
+    $field = FieldConfig::create($field_config);
+    $field->save();
+  }
+  // Ensure required and default value are set to 'last'.
+  if ($field) {
+    $field->setRequired(TRUE);
+    $field->set('default_value', [['value' => 'last']]);
+    $field->save();
   }
 
   // Update the form display to show the field.
