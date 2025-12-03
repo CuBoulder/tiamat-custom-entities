@@ -20,6 +20,7 @@ dependencies:
     - field.field.block_content.ucb_people_list_block.field_people_block_filter_2
     - field.field.block_content.ucb_people_list_block.field_people_block_filter_3
     - field.field.block_content.ucb_people_list_block.field_people_block_job_type
+    - field.field.block_content.ucb_people_list_block.field_people_list_block_order_by
   module:
     - field_group
     - text
@@ -32,6 +33,7 @@ third_party_settings:
         - field_people_block_filter_1
         - field_people_block_filter_2
         - field_people_block_filter_3
+        - field_people_list_block_order_by
       label: Filters
       region: content
       parent_name: group_content
@@ -202,19 +204,19 @@ content:
     third_party_settings: {  }
   field_bs_heading:
     type: options_select
-    weight: 7
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   field_bs_heading_alignment:
     type: options_select
-    weight: 8
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   field_bs_heading_style:
     type: options_select
-    weight: 9
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -283,6 +285,12 @@ content:
   field_people_block_job_type:
     type: options_buttons
     weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_people_list_block_order_by:
+    type: options_select
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
