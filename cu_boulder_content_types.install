@@ -335,7 +335,7 @@ function cu_boulder_content_types_update_10004() {
     ])->save();
   }
 
-  // Ensure field instance on the People List Block bundle.
+  // Ensure field instance on the People List Block
   $field = FieldConfig::loadByName('block_content', 'ucb_people_list_block', 'field_people_list_block_order_by');
   if (!$field) {
     $field_config = \Drupal::service('config.storage')->read('field.field.block_content.ucb_people_list_block.field_people_list_block_order_by');
@@ -345,7 +345,7 @@ function cu_boulder_content_types_update_10004() {
     $field = FieldConfig::create($field_config);
     $field->save();
   }
-  // Ensure required and default value are set to 'last'.
+  // Ensure required and default value are set to 'last'
   if ($field) {
     $field->setRequired(TRUE);
     $field->set('default_value', [['value' => 'last']]);
@@ -390,6 +390,45 @@ function cu_boulder_content_types_update_10004() {
       'settings' => [],
       'third_party_settings' => [],
     ])->save();
+  }
+
+  // Backfill existing People List Blocks, will have null value set
+  try {
+    $storage = \Drupal::entityTypeManager()->getStorage('block_content');
+    $ids = $storage->getQuery()
+      ->condition('type', 'ucb_people_list_block')
+      ->execute();
+    if (!empty($ids)) {
+      $entities = $storage->loadMultiple($ids);
+      foreach ($entities as $entity) {
+        if (!$entity->hasField('field_people_list_block_order_by')) {
+          continue;
+        }
+        $updated = FALSE;
+        $languages = $entity->getTranslationLanguages();
+        if (!empty($languages)) {
+          foreach ($languages as $langcode => $language) {
+            $translation = $entity->getTranslation($langcode);
+            if ($translation->get('field_people_list_block_order_by')->isEmpty()) {
+              $translation->set('field_people_list_block_order_by', 'last');
+              $updated = TRUE;
+            }
+          }
+        }
+        else {
+          if ($entity->get('field_people_list_block_order_by')->isEmpty()) {
+            $entity->set('field_people_list_block_order_by', 'last');
+            $updated = TRUE;
+          }
+        }
+        if ($updated) {
+          $entity->save();
+        }
+      }
+    }
+  }
+  catch (\Throwable $e) {
+    // Non-fatal: continue even if no entities are present or storage errors occur.
   }
 
   return t('Order By field added to People List Block.');
