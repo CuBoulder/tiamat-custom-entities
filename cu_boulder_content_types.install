@@ -397,6 +397,8 @@ function cu_boulder_content_types_update_10004() {
     $storage = \Drupal::entityTypeManager()->getStorage('block_content');
     $ids = $storage->getQuery()
       ->condition('type', 'ucb_people_list_block')
+      ->condition('field_people_list_block_order_by.value', NULL, 'IS NULL')
+      ->accessCheck(FALSE)
       ->execute();
     if (!empty($ids)) {
       $entities = $storage->loadMultiple($ids);
