@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ucb_people_list_block
+    - field.storage.block_content.field_people_list_block_order_by
+  module:
+    - options
+id: block_content.ucb_people_list_block.field_people_list_block_order_by
+field_name: field_people_list_block_order_by
+entity_type: block_content
+bundle: ucb_people_list_block
+label: 'Order By'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: last
+default_value_callback: ''
+settings: {  }
+field_type: list_string
