@@ -9,14 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- ### People List Block: Adds 'Order By' sort 
+## [20251210] - 2025-12-10
+
+- ### People List Block: Adds 'Order By' sort
+
   Adds "Order By" sorting to the People List Block, includes an update hook to backfill values to the default for existing people list blocks on a site.
-  
+
   Includes:
-  - `custom_entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/220
-  - `theme` => https://github.com/CuBoulder/tiamat-theme/pull/1721
-  - `ucb_dev_workspace` => https://github.com/CuBoulder/ucb-dev-workspace/pull/4
----
+
+  - `custom_entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/220>
+  - `theme` => <https://github.com/CuBoulder/tiamat-theme/pull/1721>
+  - `ucb_dev_workspace` => <https://github.com/CuBoulder/ucb-dev-workspace/pull/4>
+
+* * *
 
 ## [20251029] - 2025-10-29
 
@@ -1250,7 +1255,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251029...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251210...HEAD
+[20251210]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251029...20251210
 [20251029]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251022...20251029
 [20251022]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250514...20251022
 [20250514]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250423...20250514
