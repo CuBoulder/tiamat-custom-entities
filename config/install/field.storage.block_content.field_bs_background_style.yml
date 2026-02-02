@@ -41,6 +41,15 @@ settings:
       value: bs_background_style_brick
       label: Brick
     -
+      value: bs_background_style_alert_red
+      label: 'Alert Red'
+    -
+      value: bs_background_style_alert_orange
+      label: 'Alert Orange'
+    -
+      value: bs_background_style_alert_yellow
+      label: 'Alert Yellow'
+    -
       value: bs_background_style_outline
       label: Outline
     -

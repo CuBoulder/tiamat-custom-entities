@@ -436,3 +436,48 @@ function cu_boulder_content_types_update_10004() {
   return t('Order By field added to People List Block.');
 }
 
+/**
+ * Hide Text Block "Alert" override and migrate to Alert Red background style.
+ *
+ * The Alert checkbox is replaced by the Alert Red (and other alert) background
+ * style options. Text blocks that had Alert checked are updated to use Alert Red
+ * instead; the Alert field is then hidden on the form.
+ */
+function cu_boulder_content_types_update_10005() {
+  // Migrate text blocks that had Alert checked: uncheck and set background to Alert Red.
+  try {
+    $storage = \Drupal::entityTypeManager()->getStorage('block_content');
+    $ids = $storage->getQuery()
+      ->condition('type', 'text_block')
+      ->condition('field_bs_text_block_alert', 1)
+      ->accessCheck(FALSE)
+      ->execute();
+    if (!empty($ids)) {
+      $entities = $storage->loadMultiple($ids);
+      foreach ($entities as $entity) {
+        if ($entity->hasField('field_bs_text_block_alert') && $entity->hasField('field_bs_background_style')) {
+          $entity->set('field_bs_text_block_alert', 0);
+          $entity->set('field_bs_background_style', 'bs_background_style_alert_red');
+          $entity->save();
+        }
+      }
+    }
+  }
+  catch (\Throwable $e) {
+    // Non-fatal: log and continue.
+  }
+
+  // Hide the Alert override field on the Text Block form.
+  $config = \Drupal::configFactory()->getEditable('core.entity_form_display.block_content.text_block.default');
+  if (!$config->isNew()) {
+    $content = $config->get('content') ?: [];
+    if (isset($content['field_bs_text_block_alert'])) {
+      $content['field_bs_text_block_alert']['region'] = 'hidden';
+      $config->set('content', $content);
+      $config->save();
+    }
+  }
+
+  return t('Text Block Alert override hidden; blocks using it migrated to Alert Red background style.');
+}
+
