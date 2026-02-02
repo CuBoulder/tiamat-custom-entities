@@ -437,31 +437,31 @@ function cu_boulder_content_types_update_10004() {
 }
 
 /**
- * Add Alert Red, Alert Orange, and Alert Yellow to field_bs_background_style.
+ * Add Alert Red, Alert Orange, and Alert Yellow to the Background Style dropdown.
  *
- * Inserts the three options after Brick and before Outline in the allowed values.
+ * Only adds the three options (after Brick, before Outline). Does nothing else.
+ * Uses config directly so the update succeeds even when the field already has data.
  */
 function cu_boulder_content_types_update_10005() {
-  $field_storage = FieldStorageConfig::loadByName('block_content', 'field_bs_background_style');
-  if (!$field_storage) {
+  $config = \Drupal::configFactory()->getEditable('field.storage.block_content.field_bs_background_style');
+  if ($config->isNew()) {
     return t('Field storage field_bs_background_style not found.');
   }
-  $settings = $field_storage->getSettings();
-  $allowed = $settings['allowed_values'] ?? [];
+  $allowed = $config->get('settings.allowed_values') ?? [];
+  $existing_values = array_map(function ($item) {
+    return $item['value'] ?? $item;
+  }, $allowed);
   $alert_options = [
     ['value' => 'bs_background_style_alert_red', 'label' => 'Alert Red'],
     ['value' => 'bs_background_style_alert_orange', 'label' => 'Alert Orange'],
     ['value' => 'bs_background_style_alert_yellow', 'label' => 'Alert Yellow'],
   ];
-  $alert_values = array_column($alert_options, 'value');
-
-  // Remove any existing alert options so we can reinsert them in the right place.
-  $allowed = array_values(array_filter($allowed, function ($item) use ($alert_values) {
-    $value = $item['value'] ?? $item;
-    return !in_array($value, $alert_values, TRUE);
-  }));
-
-  // Find the index of Outline (insert before it).
+  $to_add = array_filter($alert_options, function ($opt) use ($existing_values) {
+    return !in_array($opt['value'], $existing_values, TRUE);
+  });
+  if (empty($to_add)) {
+    return t('Alert options already present in Background Style dropdown.');
+  }
   $outline_index = NULL;
   foreach ($allowed as $i => $item) {
     $value = $item['value'] ?? $item;
@@ -470,14 +470,14 @@ function cu_boulder_content_types_update_10005() {
       break;
     }
   }
-
-  // Insert the three alert options before Outline (or at end if Outline not found).
   $insert_index = $outline_index !== NULL ? $outline_index : count($allowed);
-  array_splice($allowed, $insert_index, 0, $alert_options);
-
-  $field_storage->setSetting('allowed_values', $allowed);
-  $field_storage->save();
-  return t('Alert Red, Alert Orange, and Alert Yellow added to Background Style options.');
+  array_splice($allowed, $insert_index, 0, array_values($to_add));
+  $settings = $config->get('settings') ?: [];
+  $settings['allowed_values'] = $allowed;
+  $config->set('settings', $settings);
+  $config->save();
+  \Drupal::entityTypeManager()->getStorage('field_storage_config')->resetCache();
+  return t('Alert Red, Alert Orange, and Alert Yellow added to Background Style dropdown.');
 }
 
 /**
