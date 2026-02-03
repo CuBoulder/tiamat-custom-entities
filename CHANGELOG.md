@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Alert Color Updates
+  Added the alert color options to bs_background_style
+  
+  Hide the current Alert override
+  
+  Update hook to swap the alert override to the Alert Red bs background style if that is in use.
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1745
+  Sister PR: https://github.com/CuBoulder/ucb_styled_block/pull/5
+  Sister PR: https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/78
+---
+
 ## [20251210] - 2025-12-10
 
 - ### People List Block: Adds 'Order By' sort

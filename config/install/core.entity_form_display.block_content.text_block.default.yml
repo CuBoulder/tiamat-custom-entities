@@ -213,7 +213,7 @@ content:
   field_bs_text_block_alert:
     type: boolean_checkbox
     weight: 13
-    region: content
+    region: hidden
     settings:
       display_label: true
     third_party_settings: {  }

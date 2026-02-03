@@ -436,3 +436,91 @@ function cu_boulder_content_types_update_10004() {
   return t('Order By field added to People List Block.');
 }
 
+/**
+ * Add Alert Red, Alert Orange, and Alert Yellow to the Background Style dropdown.
+ *
+ * Only adds the three options (after Brick, before Outline). Does nothing else.
+ * Uses config directly so the update succeeds even when the field already has data.
+ */
+function cu_boulder_content_types_update_10005() {
+  $config = \Drupal::configFactory()->getEditable('field.storage.block_content.field_bs_background_style');
+  if ($config->isNew()) {
+    return t('Field storage field_bs_background_style not found.');
+  }
+  $allowed = $config->get('settings.allowed_values') ?? [];
+  $existing_values = array_map(function ($item) {
+    return $item['value'] ?? $item;
+  }, $allowed);
+  $alert_options = [
+    ['value' => 'bs_background_style_alert_red', 'label' => 'Alert Red'],
+    ['value' => 'bs_background_style_alert_orange', 'label' => 'Alert Orange'],
+    ['value' => 'bs_background_style_alert_yellow', 'label' => 'Alert Yellow'],
+  ];
+  $to_add = array_filter($alert_options, function ($opt) use ($existing_values) {
+    return !in_array($opt['value'], $existing_values, TRUE);
+  });
+  if (empty($to_add)) {
+    return t('Alert options already present in Background Style dropdown.');
+  }
+  $outline_index = NULL;
+  foreach ($allowed as $i => $item) {
+    $value = $item['value'] ?? $item;
+    if ($value === 'bs_background_style_outline') {
+      $outline_index = $i;
+      break;
+    }
+  }
+  $insert_index = $outline_index !== NULL ? $outline_index : count($allowed);
+  array_splice($allowed, $insert_index, 0, array_values($to_add));
+  $settings = $config->get('settings') ?: [];
+  $settings['allowed_values'] = $allowed;
+  $config->set('settings', $settings);
+  $config->save();
+  \Drupal::entityTypeManager()->getStorage('field_storage_config')->resetCache();
+  return t('Alert Red, Alert Orange, and Alert Yellow added to Background Style dropdown.');
+}
+
+/**
+ * Hide Text Block "Alert" override and migrate to Alert Red background style.
+ *
+ * The Alert checkbox is replaced by the Alert Red (and other alert) background
+ * style options. Text blocks that had Alert checked are updated to use Alert Red
+ * instead; the Alert field is then hidden on the form.
+ */
+function cu_boulder_content_types_update_10006() {
+  // Migrate text blocks that had Alert checked: uncheck and set background to Alert Red.
+  try {
+    $storage = \Drupal::entityTypeManager()->getStorage('block_content');
+    $ids = $storage->getQuery()
+      ->condition('type', 'text_block')
+      ->condition('field_bs_text_block_alert', 1)
+      ->accessCheck(FALSE)
+      ->execute();
+    if (!empty($ids)) {
+      $entities = $storage->loadMultiple($ids);
+      foreach ($entities as $entity) {
+        if ($entity->hasField('field_bs_text_block_alert') && $entity->hasField('field_bs_background_style')) {
+          $entity->set('field_bs_text_block_alert', 0);
+          $entity->set('field_bs_background_style', 'bs_background_style_alert_red');
+          $entity->save();
+        }
+      }
+    }
+  }
+  catch (\Throwable $e) {
+    // Non-fatal: log and continue.
+  }
+
+  // Hide the Alert override field on the Text Block form.
+  $config = \Drupal::configFactory()->getEditable('core.entity_form_display.block_content.text_block.default');
+  if (!$config->isNew()) {
+    $content = $config->get('content') ?: [];
+    if (isset($content['field_bs_text_block_alert'])) {
+      $content['field_bs_text_block_alert']['region'] = 'hidden';
+      $config->set('content', $content);
+      $config->save();
+    }
+  }
+
+  return t('Text Block Alert override hidden; blocks using it migrated to Alert Red background style.');
+}
