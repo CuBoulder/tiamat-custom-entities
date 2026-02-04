@@ -9,17 +9,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20260204] - 2026-02-04
+
 - ### Alert Color Updates
+
   Added the alert color options to bs_background_style
-  
+
   Hide the current Alert override
-  
+
   Update hook to swap the alert override to the Alert Red bs background style if that is in use.
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1745
-  Sister PR: https://github.com/CuBoulder/ucb_styled_block/pull/5
-  Sister PR: https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/78
----
+
+  Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1745>
+  Sister PR: <https://github.com/CuBoulder/ucb_styled_block/pull/5>
+  Sister PR: <https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/78>
+
+* * *
 
 ## [20251210] - 2025-12-10
 
@@ -1267,7 +1271,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251210...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260204...HEAD
+[20260204]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251210...20260204
 [20251210]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251029...20251210
 [20251029]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251022...20251029
 [20251022]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20250514...20251022
