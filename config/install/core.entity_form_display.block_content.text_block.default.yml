@@ -136,7 +136,6 @@ third_party_settings:
     group_bs_block_style:
       children:
         - field_bs_background_style
-        - field_bs_text_block_alert
       label: 'Block Style'
       region: content
       parent_name: group_bs_styles
@@ -210,13 +209,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_bs_text_block_alert:
-    type: boolean_checkbox
-    weight: 13
-    region: hidden
-    settings:
-      display_label: true
-    third_party_settings: {  }
   field_bs_title_font_scale:
     type: options_select
     weight: 10
@@ -239,4 +231,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_bs_text_block_alert: true

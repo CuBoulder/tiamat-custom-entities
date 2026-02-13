@@ -50,6 +50,9 @@ settings:
       value: bs_background_style_alert_yellow
       label: 'Alert Yellow'
     -
+      value: bs_background_style_alert_pink
+      label: 'Alert Pink'
+    -
       value: bs_background_style_outline
       label: Outline
     -

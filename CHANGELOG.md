@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Alert Pink Option
+  Added alert pink as an option for background styles after the other alert options Fixed the default form for text block style alert from showing up. Added additional install hooks for adding alert pink as well as doing the switch over from "Alert" to Alert Pink if the item is used.
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1758
+  Sister PR: https://github.com/CuBoulder/ucb_styled_block/pull/6
+  Sister PR: https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/80
+---
+
 ## [20260204] - 2026-02-04
 
 - ### Alert Color Updates
