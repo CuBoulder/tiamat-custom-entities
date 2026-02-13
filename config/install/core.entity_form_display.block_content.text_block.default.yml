@@ -136,7 +136,6 @@ third_party_settings:
     group_bs_block_style:
       children:
         - field_bs_background_style
-        - field_bs_text_block_alert
       label: 'Block Style'
       region: content
       parent_name: group_bs_styles
