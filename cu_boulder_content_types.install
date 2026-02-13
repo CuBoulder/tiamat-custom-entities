@@ -578,28 +578,20 @@ function cu_boulder_content_types_update_10008() {
     // Non-fatal: log and continue.
   }
 
-  // Hide the Alert override field on the Text Block form and remove from group.
-  $config = \Drupal::configFactory()->getEditable('core.entity_form_display.block_content.text_block.default');
-  if (!$config->isNew()) {
-    $content = $config->get('content') ?: [];
-    $changed = FALSE;
-    if (isset($content['field_bs_text_block_alert']) && $content['field_bs_text_block_alert']['region'] !== 'hidden') {
-      $content['field_bs_text_block_alert']['region'] = 'hidden';
-      $changed = TRUE;
+  // Hide the Alert override field on the Text Block form using removeComponent().
+  // Setting region to 'hidden' in content keeps the field in content and it still
+  // gets rendered. removeComponent() moves the field to the hidden array so it
+  // is excluded from the form entirely.
+  $form_display = EntityFormDisplay::load('block_content.text_block.default');
+  if ($form_display && $form_display->getComponent('field_bs_text_block_alert')) {
+    // Remove from field group first (avoids stale references).
+    $third_party = $form_display->getThirdPartySettings('field_group');
+    if (isset($third_party['group_bs_block_style']['children']) && in_array('field_bs_text_block_alert', $third_party['group_bs_block_style']['children'], TRUE)) {
+      $third_party['group_bs_block_style']['children'] = array_values(array_diff($third_party['group_bs_block_style']['children'], ['field_bs_text_block_alert']));
+      $form_display->setThirdPartySetting('field_group', 'group_bs_block_style', $third_party['group_bs_block_style']);
     }
-    // Remove Alert field from Block Style group.
-    $tps = $config->get('third_party_settings') ?: [];
-    $fg = $tps['field_group'] ?? [];
-    if (isset($fg['group_bs_block_style']['children']) && in_array('field_bs_text_block_alert', $fg['group_bs_block_style']['children'], TRUE)) {
-      $fg['group_bs_block_style']['children'] = array_values(array_diff($fg['group_bs_block_style']['children'], ['field_bs_text_block_alert']));
-      $tps['field_group'] = $fg;
-      $config->set('third_party_settings', $tps);
-      $changed = TRUE;
-    }
-    if ($changed) {
-      $config->set('content', $content);
-      $config->save();
-    }
+    $form_display->removeComponent('field_bs_text_block_alert');
+    $form_display->save();
   }
 
   return t('Text Block Alert override hidden; blocks using it migrated to Alert Pink background style.');
