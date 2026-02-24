@@ -3,6 +3,8 @@ description: 'Entity content schemas for the content types used by CU Boulder we
 type: module
 core_version_requirement: '^10 || ^11'
 dependencies:
+  - content_moderation
+  - context
   - field
   - field_group
   - layout_builder
@@ -13,8 +15,13 @@ dependencies:
   - menu_ui
   - node
   - path
+  - rdf
+  - rest
   - taxonomy
   - text
+  - tma_form_handler
+  - tma_interface
   - user
+  - views_bulk_operations
 version: '0.8'
 package: 'CU Boulder'
