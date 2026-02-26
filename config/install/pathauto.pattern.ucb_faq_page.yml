@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: ucb_faq_page
+label: 'UCB FAQ Page'
+type: 'canonical_entities:node'
+pattern: '/[node:menu-link:parent:url:path]/[node:title]'
+selection_criteria:
+  3a79cc89-7bb9-4fdb-8821-f2f464f6b210:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 3a79cc89-7bb9-4fdb-8821-f2f464f6b210
+    context_mapping:
+      node: node
+    bundles:
+      ucb_faq_page: ucb_faq_page
+selection_logic: and
+weight: -5
+relationships: {  }
