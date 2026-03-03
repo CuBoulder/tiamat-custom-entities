@@ -64,10 +64,10 @@ elements: |-
             - '[webform_submission:current-page]_cancel'
         '#markup': '<a href="/node/3">Cancel</a>'
       task_select:
-        '#type': webform_entity_radios
-        '#title': 'Issue Type: <strong>[webform_submission:values:categories:entity:name]</strong>'
+        '#type': webform_entity_select
+        '#title': 'Issue Type'
         '#required': true
-        '#format': label
+        '#empty_option': '- Select an issue type -'
         '#target_type': node
         '#selection_handler': views
         '#selection_settings':
@@ -99,6 +99,7 @@ elements: |-
         '#preview_next__label': Next
     faq:
       '#type': webform_markup
+      '#access': false
       '#markup': '[webform_submission:values:categories:entity:tid]'
   step_2:
     '#type': webform_wizard_page
