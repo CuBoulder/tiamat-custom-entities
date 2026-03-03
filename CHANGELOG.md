@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### #226 - Adds pathauto to FAQ Page content type
+  Previously FAQ pages were missing the auto alias checkbox, which means the urls just end up being node paths unless the alias field has a value.
+  
+  This has been corrected so FAQ Pages generate the following path pattern, mirroring Basic, Form, Person List, Article List, and other pages: 
+  
+  `/[node:menu-link:parent:url:path]/[node: title]`
+  
+  Resolves #226  
+  
+  
+---
+
 ## [20260218] - 2026-02-18
 
 - ### Alert Pink Option
