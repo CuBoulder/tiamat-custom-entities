@@ -9,17 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20260310] - 2026-03-10
+
 - ### #226 - Adds pathauto to FAQ Page content type
+
   Previously FAQ pages were missing the auto alias checkbox, which means the urls just end up being node paths unless the alias field has a value.
-  
+
   This has been corrected so FAQ Pages generate the following path pattern, mirroring Basic, Form, Person List, Article List, and other pages: 
-  
+
   `/[node:menu-link:parent:url:path]/[node: title]`
-  
+
   Resolves #226  
-  
-  
----
+
+* * *
 
 ## [20260218] - 2026-02-18
 
@@ -1295,7 +1297,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260218...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260310...HEAD
+[20260310]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260218...20260310
 [20260218]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260204...20260218
 [20260204]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251210...20260204
 [20251210]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251029...20251210
