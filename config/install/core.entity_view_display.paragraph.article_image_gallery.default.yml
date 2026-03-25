@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.article_image_gallery.field_image_gallery_photo
+    - field.field.paragraph.article_image_gallery.field_masonry_columns
+    - field.field.paragraph.article_image_gallery.field_masonry_display
+    - paragraphs.paragraphs_type.article_image_gallery
+id: paragraph.article_image_gallery.default
+targetEntityType: paragraph
+bundle: article_image_gallery
+mode: default
+content: {  }
+hidden:
+  field_image_gallery_photo: true
+  field_masonry_columns: true
+  field_masonry_display: true
