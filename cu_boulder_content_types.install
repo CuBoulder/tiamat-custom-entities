@@ -3,13 +3,90 @@
 /**
  * @file
  * Install, update and uninstall functions for the CU Boulder Content Types module.
+ *
+ * Article slider paragraph: also in config/install (clean installs). Update 10012
+ * installs it on existing databases via Field API (not raw config writes).
  */
 
 use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\field\Entity\FieldConfig;
+use Drupal\Core\Config\FileStorage;
 use Drupal\Core\Entity\Entity\EntityFormDisplay;
 use Drupal\Core\Entity\Entity\EntityViewDisplay;
 use Symfony\Component\Yaml\Yaml;
+
+/**
+ * Prepares list_string field storage config for FieldStorageConfig::create().
+ * simplified key => label settings — same pattern as update_10004.
+ */
+function _cu_boulder_content_types_field_storage_data_for_list_string_create(array $data): array {
+  $allowed = $data['settings']['allowed_values'] ?? NULL;
+  if (!is_array($allowed)) {
+    return $data;
+  }
+  $first = reset($allowed);
+  if (!is_array($first) || !array_key_exists('value', $first)) {
+    return $data;
+  }
+  $flat = [];
+  foreach ($allowed as $item) {
+    if (!is_array($item) || !isset($item['value'])) {
+      continue;
+    }
+    $label = $item['label'] ?? '';
+    if (is_array($label)) {
+      $label = reset($label) ?: '';
+    }
+    $flat[(string) $item['value']] = (string) $label;
+  }
+  $data['settings']['allowed_values'] = $flat;
+  return $data;
+}
+
+/**
+ * Installs article_slider + fields from config/install (Entity API creates DB tables).
+ */
+function _cu_boulder_content_types_install_article_slider_config(string $config_path): void {
+  $source = new FileStorage($config_path);
+  $ptype_storage = \Drupal::entityTypeManager()->getStorage('paragraphs_type');
+  if (!$ptype_storage->load('article_slider')) {
+    $data = $source->read('paragraphs.paragraphs_type.article_slider');
+    if ($data) {
+      $ptype_storage->create($data)->save();
+    }
+  }
+  foreach (['field_slider_size', 'field_slider_slide', 'field_slider_text_style'] as $name) {
+    if (!FieldStorageConfig::loadByName('paragraph', $name)) {
+      $data = $source->read('field.storage.paragraph.' . $name);
+      if ($data) {
+        if (($data['type'] ?? '') === 'list_string') {
+          $data = _cu_boulder_content_types_field_storage_data_for_list_string_create($data);
+        }
+        FieldStorageConfig::create($data)->save();
+      }
+    }
+  }
+  foreach (['field_slider_size', 'field_slider_slide', 'field_slider_text_style'] as $name) {
+    if (!FieldConfig::loadByName('paragraph', 'article_slider', $name)) {
+      $data = $source->read('field.field.paragraph.article_slider.' . $name);
+      if ($data) {
+        FieldConfig::create($data)->save();
+      }
+    }
+  }
+  if (!EntityFormDisplay::load('paragraph.article_slider.default')) {
+    $data = $source->read('core.entity_form_display.paragraph.article_slider.default');
+    if ($data) {
+      EntityFormDisplay::create($data)->save();
+    }
+  }
+  if (!EntityViewDisplay::load('paragraph.article_slider.default')) {
+    $data = $source->read('core.entity_view_display.paragraph.article_slider.default');
+    if ($data) {
+      EntityViewDisplay::create($data)->save();
+    }
+  }
+}
 
 /**
  * Adds abstract field to basic pages.
@@ -631,4 +708,37 @@ function cu_boulder_content_types_update_10007() {
   $config->save();
   \Drupal::entityTypeManager()->getStorage('field_storage_config')->resetCache();
   return t('Alert Pink added to Background Style dropdown.');
+}
+
+/**
+ * Adds article_slider paragraph and enables it on article Secondary Content.
+ */
+function cu_boulder_content_types_update_10012() {
+  $config_path = \Drupal::service('extension.list.module')->getPath('cu_boulder_content_types') . '/config/install';
+  _cu_boulder_content_types_install_article_slider_config($config_path);
+
+  $field = FieldConfig::loadByName('paragraph', 'article_content', 'field_article_media_selection');
+  if ($field) {
+    $handler = $field->getSetting('handler_settings') ?: [];
+    $bundles = $handler['target_bundles'] ?? [];
+    if (!isset($bundles['article_slider'])) {
+      $bundles['article_slider'] = 'article_slider';
+      $handler['target_bundles'] = $bundles;
+    }
+    $drag = $handler['target_bundles_drag_drop'] ?? [];
+    if (!isset($drag['article_slider'])) {
+      $drag['article_slider'] = ['weight' => 25, 'enabled' => TRUE];
+    }
+    $handler['target_bundles_drag_drop'] = $drag;
+    $field->setSetting('handler_settings', $handler);
+    $field->save();
+  }
+
+  \Drupal::entityTypeManager()->getStorage('field_storage_config')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('field_config')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('entity_form_display')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('entity_view_display')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('paragraphs_type')->resetCache();
+
+  return t('Article Slider paragraph added for secondary content.');
 }
