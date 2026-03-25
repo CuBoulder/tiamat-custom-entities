@@ -5,8 +5,6 @@ dependencies:
     - field.storage.paragraph.field_article_media_selection
     - paragraphs.paragraphs_type.article_content
     - paragraphs.paragraphs_type.article_secondary_content
-    - paragraphs.paragraphs_type.article_image_gallery
-    - paragraphs.paragraphs_type.article_slider
     - paragraphs.paragraphs_type.blockquote
     - paragraphs.paragraphs_type.from_library
     - paragraphs.paragraphs_type.media
@@ -17,7 +15,7 @@ field_name: field_article_media_selection
 entity_type: paragraph
 bundle: article_content
 label: 'Secondary Content Selection'
-description: "Add media (image/video), image slider, image gallery, stylized blockquotes, or a secondary text block to the section.<br>\r\nSecondary text blocks can be made reusable through the Paragraphs library.<br>\r\nReusable Secondary Text places reusable secondary text from the Paragraphs Library."
+description: "Add media (image/video), stylized blockquotes, or a secondary text block to the section.<br>\r\nSecondary text blocks can be made reusable through the Paragraphs library.<br>\r\nReusable Secondary Text places reusable secondary text from the Paragraphs Library."
 required: false
 translatable: false
 default_value: {  }
@@ -29,8 +27,6 @@ settings:
       media: media
       blockquote: blockquote
       article_secondary_content: article_secondary_content
-      article_slider: article_slider
-      article_image_gallery: article_image_gallery
       from_library: from_library
     negate: 0
     target_bundles_drag_drop:
@@ -39,12 +35,6 @@ settings:
         enabled: false
       article_secondary_content:
         weight: 24
-        enabled: true
-      article_slider:
-        weight: 25
-        enabled: true
-      article_image_gallery:
-        weight: 26
         enabled: true
       blockquote:
         weight: -14

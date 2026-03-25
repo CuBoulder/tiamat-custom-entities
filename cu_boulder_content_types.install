@@ -637,13 +637,13 @@ function cu_boulder_content_types_update_10007() {
 }
 
 /**
- * Adds article_slider paragraph and enables it on article Secondary Content.
+ * Adds article_slider paragraph and enables it on the ucb_article content field.
  */
 function cu_boulder_content_types_update_10012() {
   $config_path = \Drupal::service('extension.list.module')->getPath('cu_boulder_content_types') . '/config/install';
   _cu_boulder_content_types_install_article_slider_config($config_path);
 
-  _cu_boulder_content_types_article_media_selection_enable_bundle('article_slider', 25);
+  _cu_boulder_content_types_entity_reference_paragraphs_field_enable_bundle('node', 'ucb_article', 'field_ucb_article_content', 'article_slider', 25);
 
   \Drupal::entityTypeManager()->getStorage('field_storage_config')->resetCache();
   \Drupal::entityTypeManager()->getStorage('field_config')->resetCache();
@@ -651,17 +651,17 @@ function cu_boulder_content_types_update_10012() {
   \Drupal::entityTypeManager()->getStorage('entity_view_display')->resetCache();
   \Drupal::entityTypeManager()->getStorage('paragraphs_type')->resetCache();
 
-  return t('Article Slider paragraph added for secondary content.');
+  return t('Article Slider paragraph added; enabled on Article Content.');
 }
 
 /**
- * Adds article_image_gallery paragraph for article secondary content.
+ * Adds article_image_gallery paragraph and enables it on the ucb_article content field.
  */
 function cu_boulder_content_types_update_10013() {
   $config_path = \Drupal::service('extension.list.module')->getPath('cu_boulder_content_types') . '/config/install';
   _cu_boulder_content_types_install_article_image_gallery_config($config_path);
 
-  _cu_boulder_content_types_article_media_selection_enable_bundle('article_image_gallery', 26);
+  _cu_boulder_content_types_entity_reference_paragraphs_field_enable_bundle('node', 'ucb_article', 'field_ucb_article_content', 'article_image_gallery', 26);
 
   \Drupal::entityTypeManager()->getStorage('field_storage_config')->resetCache();
   \Drupal::entityTypeManager()->getStorage('field_config')->resetCache();
@@ -669,26 +669,7 @@ function cu_boulder_content_types_update_10013() {
   \Drupal::entityTypeManager()->getStorage('entity_view_display')->resetCache();
   \Drupal::entityTypeManager()->getStorage('paragraphs_type')->resetCache();
 
-  return t('Article Image Gallery paragraph added for secondary content.');
-}
-
-/**
- * Use Paragraphs "Dropdown button" add mode for Secondary Content on article paragraphs.
- */
-function cu_boulder_content_types_update_10014() {
-  $form_display = EntityFormDisplay::load('paragraph.article_content.default');
-  if (!$form_display) {
-    return t('Form display paragraph.article_content.default not found; skipped.');
-  }
-  $component = $form_display->getComponent('field_article_media_selection');
-  if (!$component || ($component['type'] ?? '') !== 'entity_reference_paragraphs') {
-    return t('field_article_media_selection is not using the Paragraphs widget; skipped.');
-  }
-  $component['settings']['add_mode'] = 'dropdown';
-  $form_display->setComponent('field_article_media_selection', $component);
-  $form_display->save();
-
-  return t('Secondary Content paragraph field now uses dropdown add mode.');
+  return t('Article Image Gallery paragraph added; enabled on Article Content.');
 }
 
 /**
@@ -719,22 +700,22 @@ function _cu_boulder_content_types_field_storage_data_for_options_list_create(ar
 }
 
 /**
- * Enables a paragraph bundle on article Secondary Content (field_article_media_selection).
+ * Enables a paragraph bundle on an entity_reference_revisions (paragraphs) field.
  */
-function _cu_boulder_content_types_article_media_selection_enable_bundle(string $bundle_id, int $drag_weight): void {
-  $field = FieldConfig::loadByName('paragraph', 'article_content', 'field_article_media_selection');
+function _cu_boulder_content_types_entity_reference_paragraphs_field_enable_bundle(string $entity_type_id, string $bundle, string $field_name, string $paragraph_bundle_id, int $drag_weight): void {
+  $field = FieldConfig::loadByName($entity_type_id, $bundle, $field_name);
   if (!$field) {
     return;
   }
   $handler = $field->getSetting('handler_settings') ?: [];
   $bundles = $handler['target_bundles'] ?? [];
-  if (!isset($bundles[$bundle_id])) {
-    $bundles[$bundle_id] = $bundle_id;
+  if (!isset($bundles[$paragraph_bundle_id])) {
+    $bundles[$paragraph_bundle_id] = $paragraph_bundle_id;
     $handler['target_bundles'] = $bundles;
   }
   $drag = $handler['target_bundles_drag_drop'] ?? [];
-  if (!isset($drag[$bundle_id])) {
-    $drag[$bundle_id] = ['weight' => $drag_weight, 'enabled' => TRUE];
+  if (!isset($drag[$paragraph_bundle_id])) {
+    $drag[$paragraph_bundle_id] = ['weight' => $drag_weight, 'enabled' => TRUE];
   }
   $handler['target_bundles_drag_drop'] = $drag;
   $field->setSetting('handler_settings', $handler);
