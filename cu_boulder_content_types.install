@@ -3,10 +3,13 @@
 /**
  * @file
  * Install, update and uninstall functions for the CU Boulder Content Types module.
+ *
+ * Shared helpers for paragraph migrations live at the bottom of this file.
  */
 
 use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\field\Entity\FieldConfig;
+use Drupal\Core\Config\FileStorage;
 use Drupal\Core\Entity\Entity\EntityFormDisplay;
 use Drupal\Core\Entity\Entity\EntityViewDisplay;
 use Symfony\Component\Yaml\Yaml;
@@ -631,4 +634,188 @@ function cu_boulder_content_types_update_10007() {
   $config->save();
   \Drupal::entityTypeManager()->getStorage('field_storage_config')->resetCache();
   return t('Alert Pink added to Background Style dropdown.');
+}
+
+/**
+ * Adds article_slider paragraph and enables it on the ucb_article content field.
+ */
+function cu_boulder_content_types_update_10012() {
+  $config_path = \Drupal::service('extension.list.module')->getPath('cu_boulder_content_types') . '/config/install';
+  _cu_boulder_content_types_install_article_slider_config($config_path);
+
+  _cu_boulder_content_types_entity_reference_paragraphs_field_enable_bundle('node', 'ucb_article', 'field_ucb_article_content', 'article_slider', 25);
+
+  \Drupal::entityTypeManager()->getStorage('field_storage_config')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('field_config')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('entity_form_display')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('entity_view_display')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('paragraphs_type')->resetCache();
+
+  return t('Article Slider paragraph added; enabled on Article Content.');
+}
+
+/**
+ * Adds article_image_gallery paragraph and enables it on the ucb_article content field.
+ */
+function cu_boulder_content_types_update_10013() {
+  $config_path = \Drupal::service('extension.list.module')->getPath('cu_boulder_content_types') . '/config/install';
+  _cu_boulder_content_types_install_article_image_gallery_config($config_path);
+
+  _cu_boulder_content_types_entity_reference_paragraphs_field_enable_bundle('node', 'ucb_article', 'field_ucb_article_content', 'article_image_gallery', 26);
+
+  \Drupal::entityTypeManager()->getStorage('field_storage_config')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('field_config')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('entity_form_display')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('entity_view_display')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('paragraphs_type')->resetCache();
+
+  return t('Article Image Gallery paragraph added; enabled on Article Content.');
+}
+
+/**
+ * Flattens list_string / list_integer allowed_values from install YAML for create().
+ */
+function _cu_boulder_content_types_field_storage_data_for_options_list_create(array $data): array {
+  $allowed = $data['settings']['allowed_values'] ?? NULL;
+  if (!is_array($allowed)) {
+    return $data;
+  }
+  $first = reset($allowed);
+  if (!is_array($first) || !array_key_exists('value', $first)) {
+    return $data;
+  }
+  $flat = [];
+  foreach ($allowed as $item) {
+    if (!is_array($item) || !isset($item['value'])) {
+      continue;
+    }
+    $label = $item['label'] ?? '';
+    if (is_array($label)) {
+      $label = reset($label) ?: '';
+    }
+    $flat[(string) $item['value']] = (string) $label;
+  }
+  $data['settings']['allowed_values'] = $flat;
+  return $data;
+}
+
+/**
+ * Enables a paragraph bundle on an entity_reference_revisions (paragraphs) field.
+ */
+function _cu_boulder_content_types_entity_reference_paragraphs_field_enable_bundle(string $entity_type_id, string $bundle, string $field_name, string $paragraph_bundle_id, int $drag_weight): void {
+  $field = FieldConfig::loadByName($entity_type_id, $bundle, $field_name);
+  if (!$field) {
+    return;
+  }
+  $handler = $field->getSetting('handler_settings') ?: [];
+  $bundles = $handler['target_bundles'] ?? [];
+  if (!isset($bundles[$paragraph_bundle_id])) {
+    $bundles[$paragraph_bundle_id] = $paragraph_bundle_id;
+    $handler['target_bundles'] = $bundles;
+  }
+  $drag = $handler['target_bundles_drag_drop'] ?? [];
+  if (!isset($drag[$paragraph_bundle_id])) {
+    $drag[$paragraph_bundle_id] = ['weight' => $drag_weight, 'enabled' => TRUE];
+  }
+  $handler['target_bundles_drag_drop'] = $drag;
+  $field->setSetting('handler_settings', $handler);
+  $field->save();
+}
+
+/**
+ * Installs article_slider + fields from config/install (Entity API creates DB tables).
+ */
+function _cu_boulder_content_types_install_article_slider_config(string $config_path): void {
+  $source = new FileStorage($config_path);
+  $ptype_storage = \Drupal::entityTypeManager()->getStorage('paragraphs_type');
+  if (!$ptype_storage->load('article_slider')) {
+    $data = $source->read('paragraphs.paragraphs_type.article_slider');
+    if ($data) {
+      $ptype_storage->create($data)->save();
+    }
+  }
+  foreach (['field_slider_size', 'field_slider_slide', 'field_slider_text_style'] as $name) {
+    if (!FieldStorageConfig::loadByName('paragraph', $name)) {
+      $data = $source->read('field.storage.paragraph.' . $name);
+      if ($data) {
+        if (in_array($data['type'] ?? '', ['list_string', 'list_integer'], TRUE)) {
+          $data = _cu_boulder_content_types_field_storage_data_for_options_list_create($data);
+        }
+        FieldStorageConfig::create($data)->save();
+      }
+    }
+  }
+  foreach (['field_slider_size', 'field_slider_slide', 'field_slider_text_style'] as $name) {
+    if (!FieldConfig::loadByName('paragraph', 'article_slider', $name)) {
+      $data = $source->read('field.field.paragraph.article_slider.' . $name);
+      if ($data) {
+        FieldConfig::create($data)->save();
+      }
+    }
+  }
+  if (!EntityFormDisplay::load('paragraph.article_slider.default')) {
+    $data = $source->read('core.entity_form_display.paragraph.article_slider.default');
+    if ($data) {
+      EntityFormDisplay::create($data)->save();
+    }
+  }
+  if (!EntityViewDisplay::load('paragraph.article_slider.default')) {
+    $data = $source->read('core.entity_view_display.paragraph.article_slider.default');
+    if ($data) {
+      EntityViewDisplay::create($data)->save();
+    }
+  }
+}
+
+/**
+ * Installs article_image_gallery paragraph + fields from config/install.
+ */
+function _cu_boulder_content_types_install_article_image_gallery_config(string $config_path): void {
+  $source = new FileStorage($config_path);
+  $ptype_storage = \Drupal::entityTypeManager()->getStorage('paragraphs_type');
+  if (!$ptype_storage->load('article_image_gallery')) {
+    $data = $source->read('paragraphs.paragraphs_type.article_image_gallery');
+    if ($data) {
+      $ptype_storage->create($data)->save();
+    }
+  }
+  foreach ([
+    'field_image_gallery_photo',
+    'field_masonry_columns',
+    'field_masonry_display',
+  ] as $name) {
+    if (!FieldStorageConfig::loadByName('paragraph', $name)) {
+      $data = $source->read('field.storage.paragraph.' . $name);
+      if ($data) {
+        if (in_array($data['type'] ?? '', ['list_string', 'list_integer'], TRUE)) {
+          $data = _cu_boulder_content_types_field_storage_data_for_options_list_create($data);
+        }
+        FieldStorageConfig::create($data)->save();
+      }
+    }
+  }
+  foreach ([
+    'field_image_gallery_photo',
+    'field_masonry_columns',
+    'field_masonry_display',
+  ] as $name) {
+    if (!FieldConfig::loadByName('paragraph', 'article_image_gallery', $name)) {
+      $data = $source->read('field.field.paragraph.article_image_gallery.' . $name);
+      if ($data) {
+        FieldConfig::create($data)->save();
+      }
+    }
+  }
+  if (!EntityFormDisplay::load('paragraph.article_image_gallery.default')) {
+    $data = $source->read('core.entity_form_display.paragraph.article_image_gallery.default');
+    if ($data) {
+      EntityFormDisplay::create($data)->save();
+    }
+  }
+  if (!EntityViewDisplay::load('paragraph.article_image_gallery.default')) {
+    $data = $source->read('core.entity_view_display.paragraph.article_image_gallery.default');
+    if ($data) {
+      EntityViewDisplay::create($data)->save();
+    }
+  }
 }

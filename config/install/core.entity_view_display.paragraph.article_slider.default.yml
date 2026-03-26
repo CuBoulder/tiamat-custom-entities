@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.article_slider.field_slider_size
+    - field.field.paragraph.article_slider.field_slider_slide
+    - field.field.paragraph.article_slider.field_slider_text_style
+    - paragraphs.paragraphs_type.article_slider
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.article_slider.default
+targetEntityType: paragraph
+bundle: article_slider
+mode: default
+content:
+  field_slider_size:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_slider_slide:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_slider_text_style:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

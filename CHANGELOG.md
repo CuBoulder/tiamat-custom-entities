@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Issue/1766
+  Add Slider paragraph to the Article page as a secondary media option
+  Add Image Gallery paragraph to the Article page as a secondary media option
+  Both paragraphs function like their block counter parts.
+  Update hooks for existing environments are created as well.
+  
+  The update hooks are set to 10012, 10013, and 10014. For some reason 9, 10, and 11 weren't working. 
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1776
+  
+---
+
 ## [20260310] - 2026-03-10
 
 - ### #226 - Adds pathauto to FAQ Page content type

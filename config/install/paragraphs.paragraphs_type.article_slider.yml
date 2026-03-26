@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: article_slider
+label: Slider
+icon_uuid: null
+icon_default: null
+description: 'Image/content carousel for article secondary content (size, text style, and slides).'
+behavior_plugins: {  }
