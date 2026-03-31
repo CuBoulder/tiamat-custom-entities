@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: article_image_gallery
+label: 'Image gallery'
+icon_uuid: null
+icon_default: null
+description: 'Multi-image gallery with optional masonry layout for article secondary content (same behavior as the layout Image Gallery block, without block style options).'
+behavior_plugins: {  }
