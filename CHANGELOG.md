@@ -9,11 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20260402] - 2026-04-02
+
 - ### Image Gallery Focal Render
+
   Update entity view to render initial image properly for the image gallery in articles.
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1781
----
+
+  Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1781>
+
+* * *
 
 ## [20260331] - 2026-04-01
 
@@ -1318,7 +1322,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260331...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260402...HEAD
+[20260402]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260331...20260402
 [20260331]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260310...20260331
 [20260310]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260218...20260310
 [20260218]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260204...20260218
