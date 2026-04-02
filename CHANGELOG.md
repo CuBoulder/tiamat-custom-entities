@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Image Gallery Focal Render
+  Update entity view to render initial image properly for the image gallery in articles.
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1781
+---
+
 ## [20260331] - 2026-04-01
 
 - ### Issue/1766
