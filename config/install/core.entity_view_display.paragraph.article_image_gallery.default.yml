@@ -6,12 +6,37 @@ dependencies:
     - field.field.paragraph.article_image_gallery.field_masonry_columns
     - field.field.paragraph.article_image_gallery.field_masonry_display
     - paragraphs.paragraphs_type.article_image_gallery
+  module:
+    - options
 id: paragraph.article_image_gallery.default
 targetEntityType: paragraph
 bundle: article_image_gallery
 mode: default
-content: {  }
-hidden:
-  field_image_gallery_photo: true
-  field_masonry_columns: true
-  field_masonry_display: true
+content:
+  field_image_gallery_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: focal_image_square
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_masonry_columns:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_masonry_display:
+    type: boolean
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
