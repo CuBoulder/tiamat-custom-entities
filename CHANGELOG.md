@@ -9,17 +9,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20260402] - 2026-04-02
+
+- ### Image Gallery Focal Render
+
+  Update entity view to render initial image properly for the image gallery in articles.
+
+  Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1781>
+
+* * *
+
+## [20260331] - 2026-04-01
+
 - ### Issue/1766
+
   Add Slider paragraph to the Article page as a secondary media option
   Add Image Gallery paragraph to the Article page as a secondary media option
   Both paragraphs function like their block counter parts.
   Update hooks for existing environments are created as well.
-  
+
   The update hooks are set to 10012, 10013, and 10014. For some reason 9, 10, and 11 weren't working. 
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1776
-  
----
+
+  Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1776>
+
+* * *
 
 ## [20260310] - 2026-03-10
 
@@ -1309,7 +1322,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260310...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260402...HEAD
+[20260402]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260331...20260402
+[20260331]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260310...20260331
 [20260310]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260218...20260310
 [20260218]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260204...20260218
 [20260204]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20251210...20260204

@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: article_content
-label: 'Article Content'
+label: 'Article Text'
 icon_uuid: null
 icon_default: null
 description: "A block that can contain text and images, used for articles.\t"
