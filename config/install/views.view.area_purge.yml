@@ -6,7 +6,6 @@ dependencies:
     - field.storage.taxonomy_term.field_tma_area_id
     - field.storage.taxonomy_term.field_tma_building_id_
     - taxonomy.vocabulary.area
-    - user.role.administrator
   module:
     - taxonomy
     - user
@@ -296,10 +295,9 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: role
+        type: perm
         options:
-          role:
-            administrator: administrator
+          perm: 'administer taxonomy'
       cache:
         type: tag
         options: {  }
@@ -375,7 +373,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user.roles
+        - user.permissions
       tags:
         - 'config:field.storage.taxonomy_term.field_tma_area_id'
         - 'config:field.storage.taxonomy_term.field_tma_building_id_'
@@ -393,7 +391,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user.roles
+        - user.permissions
       tags:
         - 'config:field.storage.taxonomy_term.field_tma_area_id'
         - 'config:field.storage.taxonomy_term.field_tma_building_id_'
