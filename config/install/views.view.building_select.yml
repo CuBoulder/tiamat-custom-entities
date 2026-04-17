@@ -553,6 +553,9 @@ display:
             name:
               alias: ''
               raw_output: false
+            field_tma_building_id_:
+              alias: ''
+              raw_output: false
       display_extenders: {  }
       path: rest/buildings/%
     cache_metadata:
