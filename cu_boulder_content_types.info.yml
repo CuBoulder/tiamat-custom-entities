@@ -21,8 +21,8 @@ dependencies:
   - rest
   - taxonomy
   - text
-  - tma_form_handler
-  - tma_interface
+  - ucb_tma_form_handler
+  - ucb_tma_interface
   - user
   - views_bulk_operations
 version: '0.8'
