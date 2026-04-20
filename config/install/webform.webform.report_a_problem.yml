@@ -387,10 +387,10 @@ access:
     users: {  }
     permissions: {  }
 handlers:
-  tma_form_handler:
-    id: tma_form_handler
-    handler_id: tma_form_handler
-    label: 'TMA Form Handler'
+  ucb_tma_form_handler:
+    id: ucb_tma_form_handler
+    handler_id: ucb_tma_form_handler
+    label: 'UCB TMA form handler'
     notes: ''
     status: true
     conditions: {  }
