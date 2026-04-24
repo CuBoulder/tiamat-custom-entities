@@ -4,7 +4,9 @@ type: module
 core_version_requirement: '^10 || ^11'
 dependencies:
   - entity_reference_revisions
+  - focal_point
   - field
+  - options
   - field_group
   - layout_builder
   - layout_discovery

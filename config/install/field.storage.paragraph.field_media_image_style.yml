@@ -2,26 +2,26 @@ langcode: en
 status: true
 dependencies:
   module:
-    - node
     - options
-id: node.field_ucb_article_style
-field_name: field_ucb_article_style
-entity_type: node
+    - paragraphs
+id: paragraph.field_media_image_style
+field_name: field_media_image_style
+entity_type: paragraph
 type: list_string
 settings:
   allowed_values:
     -
-      value: '0'
-      label: Traditional
+      value: original
+      label: Original
     -
-      value: '1'
-      label: 'Dark Mode'
+      value: wide
+      label: Wide
     -
-      value: '2'
-      label: 'Zebra Striped'
+      value: square
+      label: Square
     -
-      value: '3'
-      label: 'Narrow'
+      value: focal_wide_4_3
+      label: 'Focal image wide'
   allowed_values_function: ''
 module: options
 locked: false
