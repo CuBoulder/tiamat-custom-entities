@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media.field_media
+    - field.storage.paragraph.field_media_image_style
+    - paragraphs.paragraphs_type.media
+  module:
+    - options
+id: paragraph.media.field_media_image_style
+field_name: field_media_image_style
+entity_type: paragraph
+bundle: media
+label: 'Image style'
+description: 'Controls cropping and size for image media. Does not apply to video.'
+required: false
+translatable: false
+default_value:
+  -
+    value: original
+default_value_callback: ''
+settings: {  }
+field_type: list_string

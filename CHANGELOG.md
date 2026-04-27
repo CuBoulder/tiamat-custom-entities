@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Article Updates
+  Updates for narrow article style, image styles, and wysiwyg styles.
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1789
+  Sister PR: https://github.com/CuBoulder/tiamat10-profile/pull/322
+---
+
 ## [20260402] - 2026-04-02
 
 - ### Image Gallery Focal Render
