@@ -9,12 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20260429] - 2026-04-29
+
 - ### Article Updates
+
   Updates for narrow article style, image styles, and wysiwyg styles.
-  
-  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1789
-  Sister PR: https://github.com/CuBoulder/tiamat10-profile/pull/322
----
+
+  Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1789>
+  Sister PR: <https://github.com/CuBoulder/tiamat10-profile/pull/322>
+
+* * *
 
 ## [20260402] - 2026-04-02
 
@@ -1329,7 +1333,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * * *
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260402...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260429...HEAD
+[20260429]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260402...20260429
 [20260402]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260331...20260402
 [20260331]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260310...20260331
 [20260310]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260218...20260310
