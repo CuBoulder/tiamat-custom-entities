@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.email_mjml
+label: 'Email MJML'
+description: 'Renders email newsletters through the MJML framework for improved email client compatibility and visual consistency, and future enhancements. Future replacement to the current Email HTML content type.'
+targetEntityType: node
+cache: true
