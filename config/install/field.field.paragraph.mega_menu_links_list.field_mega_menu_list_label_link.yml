@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mega_menu_list_label_link
+    - paragraphs.paragraphs_type.mega_menu_links_list
+  module:
+    - link
+id: paragraph.mega_menu_links_list.field_mega_menu_list_label_link
+field_name: field_mega_menu_list_label_link
+entity_type: paragraph
+bundle: mega_menu_links_list
+label: 'Label link'
+description: 'When set, the column label links to this URL (similar to a section overview in the main menu).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

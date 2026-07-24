@@ -673,6 +673,65 @@ function cu_boulder_content_types_update_10013() {
 }
 
 /**
+ * Adds optional label link field to mega menu links list paragraphs.
+ */
+function cu_boulder_content_types_update_10014() {
+  $config_path = \Drupal::service('extension.list.module')->getPath('cu_boulder_content_types') . '/config/install';
+
+  if (!FieldStorageConfig::loadByName('paragraph', 'field_mega_menu_list_label_link')) {
+    $field_storage_config = \Drupal::service('config.storage')->read('field.storage.paragraph.field_mega_menu_list_label_link');
+    if (!$field_storage_config) {
+      $field_storage_config = Yaml::parse(file_get_contents($config_path . '/field.storage.paragraph.field_mega_menu_list_label_link.yml'));
+    }
+    FieldStorageConfig::create($field_storage_config)->save();
+  }
+
+  if (!FieldConfig::loadByName('paragraph', 'mega_menu_links_list', 'field_mega_menu_list_label_link')) {
+    $field_config = \Drupal::service('config.storage')->read('field.field.paragraph.mega_menu_links_list.field_mega_menu_list_label_link');
+    if (!$field_config) {
+      $field_config = Yaml::parse(file_get_contents($config_path . '/field.field.paragraph.mega_menu_links_list.field_mega_menu_list_label_link.yml'));
+    }
+    FieldConfig::create($field_config)->save();
+  }
+
+  $form_display = EntityFormDisplay::load('paragraph.mega_menu_links_list.default');
+  if ($form_display && !$form_display->getComponent('field_mega_menu_list_label_link')) {
+    $form_display->setComponent('field_mega_menu_list_label_link', [
+      'type' => 'link_default',
+      'weight' => 1,
+      'region' => 'content',
+      'settings' => [
+        'placeholder_url' => '',
+        'placeholder_title' => '',
+      ],
+      'third_party_settings' => [],
+    ]);
+    $links_component = $form_display->getComponent('field_mega_menu_links_list_links');
+    if ($links_component) {
+      $links_component['weight'] = 2;
+      $form_display->setComponent('field_mega_menu_links_list_links', $links_component);
+    }
+    $form_display->save();
+  }
+
+  $view_display = EntityViewDisplay::load('paragraph.mega_menu_links_list.default');
+  if ($view_display) {
+    $view_display->removeComponent('field_mega_menu_list_label_link');
+    $hidden = $view_display->get('hidden') ?: [];
+    $hidden['field_mega_menu_list_label_link'] = TRUE;
+    $view_display->set('hidden', $hidden);
+    $view_display->save();
+  }
+
+  \Drupal::entityTypeManager()->getStorage('field_storage_config')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('field_config')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('entity_form_display')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('entity_view_display')->resetCache();
+
+  return t('Optional label link field added to Mega Menu Links List paragraphs.');
+}
+
+/**
  * Flattens list_string / list_integer allowed_values from install YAML for create().
  */
 function _cu_boulder_content_types_field_storage_data_for_options_list_create(array $data): array {
