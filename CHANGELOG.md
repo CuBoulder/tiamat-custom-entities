@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Mega Menu Label Link
+  Add field for mega menu label link
+  Create update hook for new field in paragraph.
+  
+  Sister PR: https://github.com/CuBoulder/tiamat-theme/pull/1844
+---
+
 - ### #1821 - Fixes issue with captions not displaying on Focal Image Wide/Square image styles
   Previously the 'Focal Image Wide' and 'Focal Image Square' image styles did not display Captions set on the media. This has been corrected for those two Image Styles
   

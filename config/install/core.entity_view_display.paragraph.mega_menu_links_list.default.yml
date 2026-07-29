@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.mega_menu_links_list.field_mega_menu_links_list_label
+    - field.field.paragraph.mega_menu_links_list.field_mega_menu_list_label_link
     - field.field.paragraph.mega_menu_links_list.field_mega_menu_links_list_links
     - paragraphs.paragraphs_type.mega_menu_links_list
   module:
@@ -29,4 +30,5 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-hidden: {  }
+hidden:
+  field_mega_menu_list_label_link: true
