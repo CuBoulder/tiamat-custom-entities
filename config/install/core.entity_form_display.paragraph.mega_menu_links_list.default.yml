@@ -3,9 +3,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.mega_menu_links_list.field_mega_menu_links_list_label
+    - field.field.paragraph.mega_menu_links_list.field_mega_menu_list_label_link
     - field.field.paragraph.mega_menu_links_list.field_mega_menu_links_list_links
     - paragraphs.paragraphs_type.mega_menu_links_list
   module:
+    - link
     - paragraphs
 id: paragraph.mega_menu_links_list.default
 targetEntityType: paragraph
@@ -20,9 +22,17 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_mega_menu_list_label_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   field_mega_menu_links_list_links:
     type: paragraphs
-    weight: 1
+    weight: 2
     region: content
     settings:
       title: Paragraph
