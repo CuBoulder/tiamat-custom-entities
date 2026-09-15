@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20260915-test] - 2026-09-15
+
 ## [20260729] - 2026-07-29
 
 - ### Mega Menu Label Link
@@ -18,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1844>
 
-* * *
+***
 
 - ### #1821 - Fixes issue with captions not displaying on Focal Image Wide/Square image styles
 
@@ -31,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1821>
 
-* * *
+***
 
 ## [20260429] - 2026-04-29
 
@@ -42,7 +44,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1789>
   Sister PR: <https://github.com/CuBoulder/tiamat10-profile/pull/322>
 
-* * *
+***
 
 ## [20260402] - 2026-04-02
 
@@ -52,7 +54,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1781>
 
-* * *
+***
 
 ## [20260331] - 2026-04-01
 
@@ -63,11 +65,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Both paragraphs function like their block counter parts.
   Update hooks for existing environments are created as well.
 
-  The update hooks are set to 10012, 10013, and 10014. For some reason 9, 10, and 11 weren't working. 
+  The update hooks are set to 10012, 10013, and 10014. For some reason 9, 10, and 11 weren't working.
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1776>
 
-* * *
+***
 
 ## [20260310] - 2026-03-10
 
@@ -75,13 +77,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Previously FAQ pages were missing the auto alias checkbox, which means the urls just end up being node paths unless the alias field has a value.
 
-  This has been corrected so FAQ Pages generate the following path pattern, mirroring Basic, Form, Person List, Article List, and other pages: 
+  This has been corrected so FAQ Pages generate the following path pattern, mirroring Basic, Form, Person List, Article List, and other pages:
 
   `/[node:menu-link:parent:url:path]/[node: title]`
 
-  Resolves #226  
+  Resolves #226
 
-* * *
+***
 
 ## [20260218] - 2026-02-18
 
@@ -93,13 +95,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Sister PR: <https://github.com/CuBoulder/ucb_styled_block/pull/6>
   Sister PR: <https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/80>
 
-* * *
+***
 
 ## [20260204] - 2026-02-04
 
 - ### Alert Color Updates
 
-  Added the alert color options to bs_background_style
+  Added the alert color options to bs\_background\_style
 
   Hide the current Alert override
 
@@ -109,7 +111,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Sister PR: <https://github.com/CuBoulder/ucb_styled_block/pull/5>
   Sister PR: <https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/78>
 
-* * *
+***
 
 ## [20251210] - 2025-12-10
 
@@ -123,7 +125,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `theme` => <https://github.com/CuBoulder/tiamat-theme/pull/1721>
   - `ucb_dev_workspace` => <https://github.com/CuBoulder/ucb-dev-workspace/pull/4>
 
-* * *
+***
 
 ## [20251029] - 2025-10-29
 
@@ -135,15 +137,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves #217
 
-* * *
+***
 
 - ### #215: Change label from Syndicated CU Content to Trusted CU Content
 
   Changes `Syndicated CU Content` block name to `Trusted CU Content` for better consistency with the terminology used throughout the Trust and Discovery content-sharing ecosystem.
 
-  Resolves #215 
+  Resolves #215
 
-* * *
+***
 
 ## [20251022] - 2025-10-22
 
@@ -157,29 +159,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `theme` => <https://github.com/CuBoulder/tiamat-theme/issues/1675>
   - `ucb_trusted_content_discovery` => <https://github.com/CuBoulder/ucb_trusted_content_discovery/pull/2>
 
-* * *
+***
 
 ## [20250514] - 2025-05-14
 
 - ### Updates Description of Summary/Thumbnail section of Articles
 
-  Helps clarify the purpose of the Summary and Thumbnail fields on Article nodes, since they will be used for aggregator blocks like the Article List, and in metatags to facilitate social sharing across applications. 
+  Helps clarify the purpose of the Summary and Thumbnail fields on Article nodes, since they will be used for aggregator blocks like the Article List, and in metatags to facilitate social sharing across applications.
 
-  Includes: 
+  Includes:
 
   - `profile` => <https://github.com/CuBoulder/tiamat10-profile/pull/280>
   - `custom_entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/210>
 
   Resolves <https://github.com/CuBoulder/tiamat10-profile/issues/279>
 
-* * *
+***
 
 ## [20250423] - 2025-04-23
 
-- ### Update block_content.type.ucb_hero_slider.yml
+- ### Update block\_content.type.ucb\_hero\_slider.yml
   Add BETA to the label for the hero slider
 
-* * *
+***
 
 - ### Slide duration update
 
@@ -187,7 +189,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1628>
 
-* * *
+***
 
 ## [20250409] - 2025-04-09
 
@@ -197,14 +199,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1620>
 
-* * *
+***
 
 ## [20250312] - 2025-03-12
 
 - ### D11 version bump
   D11 version bump
 
-* * *
+***
 
 ## [20250219] - 2025-02-19
 
@@ -218,7 +220,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1598>
 
-* * *
+***
 
 ## [20250115] - 2025-01-15
 
@@ -226,25 +228,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [20241204] - 2024-12-04
 
-- ### Create image.style.focal_image_teaser_wide.yml
+- ### Create image.style.focal\_image\_teaser\_wide.yml
 
   Added new teaser wide style which is 2:1 instead of 3:2
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1529>
 
-* * *
+***
 
 ## [20241122] - 2024-11-22
 
 ## [20241120] - 2024-11-20
 
-- ### Update image.style.focal_image_wide.yml
+- ### Update image.style.focal\_image\_wide.yml
 
   Updated focal wide image style to be 3:2 instead of 2:1
 
-  Resolves #190 
+  Resolves #190
 
-* * *
+***
 
 - ### Additional height options for video hero unit
 
@@ -252,11 +254,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1480>
 
-* * *
+***
 
 - ### Adds Newsletter List Block and Newsletter Summary Field
 
-  Creates the Newsletter List Block schema. Updates Newsletter schema to include a Summary field. 
+  Creates the Newsletter List Block schema. Updates Newsletter schema to include a Summary field.
 
   Includes:
 
@@ -267,7 +269,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1391>
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1475>
 
-* * *
+***
 
 ## [20241113] - 2024-11-13
 
@@ -277,7 +279,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1448>
 
-* * *
+***
 
 ## [20241030] - 2024-10-30
 
@@ -288,18 +290,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Includes:
 
   - theme => <https://github.com/CuBoulder/tiamat-theme/pull/1437>
-  - custom_entities => <https://github.com/CuBoulder/tiamat-custom-entities/pull/186>
+  - custom\_entities => <https://github.com/CuBoulder/tiamat-custom-entities/pull/186>
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1398>
 
-* * *
+***
 
 ## [20241023] - 2024-10-23
 
 - ### Updates article date/time formatting default option label
-  [change] Resolves CuBoulder/tiamat-custom-entities#183
+  \[change] Resolves CuBoulder/tiamat-custom-entities#183
 
-* * *
+***
 
 ## [20241017] - 2024-10-17
 
@@ -311,13 +313,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR in: All the things
 
-* * *
+***
 
 - ### Article List Page: Expose Category/Tag Filter Toggle Setting
 
   Adds two new toggles to the Article List Page settings, which will expose filters on Categories and Tags for page visitors. This will allow visitors to the page to further filter Articles, which was previously a setting in D7.
 
-  This will have migration implications. 
+  This will have migration implications.
 
   Includes:
 
@@ -326,14 +328,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/pull/1387>
 
-* * *
+***
 
 ## [20241009] - 2024-10-09
 
 - ### Create developer-sandbox-ci.yml
   new ci workflow
 
-* * *
+***
 
 ## [20241002] - 2024-10-02
 
@@ -344,22 +346,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Article: Removes 'Sticky at Top'. Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1319>
   - Newsletter: Adds 'Published' checkbox to allow Unpublished Newsletters. Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1310>
 
-* * *
+***
 
 ## [20240918] - 2024-09-18
 
-- ### Create image.style.section_background.yml
+- ### Create image.style.section\_background.yml
 
   New image style for section backgrounds.
   Scales to 1920 width, but does not crop height at all.
 
   Sister PR: <https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/57>
 
-* * *
+***
 
 - ### Adds the Faculty Publications block
 
-  [new] This update adds the Faculty Publications block. Faculty Publications blocks pull results from [CU Experts](https://experts.colorado.edu/). A variety of filters are available to bring near feature-parity with the version in D7. Notable changes in this version:
+  \[new] This update adds the Faculty Publications block. Faculty Publications blocks pull results from [CU Experts](https://experts.colorado.edu/). A variety of filters are available to bring near feature-parity with the version in D7. Notable changes in this version:
 
   - Adds an option to detect when the block has been added to a faculty member's person page, and automatically use that person's email address for the author filter.
   - Replaces the pager with a "More publications" button which loads the next batch of publications. Results are loaded fast and no longer require a reload of the page to view.
@@ -369,14 +371,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/1297), [tiamat10-profile](https://github.com/CuBoulder/tiamat10-profile/pull/201)
 
-* * *
+***
 
 - ### Article thumbnail style change
   This is a change to the article's thumbnail display so that cropping works properly across our various blocks.
   This is one of several incoming changes for issue #1249
   <https://github.com/CuBoulder/tiamat-theme/issues/1249>
 
-* * *
+***
 
 ## [20240911] - 2024-09-11
 
@@ -386,12 +388,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Helps close <https://github.com/CuBoulder/tiamat-theme/pull/1265>.
   Adds the necessary entity changes to allow collection item pages to be used in the content list.
 
-* * *
+***
 
 - ### Updates `core.entity_form_display.node.ucb_person.default.yml`
-  [bug] This update adds the missing author information to Person nodes to match our other content types. Resolves CuBoulder/tiamat-custom-entities#166
+  \[bug] This update adds the missing author information to Person nodes to match our other content types. Resolves CuBoulder/tiamat-custom-entities#166
 
-* * *
+***
 
 - ### New Image styles issue/1240
 
@@ -408,9 +410,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/1252>
 
-  Closes #1240 
+  Closes #1240
 
-* * *
+***
 
 ## [20240821] - 2024-08-21
 
@@ -421,23 +423,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR: <https://github.com/CuBoulder/tiamat10-profile/pull/192>
 
-* * *
+***
 
 - ### 'Small Square' Image Style size adjustments
 
   ### Image Style: Small Square
 
-  Adjusts the `Small Square` image style size to mirror the `Small` image style sizing, reducing the width from 500px to 375px. 
+  Adjusts the `Small Square` image style size to mirror the `Small` image style sizing, reducing the width from 500px to 375px.
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1222>
 
-* * *
+***
 
 - ### Content Entities for Mega Menu
   Closes <https://github.com/CuBoulder/tiamat-theme/issues/629>.
   Adds the necessary content entities for the mega menu.
 
-* * *
+***
 
 ## [20240814] - 2024-08-14
 
@@ -445,9 +447,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   These fields aren't currently used anywhere and do nothing. This update hides them.
 
-  [remove] Resolves CuBoulder/tiamat-custom-entities#158
+  \[remove] Resolves CuBoulder/tiamat-custom-entities#158
 
-* * *
+***
 
 - ### New Image Styles: Colorbox Image Styles
 
@@ -465,7 +467,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/1174>
 
-* * *
+***
 
 - ### Slate Form: Allows a Block Description & Config Fixes
 
@@ -481,7 +483,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Related: <https://github.com/CuBoulder/tiamat-theme/pull/1182>
 
-* * *
+***
 
 - ### Image Styles: Adds 'Original Image Size' style, adjusts small
 
@@ -495,9 +497,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `tiamat-custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/155>
   - `tiamat-profile` => <https://github.com/CuBoulder/tiamat10-profile/pull/177>
 
-  Resolves #154 
+  Resolves #154
 
-* * *
+***
 
 ## [20240711] - 2024-07-11
 
@@ -506,29 +508,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Sister Pull Request with <https://github.com/CuBoulder/tiamat-theme/pull/1094>.
   Adds the necessary entities to enable the masonry option for image galleries.
 
-* * *
+***
 
 ## [20240604] - 2024-06-04
 
 - ### Adds secondary and footer menus as allowed options for class notes list pages
   Resolves #149
 
-* * *
+***
 
 - ### Updates form display of Content Sequence block
   This update includes two modifications to the Content Sequence block's form display:
-  - [Bug] Restores missing block info description for Content Sequence blocks added using Block Layout.
-  - [Remove] Removes stray description field previously used for the advanced Content Sequence. CuBoulder/tiamat-theme#934; Resolves CuBoulder/tiamat-custom-entities#142 
+  - \[Bug] Restores missing block info description for Content Sequence blocks added using Block Layout.
+  - \[Remove] Removes stray description field previously used for the advanced Content Sequence. CuBoulder/tiamat-theme#934; Resolves CuBoulder/tiamat-custom-entities#142
 
-* * *
+***
 
-- ### Update field.storage.block_content.field_bs_background_style.yml
+- ### Update field.storage.block\_content.field\_bs\_background\_style.yml
 
   Switched 'gray' to 'light gray' for site setting consistency.
 
-  Resolves #146 
+  Resolves #146
 
-* * *
+***
 
 - ### Adds Alert setting to Text Block
 
@@ -543,7 +545,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/880>
 
-* * *
+***
 
 - ### Video Hero Block: Enables background color block style
 
@@ -558,33 +560,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/988>
 
-* * *
+***
 
 ## [20240513] - 2024-05-13
 
-- ### Update core.entity_view_display.block_content.video_hero_unit.default.yml
+- ### Update core.entity\_view\_display.block\_content.video\_hero\_unit.default.yml
 
   Update video hero unit's display options so that the title displays properly.
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/950>
 
-* * *
+***
 
 - ### Removes horizontal and advanced content sequence blocks
 
-  [a11y, Remove] The horizontal and advanced variants of content sequence aren't properly accessible to screenreader users. This update removes them. CuBoulder/tiamat-theme#934
+  \[a11y, Remove] The horizontal and advanced variants of content sequence aren't properly accessible to screenreader users. This update removes them. CuBoulder/tiamat-theme#934
 
   Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/940)
 
-* * *
+***
 
 - ### Remove Plain text from Collection Item Page
   Closes <https://github.com/CuBoulder/tiamat-theme/issues/928>.
   Removes the plain text option from the collection item page preview.
 
-* * *
+***
 
-- ### Update core.entity_view_display.node.basic_page.default.yml
+- ### Update core.entity\_view\_display.node.basic\_page.default.yml
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/898>
   Sister PR: <https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/38>
@@ -592,18 +594,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Updated basic page default layout to be a two column set up rather than single column
 
-  The first column contains the title and body content 
+  The first column contains the title and body content
   The second column contains the Main, Secondary, and Footer navigations
 
-  This will allow for the new layout to display properly. 
+  This will allow for the new layout to display properly.
 
-* * *
+***
 
 - ### Issue/tiamat theme/804
   Sister pull request to resolve <https://github.com/CuBoulder/tiamat-theme/issues/804>.
   Adds necessary custom entities for the wallpaper image style.
 
-* * *
+***
 
 - ### Issue/129
 
@@ -614,12 +616,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Tiamat-profile: <https://github.com/CuBoulder/tiamat10-profile/pull/117>
   Tiamat-theme: <https://github.com/CuBoulder/tiamat-theme/pull/890>
 
-* * *
+***
 
 - ### Removal of article hero files
   Removes necessary files for article hero units.
 
-* * *
+***
 
 - ### Newsletter: Adds optional URL field to Newsletter Section: Custom Content
 
@@ -632,7 +634,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/872>
 
-* * *
+***
 
 - ### Newsletter: Moves social links from Node to Newsletter term
 
@@ -643,7 +645,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/871>
   - `custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/130>
 
-* * *
+***
 
 - ### Issue Page: Section Titles made optional
 
@@ -654,28 +656,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/855>
   - `custom-entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/127>
 
-* * *
+***
 
 - ### Makes the URL to the Events Calendar block widget builder a link
   Resolves CuBoulder/tiamat-custom-entities#124
 
-* * *
+***
 
 - ### Updates Collection Grid block
 
   This update:
 
-  - [Bug] Fixes a minor typo in the description of the "Display Summary" field. Resolves CuBoulder/tiamat-custom-entities#122
-  - [Bug] Moves "Block Heading" into the correct place under the "Styles" tab in the form display.  Resolves CuBoulder/tiamat-custom-entities#121
+  - \[Bug] Fixes a minor typo in the description of the "Display Summary" field. Resolves CuBoulder/tiamat-custom-entities#122
+  - \[Bug] Moves "Block Heading" into the correct place under the "Styles" tab in the form display.  Resolves CuBoulder/tiamat-custom-entities#121
 
   Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/851)
 
-* * *
+***
 
 - ### Collection Item Page: Tab Labels change
-  Resolves #123 
+  Resolves #123
 
-* * *
+***
 
 - ### Updates Social Media Icons block
 
@@ -688,7 +690,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/827)
 
-* * *
+***
 
 - ### Adjusts descriptions of various blocks
 
@@ -702,9 +704,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Previously these were described as 'paragraphs' rather than blocks.
 
-  Resolves #116 
+  Resolves #116
 
-* * *
+***
 
 - ### Block Style Updates
 
@@ -712,7 +714,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/808>
 
-* * *
+***
 
 - ### Updates Articles
 
@@ -728,15 +730,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/805)
 
-* * *
+***
 
 - ### Disables 'Sticky at Top of Lists' and 'Promoted to Front Page'
 
   Disables the 'Sticky at Top of Lists' and 'Promoted to Front Page' fields from Form Display across all Content Types
 
-  Resolves #114 
+  Resolves #114
 
-* * *
+***
 
 - ### Issue Archive Path Auto
 
@@ -751,11 +753,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/765>
 
-* * *
+***
 
 - ### Newsletter Changes
 
-  - `Newsletter Text Blocks` previously had two fixed Text Blocks. This has been updated to a paragraph type with no limit and the previous fields were removed. 
+  - `Newsletter Text Blocks` previously had two fixed Text Blocks. This has been updated to a paragraph type with no limit and the previous fields were removed.
   - Custom content in the `Newsletter Section Content` paragraph no longer includes a category field.
   - Adds a `Social Media Links` boolean field to the Newsletter.
   - Includes Email HTML views for new paragraph types
@@ -767,28 +769,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/706>
 
-* * *
+***
 
 - ### Added "None"
 
   Added `None` as an option to background style and made it a required field with `None` selected as default
 
-  Fixed hero and event calendar classes showing in content 
+  Fixed hero and event calendar classes showing in content
   Fixed color layering and cascading
   Added `None` as an option for `Block Style` background color
 
   Related PR: <https://github.com/CuBoulder/tiamat-theme/pull/747>
   Related PR: <https://github.com/CuBoulder/ucb_bootstrap_layouts/pull/26>
 
-* * *
+***
 
 - ### Removes requirement for Related Articles
 
   Related Articles block no longer required, which would cause errors on migrated sites with this block
 
-  Resolves #102 
+  Resolves #102
 
-* * *
+***
 
 - ### Block styles
 
@@ -800,13 +802,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/729>
   Sister PR: <https://github.com/CuBoulder/tiamat10-profile/pull/99>
 
-* * *
+***
 
 - ### Issue Node: Removing the Secondary Image
 
   Fixes the following on Issue Content Types:
 
-  - Removes the Secondary Image field from the form and page display. Also removes the hard-coded dark gray box with the title and body in it, as users can use CKEditor5 plugins such as Box, Button, Icons, and Media Library to achieve a variety of left-side layouts. 
+  - Removes the Secondary Image field from the form and page display. Also removes the hard-coded dark gray box with the title and body in it, as users can use CKEditor5 plugins such as Box, Button, Icons, and Media Library to achieve a variety of left-side layouts.
   - Fixes bug with Teaser view of Categories displaying improperly
   - "Read More" capitzalized via CSS instead of hard-coded
 
@@ -817,7 +819,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/704>
 
-* * *
+***
 
 - ### Issue and Issue Archive use Media Library images
 
@@ -831,19 +833,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves [#104 ](https://github.com/CuBoulder/tiamat-custom-entities/issues/104)
 
-* * *
+***
 
 - ### update text field for video reveal
   Closes <https://github.com/CuBoulder/tiamat-theme/issues/662>.
   Changes the text field for video reveal.
 
-* * *
+***
 
 - ### Collection Item Page Preview Page
   Closes #101.
   Changes the preview field into a full html field.
 
-* * *
+***
 
 - ### Content Row: Block Changes
 
@@ -852,8 +854,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - On the "Configure Block" modal, switched the order of the tabs so 'Row Content' is on the left and open by default and 'Row Design' is on the right and hidden
   - Added three teaser displays: `Large Teaser`, `Large Teaser Alternate`, and `Teaser`. Previously the teaser displays available were Teaser and Teaser Alternate.
   - The `Large Teaser` and `Large Teaser Alternate` displays use the focal image wide style images rather than square.
-  - Adjusts style of the `Teaser` display to mirror other teaser-list style elements, such as the Article List. 
-  - Adjusted style of the `Tile` style display to more closely mirror the D7 version, which achieved the tile effect with images and text alternating. 
+  - Adjusts style of the `Teaser` display to mirror other teaser-list style elements, such as the Article List.
+  - Adjusted style of the `Tile` style display to more closely mirror the D7 version, which achieved the tile effect with images and text alternating.
   - Fixes bug where internal links, such as `/homepage` would cause a WSOD when added to Row Layout Content
 
   Includes:
@@ -865,19 +867,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/674>
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/675>
 
-* * *
+***
 
 - ### Content Sequence fixes.
   Helps close content sequence tickets.
   Sister pull request in <https://github.com/CuBoulder/tiamat-theme/pull/685>.
 
-* * *
+***
 
 - ### Social Media Block entities
   Helps close <https://github.com/CuBoulder/tiamat-theme/issues/12>.
   Adds custom entities for social media block
 
-* * *
+***
 
 - ### Class Note + Class Note List Changes
 
@@ -891,7 +893,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/206>
 
-* * *
+***
 
 - ### Class Note Enhancements
 
@@ -903,13 +905,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - tiamat-profile => <https://github.com/CuBoulder/tiamat10-profile/pull/75>
   - custom-entities => <https://github.com/CuBoulder/tiamat-custom-entities/pull/94>
 
-* * *
+***
 
 - ### Adds Collection Grid block and Collection Item content type
   Helps close <https://github.com/CuBoulder/tiamat-theme/issues/534>.
   Adds the entities for the collection grid and collection item pages.
 
-* * *
+***
 
 - ### FAQ Content Type
 
@@ -921,7 +923,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - custom-entities (issue/tiamat-theme/620) => <https://github.com/CuBoulder/tiamat-custom-entities/pull/92>
   - ucb-admin-menus (issue/tiamat-theme/620) => <https://github.com/CuBoulder/ucb_admin_menus/pull/20>
 
-* * *
+***
 
 - ### Adds Class Note Page + Class Notes List Page
 
@@ -933,7 +935,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/588>
 
-* * *
+***
 
 - ### Video hero unit separation setup
 
@@ -941,7 +943,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/606>
 
-* * *
+***
 
 ## [20231212] - 2023-12-12
 
@@ -951,7 +953,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/582>
 
-* * *
+***
 
 - ### People List Filter Labels as a Global Setting
 
@@ -965,7 +967,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `tiamat-theme` => <https://github.com/CuBoulder/tiamat-theme/pull/560>
   - `ucb_custom_entities` => <https://github.com/CuBoulder/tiamat-custom-entities/pull/87>
 
-* * *
+***
 
 - ### pathauto updates
 
@@ -973,19 +975,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/557>
 
-* * *
+***
 
 - ### Add help text to Calendar Block
   Closes <https://github.com/CuBoulder/tiamat-theme/issues/539>.
   Adds new help text to Calendar Block to link to the widget builder
 
-* * *
+***
 
 - ### updated entities for scheduler
   Used for <https://github.com/CuBoulder/tiamat-theme/issues/504>.
   Adds entities needed for the scheduler module.
 
-* * *
+***
 
 - ### View Display fix on 'Focal Image Wide' + 'Focal Image Square' Image Styles on Sandbox Sites
 
@@ -993,13 +995,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/521>
 
-* * *
+***
 
 - ### Resolves configuration conflict for Image Styles causing issues on the Admin Interface
 
   Resizes the `Wide` Image Style after fixing config.
 
-  Removes conflicting/duplicate `Image Style` configuration from `profile` that already existed in `custom-entities`, which caused the Admin interface to WSOD while trying to update the Image Styles via UI. 
+  Removes conflicting/duplicate `Image Style` configuration from `profile` that already existed in `custom-entities`, which caused the Admin interface to WSOD while trying to update the Image Styles via UI.
 
   Includes:
 
@@ -1008,15 +1010,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/524>
 
-* * *
+***
 
-- ### Update core.entity_view_display.node.basic_page.default.yml
+- ### Update core.entity\_view\_display.node.basic\_page.default.yml
 
   Added setting so default section has "contained" set.
 
-  Closes #77 
+  Closes #77
 
-* * *
+***
 
 ## [20230918] - 2023-09-18
 
@@ -1026,21 +1028,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/482>
 
-* * *
+***
 
 - ### metatag necessary fields
   Closes <https://github.com/CuBoulder/tiamat-theme/issues/149>.
   Adds social sharing custom entity to enable metatags.
 
-* * *
+***
 
-- ### Update core.entity_view_display.node.basic_page.default.yml
+- ### Update core.entity\_view\_display.node.basic\_page.default.yml
 
   The page title being moved to layout builder mode
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/473>
 
-* * *
+***
 
 - ### New: Adds 'People List Block'
 
@@ -1055,7 +1057,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/466>
 
-* * *
+***
 
 - ### Removes image requirement from Content Row "Teaser" layouts
 
@@ -1065,25 +1067,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/457)
 
-* * *
+***
 
 - ### Removes "D9" from theme name and the theme, custom entities Composer package names
 
   CuBoulder/tiamat-theme#435
 
-  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/452), [tiamat-profile](https://github.com/CuBoulder/tiamat-profile/pull/52), [tiamat10-profile](https://github.com/CuBoulder/tiamat10-profile/pull/13), [tiamat-project-template](https://github.com/CuBoulder/tiamat-project-template/pull/28), [tiamat10-project-template](https://github.com/CuBoulder/tiamat10-project-template/pull/8), [ucb_site_configuration](https://github.com/CuBoulder/ucb_site_configuration/pull/26)
+  Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/452), [tiamat-profile](https://github.com/CuBoulder/tiamat-profile/pull/52), [tiamat10-profile](https://github.com/CuBoulder/tiamat10-profile/pull/13), [tiamat-project-template](https://github.com/CuBoulder/tiamat-project-template/pull/28), [tiamat10-project-template](https://github.com/CuBoulder/tiamat10-project-template/pull/8), [ucb\_site\_configuration](https://github.com/CuBoulder/ucb_site_configuration/pull/26)
 
-* * *
+***
 
 - ### Updated Byline
   Byline now has Author Person Page entity ID targetting
 
-* * *
+***
 
 - ### Adds Description to Form Page Node
-  Resolves #18 
+  Resolves #18
 
-* * *
+***
 
 - ### Change: Adds 'White' background to card-styled Text Block
 
@@ -1096,7 +1098,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/413>
 
-* * *
+***
 
 - ### Adds Additional Events link to Event Calendar block
 
@@ -1106,25 +1108,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   [tiamat-theme](https://github.com/CuBoulder/tiamat-theme) => [issue/tiamat-theme/381 ](https://github.com/CuBoulder/tiamat-theme/pull/411)
   [tiamat-custom-entities](https://github.com/CuBoulder/tiamat-custom-entities) => [issue/tiamat-theme/381](https://github.com/CuBoulder/tiamat-custom-entities/pull/65)
 
-* * *
+***
 
 - ### Changes labels of Hero Block 'Content' and 'Design' tabs
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/399>
 
-* * *
+***
 
 - ### Issue 320: Adding primary link to person pages
   Closes Issue 320 in tiamat-theme. Adds the necessary files for a primary link field in the person page.
 
-* * *
+***
 
-- ### Update field.storage.block_content.field_grid_column_count.yml
+- ### Update field.storage.block\_content.field\_grid\_column\_count.yml
 
   Added options for 5 and 6 columns in grid content
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/395>
 
-* * *
+***
 
 - ### Changes to Article content type, Text and Content Grid blocks
   - Changes Article category and tag fields to tag style. Resolves CuBoulder/tiamat-theme#349
@@ -1132,15 +1134,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Renames and reorders tabs in the Content Grid form display. Resolves CuBoulder/tiamat-theme#375
   - Renames tabs in the Text block form display. Resolves CuBoulder/tiamat-theme#386
 
-* * *
+***
 
-- ### Update field.field.paragraph.row_layout_content.field_row_layout_cont…
+- ### Update field.field.paragraph.row\_layout\_content.field\_row\_layout\_cont…
 
   Made the text option not required
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/391>
 
-* * *
+***
 
 - ### New Block Type: Article Slider
 
@@ -1152,11 +1154,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `tiamat-theme` => `issue/tiamat-theme/319`
   `tiamat-custom-entities` => `issue/tiamat-theme/319`
 
-* * *
+***
 
 - ### New Block Type: Article Feature
 
-  Adds a new block type: Article Feature. The Article Feature block displays the latest Articles, with Category & Tag filters set by the user much like the Article List page. The first Article displays a large image and summary and the remaining articles displays titles and thumbnails. 
+  Adds a new block type: Article Feature. The Article Feature block displays the latest Articles, with Category & Tag filters set by the user much like the Article List page. The first Article displays a large image and summary and the remaining articles displays titles and thumbnails.
 
   Resolves [#318 ](https://github.com/CuBoulder/tiamat-theme/issues/318)
 
@@ -1165,7 +1167,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `tiamat-theme` => `issue/tiamat-theme/318`
   - `tiamat-custom-entities` => `issue/tiamat-theme/318`
 
-* * *
+***
 
 - ### New Block Type: Article Grid
 
@@ -1178,15 +1180,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Resolves [#317 ](https://github.com/CuBoulder/tiamat-theme/issues/317)
 
-* * *
+***
 
-- ### Update field.field.block_content.events_calendar.field_calendar_code.yml
+- ### Update field.field.block\_content.events\_calendar.field\_calendar\_code.yml
 
   Updated help text to contain link to the events calendar widget maker
 
   Sister PR: <https://github.com/CuBoulder/tiamat-theme/pull/367>
 
-* * *
+***
 
 - ### Change: Related Articles set via Global Settings
 
@@ -1197,7 +1199,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - tiamat-theme `issue/246`
   - tiamat-custom-entities `issue/tiamat-theme/246`
 
-* * *
+***
 
 - ### New Block Type: Article List Block
 
@@ -1206,15 +1208,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/316>
 
   Includes:
-  \-tiamat-theme (<https://github.com/CuBoulder/tiamat-theme/pull/357>) => `issue/tiamat-theme-316` 
-  \-custom-entities => `issue/tiamat-theme-316`
+  -tiamat-theme (<https://github.com/CuBoulder/tiamat-theme/pull/357>) => `issue/tiamat-theme-316`
+  -custom-entities => `issue/tiamat-theme-316`
 
-* * *
+***
 
 - ### Issue/tiamat theme/265
   Closes #265.
 
-* * *
+***
 
 - ### Change: Newsletter Taxonomy Enhancements and Newsletter URL Path
 
@@ -1228,13 +1230,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Newsletter Path\*
 
   Also changes pathauto for Newsletters to follow this pattern:
-  _/newsletter/newsletter-path\*/title_
+  */newsletter/newsletter-path\*/title*
 
-* * *
+***
 
 - ### chg: bumping for D10 compatibility
 
-* * *
+***
 
 - ### Adds pronouns field to the Person page
 
@@ -1244,7 +1246,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/327)
 
-* * *
+***
 
 - ### Update hero unit form display
 
@@ -1254,31 +1256,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Closes #45
   (Issue number changed in ticket repo transfer)
 
-* * *
+***
 
 - ### Modifies person page form display
-  - CuBoulder/tiamat-theme#308: adds descriptions for the _Job Type_ and _Phone_ fields
+  - CuBoulder/tiamat-theme#308: adds descriptions for the *Job Type* and *Phone* fields
   - Resolves CuBoulder/tiamat-theme#310: renames "Other" tab to "Filters"
   - Resolves CuBoulder/tiamat-theme#311: renames "Description" tab and "Bio" field to "Body"
 
-* * *
+***
 
 - ### Add new image styles to WYSIWYG and full html
   Closes #152 in Tiamat Theme.
   Adds the new image styles to the custom entities
 
-* * *
+***
 
 ## [20230323] - 2023-03-23
 
 - ### Changes "Order by" for Person List page
 
-  The option "Has Job Type, Last Name" has become "Job Type, Last Name". Rather than simply checking for the existence of the _job type_, sorting is performed alphabetically by a person's first _job type_.
+  The option "Has Job Type, Last Name" has become "Job Type, Last Name". Rather than simply checking for the existence of the *job type*, sorting is performed alphabetically by a person's first *job type*.
 
-  CuBoulder/tiamat-theme#280; Author @TeddyBearX 
+  CuBoulder/tiamat-theme#280; Author @TeddyBearX
   Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/287)
 
-* * *
+***
 
 - ### Removes the ability to turn off "Restrict choices to those selected" in People List
 
@@ -1288,7 +1290,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
   Sister PR in: [tiamat-theme](https://github.com/CuBoulder/tiamat-theme/pull/285)
 
-* * *
+***
 
 - ### Newsletter Email View Modes
 
@@ -1299,12 +1301,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `tiamat-theme` => issue/222
   `tiamat-custom-entities` => issue/222
 
-* * *
+***
 
 - ### Removes the ability to add articles to menus
   Resolves CuBoulder/tiamat-theme#239
 
-* * *
+***
 
 - ### Hidden Terms: Category and Tag Taxonomy Display Option
 
@@ -1317,7 +1319,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `tiamat-theme` => `issue/217`
   - `tiamat-custom-entities` => `issue/217`
 
-* * *
+***
 
 ## [20230209] - 2023-02-09
 
@@ -1325,7 +1327,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Schemas for new Article fields for Header Image, Overlay, and Header Color
   Resolves <https://github.com/CuBoulder/tiamat-theme/issues/154>
 
-* * *
+***
 
 - ### Publication Bundle
 
@@ -1350,14 +1352,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Notes for testing:
   Includes branches `issue/168` on `tiamat-theme`
 
-* * *
+***
 
 - ### Adds `CHANGELOG.md` and workflow to `tiamat-custom-entities`
-  Resolves #32 
+  Resolves #32
 
-* * *
+***
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260729...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260915-test...HEAD
+[20260915-test]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260729...20260915-test
 [20260729]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260429...20260729
 [20260429]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260402...20260429
 [20260402]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260331...20260402
