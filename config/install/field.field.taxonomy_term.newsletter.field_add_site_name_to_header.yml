@@ -10,7 +10,7 @@ entity_type: taxonomy_term
 bundle: newsletter
 label: 'Add Site Name to Newsletter Header'
 description: 'By default, the Newsletter (new) will only use the Newsletter taxonomy label. Enabling this box will add Site Name, then Newsletter taxonomy label in the Newsletter Email Header. '
-required: true
+required: false
 translatable: false
 default_value:
   -
