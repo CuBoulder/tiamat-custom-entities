@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.newsletter.field_add_site_name_to_header
     - field.field.taxonomy_term.newsletter.field_newsletter_design
     - field.field.taxonomy_term.newsletter.field_newsletter_footer
     - field.field.taxonomy_term.newsletter.field_newsletter_name_image
@@ -10,10 +11,62 @@ dependencies:
     - image.style.thumbnail
     - taxonomy.vocabulary.newsletter
   module:
+    - field_group
     - image
     - link
     - path
     - text
+third_party_settings:
+  field_group:
+    group_newsletter_version:
+      children:
+        - group_legacy
+        - group_new
+      label: 'Newsletter Version'
+      region: content
+      parent_name: ''
+      weight: 5
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        direction: horizontal
+        width_breakpoint: 640
+    group_legacy:
+      children:
+        - field_newsletter_name_image
+        - field_newsletter_design
+      label: Legacy
+      region: content
+      parent_name: group_newsletter_version
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: open
+        description: 'These are visual settings for the legacy version of Newsletter'
+        required_fields: true
+    group_new:
+      children:
+        - field_add_site_name_to_header
+      label: New
+      region: content
+      parent_name: group_newsletter_version
+      weight: 21
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
 id: taxonomy_term.newsletter.default
 targetEntityType: taxonomy_term
 bundle: newsletter
@@ -27,6 +80,13 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_add_site_name_to_header:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_newsletter_design:
     type: options_select
     weight: 4
@@ -35,7 +95,7 @@ content:
     third_party_settings: {  }
   field_newsletter_footer:
     type: text_textarea
-    weight: 5
+    weight: 6
     region: content
     settings:
       rows: 5
@@ -59,7 +119,7 @@ content:
     third_party_settings: {  }
   field_newsletter_social_link:
     type: link_default
-    weight: 6
+    weight: 7
     region: content
     settings:
       placeholder_url: ''
@@ -75,18 +135,18 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   simple_sitemap:
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 9
+    weight: 10
     region: content
     settings:
       display_label: true
