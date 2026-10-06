@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ucb_cvent_form
+    - field.storage.block_content.field_ucb_cvent_embed_id
+id: block_content.ucb_cvent_form.field_ucb_cvent_embed_id
+field_name: field_ucb_cvent_embed_id
+entity_type: block_content
+bundle: ucb_cvent_form
+label: 'Cvent Embed ID'
+description: 'Enter the Cvent embed ID from the end of the embed URL script. It is the value between /embed/ and .js. For example, using https://web.cvent.com/event_guest/v1/embed/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.js, copy the embed id of xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx here.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
