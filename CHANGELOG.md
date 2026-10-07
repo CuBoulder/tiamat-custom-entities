@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### MJML Entity Update
+  - Adds in Newsletter MJML View Mode, and other MJML entities
+  - Adds Tab groups and new Header field to Newsletter Taxonomy term
+---
+
 - ### Adds Cvent Form block config
   Adds the ability to add a Cvent Form block to Web Express
   

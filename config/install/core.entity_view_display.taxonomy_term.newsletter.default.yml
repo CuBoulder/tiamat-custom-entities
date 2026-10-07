@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.newsletter.field_add_site_name_to_header
     - field.field.taxonomy_term.newsletter.field_newsletter_design
     - field.field.taxonomy_term.newsletter.field_newsletter_footer
     - field.field.taxonomy_term.newsletter.field_newsletter_name_image
@@ -24,6 +25,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_add_site_name_to_header:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_newsletter_design:
     type: list_default
