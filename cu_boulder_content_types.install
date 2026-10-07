@@ -732,6 +732,90 @@ function cu_boulder_content_types_update_10014() {
 }
 
 /**
+ * Adds a Size option to Video Reveal blocks.
+ *
+ * Existing blocks have no stored value and continue to render as Small.
+ */
+function cu_boulder_content_types_update_10015() {
+  $source = new FileStorage(\Drupal::service('extension.list.module')->getPath('cu_boulder_content_types') . '/config/install');
+
+  if (!FieldStorageConfig::loadByName('block_content', 'field_video_reveal_size')) {
+    $data = $source->read('field.storage.block_content.field_video_reveal_size');
+    FieldStorageConfig::create(_cu_boulder_content_types_field_storage_data_for_options_list_create($data))->save();
+  }
+
+  if (!FieldConfig::loadByName('block_content', 'video_reveal', 'field_video_reveal_size')) {
+    FieldConfig::create($source->read('field.field.block_content.video_reveal.field_video_reveal_size'))->save();
+  }
+
+  $form_display = EntityFormDisplay::load('block_content.video_reveal.default');
+  if ($form_display && !$form_display->getComponent('field_video_reveal_size')) {
+    $form_display->setComponent('field_video_reveal_size', [
+      'type' => 'options_select',
+      'weight' => 3,
+      'region' => 'content',
+      'settings' => [],
+      'third_party_settings' => [],
+    ]);
+    $group_content = $form_display->getThirdPartySetting('field_group', 'group_content');
+    if ($group_content && !in_array('field_video_reveal_size', $group_content['children'], TRUE)) {
+      $children = $group_content['children'];
+      $image_index = array_search('field_video_reveal_image', $children, TRUE);
+      $insert_index = $image_index !== FALSE ? $image_index + 1 : count($children);
+      array_splice($children, $insert_index, 0, ['field_video_reveal_size']);
+      $group_content['children'] = $children;
+      $form_display->setThirdPartySetting('field_group', 'group_content', $group_content);
+    }
+    $form_display->save();
+  }
+
+  $view_display = EntityViewDisplay::load('block_content.video_reveal.default');
+  if ($view_display && !$view_display->getComponent('field_video_reveal_size')) {
+    $view_display->setComponent('field_video_reveal_size', [
+      'type' => 'list_key',
+      'label' => 'hidden',
+      'weight' => 4,
+      'region' => 'content',
+      'settings' => [],
+      'third_party_settings' => [],
+    ]);
+    $view_display->save();
+  }
+
+  return t('Size option added to Video Reveal blocks.');
+}
+
+/**
+ * Expands Hero Unit and Video Hero Unit sizes to Tiny through Very Large.
+ *
+ * Stored values are kept, so existing Small blocks become Tiny and existing
+ * Large blocks become Medium without changing how they render.
+ */
+function cu_boulder_content_types_update_10016() {
+  $source = new FileStorage(\Drupal::service('extension.list.module')->getPath('cu_boulder_content_types') . '/config/install');
+
+  $storage_config = \Drupal::configFactory()->getEditable('field.storage.block_content.field_size');
+  if ($storage_config->isNew()) {
+    return t('Field storage field_size not found.');
+  }
+  $install_storage = $source->read('field.storage.block_content.field_size');
+  $storage_config->set('settings.allowed_values', $install_storage['settings']['allowed_values']);
+  $storage_config->save();
+
+  $field_config = \Drupal::configFactory()->getEditable('field.field.block_content.hero_unit.field_size');
+  if (!$field_config->isNew()) {
+    $install_field = $source->read('field.field.block_content.hero_unit.field_size');
+    $field_config->set('description', $install_field['description']);
+    $field_config->save();
+  }
+
+  \Drupal::entityTypeManager()->getStorage('field_storage_config')->resetCache();
+  \Drupal::entityTypeManager()->getStorage('field_config')->resetCache();
+
+  return t('Hero Unit sizes expanded to Tiny, Small, Medium, Large, and Very Large.');
+}
+
+/**
  * Flattens list_string / list_integer allowed_values from install YAML for create().
  */
 function _cu_boulder_content_types_field_storage_data_for_options_list_create(array $data): array {

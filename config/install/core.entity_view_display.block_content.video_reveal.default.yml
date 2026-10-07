@@ -14,6 +14,7 @@ dependencies:
     - field.field.block_content.video_reveal.field_bs_icon_size
     - field.field.block_content.video_reveal.field_bs_title_font_scale
     - field.field.block_content.video_reveal.field_video_reveal_image
+    - field.field.block_content.video_reveal.field_video_reveal_size
     - field.field.block_content.video_reveal.field_video_reveal_text_overlay
     - field.field.block_content.video_reveal.field_video_reveal_video
   module:
@@ -102,6 +103,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_video_reveal_size:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_video_reveal_text_overlay:
     type: text_default
