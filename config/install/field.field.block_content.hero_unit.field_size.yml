@@ -11,7 +11,7 @@ field_name: field_size
 entity_type: block_content
 bundle: hero_unit
 label: Size
-description: 'This setting determines the size of the hero unit. Sizes range from Tiny for narrow areas to Very Large for tall areas.'
+description: 'This setting determines the size of the hero unit. Sizes range from Tiny for narrow areas to Very Large for tall areas. Maximum keeps a 16:9 shape at any width.'
 required: true
 translatable: false
 default_value:

@@ -25,6 +25,9 @@ settings:
     -
       value: '4'
       label: 'Very Large'
+    -
+      value: '5'
+      label: 'Maximum (16:9)'
   allowed_values_function: ''
 module: options
 locked: false
