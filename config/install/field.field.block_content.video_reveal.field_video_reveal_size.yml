@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video_reveal
+    - field.storage.block_content.field_video_reveal_size
+  module:
+    - options
+id: block_content.video_reveal.field_video_reveal_size
+field_name: field_video_reveal_size
+entity_type: block_content
+bundle: video_reveal
+label: Size
+description: 'Larger sizes add vertical space to show more of the background image.'
+required: true
+translatable: false
+default_value:
+  -
+    value: small
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -14,6 +14,7 @@ dependencies:
     - field.field.block_content.video_reveal.field_bs_icon_size
     - field.field.block_content.video_reveal.field_bs_title_font_scale
     - field.field.block_content.video_reveal.field_video_reveal_image
+    - field.field.block_content.video_reveal.field_video_reveal_size
     - field.field.block_content.video_reveal.field_video_reveal_text_overlay
     - field.field.block_content.video_reveal.field_video_reveal_video
   module:
@@ -41,6 +42,7 @@ third_party_settings:
       children:
         - field_video_reveal_video
         - field_video_reveal_image
+        - field_video_reveal_size
         - field_video_reveal_text_overlay
       label: Content
       region: content
@@ -225,6 +227,12 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_video_reveal_size:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_video_reveal_text_overlay:
     type: text_textarea

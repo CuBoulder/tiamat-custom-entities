@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### video reveal, hero units updates
+  Updated the hero units to have extra size options
+  
+  Updated the video reveal to have size options
+  
+  Includes:
+  - `theme` => https://github.com/CuBoulder/tiamat-theme/pull/1869
+  - `custom_entities` => https://github.com/CuBoulder/tiamat-custom-entities/pull/243
+  
+---
+
 ## [20261007] - 2026-10-07
 
 - ### MJML Entity Update
