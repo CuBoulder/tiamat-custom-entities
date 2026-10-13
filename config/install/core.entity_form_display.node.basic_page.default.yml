@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.basic_page.body
     - field.field.node.basic_page.field_abstract
+    - field.field.node.basic_page.field_color_categorization
     - field.field.node.basic_page.field_social_sharing_image
     - field.field.node.basic_page.layout_builder__layout
     - node.type.basic_page
@@ -76,6 +77,21 @@ third_party_settings:
         description: ''
         required_fields: true
         weight: 0
+    group_color_category:
+      children:
+        - field_color_categorization
+      label: 'Color Category'
+      region: content
+      parent_name: ''
+      weight: 11
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        id: ''
+        label_as_html: false
+        open: false
+        required_fields: true
+        weight: 0
 id: node.basic_page.default
 targetEntityType: node
 bundle: basic_page
@@ -91,6 +107,12 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_abstract:
     type: text_textarea
     weight: 2
@@ -99,9 +121,9 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  created:
-    type: datetime_timestamp
-    weight: 2
+  field_color_categorization:
+    type: options_select
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
