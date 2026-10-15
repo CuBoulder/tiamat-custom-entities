@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_color_categorization
+field_name: field_color_categorization
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: blue
+      label: Blue
+    -
+      value: green
+      label: Green
+    -
+      value: purple
+      label: Purple
+    -
+      value: pink
+      label: Pink
+    -
+      value: orange
+      label: Orange
+    -
+      value: yellow
+      label: Yellow
+    -
+      value: red
+      label: Red
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
