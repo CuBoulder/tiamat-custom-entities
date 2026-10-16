@@ -80,7 +80,7 @@ third_party_settings:
     group_color_category:
       children:
         - field_color_categorization
-      label: 'Color Category'
+      label: 'Color Marker'
       region: content
       parent_name: ''
       weight: 11

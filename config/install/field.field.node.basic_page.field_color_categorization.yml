@@ -10,8 +10,8 @@ id: node.basic_page.field_color_categorization
 field_name: field_color_categorization
 entity_type: node
 bundle: basic_page
-label: 'Color Categorization'
-description: 'Select a color to categorize this page. You are able to decide what each color categorization means for your site.'
+label: 'Color Marker'
+description: 'Select a color marker to categorize this page. You are able to decide what each color marker means for your site.'
 required: false
 translatable: false
 default_value: {  }
