@@ -9,25 +9,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [20261022] - 2026-10-22
+
 - ### #248 - Hides Class Note image label
-  Resolves #248 
----
+  Resolves #248
+
+***
 
 - ### #246 - Change label of Color Category to Color Marker
-  Resolves #246 
----
+  Resolves #246
+
+***
 
 - ### Adds New Fields to Basic Page config
+
   This change adds a new field to Basic Pages -- "Color Category", which allows content editors to assign color categories to Basic Pages. These colors can represent whatever you decide for your site to enable additional user-accessible filtering on the `/admin/content` View.
-  
+
   Includes:
+
   - `theme` : https://github.com/CuBoulder/tiamat-theme/pull/1876
   - `profile` : https://github.com/CuBoulder/tiamat10-profile/pull/360
   - `custom_entities` : https://github.com/CuBoulder/tiamat-custom-entities/pull/245
-  - `express_admin` :  https://github.com/CuBoulder/express_admin/pull/24
-  
+  - `express_admin` :  https://github.com/CuBoulder/express\_admin/pull/24
+
   Resolves https://github.com/CuBoulder/tiamat-theme/issues/1872
----
+
+***
 
 ## [20261014] - 2026-10-14
 
@@ -1413,7 +1420,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ***
 
-[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20261014...HEAD
+[unreleased]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20261022...HEAD
+[20261022]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20261014...20261022
 [20261014]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20261007...20261014
 [20261007]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260729...20261007
 [20260729]: https://github.com/CuBoulder/tiamat-custom-entities/compare/20260429...20260729
